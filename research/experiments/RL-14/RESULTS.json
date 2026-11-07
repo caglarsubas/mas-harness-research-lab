@@ -1,0 +1,144 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-28-obs",
+   "contextId": "lab",
+   "establishedValue": "windows with days >= 1: 23 (of 33); files 8 (clusters 6, windows per cluster {\"LANE-DESIGN-UX.md\": 1, \"LANE-PARALLEL.md\": 10, \"LANE-R00-HARNESS-ONION.md\": 5, \"LANE-R03.md\": 3, \"LANE-R04.md\": 2, \"LANE-R11.md\": 2}); blocks 40 (the last block of each lane opens no window)",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-28-obs",
+   "contextId": "lab",
+   "establishedValue": "rho 0.124; bootstrap [-0.413, 0.358], 1000 defined resamples; gate: the interval reaches the minimum effect of interest but PASS is not met",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "UNRESOLVED",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-28-obs",
+   "contextId": "lab",
+   "establishedValue": "secondary, descriptive: median rate per day 1.0 (typedness above median, n 11) vs 0.0 (at or below, n 12)",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-28-obs",
+   "contextId": "lab",
+   "establishedValue": "sensitivity, descriptive: rho with digests-only typedness 0.117 against 0.124; tied X 0 of 23, tied Y 16 of 23 (average ranks)",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+   ],
+   "claimId": "H-28-obs",
+   "value": "n 23; rho 0.124; 95 percent clustered bootstrap [-0.413, 0.358] (1000 of 1,000 resamples defined); digests-only rho 0.117 (descriptive); tied X values 0, tied Y values 16; windows per cluster {\"LANE-DESIGN-UX.md\": 1, \"LANE-PARALLEL.md\": 10, \"LANE-R00-HARNESS-ONION.md\": 5, \"LANE-R03.md\": 3, \"LANE-R04.md\": 2, \"LANE-R11.md\": 2}; median rate above-median typedness 1.000 vs at-or-below 0.000 (n 11 / 12)",
+   "verdict": "UNRESOLVED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-28-obs",
+   "delivered": "n 23; rho 0.124; 95 percent clustered bootstrap [-0.413, 0.358] (1000 of 1,000 resamples defined); digests-only rho 0.117 (descriptive); tied X values 0, tied Y values 16; windows per cluster {\"LANE-DESIGN-UX.md\": 1, \"LANE-PARALLEL.md\": 10, \"LANE-R00-HARNESS-ONION.md\": 5, \"LANE-R03.md\": 3, \"LANE-R04.md\": 2, \"LANE-R11.md\": 2}; median rate above-median typedness 1.000 vs at-or-below 0.000 (n 11 / 12)",
+   "requirement": "H-28 (observational half): typed resume blocks are followed by fewer dated MON lines per day",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "UNRESOLVED"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:c142ef6059df545bda328c838b2c76251aadd2618afe41ff251e406da958a709",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl14_handoff.run-001"
+  },
+  {
+   "contentDigest": "sha256:bcfa5c1b5bb4e51bda2c71c4d5788cf28026c2400c4f26546189cfaa834c685c",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:ac639ff85852f60a10071aec1acbb898eac5757ef4afbe46c68c8b1798cb616a",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl14_eval"
+  }
+ ],
+ "ledgerId": "RL-14-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:02ef7761ce5835b60f62d825551799e5b445ef296a93950e2396b84f06674a8a"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:c142ef6059df545bda328c838b2c76251aadd2618afe41ff251e406da958a709",
+   "sha256:bcfa5c1b5bb4e51bda2c71c4d5788cf28026c2400c4f26546189cfaa834c685c",
+   "sha256:02ef7761ce5835b60f62d825551799e5b445ef296a93950e2396b84f06674a8a",
+   "sha256:ac639ff85852f60a10071aec1acbb898eac5757ef4afbe46c68c8b1798cb616a"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "blocks": 40,
+   "ci_hi_permille": 358,
+   "ci_lo_permille": -413,
+   "defined_resamples": 1000,
+   "n": 23,
+   "rho_digests_only_permille": 117,
+   "rho_permille": 124,
+   "typed_blocks": 36
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C2"
+  ]
+ }
+}

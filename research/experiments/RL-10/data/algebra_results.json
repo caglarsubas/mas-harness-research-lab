@@ -1,0 +1,276 @@
+{
+ "C1": {
+  "consistencyOnly_list": [
+   "REGRESSION_RUN"
+  ],
+  "ledger_extra_in_map": [],
+  "ledger_unmapped": [],
+  "lists_agree": true,
+  "native_extra_in_map": [],
+  "native_unmapped": [],
+  "notConfirmation_list": [
+   "ROLLOUT_AGREEMENT",
+   "POOL_RECOMPUTATION"
+  ],
+  "notEvidence_list": [
+   "MODEL_CONFIDENCE",
+   "SELF_REPORTED_STATUS"
+  ],
+  "ok": true
+ },
+ "C2": {
+  "ok": true,
+  "rows": [
+   {
+    "code": "NOT_EVIDENCE",
+    "establishing_deciding_checks": 2,
+    "has_code_level_kind": true,
+    "id": "L42",
+    "kinds": [
+     "ARTIFACT",
+     "ENVIRONMENT_STATE",
+     "MODEL_CONFIDENCE",
+     "TEST_RESULT"
+    ]
+   },
+   {
+    "code": "NOT_EVIDENCE",
+    "establishing_deciding_checks": 2,
+    "has_code_level_kind": true,
+    "id": "L43",
+    "kinds": [
+     "ARTIFACT",
+     "ENVIRONMENT_STATE",
+     "SELF_REPORTED_STATUS",
+     "TEST_RESULT"
+    ]
+   },
+   {
+    "code": "NOT_EVIDENCE",
+    "establishing_deciding_checks": 1,
+    "has_code_level_kind": true,
+    "id": "L44",
+    "kinds": [
+     "ARTIFACT",
+     "ENVIRONMENT_STATE",
+     "MODEL_CONFIDENCE",
+     "TEST_RESULT"
+    ]
+   },
+   {
+    "code": "CONSENSUS_ONLY",
+    "establishing_deciding_checks": 1,
+    "has_code_level_kind": true,
+    "id": "L79",
+    "kinds": [
+     "ARTIFACT",
+     "ENVIRONMENT_STATE",
+     "ROLLOUT_AGREEMENT",
+     "TEST_RESULT"
+    ]
+   },
+   {
+    "code": "CONSENSUS_ONLY",
+    "establishing_deciding_checks": 1,
+    "has_code_level_kind": true,
+    "id": "L80",
+    "kinds": [
+     "ARTIFACT",
+     "ENVIRONMENT_STATE",
+     "POOL_RECOMPUTATION",
+     "TEST_RESULT"
+    ]
+   },
+   {
+    "code": "CONSISTENCY_ONLY",
+    "establishing_deciding_checks": 1,
+    "has_code_level_kind": true,
+    "id": "L81",
+    "kinds": [
+     "ARTIFACT",
+     "ENVIRONMENT_STATE",
+     "REGRESSION_RUN",
+     "TEST_RESULT"
+    ]
+   },
+   {
+    "code": "CONSISTENCY_ONLY",
+    "establishing_deciding_checks": 1,
+    "has_code_level_kind": true,
+    "id": "L82",
+    "kinds": [
+     "ARTIFACT",
+     "DIFF",
+     "ENVIRONMENT_STATE",
+     "REGRESSION_RUN",
+     "TEST_RESULT"
+    ]
+   }
+  ],
+  "vectors": 7,
+  "violations": [],
+  "with_establishing_deciding_check": [
+   "L42",
+   "L43",
+   "L44",
+   "L79",
+   "L80",
+   "L81",
+   "L82"
+  ]
+ },
+ "C3": {
+  "by_kind": {
+   "ceiling": 8,
+   "missing_required": 4,
+   "strictly_below": 1
+  },
+  "ok": true,
+  "rows": [
+   {
+    "consistent": true,
+    "id": "N13",
+    "kind": "strictly_below",
+    "offered": "LABEL_BOUND",
+    "offered_level": 4,
+    "refusal": "LABEL_BOUND capture where OBSERVED is required",
+    "required": "OBSERVED",
+    "required_level": 5
+   },
+   {
+    "consistent": true,
+    "id": "N14",
+    "kind": "missing_required",
+    "offered": null,
+    "offered_level": null,
+    "refusal": "OBSERVED field missing from the capture",
+    "required": "OBSERVED",
+    "required_level": 5
+   },
+   {
+    "consistent": true,
+    "id": "N15",
+    "kind": "missing_required",
+    "offered": null,
+    "offered_level": null,
+    "refusal": "OBSERVED field missing from the capture",
+    "required": "OBSERVED",
+    "required_level": 5
+   },
+   {
+    "consistent": true,
+    "id": "N16",
+    "kind": "missing_required",
+    "offered": null,
+    "offered_level": null,
+    "refusal": "OBSERVED field missing from the capture",
+    "required": "OBSERVED",
+    "required_level": 5
+   },
+   {
+    "consistent": true,
+    "id": "N17",
+    "kind": "missing_required",
+    "offered": null,
+    "offered_level": null,
+    "refusal": "OBSERVED field missing from the capture",
+    "required": "OBSERVED",
+    "required_level": 5
+   },
+   {
+    "consistent": true,
+    "id": "N18",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   },
+   {
+    "consistent": true,
+    "id": "N19",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   },
+   {
+    "consistent": true,
+    "id": "N20",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   },
+   {
+    "consistent": true,
+    "id": "N21",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   },
+   {
+    "consistent": true,
+    "id": "N22",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   },
+   {
+    "consistent": true,
+    "id": "N118",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   },
+   {
+    "consistent": true,
+    "id": "N119",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   },
+   {
+    "consistent": true,
+    "id": "N120",
+    "kind": "ceiling",
+    "offered": "OBSERVED",
+    "offered_level": 5,
+    "refusal": "field forbidden in a LABEL_BOUND capture",
+    "required": "LABEL_BOUND",
+    "required_level": 4
+   }
+  ],
+  "vectors": 13,
+  "violations": []
+ },
+ "asymmetries": {
+  "NOT_CONFIRMATION_native_counterpart": null,
+  "OUT_OF_SCOPE_ledger_counterpart": null,
+  "PROOF_BOUND_native_classes": [
+   "LABEL_BOUND",
+   "ENTRY_BOUND",
+   "DECLARED_T04"
+  ]
+ },
+ "gate": "PASS",
+ "ledger_vectors": 112,
+ "native_negatives": 444
+}

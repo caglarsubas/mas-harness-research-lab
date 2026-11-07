@@ -1,0 +1,247 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-13a",
+   "contextId": "lab",
+   "establishedValue": "not runnable: the harness's scaling section has one task family (independent items); no sequential family; UNRESOLVED-by-input, declared before the run",
+   "evidence": [
+    "E1",
+    "E4"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-13b",
+   "contextId": "lab",
+   "establishedValue": "median paired difference advisory minus leased (duplicatedWorkRatioPpm) at N >= 2: S-C2 0; S-C4 0; S-C8 4365; S-C16 1663; S-D2 202381; S-D4 373303; S-D8 498417; S-D16 600748; bound: >= 0 at every point",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-13b",
+   "contextId": "lab",
+   "establishedValue": "pooled mean paired difference over 256 pairs (8 points x 32 seeds) 206287.8 ppm, bootstrap 95% [176199.9, 234760.1] (seed 20261104, 1,000 resamples); bound: interval above zero",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-13b",
+   "contextId": "lab",
+   "establishedValue": "by family (descriptive, preregistered): CENTRAL mean d -3165.7, bootstrap [-8332.4, 1620.8] (no effect; leased p95 above advisory p95 at all four N >= 2 points); DECENTRALIZED mean d 415741.3, bootstrap [387762.6, 443445.0], rising with N: medians 202381, 373303, 498417, 600748 ppm at N 2, 4, 8, 16; advisory p50 duplicated work 230769, 400000, 511904, 629629 ppm",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-13b",
+   "contextId": "lab",
+   "establishedValue": "safety: claimOverlap 0 in every leased run at every point; under advisory, claimOverlap in 32 of 32 seeds at every DECENTRALIZED N >= 2 point and 0 in CENTRAL; some safety counter above zero under advisory in 23-32 seeds per point; completion p50 1,000,000 and lost work p95 0 under both arms at every point; all 640 runs finished",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C6",
+   "claimId": "H-19-second",
+   "contextId": "lab",
+   "establishedValue": "as preregistered ('lower than advisory', the register's 'vanish' reported as a finding): leased duplicated work does not vanish at larger N (DECENTRALIZED leased p50 18518 and 26548 ppm at N 8 and 16, p95 66666 and 78947) but stays within the campaign's bounds while advisory reaches p50 511904 and 629629 ppm",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 6,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C7",
+   "claimId": "H-13b",
+   "contextId": "lab",
+   "establishedValue": "makespan (lastMergeTick p50, leased / advisory): CENTRAL 139/118, 153/121, 171/128, 186/138, 187/139 at N 1-16 (advisory faster, no contention to resolve); DECENTRALIZED 154/116, 153/157, 185/198, 198/242, 231/298 (advisory slower from N 2, the duplicated work costs ticks)",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 7,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C8",
+   "claimId": "H-13b",
+   "contextId": "lab",
+   "establishedValue": "the lab's p50 (upper median) differs by one rank from the harness's stats at S-C8, S-C16 and S-D16 for the leased arm; p95 and max equal the committed scaling readings; the gate's signs are the same under either convention; N = 1 control: arms differ in 3 of 32 seeds at S-C1 and S-D1 (the VERSION bypass changes a retry path), medians 0",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 8,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-13a",
+   "value": "UNRESOLVED-by-input",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C7",
+    "C8"
+   ],
+   "claimId": "H-13b",
+   "value": "PASS by gate; the effect is the DECENTRALIZED family's (mean +415,741 ppm) and absent in CENTRAL (mean -3,166 ppm, interval includes zero)",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C6"
+   ],
+   "claimId": "H-19-second",
+   "value": "lower than advisory; the register's word 'vanish' is contradicted and recorded as a finding",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-13a",
+   "delivered": "not measurable at this pin (one task family)",
+   "requirement": "H-13a: speedup and efficiency change sign between decomposable and sequential tasks",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "not run"
+    }
+   ]
+  },
+  {
+   "claimId": "H-13b",
+   "delivered": "yes pooled (+206,288 ppm, 176,200 to 234,760), entirely from the DECENTRALIZED family; no effect in CENTRAL",
+   "requirement": "H-13b: leased claims reduce duplicated work relative to advisory claims at N >= 2, seed for seed",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS by gate; family split"
+    }
+   ]
+  },
+  {
+   "claimId": "H-19-second",
+   "delivered": "lower than advisory at every decentralized point; not vanished (bounded, p50 18,518 to 26,548 ppm at N 8 and 16)",
+   "requirement": "H-19 second clause: the breaches vanish under leased exclusivity at larger agent counts (tested as: lower than advisory)",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS as preregistered; 'vanish' false"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:90fdfe4d75a8ade4a8d9652d3dbfbe0093afd4343d52dc72962a1135393e1000",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R12.export-b4bbea79.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:a36f4d801eca00e8880b2c5ca6295edf9e8be719a04a220d7afc523ea299eb34",
+   "evidenceId": "E2",
+   "kind": "REGRESSION_RUN",
+   "producedBy": "Research-Lab.rl04_scaling.run-001"
+  },
+  {
+   "contentDigest": "sha256:e1bcd8724da481fe3b5a6aa95ec9101e86e9257e441be5e3ca027d0fbc952aee",
+   "evidenceId": "E3",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:45b0e50f15e90faf996c24968232f8f9b1c73d9851d697333d3bbca2e05fa428",
+   "evidenceId": "E4",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  },
+  {
+   "contentDigest": "sha256:213d27e6e2c7bc46f511bf64f632e621d0e7aa97a6cff5f9d0dad7a9134a9e0c",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.RL-03-RESULTS-v1"
+  }
+ ],
+ "ledgerId": "RL-04-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:45b0e50f15e90faf996c24968232f8f9b1c73d9851d697333d3bbca2e05fa428"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:90fdfe4d75a8ade4a8d9652d3dbfbe0093afd4343d52dc72962a1135393e1000",
+   "sha256:a36f4d801eca00e8880b2c5ca6295edf9e8be719a04a220d7afc523ea299eb34",
+   "sha256:e1bcd8724da481fe3b5a6aa95ec9101e86e9257e441be5e3ca027d0fbc952aee",
+   "sha256:45b0e50f15e90faf996c24968232f8f9b1c73d9851d697333d3bbca2e05fa428",
+   "sha256:213d27e6e2c7bc46f511bf64f632e621d0e7aa97a6cff5f9d0dad7a9134a9e0c"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "decentralized_mean_d_ppm": 415741,
+   "leased_claim_overlap_runs": 0,
+   "pairs_n_ge_2": 256,
+   "points": 10,
+   "pooled_mean_d_ppm": 206288,
+   "runs": 640
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C1",
+   "C8"
+  ]
+ }
+}

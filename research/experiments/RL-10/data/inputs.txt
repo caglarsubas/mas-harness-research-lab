@@ -1,0 +1,6 @@
+d53c5fb8e125c0c6 verdict-ledger/check-kinds.json
+d2331fc2278c7bc4 verdict-ledger/vectors.json
+dde6efc45fc2e1ad verdict-ledger/README.md
+c3e91c087ebc6a13 native-profile-v4/qualification.schema.json
+dede64ab3202a9e2 native-profile-v4/vectors.json
+a4205a5388dc8382 native-profile-v4/README.md

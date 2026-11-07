@@ -1,0 +1,226 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-09a",
+   "contextId": "lab",
+   "establishedValue": "not runnable: J1 carries per-round finding counts, no finding identities and no oracle verdicts; declared UNRESOLVED-by-input before the run",
+   "evidence": [
+    "E1",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-09b",
+   "contextId": "lab",
+   "establishedValue": "PASS_FOR_PUSH heads 11; matched in I2 9 (unmatched 2); refused 1; fraction 0.1111; Wilson 95% [0.0199, 0.435]; bound: at least 40 matched heads for a verdict",
+   "evidence": [
+    "E1",
+    "E2",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-09c",
+   "contextId": "lab",
+   "establishedValue": "not runnable: note counts only, no identities; declared UNRESOLVED-by-input before the run",
+   "evidence": [
+    "E1",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-09-descriptive",
+   "contextId": "lab",
+   "establishedValue": "descriptive, not gated: rounds at index 2+ with at least one finding 63 of 76, fraction 0.829, Wilson 95% [0.729, 0.8972]; median findings round 1 = 6.0, round 2 = 2.0, round 3 = 3.0, round 4+ = 3.0; CHANGES_REQUIRED fraction round 1 = 0.714, round 2 = 0.417, round 3 = 0.529, round 4+ = 0.6",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-09-descriptive",
+   "contextId": "lab",
+   "establishedValue": "junk rule dropped 1 row(s) of 105; the exporter named 2 junk rows; one row the exporter called junk passed the rule, identity unknown to the lab; recorded, not corrected",
+   "evidence": [
+    "E1",
+    "E4"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "FAIL",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-09a",
+   "value": "UNRESOLVED-by-input; v2 needs a finding-level export with oracle verdicts",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C2"
+   ],
+   "claimId": "H-09b",
+   "value": "below the preregistered head count; the observed fraction is reported",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C3"
+   ],
+   "claimId": "H-09c",
+   "value": "UNRESOLVED-by-input",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C4",
+    "C5"
+   ],
+   "claimId": "H-09-descriptive",
+   "value": "later rounds still find findings in 0.83 of rounds (0.73-0.90)",
+   "verdict": "NEW_VALUE_ESTABLISHED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-09a",
+   "delivered": "not measurable on J1 (counts only, no oracle)",
+   "requirement": "H-09a: review rounds and the independent oracle find different findings (finding-level overlap below 0.5)",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "not run"
+    }
+   ]
+  },
+  {
+   "claimId": "H-09b",
+   "delivered": "1 of 9 matched heads refused (0.11, Wilson 0.02-0.44); below the 40-head bound",
+   "requirement": "H-09b: the verifier refuses a measurable fraction of PASS_FOR_PUSH heads",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "0.1111 on 9 matched heads"
+    }
+   ]
+  },
+  {
+   "claimId": "H-09c",
+   "delivered": "not measurable on J1 (note counts only)",
+   "requirement": "H-09c: carried notes that became later findings, descriptive fraction",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "not run"
+    }
+   ]
+  },
+  {
+   "claimId": "H-09-descriptive",
+   "delivered": "computed on 104 rounds over 25 series",
+   "requirement": "descriptive review-round table (PREREG v1 section 3), not gated",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "see C4"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:a1a4b2373be0663089155962c5ff06927cfff18383d83e373874167c890456a4",
+   "evidenceId": "E1",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Lane-Monitor.export-J1.MON-RL-M2"
+  },
+  {
+   "contentDigest": "sha256:808bf769ab2bbc1e45a768816bc1bbf28ccbea052ff20a281b5b4c003532fb4b",
+   "evidenceId": "E2",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Lane-Monitor.export-I2.MON-RL-M1"
+  },
+  {
+   "contentDigest": "sha256:fcd4956736836a80ea2c03553d05862640fdc17dbea724968b34af5cdd18f135",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl02_table.run-001"
+  },
+  {
+   "contentDigest": "sha256:5f84724e3df568b6a7de3799b29f4326325da461059b2908a84e96b59003ac5f",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:bbb53d0ba13d96198c7b03a8c2c83524f4a834fececc4bfc2b8119fa605251e2",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  }
+ ],
+ "ledgerId": "RL-02-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:bbb53d0ba13d96198c7b03a8c2c83524f4a834fececc4bfc2b8119fa605251e2"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:a1a4b2373be0663089155962c5ff06927cfff18383d83e373874167c890456a4",
+   "sha256:808bf769ab2bbc1e45a768816bc1bbf28ccbea052ff20a281b5b4c003532fb4b",
+   "sha256:fcd4956736836a80ea2c03553d05862640fdc17dbea724968b34af5cdd18f135",
+   "sha256:5f84724e3df568b6a7de3799b29f4326325da461059b2908a84e96b59003ac5f",
+   "sha256:bbb53d0ba13d96198c7b03a8c2c83524f4a834fececc4bfc2b8119fa605251e2"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "later_rounds_with_finding_permille": 829,
+   "push_heads_matched": 9,
+   "refused": 1,
+   "rows_used": 104
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C1",
+   "C2",
+   "C3"
+  ]
+ }
+}

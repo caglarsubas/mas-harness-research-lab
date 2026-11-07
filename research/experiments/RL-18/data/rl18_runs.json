@@ -1,0 +1,3274 @@
+{
+ "arms": {
+  "classes": [
+   "C2",
+   "C3",
+   "C4",
+   "C5",
+   "C7"
+  ],
+  "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+  "classesShaMatch": true,
+  "committedClassesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+  "comparisons": [
+   {
+    "agrees": true,
+    "arm": "A1",
+    "campaignBoundsHoldAllClasses": true,
+    "campaignPerClass": {
+     "C2": true,
+     "C3": true,
+     "C4": true,
+     "C5": true,
+     "C7": true
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "completionPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 0,
+     "meanDifferencePpm": 0,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": false,
+    "arm": "A1",
+    "campaignBoundsHoldAllClasses": false,
+    "campaignPerClass": {
+     "C2": false,
+     "C3": true,
+     "C4": true,
+     "C5": true,
+     "C7": true
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "duplicatedWorkRatioPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 9104,
+     "meanDifferencePpm": 3880,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": true,
+    "arm": "A1",
+    "campaignBoundsHoldAllClasses": true,
+    "campaignPerClass": {
+     "C2": true,
+     "C3": true,
+     "C4": true,
+     "C5": true,
+     "C7": true
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "lostWorkPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 0,
+     "meanDifferencePpm": 0,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": true,
+    "arm": "A2",
+    "campaignBoundsHoldAllClasses": true,
+    "campaignPerClass": {
+     "C2": true,
+     "C3": true,
+     "C4": true,
+     "C5": true,
+     "C7": true
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "completionPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 0,
+     "meanDifferencePpm": 0,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": true,
+    "arm": "A2",
+    "campaignBoundsHoldAllClasses": false,
+    "campaignPerClass": {
+     "C2": false,
+     "C3": false,
+     "C4": false,
+     "C5": false,
+     "C7": false
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": false,
+    "metric": "duplicatedWorkRatioPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 21204,
+     "meanDifferencePpm": -16275,
+     "nonInferior": false,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": true,
+    "arm": "A2",
+    "campaignBoundsHoldAllClasses": true,
+    "campaignPerClass": {
+     "C2": true,
+     "C3": true,
+     "C4": true,
+     "C5": true,
+     "C7": true
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "lostWorkPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 0,
+     "meanDifferencePpm": 0,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": true,
+    "arm": "A3",
+    "campaignBoundsHoldAllClasses": true,
+    "campaignPerClass": {
+     "C2": true,
+     "C3": true,
+     "C4": true,
+     "C5": true,
+     "C7": true
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "completionPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 0,
+     "meanDifferencePpm": 0,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": false,
+    "arm": "A3",
+    "campaignBoundsHoldAllClasses": false,
+    "campaignPerClass": {
+     "C2": true,
+     "C3": true,
+     "C4": true,
+     "C5": false,
+     "C7": false
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "duplicatedWorkRatioPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 12676,
+     "meanDifferencePpm": 3982,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   },
+   {
+    "agrees": true,
+    "arm": "A3",
+    "campaignBoundsHoldAllClasses": true,
+    "campaignPerClass": {
+     "C2": true,
+     "C3": true,
+     "C4": true,
+     "C5": true,
+     "C7": true
+    },
+    "decision": "WITHIN_NOISE",
+    "gateNonInferior": true,
+    "metric": "lostWorkPpm",
+    "statistics": {
+     "baselineRuns": 32,
+     "candidateRuns": 32,
+     "criticalThousandths": 3183,
+     "halfWidthPpm": 0,
+     "meanDifferencePpm": 0,
+     "nonInferior": true,
+     "tasks": 5
+    },
+    "valid": true,
+    "where": null
+   }
+  ],
+  "counts": {
+   "agree": 7,
+   "comparisons": 9,
+   "comparisonsUnresolved": 0,
+   "comparisonsValid": 9,
+   "manifests": 640,
+   "manifestsValid": 0,
+   "records": 12,
+   "recordsValid": 0,
+   "splitValid": true
+  },
+  "heldOut": [
+   "C1",
+   "C6",
+   "C8",
+   "C9",
+   "C10",
+   "C11",
+   "C12",
+   "C13"
+  ],
+  "manifestRefused": [
+   {
+    "runId": "DEFENDED-C2-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C2-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C3-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C4-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C5-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "DEFENDED-C7-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C2-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C3-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C4-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C5-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A1-C7-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C2-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C3-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C4-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C5-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A2-C7-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C2-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C3-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C4-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C5-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s1",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s2",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s3",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s4",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s5",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s6",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s7",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s8",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s9",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s10",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s11",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s12",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s13",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s14",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s15",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s16",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s17",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s18",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s19",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s20",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s21",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s22",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s23",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s24",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s25",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s26",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s27",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s28",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s29",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s30",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s31",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "runId": "A3-C7-s32",
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   }
+  ],
+  "manifests": 640,
+  "policies": [
+   null,
+   "A1",
+   "A2",
+   "A3"
+  ],
+  "records": [
+   {
+    "digest": "sha256:7a38e35a496f0af6",
+    "recordId": "DEFENDED-completionPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:ca423f9c2f991025",
+    "recordId": "DEFENDED-duplicatedWorkRatioPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:47063b46e27dc516",
+    "recordId": "DEFENDED-lostWorkPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:c5544a820a2bd7dd",
+    "recordId": "A1-completionPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:1e79cdf4a03c9762",
+    "recordId": "A1-duplicatedWorkRatioPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:6092eb811e574323",
+    "recordId": "A1-lostWorkPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:390dacd7028f350f",
+    "recordId": "A2-completionPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:fdea0192b4a0889b",
+    "recordId": "A2-duplicatedWorkRatioPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:4b122af5453aeea6",
+    "recordId": "A2-lostWorkPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:cbd3fd84dd2732e7",
+    "recordId": "A3-completionPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:17ebc19fd1cc1f43",
+    "recordId": "A3-duplicatedWorkRatioPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   },
+   {
+    "digest": "sha256:069e070ad45a3e90",
+    "recordId": "A3-lostWorkPpm",
+    "valid": false,
+    "where": "$.configuration.budget.tokensPerTask minimum"
+   }
+  ],
+  "seeds": 32,
+  "splitValid": true
+ },
+ "contractDigests": {
+  "README.md": "sha256:279d374e5ddd1b6305611f3565a7af14046b305e59cf9634a88bd358818ce826",
+  "distribution-gate.schema.json": "sha256:f521fc6691984959473ef4f184e863193c060acc0b2ed1012dcf1d2c9d3a1683",
+  "evaluation-record.schema.json": "sha256:8b34740168f5a96f0186b69f9a1a43c544fdd971ed052f8e723c14dda1c3e625",
+  "run-manifest.schema.json": "sha256:ec62c1322179c44df40220a21806e1a0d17d25cc437a9a7e252cd4b1cf9d9636",
+  "selection-record.schema.json": "sha256:43dd05a99b299760b378d0526a501c6b989d2f7d707435cd82b7e78501bc90d3",
+  "split-declaration.schema.json": "sha256:f0247744e5f2e2c23db51ce63f7ed5a7a881f6986e2ee7d308ee5c65e6184a09",
+  "vectors.json": "sha256:43bcd436efdfe4270677b7a8d04cca30859c41e6d8de1f6ff5413dc9770d44b3"
+ },
+ "vectors": {
+  "comparisons": [
+   {
+    "agrees": true,
+    "documentDecision": "IMPROVED",
+    "id": "V45",
+    "labDecision": "IMPROVED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "IMPROVED",
+    "id": "V46",
+    "labDecision": "IMPROVED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V47",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V48",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "REGRESSED",
+    "id": "V49",
+    "labDecision": "REGRESSED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "REGRESSED",
+    "id": "V50",
+    "labDecision": "REGRESSED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "IMPROVED",
+    "id": "V51",
+    "labDecision": "IMPROVED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "IMPROVED",
+    "id": "V52",
+    "labDecision": "IMPROVED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V53",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V54",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V55",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V56",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V57",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "WITHIN_NOISE",
+    "id": "V58",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "UNRESOLVED",
+    "id": "V59",
+    "labDecision": "UNRESOLVED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "UNRESOLVED",
+    "id": "V60",
+    "labDecision": "UNRESOLVED"
+   },
+   {
+    "agrees": true,
+    "documentDecision": "UNRESOLVED",
+    "id": "V61",
+    "labDecision": "UNRESOLVED"
+   }
+  ],
+  "counts": {
+   "comparisonAgree": 17,
+   "comparisonCases": 17,
+   "mismatchCases": 2,
+   "mismatchFlagged": 2,
+   "shapeCases": 18,
+   "shapeRefused": 18,
+   "validAccepted": 25,
+   "validCases": 25
+  },
+  "mismatchFlagged": [
+   {
+    "agrees": false,
+    "documentDecision": "IMPROVED",
+    "id": "V71",
+    "labDecision": "WITHIN_NOISE"
+   },
+   {
+    "agrees": false,
+    "documentDecision": "IMPROVED",
+    "id": "V72",
+    "labDecision": "IMPROVED"
+   }
+  ],
+  "shape": [
+   {
+    "id": "V02",
+    "refused": true,
+    "where": "$.declaredAt pattern"
+   },
+   {
+    "id": "V03",
+    "refused": true,
+    "where": "$.partitions additional:TEST"
+   },
+   {
+    "id": "V10",
+    "refused": true,
+    "where": "$ additional:score"
+   },
+   {
+    "id": "V11",
+    "refused": true,
+    "where": "$.locks required:environmentDigest"
+   },
+   {
+    "id": "V12",
+    "refused": true,
+    "where": "$.locks.promptDigests minItems"
+   },
+   {
+    "id": "V13",
+    "refused": true,
+    "where": "$.configuration.harness.dirty type"
+   },
+   {
+    "id": "V14",
+    "refused": true,
+    "where": "$.configuration.harness.commit pattern"
+   },
+   {
+    "id": "V15",
+    "refused": true,
+    "where": "$.seed oneOf(0)"
+   },
+   {
+    "id": "V16",
+    "refused": true,
+    "where": "$.seed oneOf(0)"
+   },
+   {
+    "id": "V17",
+    "refused": true,
+    "where": "$ required:execution"
+   },
+   {
+    "id": "V18",
+    "refused": true,
+    "where": "$.configuration.agentCount minimum"
+   },
+   {
+    "id": "V28",
+    "refused": true,
+    "where": "$.runs[0].results[0].score type"
+   },
+   {
+    "id": "V29",
+    "refused": true,
+    "where": "$.runs[0].results[0].score maximum"
+   },
+   {
+    "id": "V62",
+    "refused": true,
+    "where": "$.purpose enum"
+   },
+   {
+    "id": "V63",
+    "refused": true,
+    "where": "$.statistics oneOf(0)"
+   },
+   {
+    "id": "V64",
+    "refused": true,
+    "where": "$.statistics oneOf(0)"
+   },
+   {
+    "id": "V65",
+    "refused": true,
+    "where": "$.statistics oneOf(0)"
+   },
+   {
+    "id": "V75",
+    "refused": true,
+    "where": "$.candidates minItems"
+   }
+  ],
+  "valid": [
+   {
+    "accepted": true,
+    "id": "V01",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V08",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V09",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V24",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V25",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V26",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V27",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V45",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V46",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V47",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V48",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V49",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V50",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V51",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V52",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V53",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V54",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V55",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V56",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V57",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V58",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V59",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V60",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V61",
+    "where": null
+   },
+   {
+    "accepted": true,
+    "id": "V74",
+    "where": null
+   }
+  ]
+ }
+}

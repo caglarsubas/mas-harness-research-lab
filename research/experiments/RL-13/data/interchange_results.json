@@ -1,0 +1,116 @@
+{
+ "instances": {
+  "eventlog": {
+   "problems": [],
+   "schema": "run-events/run-event-log.schema.json",
+   "valid": true
+  },
+  "ledger": {
+   "problems": [],
+   "schema": "verdict-ledger/ledger.schema.json",
+   "valid": true
+  },
+  "manifest": {
+   "problems": [],
+   "schema": "run-manifest/run-manifest.schema.json",
+   "valid": true
+  }
+ },
+ "mapping": {
+  "coverage_ok": true,
+  "names": {
+   "gen_ai.agent.name": "known to the lab (unverified version)",
+   "gen_ai.client.inference": "span-type id the lab cannot confirm",
+   "gen_ai.conversation.id": "known to the lab (unverified version)",
+   "gen_ai.evaluation.name": "known to the lab (unverified version)",
+   "gen_ai.evaluation.result": "known to the lab (unverified version)",
+   "gen_ai.evaluation.score.label": "known to the lab (unverified version)",
+   "gen_ai.execute_tool.internal": "span-type id the lab cannot confirm",
+   "gen_ai.invoke_agent.internal": "span-type id the lab cannot confirm",
+   "gen_ai.provider.name": "known to the lab (unverified version)",
+   "gen_ai.request.model": "known to the lab (unverified version)",
+   "gen_ai.tool.call.id": "known to the lab (unverified version)",
+   "gen_ai.tool.name": "known to the lab (unverified version)",
+   "planeon.claim": "local extension (planeon.*)",
+   "planeon.environment": "local extension (planeon.*)",
+   "planeon.handoff": "local extension (planeon.*)",
+   "planeon.hook": "local extension (planeon.*)",
+   "planeon.merge": "local extension (planeon.*)",
+   "planeon.message": "local extension (planeon.*)"
+  },
+  "never_emitted": [
+   "gen_ai.agent.description",
+   "gen_ai.evaluation.explanation",
+   "gen_ai.input.messages",
+   "gen_ai.main_agent.description",
+   "gen_ai.memory.query.text",
+   "gen_ai.memory.records",
+   "gen_ai.output.messages",
+   "gen_ai.prompt.variable",
+   "gen_ai.retrieval.documents",
+   "gen_ai.retrieval.query.text",
+   "gen_ai.skill.description",
+   "gen_ai.system_instructions",
+   "gen_ai.tool.call.arguments",
+   "gen_ai.tool.call.result",
+   "gen_ai.tool.definitions",
+   "gen_ai.tool.description"
+  ],
+  "operations": {
+   "AGENT_INVOKE": "span",
+   "CLAIM": "point",
+   "ENVIRONMENT": "point",
+   "HANDOFF": "point",
+   "HOOK": "point",
+   "MERGE": "point",
+   "MESSAGE": "point",
+   "MODEL_CALL": "span",
+   "RUN": "span",
+   "TOOL_CALL": "span",
+   "VERIFICATION": "span"
+  },
+  "overlap_with_never_emitted": [],
+  "pinned_files": 7,
+  "pinned_source": {
+   "commit": "4e8a2812139b2a999d959e3650e24dfc64e21943",
+   "repository": "open-telemetry/semantic-conventions-genai",
+   "schemaUrl": "https://opentelemetry.io/schemas/gen-ai-dev/1.42.0-dev",
+   "stability": "development"
+  }
+ },
+ "positives": {
+  "ledger": {
+   "failing_in_lab_checker": [
+    "L13"
+   ],
+   "n": 16
+  },
+  "manifest_by_kind": {
+   "comparison": {
+    "failing": [],
+    "n": 17,
+    "no_schema": 17
+   },
+   "manifest": {
+    "failing": [],
+    "n": 2,
+    "no_schema": 2
+   },
+   "record": {
+    "failing": [],
+    "n": 4,
+    "no_schema": 4
+   },
+   "selection": {
+    "failing": [],
+    "n": 1,
+    "no_schema": 1
+   },
+   "split": {
+    "failing": [],
+    "n": 1,
+    "no_schema": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "events": [
+  {
+   "agentId": "ext-agent-1",
+   "attributes": {
+    "depth": 0,
+    "parentRunId": null
+   },
+   "inputHash": null,
+   "logicalTime": 1,
+   "name": "run",
+   "operation": "RUN",
+   "outcome": null,
+   "outputHash": null,
+   "parentSpanId": null,
+   "payloadRef": null,
+   "phase": "START",
+   "runId": "ext-run-1",
+   "sequence": 1,
+   "spanId": "aaaaaaaaaaaaaaaa",
+   "timeMs": 0
+  },
+  {
+   "agentId": "ext-agent-1",
+   "attributes": {
+    "costMicros": null,
+    "iterations": 1,
+    "tokens": 10
+   },
+   "inputHash": null,
+   "logicalTime": 2,
+   "name": "run",
+   "operation": "RUN",
+   "outcome": "COMPLETED",
+   "outputHash": null,
+   "parentSpanId": null,
+   "payloadRef": null,
+   "phase": "END",
+   "runId": "ext-run-1",
+   "sequence": 2,
+   "spanId": "aaaaaaaaaaaaaaaa",
+   "timeMs": 1
+  }
+ ],
+ "rootRunId": "ext-run-1",
+ "schemaVersion": "planeon.internal.run-event-log/v1",
+ "sources": {
+  "loopTraceDigest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "runManifestDigest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "verdictLedgerDigest": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "traceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}

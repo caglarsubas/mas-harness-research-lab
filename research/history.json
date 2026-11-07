@@ -1,0 +1,770 @@
+[
+ {
+  "bridgeCommit": "3914f9be",
+  "counts": {
+   "blocked": 11,
+   "completed": 13,
+   "experiments": 13,
+   "hypotheses": 24,
+   "ongoing": 0,
+   "ready": 2,
+   "runs": 18,
+   "verdicts": {
+    "FAIL": 4,
+    "PASS": 5,
+    "UNRESOLVED": 4
+   },
+   "withExperiment": 11
+  },
+  "generatedAt": "2026-11-04 12:52 UTC",
+  "lane": "PAUSED",
+  "registerDigest": "4e3522cb",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS"
+  }
+ },
+ {
+  "bridgeCommit": "d41cd96e",
+  "counts": {
+   "blocked": 11,
+   "completed": 13,
+   "experiments": 13,
+   "hypotheses": 31,
+   "ongoing": 0,
+   "ready": 9,
+   "runs": 18,
+   "verdicts": {
+    "FAIL": 4,
+    "PASS": 5,
+    "UNRESOLVED": 4
+   },
+   "withExperiment": 11
+  },
+  "generatedAt": "2026-11-05 09:43 UTC",
+  "lane": "PAUSED",
+  "registerDigest": "534f315c",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS"
+  }
+ },
+ {
+  "bridgeCommit": "d41cd96e",
+  "counts": {
+   "blocked": 11,
+   "completed": 13,
+   "experiments": 13,
+   "hypotheses": 31,
+   "ongoing": 0,
+   "ready": 9,
+   "runs": 18,
+   "verdicts": {
+    "FAIL": 4,
+    "PASS": 5,
+    "UNRESOLVED": 4
+   },
+   "withExperiment": 11
+  },
+  "generatedAt": "2026-11-05 09:44 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "534f315c",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS"
+  }
+ },
+ {
+  "bridgeCommit": "4eecd9e5",
+  "counts": {
+   "blocked": 11,
+   "completed": 14,
+   "experiments": 14,
+   "hypotheses": 31,
+   "ongoing": 0,
+   "ready": 8,
+   "runs": 19,
+   "verdicts": {
+    "FAIL": 4,
+    "PASS": 5,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 12
+  },
+  "generatedAt": "2026-11-05 10:05 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "f391e9e4",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED"
+  }
+ },
+ {
+  "bridgeCommit": "4bc3ee83",
+  "counts": {
+   "blocked": 11,
+   "completed": 14,
+   "experiments": 14,
+   "hypotheses": 31,
+   "ongoing": 0,
+   "ready": 8,
+   "runs": 19,
+   "verdicts": {
+    "FAIL": 4,
+    "PASS": 5,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 12
+  },
+  "generatedAt": "2026-11-05 10:21 UTC",
+  "lane": "PAUSED",
+  "registerDigest": "f391e9e4",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED"
+  }
+ },
+ {
+  "bridgeCommit": "54c3a914",
+  "counts": {
+   "blocked": 11,
+   "completed": 15,
+   "experiments": 15,
+   "hypotheses": 31,
+   "ongoing": 0,
+   "ready": 7,
+   "runs": 20,
+   "verdicts": {
+    "FAIL": 5,
+    "PASS": 5,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 13
+  },
+  "generatedAt": "2026-11-05 14:09 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "050ad6a5",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL"
+  }
+ },
+ {
+  "bridgeCommit": "54c3a914",
+  "counts": {
+   "blocked": 11,
+   "completed": 15,
+   "experiments": 15,
+   "hypotheses": 31,
+   "ongoing": 0,
+   "ready": 7,
+   "runs": 20,
+   "verdicts": {
+    "FAIL": 5,
+    "PASS": 5,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 13
+  },
+  "generatedAt": "2026-11-05 14:10 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "5ecd2419",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL"
+  }
+ },
+ {
+  "bridgeCommit": "67229951",
+  "counts": {
+   "blocked": 10,
+   "completed": 16,
+   "experiments": 16,
+   "hypotheses": 31,
+   "ongoing": 0,
+   "ready": 7,
+   "runs": 21,
+   "verdicts": {
+    "FAIL": 5,
+    "PASS": 6,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 14
+  },
+  "generatedAt": "2026-11-05 14:19 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "37ea5ff7",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS"
+  }
+ },
+ {
+  "bridgeCommit": "d2ec5bdb",
+  "counts": {
+   "blocked": 14,
+   "completed": 16,
+   "experiments": 17,
+   "hypotheses": 35,
+   "ongoing": 1,
+   "ready": 6,
+   "runs": 21,
+   "verdicts": {
+    "FAIL": 5,
+    "PASS": 6,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 15
+  },
+  "generatedAt": "2026-11-05 14:40 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "ae845976",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": null
+  }
+ },
+ {
+  "bridgeCommit": "d2ec5bdb",
+  "counts": {
+   "blocked": 14,
+   "completed": 17,
+   "experiments": 17,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 6,
+   "runs": 22,
+   "verdicts": {
+    "FAIL": 6,
+    "PASS": 6,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 15
+  },
+  "generatedAt": "2026-11-05 14:41 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "655aaae4",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL"
+  }
+ },
+ {
+  "bridgeCommit": "6c35ec8e",
+  "counts": {
+   "blocked": 14,
+   "completed": 18,
+   "experiments": 18,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 5,
+   "runs": 23,
+   "verdicts": {
+    "FAIL": 7,
+    "PASS": 6,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 16
+  },
+  "generatedAt": "2026-11-05 15:05 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "65bfe63c",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL"
+  }
+ },
+ {
+  "bridgeCommit": "fae0fb8e",
+  "counts": {
+   "blocked": 14,
+   "completed": 18,
+   "experiments": 18,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 5,
+   "runs": 23,
+   "verdicts": {
+    "FAIL": 7,
+    "PASS": 6,
+    "UNRESOLVED": 5
+   },
+   "withExperiment": 16
+  },
+  "generatedAt": "2026-11-05 16:50 UTC",
+  "lane": "PAUSED",
+  "registerDigest": "65bfe63c",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL"
+  }
+ },
+ {
+  "bridgeCommit": "d3035c67",
+  "counts": {
+   "blocked": 14,
+   "completed": 19,
+   "experiments": 19,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 4,
+   "runs": 24,
+   "verdicts": {
+    "FAIL": 7,
+    "PASS": 6,
+    "UNRESOLVED": 6
+   },
+   "withExperiment": 17
+  },
+  "generatedAt": "2026-11-05 18:57 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "3eb02a1d",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL",
+   "RL-19": "UNRESOLVED"
+  }
+ },
+ {
+  "bridgeCommit": "d60195c5",
+  "counts": {
+   "blocked": 14,
+   "completed": 20,
+   "experiments": 20,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 3,
+   "runs": 25,
+   "verdicts": {
+    "FAIL": 8,
+    "PASS": 6,
+    "UNRESOLVED": 6
+   },
+   "withExperiment": 18
+  },
+  "generatedAt": "2026-11-05 19:03 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "efde8c8f",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL",
+   "RL-19": "UNRESOLVED",
+   "RL-20": "FAIL"
+  }
+ },
+ {
+  "bridgeCommit": "37c880ac",
+  "counts": {
+   "blocked": 14,
+   "completed": 21,
+   "experiments": 21,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 2,
+   "runs": 26,
+   "verdicts": {
+    "FAIL": 8,
+    "PASS": 7,
+    "UNRESOLVED": 6
+   },
+   "withExperiment": 19
+  },
+  "generatedAt": "2026-11-06 01:48 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "46d792fc",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL",
+   "RL-19": "UNRESOLVED",
+   "RL-20": "FAIL",
+   "RL-21": "PASS"
+  }
+ },
+ {
+  "bridgeCommit": "37c880ac",
+  "counts": {
+   "blocked": 14,
+   "completed": 22,
+   "experiments": 22,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 1,
+   "runs": 27,
+   "verdicts": {
+    "FAIL": 8,
+    "PASS": 7,
+    "UNRESOLVED": 7
+   },
+   "withExperiment": 20
+  },
+  "generatedAt": "2026-11-06 01:53 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "46d792fc",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL",
+   "RL-19": "UNRESOLVED",
+   "RL-20": "FAIL",
+   "RL-21": "PASS",
+   "RL-22": "UNRESOLVED"
+  }
+ },
+ {
+  "bridgeCommit": "37c880ac",
+  "counts": {
+   "blocked": 14,
+   "completed": 22,
+   "experiments": 22,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 1,
+   "runs": 27,
+   "verdicts": {
+    "FAIL": 8,
+    "PASS": 7,
+    "UNRESOLVED": 7
+   },
+   "withExperiment": 20
+  },
+  "generatedAt": "2026-11-06 01:54 UTC",
+  "lane": "ACTIVE",
+  "registerDigest": "f3d883f4",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL",
+   "RL-19": "UNRESOLVED",
+   "RL-20": "FAIL",
+   "RL-21": "PASS",
+   "RL-22": "UNRESOLVED"
+  }
+ },
+ {
+  "bridgeCommit": "3571ae38",
+  "counts": {
+   "blocked": 14,
+   "completed": 22,
+   "experiments": 22,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 1,
+   "runs": 27,
+   "verdicts": {
+    "FAIL": 8,
+    "PASS": 7,
+    "UNRESOLVED": 7
+   },
+   "withExperiment": 20
+  },
+  "generatedAt": "2026-11-06 02:10 UTC",
+  "lane": "PAUSED",
+  "registerDigest": "f3d883f4",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL",
+   "RL-19": "UNRESOLVED",
+   "RL-20": "FAIL",
+   "RL-21": "PASS",
+   "RL-22": "UNRESOLVED"
+  }
+ },
+ {
+  "bridgeCommit": "a5502085",
+  "counts": {
+   "blocked": 14,
+   "completed": 22,
+   "experiments": 22,
+   "hypotheses": 35,
+   "ongoing": 0,
+   "ready": 1,
+   "runs": 27,
+   "verdicts": {
+    "FAIL": 8,
+    "PASS": 7,
+    "UNRESOLVED": 7
+   },
+   "withExperiment": 20
+  },
+  "generatedAt": "2026-11-07 06:30 UTC",
+  "lane": "PAUSED",
+  "registerDigest": "acf48fa4",
+  "verdicts": {
+   "RL-01": "PASS",
+   "RL-02": "UNRESOLVED",
+   "RL-03": "PASS",
+   "RL-04": "UNRESOLVED",
+   "RL-05": "FAIL",
+   "RL-06": "FAIL",
+   "RL-07": "PASS",
+   "RL-08": "UNRESOLVED",
+   "RL-09": "FAIL",
+   "RL-10": "FAIL",
+   "RL-11": "UNRESOLVED",
+   "RL-12": "PASS",
+   "RL-13": "PASS",
+   "RL-14": "UNRESOLVED",
+   "RL-15": "FAIL",
+   "RL-16": "PASS",
+   "RL-17": "FAIL",
+   "RL-18": "FAIL",
+   "RL-19": "UNRESOLVED",
+   "RL-20": "FAIL",
+   "RL-21": "PASS",
+   "RL-22": "UNRESOLVED"
+  }
+ }
+]

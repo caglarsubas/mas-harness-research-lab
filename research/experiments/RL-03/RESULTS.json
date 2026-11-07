@@ -1,0 +1,218 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-19a",
+   "contextId": "lab",
+   "establishedValue": "C2, C5, C7, C9 recomputed over 32 seeds: result, gates, defended quantiles and the whole row equal to the committed rows (differing top-level keys: none); classes.json sha256 equals the ledger's classesSha256",
+   "evidence": [
+    "E1",
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-19b",
+   "contextId": "lab",
+   "establishedValue": "15 (arm, class) pairs A1-A3 over C2, C3, C4, C5, C7: quantiles and totals equal to the committed arms results in every pair",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-19c",
+   "contextId": "lab",
+   "establishedValue": "in the recomputed rows the only failing ratio bound is duplicatedWorkRatioPpm (p95 bound 100,000, max 250,000): C2 p50/p95/max 0/133333/142857; C5 40000/178571/281250; C7 0/142857/148148; C9 200000/285714/303030; completionPpm and lostWorkPpm hold; controls fire in all seeds, depth checks hold",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-19c",
+   "contextId": "lab",
+   "establishedValue": "descriptive from the arms: A3 (POISON_BACKOFF) brings C2 to 0/0/0 and A1 (RENEW_AWARE_MERGE) brings C7 to 0/0/0, both within bounds; A2 (RENEW_HEADROOM) worsens every class; C5 stays above the p95 bound under every arm",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-19a",
+   "contextId": "lab",
+   "establishedValue": "three GO'd runs (timing 0.004 s; classes 5 s; arms 3 s), profile interpreter, -I -B, TMPDIR in scratch, no bytecode written into the export, results.json and campaign-record.json never written",
+   "evidence": [
+    "E4",
+    "E5",
+    "E7"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "PASS",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C5"
+   ],
+   "claimId": "H-19a",
+   "value": "the export at b4bbea79 reproduces the breach rows exactly",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C2"
+   ],
+   "claimId": "H-19b",
+   "value": "the arms reproduce exactly",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C3",
+    "C4"
+   ],
+   "claimId": "H-19c",
+   "value": "the breach is duplicated work only, as the ledger states",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-19a",
+   "delivered": "all four equal, whole row",
+   "requirement": "H-19a: the four breach class rows recomputed from the pinned export equal the committed rows",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "4 of 4 equal"
+    }
+   ]
+  },
+  {
+   "claimId": "H-19b",
+   "delivered": "15 of 15 pairs equal",
+   "requirement": "H-19b: the arms section recomputed equals the committed arms results",
+   "rolloutValues": [
+    {
+     "rollout": "run-003",
+     "value": "15 of 15 equal"
+    }
+   ]
+  },
+  {
+   "claimId": "H-19c",
+   "delivered": "yes for C2, C5, C7, C9",
+   "requirement": "H-19c: the recomputed rows fail only the duplicatedWorkRatioPpm bound",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "4 of 4"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:90fdfe4d75a8ade4a8d9652d3dbfbe0093afd4343d52dc72962a1135393e1000",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R12.export-b4bbea79.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:0273413616b276db5e9fc8d1948763dc6ae13fc0f8cc7b9d1881866293ac7739",
+   "evidenceId": "E2",
+   "kind": "REGRESSION_RUN",
+   "producedBy": "Research-Lab.rl03_repro.run-002"
+  },
+  {
+   "contentDigest": "sha256:3ffb2fd31667cba95b944fea5e6c7655017460fa4fdc901eb377ed77734ad8cc",
+   "evidenceId": "E3",
+   "kind": "REGRESSION_RUN",
+   "producedBy": "Research-Lab.rl03_repro.run-003"
+  },
+  {
+   "contentDigest": "sha256:7925ed33acb720cf5541fe684825c022ba59762977449e926a53941328e702d3",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-002"
+  },
+  {
+   "contentDigest": "sha256:8e36a972152f068d9604f2676ce78b2fdab93963d943044ff521fb05cf502386",
+   "evidenceId": "E5",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-003"
+  },
+  {
+   "contentDigest": "sha256:82d84774c1b30a5499c7f9cfac391e5f4ea3aa6bccd43ee412b4f52bbce691ad",
+   "evidenceId": "E6",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  },
+  {
+   "contentDigest": "sha256:48c921fddc4d7a93450b997783097830ab59a3469e8dce4ddf81ad242a75be3c",
+   "evidenceId": "E7",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  }
+ ],
+ "ledgerId": "RL-03-RESULTS-v1",
+ "rollouts": [
+  "run-001",
+  "run-002",
+  "run-003"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:82d84774c1b30a5499c7f9cfac391e5f4ea3aa6bccd43ee412b4f52bbce691ad"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:90fdfe4d75a8ade4a8d9652d3dbfbe0093afd4343d52dc72962a1135393e1000",
+   "sha256:0273413616b276db5e9fc8d1948763dc6ae13fc0f8cc7b9d1881866293ac7739",
+   "sha256:3ffb2fd31667cba95b944fea5e6c7655017460fa4fdc901eb377ed77734ad8cc",
+   "sha256:7925ed33acb720cf5541fe684825c022ba59762977449e926a53941328e702d3",
+   "sha256:8e36a972152f068d9604f2676ce78b2fdab93963d943044ff521fb05cf502386",
+   "sha256:82d84774c1b30a5499c7f9cfac391e5f4ea3aa6bccd43ee412b4f52bbce691ad",
+   "sha256:48c921fddc4d7a93450b997783097830ab59a3469e8dce4ddf81ad242a75be3c"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "arm_pairs_equal": 15,
+   "class_rows_equal": 4,
+   "seeds": 32
+  },
+  "status": "PASS",
+  "unresolvedChecks": []
+ }
+}

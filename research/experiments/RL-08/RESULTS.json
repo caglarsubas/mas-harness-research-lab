@@ -1,0 +1,165 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-08a",
+   "contextId": "lab",
+   "establishedValue": "not runnable: the cost report records cost per test, file, layer and authority path, not refusals; no per-check refusal history is exported; UNRESOLVED-by-input, declared before the run",
+   "evidence": [
+    "E1",
+    "E4"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-08b",
+   "contextId": "lab",
+   "establishedValue": "B2 per-file CPU in argv 63: 141 files, top 14 hold 0.3449 (Gini 0.4826), top file tests/test_native_profile_v4.py at 0.0617; B3 per-layer bytes:read:authority: 60 layers, top 6 hold 0.3137 (Gini 0.5322), top layer 02 at 0.1221; bounds: PASS at or above 0.50 on both, FAIL below 0.30 on either",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-08b",
+   "contextId": "lab",
+   "establishedValue": "descriptive (seen before the freeze, no gate): per-argv CPU over 64 commands, argv 63 alone 0.8639 of 3282.0 s (Gini 0.914), top 3 0.8838; argv 63 cpu 2580.761 s, generic scaffold share 0.3594; wall of all argv 1130.7 s; tests 16560",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-08b",
+   "contextId": "lab",
+   "establishedValue": "descriptive: authority reads per verify over 88 authority files, top 5 hold 0.242 (Gini 0.4315), top path architecture/i06-backend-profile-v4-authority.json at 0.055; per-layer authority reads top decile 0.315 (Gini 0.5383); per-layer own-authority calls top decile 0.3158 (Gini 0.5382)",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-08a",
+   "value": "UNRESOLVED-by-input",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C2",
+    "C3",
+    "C4"
+   ],
+   "claimId": "H-08b",
+   "value": "between the bounds: moderately concentrated (Gini about 0.5), not held by a small set; the one concentration that is sharp is at the argv level (argv 63), seen before the freeze and descriptive",
+   "verdict": "UNRESOLVED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-08a",
+   "delivered": "not measurable: no refusal history in the cost report",
+   "requirement": "H-08a: some inherited checks never refused anything and some refused real drift",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "not run"
+    }
+   ]
+  },
+  {
+   "claimId": "H-08b",
+   "delivered": "top decile holds 0.3449 of per-file CPU and 0.3137 of per-layer authority bytes",
+   "requirement": "H-08b: the chain's cost per layer is concentrated in a small set of validators (top decile holds at least half)",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "INCONCLUSIVE"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:ea50f1d56df9fac17eacfc5c04271e540d18676f15d3d6c811e1e4076f4dde44",
+   "evidenceId": "E1",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Build-R00.chain-compaction-cost-report.afee03b9"
+  },
+  {
+   "contentDigest": "sha256:705c455d5f9001aecc524e3b4863596417f8b537939e7e308fd00213cf05eb54",
+   "evidenceId": "E2",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl08_cost.run-001"
+  },
+  {
+   "contentDigest": "sha256:859332ff8fb128cc4997924aab28db5455fab9fbb68b939806f36caccb5115a3",
+   "evidenceId": "E3",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:1e0852982c76bd1f6981a9b667a33aa01ad7a4f2a8f4dc304fc74f06d83b89a9",
+   "evidenceId": "E4",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  }
+ ],
+ "ledgerId": "RL-08-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:1e0852982c76bd1f6981a9b667a33aa01ad7a4f2a8f4dc304fc74f06d83b89a9"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:ea50f1d56df9fac17eacfc5c04271e540d18676f15d3d6c811e1e4076f4dde44",
+   "sha256:705c455d5f9001aecc524e3b4863596417f8b537939e7e308fd00213cf05eb54",
+   "sha256:859332ff8fb128cc4997924aab28db5455fab9fbb68b939806f36caccb5115a3",
+   "sha256:1e0852982c76bd1f6981a9b667a33aa01ad7a4f2a8f4dc304fc74f06d83b89a9"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "argv63_cpu_permille": 864,
+   "b2_top_decile_permille": 345,
+   "b3_top_decile_permille": 314,
+   "files": 141,
+   "layers": 60
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C1",
+   "C2"
+  ]
+ }
+}

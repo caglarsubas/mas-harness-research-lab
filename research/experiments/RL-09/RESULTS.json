@@ -1,0 +1,168 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-18",
+   "contextId": "lab",
+   "establishedValue": "paths 18-28: covered 5, residual 0, uncovered 4, unresolved 2; bound: every path covered or residual; per path: 18 UNCOVERED (tokens A3; S 0, M 0, D 0, T04 0); 19 COVERED (tokens RefuseManualStart,S4,planeon_containment_enabled=0,secure_mode_policyload; S 1, M 8, D 0, T04 0; residual named); 20 COVERED (tokens P2,name_connect; S 0, M 9, D 1, T04 1); 21 UNCOVERED (tokens C6; S 0, M 0, D 0, T04 0); 22 UNCOVERED (tokens C4; S 0, M 0, D 0, T04 0); 23 UNRESOLVED (tokens none; S 0, M 0, D 0, T04 0); 24 UNRESOLVED (tokens none; S 0, M 0, D 0, T04 0); 25 COVERED (tokens connectto; S 0, M 7, D 1, T04 1); 26 COVERED (tokens P2,P4; S 0, M 3, D 0, T04 0); 27 COVERED (tokens v2; S 1, M 0, D 3, T04 0; residual named); 28 UNCOVERED (tokens dir search,prog_run; S 0, M 0, D 0, T04 0)",
+   "evidence": [
+    "E2",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-18",
+   "contextId": "lab",
+   "establishedValue": "finding: the four uncovered paths require the effect gate's own rules (18: admission rule A3; 21: connection rule C6; 22: connection rule C4) or a cgroup directory search with prog_run (28); none of the 69 seccomp duties, 214 SELinux assertions or 23 amendment items and obligations cites those tokens; the union of the four preregistered record families does not reach software-gate paths; the gate-channel and admission-semantics records (not among H-18's families) would be the fifth family",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-18",
+   "contextId": "lab",
+   "establishedValue": "paths 23 and 24 yield no clause token from their Required sentences (refusal; writer... / profile...), so the join could not be attempted; path 27 is covered through the generic token v2 only (1 seccomp duty, 3 amendment rows), a weak match; the join is documentary (citations and tokens), not a semantic proof",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 3,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-18",
+   "contextId": "lab",
+   "establishedValue": "counterexamples 1-17 are counted (17) but enumerated in no published record at afee03b9 (the monitor searched names outside closed areas, MON-RL-M13); UNRESOLVED-by-input, declared before the run",
+   "evidence": [
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-18",
+   "contextId": "lab",
+   "establishedValue": "the residual list is finite and recorded: the amendments name R-OBSERVER-TCP-LISTEN and R-HE5-POSTEXEC; the specification's sections 6.3 and 8 state what stays open; paths 19 and 27 touch a named residual",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+   ],
+   "claimId": "H-18",
+   "value": "FAIL as preregistered on paths 18-28: the four record families do not reach the paths whose required mechanism is a gate rule; a v2 with the gate-channel and admission records as a fifth family is a new design",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-18",
+   "delivered": "on the 11 enumerated paths: 5 covered, 4 uncovered (gate-rule paths), 2 untestable; 1-17 not enumerated; residual list finite",
+   "requirement": "H-18: the union of seccomp rows, SELinux matrix rows, descriptor sets and T04 proofs covers every effect path the threat model names, with a finite residual list",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.export-architecture-afee03b9.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:09d155aa0ad47f2151d0ae67464a1188915e17b2cab76f66e24eca178fd1acc5",
+   "evidenceId": "E2",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl09_join.run-001"
+  },
+  {
+   "contentDigest": "sha256:ee408217a32c4e51d0a00d370a89b34b6c4339f181f104a5515ec52c1a62ecb0",
+   "evidenceId": "E3",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.inputs-list"
+  },
+  {
+   "contentDigest": "sha256:0837ee606525020b8e4d2f8e9b52e380db74adf8c162b953b3139aa21582f308",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:4387dbff7422e47a4de27af3e32ac8d47c224f5c0e7de91d2f369929c2b4556a",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  }
+ ],
+ "ledgerId": "RL-09-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:4387dbff7422e47a4de27af3e32ac8d47c224f5c0e7de91d2f369929c2b4556a"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "sha256:09d155aa0ad47f2151d0ae67464a1188915e17b2cab76f66e24eca178fd1acc5",
+   "sha256:ee408217a32c4e51d0a00d370a89b34b6c4339f181f104a5515ec52c1a62ecb0",
+   "sha256:0837ee606525020b8e4d2f8e9b52e380db74adf8c162b953b3139aa21582f308",
+   "sha256:4387dbff7422e47a4de27af3e32ac8d47c224f5c0e7de91d2f369929c2b4556a"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "covered": 5,
+   "paths": 11,
+   "residual_entries": 2,
+   "uncovered": 4,
+   "unresolved": 2
+  },
+  "status": "FAIL",
+  "unresolvedChecks": [
+   "C3",
+   "C4"
+  ]
+ }
+}

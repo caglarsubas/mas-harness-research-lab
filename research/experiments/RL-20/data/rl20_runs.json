@@ -1,0 +1,694 @@
+{
+ "agreement": [
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T01",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T02",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T03",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T04",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T05",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T06",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T07",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": null,
+   "id": "T08",
+   "lab": null,
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T09",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T10",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T11",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T12",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T13",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T14",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T15",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "SHAPE",
+   "id": "T16",
+   "lab": "SHAPE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "DUPLICATE_ID",
+   "id": "T17",
+   "lab": "DUPLICATE_ID",
+   "witness": "node"
+  },
+  {
+   "agrees": true,
+   "expect": "DUPLICATE_ID",
+   "id": "T18",
+   "lab": "DUPLICATE_ID",
+   "witness": "role"
+  },
+  {
+   "agrees": true,
+   "expect": "DUPLICATE_ID",
+   "id": "T19",
+   "lab": "DUPLICATE_ID",
+   "witness": "edge"
+  },
+  {
+   "agrees": true,
+   "expect": "UNKNOWN_REFERENCE",
+   "id": "T20",
+   "lab": "UNKNOWN_REFERENCE",
+   "witness": "role"
+  },
+  {
+   "agrees": true,
+   "expect": "UNKNOWN_REFERENCE",
+   "id": "T21",
+   "lab": "UNKNOWN_REFERENCE",
+   "witness": "role"
+  },
+  {
+   "agrees": true,
+   "expect": "UNKNOWN_REFERENCE",
+   "id": "T22",
+   "lab": "UNKNOWN_REFERENCE",
+   "witness": "edge p3->p9"
+  },
+  {
+   "agrees": true,
+   "expect": "UNKNOWN_REFERENCE",
+   "id": "T23",
+   "lab": "UNKNOWN_REFERENCE",
+   "witness": "baseline"
+  },
+  {
+   "agrees": true,
+   "expect": "UNKNOWN_REFERENCE",
+   "id": "T24",
+   "lab": "UNKNOWN_REFERENCE",
+   "witness": "baseline"
+  },
+  {
+   "agrees": true,
+   "expect": "CONFLICTING_OBJECTIVE",
+   "id": "T25",
+   "lab": "CONFLICTING_OBJECTIVE",
+   "witness": ""
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T26",
+   "lab": "MODE_STRUCTURE",
+   "witness": "central counts"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T27",
+   "lab": "MODE_STRUCTURE",
+   "witness": "delegate edges"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T28",
+   "lab": "MODE_STRUCTURE",
+   "witness": "delegate edges"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T29",
+   "lab": "MODE_STRUCTURE",
+   "witness": "board"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T30",
+   "lab": "MODE_STRUCTURE",
+   "witness": "board"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T31",
+   "lab": "MODE_STRUCTURE",
+   "witness": "single agent"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T32",
+   "lab": "MODE_STRUCTURE",
+   "witness": "self-edge"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T33",
+   "lab": "MODE_STRUCTURE",
+   "witness": "board"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T34",
+   "lab": "MODE_STRUCTURE",
+   "witness": "recursion depth"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T35",
+   "lab": "MODE_STRUCTURE",
+   "witness": "recursion depth"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T36",
+   "lab": "MODE_STRUCTURE",
+   "witness": "central counts"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T37",
+   "lab": "MODE_STRUCTURE",
+   "witness": "board"
+  },
+  {
+   "agrees": true,
+   "expect": "MODE_STRUCTURE",
+   "id": "T38",
+   "lab": "MODE_STRUCTURE",
+   "witness": "single agent"
+  },
+  {
+   "agrees": true,
+   "expect": "BUDGET",
+   "id": "T39",
+   "lab": "BUDGET",
+   "witness": "vector [1, 2, 1] budget 3 concurrency 2"
+  },
+  {
+   "agrees": true,
+   "expect": "BUDGET",
+   "id": "T40",
+   "lab": "BUDGET",
+   "witness": "vector [1, 2, 1] budget 8 concurrency 3"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T41",
+   "lab": "SELECTION",
+   "witness": "outcome not allowed"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T42",
+   "lab": "SELECTION",
+   "witness": "outcome not allowed"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T43",
+   "lab": "SELECTION",
+   "witness": "outcome vs mode"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T44",
+   "lab": "SELECTION",
+   "witness": "outcome vs mode"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T45",
+   "lab": "SELECTION",
+   "witness": "outcome not allowed"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T46",
+   "lab": "SELECTION",
+   "witness": "baseline ineligible"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T47",
+   "lab": "SELECTION",
+   "witness": "baseline ineligible"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T48",
+   "lab": "SELECTION",
+   "witness": "baseline ineligible"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T49",
+   "lab": "SELECTION",
+   "witness": "baseline ineligible"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T50",
+   "lab": "SELECTION",
+   "witness": "baseline ineligible"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T51",
+   "lab": "SELECTION",
+   "witness": "baseline ineligible"
+  },
+  {
+   "agrees": true,
+   "expect": "SELECTION",
+   "id": "T52",
+   "lab": "SELECTION",
+   "witness": "baseline ineligible"
+  }
+ ],
+ "contractDigests": {
+  "topology-coordination/README.md": "sha256:890af54aa39c6fbec35615bec8cadb5ffa62c33a5ccce0e21b7af5fcd3fb9c90",
+  "topology-coordination/topology-spec.schema.json": "sha256:a326f70fd56d4300aa1bfaa3838a888c90347a75fc84164188e4af42052e82d0",
+  "topology-coordination/vectors.json": "sha256:ad177f611d24862e390ddf55268ebd046036b31e176300dd1a2737456b384ec0"
+ },
+ "controls": [
+  {
+   "accepted": true,
+   "id": "T01"
+  },
+  {
+   "accepted": true,
+   "id": "T02"
+  },
+  {
+   "accepted": true,
+   "id": "T03"
+  },
+  {
+   "accepted": true,
+   "id": "T04"
+  },
+  {
+   "accepted": true,
+   "id": "T05"
+  },
+  {
+   "accepted": true,
+   "id": "T06"
+  },
+  {
+   "accepted": true,
+   "id": "T07"
+  },
+  {
+   "accepted": true,
+   "id": "T08"
+  }
+ ],
+ "counts": {
+  "descriptive": [
+   {
+    "base": "T02",
+    "class": "unreachable",
+    "lab": null
+   },
+   {
+    "base": "T05",
+    "class": "unreachable",
+    "lab": null
+   }
+  ],
+  "gatedAccepted": 1,
+  "gatedMutations": 22,
+  "gatedRefusedAsExpected": 21,
+  "valid": 8,
+  "validAccepted": 8,
+  "vectorAgree": 52,
+  "vectorCases": 52
+ },
+ "mutations": [
+  {
+   "base": "T01",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "w1->c1",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T01",
+   "class": "unreachable",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "rl20-isolated",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T01",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": "BUDGET",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "agentBudget 3 < nodes 4",
+   "witness": "vector [1, 2, 1] budget 3 concurrency 2"
+  },
+  {
+   "base": "T02",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "DECENTRALIZED",
+   "refusedAsExpected": true,
+   "seeded": "p1->v1",
+   "witness": "board"
+  },
+  {
+   "base": "T02",
+   "class": "unreachable",
+   "expected": null,
+   "gated": false,
+   "lab": null,
+   "mode": "DECENTRALIZED",
+   "refusedAsExpected": false,
+   "seeded": "rl20-isolated",
+   "witness": ""
+  },
+  {
+   "base": "T02",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": "BUDGET",
+   "mode": "DECENTRALIZED",
+   "refusedAsExpected": true,
+   "seeded": "agentBudget 3 < nodes 4",
+   "witness": "vector [0, 3, 1] budget 3 concurrency 2"
+  },
+  {
+   "base": "T03",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "SINGLE_AGENT",
+   "refusedAsExpected": true,
+   "seeded": "s1->s1",
+   "witness": "self-edge"
+  },
+  {
+   "base": "T03",
+   "class": "unreachable",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "SINGLE_AGENT",
+   "refusedAsExpected": true,
+   "seeded": "rl20-isolated",
+   "witness": "single agent"
+  },
+  {
+   "base": "T03",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": null,
+   "mode": "SINGLE_AGENT",
+   "refusedAsExpected": false,
+   "seeded": "agentBudget 1 < nodes 1",
+   "witness": ""
+  },
+  {
+   "base": "T04",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "w1->c1",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T04",
+   "class": "unreachable",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "rl20-isolated",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T04",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": "BUDGET",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "agentBudget 3 < nodes 4",
+   "witness": "vector [1, 2, 1] budget 3 concurrency 2"
+  },
+  {
+   "base": "T05",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "DECENTRALIZED",
+   "refusedAsExpected": true,
+   "seeded": "p1->p3",
+   "witness": "board"
+  },
+  {
+   "base": "T05",
+   "class": "unreachable",
+   "expected": null,
+   "gated": false,
+   "lab": null,
+   "mode": "DECENTRALIZED",
+   "refusedAsExpected": false,
+   "seeded": "rl20-isolated",
+   "witness": ""
+  },
+  {
+   "base": "T05",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": "BUDGET",
+   "mode": "DECENTRALIZED",
+   "refusedAsExpected": true,
+   "seeded": "agentBudget 2 < nodes 3",
+   "witness": "vector [0, 3, 0] budget 2 concurrency 2"
+  },
+  {
+   "base": "T06",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "w1->c1",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T06",
+   "class": "unreachable",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "rl20-isolated",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T06",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": "BUDGET",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "agentBudget 5 < nodes 6",
+   "witness": "vector [1, 4, 1] budget 5 concurrency 2"
+  },
+  {
+   "base": "T07",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "w1->c1",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T07",
+   "class": "unreachable",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "rl20-isolated",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T07",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": "BUDGET",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "agentBudget 3 < nodes 4",
+   "witness": "vector [1, 2, 1] budget 3 concurrency 2"
+  },
+  {
+   "base": "T08",
+   "class": "cycle",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "w1->c1",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T08",
+   "class": "unreachable",
+   "expected": "MODE_STRUCTURE",
+   "gated": true,
+   "lab": "MODE_STRUCTURE",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "rl20-isolated",
+   "witness": "delegate edges"
+  },
+  {
+   "base": "T08",
+   "class": "budget",
+   "expected": "BUDGET",
+   "gated": true,
+   "lab": "BUDGET",
+   "mode": "CENTRAL",
+   "refusedAsExpected": true,
+   "seeded": "agentBudget 3 < nodes 4",
+   "witness": "vector [1, 2, 1] budget 3 concurrency 2"
+  }
+ ]
+}

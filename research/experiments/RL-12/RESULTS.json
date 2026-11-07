@@ -1,0 +1,174 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "totality as RL-10: both maps total; the ledger's three lists equal levels 3, 2, 1",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_SCHEMA",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2a",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "7 vectors (CONSISTENCY_ONLY 2, CONSENSUS_ONLY 2, NOT_EVIDENCE 3) each carry an item of the matching level; violations 0",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2b",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "per claim: in 5 vectors (L44, L79, L80, L81, L82) the claim citing the weak item has no establishing deterministic PASS on the delivered target; in 2 (L42, L43) the not-evidence item is cited by no check and the clause holds vacuously (the ledger refuses the item on sight); violations 0",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "native agreement as RL-10: 13 of 13 class-naming refusals consistent with the order",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "disclosure: the per-claim reading was already seen in RL-10's post-hoc check C5 (7 of 7); RL-12 puts it on the record under a preregistered clause and establishes nothing new; asymmetries as RL-10 (OUT_OF_SCOPE, PROOF_BOUND merging three classes, NOT_CONFIRMATION)",
+   "evidence": [
+    "E5",
+    "E6"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2a",
+    "C2b",
+    "C3",
+    "C4"
+   ],
+   "claimId": "H-04",
+   "value": "the composition holds on the published vectors under the per-claim clause; RL-10's FAIL stands as the record of the mis-scoped clause",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-04",
+   "delivered": "maps total; ledger refusals agree per claim 7 of 7 (2 vacuous); native refusals agree 13 of 13",
+   "requirement": "H-04: one five-level evidence order into which both vocabularies map totally, with each record's refusals agreeing with the order (ledger agreement per claim)",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.export-architecture-afee03b9.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:b05c67f315f78bbbd06721ab658e85ab878913654d922c4302b73054c7dde838",
+   "evidenceId": "E2",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl12_algebra.run-001"
+  },
+  {
+   "contentDigest": "sha256:3e598d6bc288a4c1b99318d253c7c222e1a36254e9786d1f9168a2bc52b58021",
+   "evidenceId": "E3",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.inputs-list"
+  },
+  {
+   "contentDigest": "sha256:f6cda7ffeebd92d370edcba19082aea0b0c4d6a287e1369a861f55407a252044",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:d1763b9785d4184b26201eb256059b31c524485f55d1192c3fa04687095ab4b8",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  },
+  {
+   "contentDigest": "sha256:023591f8e51cba5436398e5b2e29520d501b39e537b40af65b683510d4956842",
+   "evidenceId": "E6",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.RL-10-RESULTS-v1"
+  }
+ ],
+ "ledgerId": "RL-12-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:d1763b9785d4184b26201eb256059b31c524485f55d1192c3fa04687095ab4b8"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "sha256:b05c67f315f78bbbd06721ab658e85ab878913654d922c4302b73054c7dde838",
+   "sha256:3e598d6bc288a4c1b99318d253c7c222e1a36254e9786d1f9168a2bc52b58021",
+   "sha256:f6cda7ffeebd92d370edcba19082aea0b0c4d6a287e1369a861f55407a252044",
+   "sha256:d1763b9785d4184b26201eb256059b31c524485f55d1192c3fa04687095ab4b8",
+   "sha256:023591f8e51cba5436398e5b2e29520d501b39e537b40af65b683510d4956842"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "c2_vacuous": 2,
+   "c2_vectors": 7,
+   "c3_vectors": 13,
+   "ledger_vectors": 112,
+   "native_negatives": 444
+  },
+  "status": "PASS",
+  "unresolvedChecks": [
+   "C4"
+  ]
+ }
+}

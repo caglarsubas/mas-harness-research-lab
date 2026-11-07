@@ -1,0 +1,130 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-25a",
+   "contextId": "lab",
+   "establishedValue": "the lab's checker agrees with 52 of 52 topology vectors; disagreements: []",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-25b",
+   "contextId": "lab",
+   "establishedValue": "gated seeded edits refused as expected 21 of 22 (accepted 1); valid vectors accepted 8 of 8; descriptive (decentralized isolated peer): [{\"base\": \"T02\", \"class\": \"unreachable\", \"lab\": null}, {\"base\": \"T05\", \"class\": \"unreachable\", \"lab\": null}]; gate: 1 seeded edits accepted or 0 of 8 valid vectors refused",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 2,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-25a",
+   "value": "the lab's checker agrees with 52 of 52 topology vectors; disagreements: []",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C2"
+   ],
+   "claimId": "H-25b",
+   "value": "gated seeded edits refused as expected 21 of 22 (accepted 1); valid vectors accepted 8 of 8; descriptive (decentralized isolated peer): [{\"base\": \"T02\", \"class\": \"unreachable\", \"lab\": null}, {\"base\": \"T05\", \"class\": \"unreachable\", \"lab\": null}]",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-25a",
+   "delivered": "the lab's checker agrees with 52 of 52 topology vectors; disagreements: []",
+   "requirement": "H-25a (instrument): the lab's checker reproduces the record's topology vectors",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-25b",
+   "delivered": "gated seeded edits refused as expected 21 of 22 (accepted 1); valid vectors accepted 8 of 8; descriptive (decentralized isolated peer): [{\"base\": \"T02\", \"class\": \"unreachable\", \"lab\": null}, {\"base\": \"T05\", \"class\": \"unreachable\", \"lab\": null}]",
+   "requirement": "H-25b: the seeded graph classes the TopologySpec can express (cycle, unreachable node, budget escape) are refused with the record's code and a witness, and no valid vector is refused",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:c6ee93f7ba7acf9e2ec192a5bf8538d8d131cebd51f0168a6ce468076efd3cf8",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl20_topology.run-001"
+  },
+  {
+   "contentDigest": "sha256:37bd092269b795b1e4dce42ef984610d67de92b8fa2d934d8071a6d23d663654",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:56ba25ce3ead2ee39f56e7ad3db288d2b44bf81cb7430b61c8b95461b1e8fe7d",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl20_eval"
+  }
+ ],
+ "ledgerId": "RL-20-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:4f12f24f23d441ac96f2c8dff0fdefcc2e8019a3662928e840b3ad12417adb13"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:c6ee93f7ba7acf9e2ec192a5bf8538d8d131cebd51f0168a6ce468076efd3cf8",
+   "sha256:37bd092269b795b1e4dce42ef984610d67de92b8fa2d934d8071a6d23d663654",
+   "sha256:4f12f24f23d441ac96f2c8dff0fdefcc2e8019a3662928e840b3ad12417adb13",
+   "sha256:56ba25ce3ead2ee39f56e7ad3db288d2b44bf81cb7430b61c8b95461b1e8fe7d"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "gated_accepted": 1,
+   "gated_mutations": 22,
+   "gated_refused_as_expected": 21,
+   "valid_accepted": 8,
+   "vector_agree": 52,
+   "vector_cases": 52
+  },
+  "status": "FAIL",
+  "unresolvedChecks": []
+ }
+}

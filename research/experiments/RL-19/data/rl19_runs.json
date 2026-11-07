@@ -1,0 +1,387 @@
+{
+ "byPaper": {
+  "F2": {
+   "claims": 6,
+   "found": 6
+  },
+  "F4a": {
+   "claims": 5,
+   "found": 3
+  },
+  "F4b": {
+   "claims": 5,
+   "found": 4
+  },
+  "F5": {
+   "claims": 6,
+   "found": 6
+  },
+  "F6": {
+   "claims": 7,
+   "found": 5
+  }
+ },
+ "bySource": {
+  "RS-1": {
+   "claims": 1,
+   "found": 0
+  },
+  "RS-2": {
+   "claims": 11,
+   "found": 9
+  },
+  "RS-3": {
+   "claims": 29,
+   "found": 24
+  }
+ },
+ "claims": 29,
+ "found": 24,
+ "heldDigests": {
+  "F2": "9dff38ef1396804f3c4f4d6ed471403f89b04e75336e72fe57a0be80152a23d7",
+  "F4a": "b2ec0c042c4738cd99ace87150af6ed175c098b39fd24f36b1b6ce141e2b5d34",
+  "F4b": "8488e9440ac33fca66aece3a956fef9ff728daa9ecf1492b02f39ce3b5fafd9b",
+  "F5": "b3a379894adc96b9afb9d2aedddfde85b0b53787f013111911d540aae06741e9",
+  "F6": "36999ed0cb2d15b93897fa1f8be9ff2291516b633889e16e377f19db4288f482"
+ },
+ "results": [
+  {
+   "context": "Agentproofrequiresnomanualmodeling. Inacuratedbenchmarkof18author-constructedwork\\015ows,27%ofthebenchmarkcontain",
+   "id": "F2-1",
+   "occurrences": 88,
+   "paper": "F2",
+   "pattern": "18",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "Inacuratedbenchmarkof18author-constructedwork\\015ows,27%ofthebenchmarkcontain",
+   "id": "F2-2",
+   "occurrences": 2,
+   "paper": "F2",
+   "pattern": "27%",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "structuraldefects\\050dead-endnodes,unreachableexits\\051and55%violateahuman-gatepolicy",
+   "id": "F2-3",
+   "occurrences": 2,
+   "paper": "F2",
+   "pattern": "55%",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "MelwinXavier",
+   "id": "F2-4",
+   "occurrences": 524,
+   "paper": "F2",
+   "pattern": "15",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "",
+   "id": "F2-5",
+   "occurrences": 22,
+   "paper": "F2",
+   "pattern": "5,000",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "graphmodelfromfourmajoragentframeworks\\050LangGraph,CrewAI,AutoGen,GoogleADK\\051,",
+   "id": "F2-6",
+   "occurrences": 56,
+   "paper": "F2",
+   "pattern": "CrewAI",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "analyze6,864sampledrunsacrossall300tasks.Veri\\002cationisthemostfrequentofsixerror",
+   "id": "F4a-1",
+   "occurrences": 56,
+   "paper": "F4a",
+   "pattern": "300",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "13.50points.",
+   "id": "F4a-2",
+   "occurrences": 20,
+   "paper": "F4a",
+   "pattern": "13.5",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "GPT-5.6Luna58.762.936.558.759.051.2 64.4 GLM-5.3-Flash52.971.257.7 76.7 64.765.157.5 Kimi-K360.928.164.3 72.7",
+   "id": "F4a-3",
+   "occurrences": 20,
+   "paper": "F4a",
+   "pattern": "2.97",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "",
+   "id": "F4a-4",
+   "occurrences": 0,
+   "paper": "F4a",
+   "pattern": "5,000",
+   "sources": [
+    "RS-1",
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "NOT_FOUND"
+  },
+  {
+   "context": "",
+   "id": "F4a-5",
+   "occurrences": 0,
+   "paper": "F4a",
+   "pattern": "ten backends",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "NOT_FOUND"
+  },
+  {
+   "context": "canreducescorevariance,hasmedian1.34acrossmodels\\050range1.05\\2261.71\\051,so",
+   "id": "F4b-1",
+   "occurrences": 28,
+   "paper": "F4b",
+   "pattern": "1.34",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "",
+   "id": "F4b-2",
+   "occurrences": 28,
+   "paper": "F4b",
+   "pattern": "1.71",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "repetitioncannarrowcon\\002denceintervalsbyatmost23%onthisbenchmark,and",
+   "id": "F4b-3",
+   "occurrences": 8,
+   "paper": "F4b",
+   "pattern": "23%",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "withtwopromptsand\\002verunseach\\05015,840judgedrunsinafullycrosseddesign\\051,",
+   "id": "F4b-4",
+   "occurrences": 3,
+   "paper": "F4b",
+   "pattern": "15,840",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "",
+   "id": "F4b-5",
+   "occurrences": 0,
+   "paper": "F4b",
+   "pattern": "16 models",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "NOT_FOUND"
+  },
+  {
+   "context": "only coordination structure and model capability. Across 260 configurations spanning six benchmarks, five",
+   "id": "F5-1",
+   "occurrences": 44,
+   "paper": "F5",
+   "pattern": "260",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "changes relative to single-agent baseline span +80.8% on structured financial reasoning to -70.0% on",
+   "id": "F5-2",
+   "occurrences": 36,
+   "paper": "F5",
+   "pattern": "80.8",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "span +80.8% on structured financial reasoning to -70.0% on sequential planning, demonstrating that",
+   "id": "F5-3",
+   "occurrences": 20,
+   "paper": "F5",
+   "pattern": "70.0",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "decision rule yields an empirically derived ~45% capability-saturation threshold and, in an additional",
+   "id": "F5-4",
+   "occurrences": 16,
+   "paper": "F5",
+   "pattern": "45%",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "capability metric) and selects the best architecture in 87% of held-out configurations. These results provide a",
+   "id": "F5-5",
+   "occurrences": 16,
+   "paper": "F5",
+   "pattern": "87%",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "SWE-bench Verified and Terminal-Bench are available via Zenodo at https://doi.org/10.5281/zenodo.20388843 (ref. 43",
+   "id": "F5-6",
+   "occurrences": 32,
+   "paper": "F5",
+   "pattern": "zenodo",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "sistent,withaverageASRof50.46%andRSRof41.05%",
+   "id": "F6-1",
+   "occurrences": 4,
+   "paper": "F6",
+   "pattern": "50.46",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "ceptibleacrossallattackclasses,withanaverageASRof 66.67%comparedto34.25%onOpenClaw.Thisdiffer-",
+   "id": "F6-2",
+   "occurrences": 12,
+   "paper": "F6",
+   "pattern": "66.67",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "66.67%comparedto34.25%onOpenClaw.Thisdiffer-",
+   "id": "F6-3",
+   "occurrences": 12,
+   "paper": "F6",
+   "pattern": "34.25",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "sistent,withaverageASRof50.46%andRSRof41.05% acrossbothagents.Attacksuccessscaleswithhowag-",
+   "id": "F6-4",
+   "occurrences": 4,
+   "paper": "F6",
+   "pattern": "41.05",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  },
+  {
+   "context": "",
+   "id": "F6-5",
+   "occurrences": 0,
+   "paper": "F6",
+   "pattern": "four memory write channels",
+   "sources": [
+    "RS-2",
+    "RS-3"
+   ],
+   "status": "NOT_FOUND"
+  },
+  {
+   "context": "",
+   "id": "F6-6",
+   "occurrences": 0,
+   "paper": "F6",
+   "pattern": "nine structural vulnerabilities",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "NOT_FOUND"
+  },
+  {
+   "context": "memorypoisoningattacks.Furthermore,wede- sign MPBench -abenchmarkforevaluatingmem-",
+   "id": "F6-7",
+   "occurrences": 24,
+   "paper": "F6",
+   "pattern": "MPBench",
+   "sources": [
+    "RS-3"
+   ],
+   "status": "FOUND"
+  }
+ ],
+ "textChars": {
+  "F2": 59325,
+  "F4a": 84305,
+  "F4b": 46629,
+  "F5": 112052,
+  "F6": 486050
+ }
+}

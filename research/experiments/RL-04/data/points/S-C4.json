@@ -1,0 +1,129 @@
+{
+ "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "points": {
+  "S-C4": {
+   "arms": {
+    "advisory": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 90909,
+       "min": 0,
+       "p50": 0,
+       "p95": 47619
+      },
+      "lastMergeTick": {
+       "max": 156,
+       "min": 110,
+       "p50": 128,
+       "p95": 150
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 32
+    },
+    "leased": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 125000,
+       "min": 0,
+       "p50": 0,
+       "p95": 64516
+      },
+      "lastMergeTick": {
+       "max": 213,
+       "min": 132,
+       "p50": 171,
+       "p95": 213
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 0
+    }
+   },
+   "d_values": [
+    0,
+    0,
+    12228,
+    11905,
+    10972,
+    0,
+    0,
+    0,
+    -38461,
+    10972,
+    0,
+    0,
+    0,
+    0,
+    47619,
+    26393,
+    0,
+    0,
+    0,
+    45454,
+    8996,
+    0,
+    0,
+    -31250,
+    0,
+    12121,
+    -125000,
+    10972,
+    0,
+    0,
+    0,
+    0
+   ],
+   "family": "CENTRAL",
+   "items": 20,
+   "paired_d": {
+    "mean": 91.3,
+    "median": 0,
+    "negative": 3,
+    "positive": 10,
+    "zero": 19
+   },
+   "workers": 4
+  }
+ },
+ "pooled_n_ge_2": {
+  "bootstrap95": [
+   -10294.5,
+   8477.1
+  ],
+  "mean_d": 91.3,
+  "pairs": 32,
+  "resamples": 1000,
+  "seed": 20261104
+ },
+ "seeds": 32,
+ "wall_s": {
+  "S-C4": 0.32
+ }
+}

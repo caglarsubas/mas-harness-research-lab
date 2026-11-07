@@ -1,0 +1,204 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-27a",
+   "contextId": "lab",
+   "establishedValue": "classes.json digest matches the committed results: True; 416 of 416 run pairs identical (whole effect log); bound: all pairs identical, at least 39 pairs",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-27b",
+   "contextId": "lab",
+   "establishedValue": "REPLAY_STALE class C3: result PASS (committed PASS); whole row equal: True; differing keys: []",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-27c",
+   "contextId": "lab",
+   "establishedValue": "duplicates: 70169 of 70169 answered DUPLICATE_ID, 0 changed state; stale replays: 0 of 39795 answered STALE_VERSION, 39795 refused otherwise, 0 accepted, 0 changed state, 0 not posable (version unchanged); exceptions 0; gate: no vectors posed, or 0 driver exceptions, or 0 duplicates answered other than DUPLICATE_ID, or 39795 stale replays refused for another reason than STALE_VERSION",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "UNRESOLVED",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-27d",
+   "contextId": "lab",
+   "establishedValue": "log replay through a fresh board: claim and merge sequence identical in 0 of 416 runs; agreement by operation kind (agree, total): {\"ACQUIRE\": [6149, 8095], \"ASSIGN\": [2045, 3349], \"MERGE\": [817, 9461], \"MESSAGE\": [32, 20388], \"RELEASE\": [109, 113], \"RENEW\": [17686, 25223], \"VERIFY\": [0, 10082]}; exceptions 10082; gate: the claim and merge answers diverged from the recorded log in 416 of 416 runs",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 4,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-27a",
+   "value": "classes.json digest matches the committed results: True; 416 of 416 run pairs identical (whole effect log)",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C2"
+   ],
+   "claimId": "H-27b",
+   "value": "REPLAY_STALE class C3: result PASS (committed PASS); whole row equal: True; differing keys: []",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C3"
+   ],
+   "claimId": "H-27c",
+   "value": "duplicates: 70169 of 70169 answered DUPLICATE_ID, 0 changed state; stale replays: 0 of 39795 answered STALE_VERSION, 39795 refused otherwise, 0 accepted, 0 changed state, 0 not posable (version unchanged); exceptions 0",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C4"
+   ],
+   "claimId": "H-27d",
+   "value": "log replay through a fresh board: claim and merge sequence identical in 0 of 416 runs; agreement by operation kind (agree, total): {\"ACQUIRE\": [6149, 8095], \"ASSIGN\": [2045, 3349], \"MERGE\": [817, 9461], \"MESSAGE\": [32, 20388], \"RELEASE\": [109, 113], \"RENEW\": [17686, 25223], \"VERIFY\": [0, 10082]}; exceptions 10082",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-27a",
+   "delivered": "classes.json digest matches the committed results: True; 416 of 416 run pairs identical (whole effect log)",
+   "requirement": "H-27a: two runs of the same class and seed produce identical effect logs",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-27b",
+   "delivered": "REPLAY_STALE class C3: result PASS (committed PASS); whole row equal: True; differing keys: []",
+   "requirement": "H-27b: the committed REPLAY_STALE class row reproduces exactly on the pin",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-27c",
+   "delivered": "duplicates: 70169 of 70169 answered DUPLICATE_ID, 0 changed state; stale replays: 0 of 39795 answered STALE_VERSION, 39795 refused otherwise, 0 accepted, 0 changed state, 0 not posable (version unchanged); exceptions 0",
+   "requirement": "H-27c: duplicated and stale (reordered) board operations replayed after a run are refused and change nothing",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "UNRESOLVED"
+    }
+   ]
+  },
+  {
+   "claimId": "H-27d",
+   "delivered": "log replay through a fresh board: claim and merge sequence identical in 0 of 416 runs; agreement by operation kind (agree, total): {\"ACQUIRE\": [6149, 8095], \"ASSIGN\": [2045, 3349], \"MERGE\": [817, 9461], \"MESSAGE\": [32, 20388], \"RELEASE\": [109, 113], \"RENEW\": [17686, 25223], \"VERIFY\": [0, 10082]}; exceptions 10082",
+   "requirement": "H-27d: the recorded operation sequence replayed in order through a fresh board reproduces the claim and merge answers exactly",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:f5fe694a162ecf1c441c3ba9a053f27efb3af97642c107d0d1105a41604c4de3",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl17_replay.run-001"
+  },
+  {
+   "contentDigest": "sha256:35f3d6a9b40b3bb29bec43f8015622ddd167a78241e9b461cf89b0fc81bedad7",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:2671984a41cb5da1225411199ba248fa7e035f52bbeef151b9a7d7b0906a702c",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl17_eval"
+  }
+ ],
+ "ledgerId": "RL-17-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:77015690d73e9f7499bde1437cd49d74713f13cccddcab9bdc150e439edca027"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:f5fe694a162ecf1c441c3ba9a053f27efb3af97642c107d0d1105a41604c4de3",
+   "sha256:35f3d6a9b40b3bb29bec43f8015622ddd167a78241e9b461cf89b0fc81bedad7",
+   "sha256:77015690d73e9f7499bde1437cd49d74713f13cccddcab9bdc150e439edca027",
+   "sha256:2671984a41cb5da1225411199ba248fa7e035f52bbeef151b9a7d7b0906a702c"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "changed": 0,
+   "dup_attempts": 70169,
+   "dup_duplicate_id": 70169,
+   "exceptions": 0,
+   "identical": 416,
+   "log_replay_identical": 0,
+   "log_replay_runs": 416,
+   "pairs": 416,
+   "stale_accepted": 0,
+   "stale_attempts": 39795,
+   "stale_other_refusal": 39795,
+   "stale_stale_version": 0
+  },
+  "status": "FAIL",
+  "unresolvedChecks": [
+   "C3"
+  ]
+ }
+}

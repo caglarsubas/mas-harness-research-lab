@@ -1,0 +1,276 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "P1",
+   "contextId": "lab",
+   "establishedValue": "replay matches (kind and clause): inheritance 26 of 26; steps 14 of 14; R13 refusals 17 of 26 inheritance vectors, step-rule refusals 9 of 14",
+   "evidence": [
+    "E2",
+    "E8",
+    "E9",
+    "E7"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "P1",
+   "contextId": "lab",
+   "establishedValue": "identity rule evidence: 20 steps listed; bridgesChecked 20, bridgesExplained 20, bridgeExplained true counted 20; bumpClean 19 with exceptions [241]; discrepancies 0; 66 layers, allow-list '66 of 66 layers satisfy the allow-list'",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_SCHEMA",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "P2",
+   "contextId": "lab",
+   "establishedValue": "replay matches: products 14 of 14; allowedPaths 6 of 6; classForms_v2 23 of 23; classForms_v3 9 of 9; a changed or re-identified published product refuses (R6, R2, R3, R8, R12 among the 12 product refusals); class functions must equal their K = 0 form after the P-forms are undone",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "P2",
+   "contextId": "lab",
+   "establishedValue": "identity rule: d.bridgedClasses equals evidence.dClassesFound (True)",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_SCHEMA",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "P3",
+   "contextId": "lab",
+   "establishedValue": "replay matches: bindings 14 of 14; counts 9 of 9; pin 1 of 1; every non-plain binding of PRODUCT_PACKETS refuses (13 of 14), every count outside C = S + P refuses (6 of 9), v2's bytes equal V2_SHA256 and pin_v2 accepts; the inheritance pin refusals (missing, foreign, stale, digest) are inside C1's 26",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 5,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C6",
+   "claimId": "P3",
+   "contextId": "lab",
+   "establishedValue": "oldest-layer attribution: all 17 inheritance refusals carry clause R13 with a detail message; 5 of them concern a comparator pin (missing, foreign, stale, digest), and none names the refusing layer's slot in its detail; the vectors fix the clause, not the layer, so the 'oldest layer that pinned it' sub-claim is not established by the vectors",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 6,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C7",
+   "claimId": "P1",
+   "contextId": "lab",
+   "establishedValue": "not replayed: the step rule over the live 66-layer chain (sources not in the export), the 273-277 equivalence, the 22 agreement rows, 5 bridge replays and 4 head-only checks (they name the mechanics replay and the head's validate())",
+   "evidence": [
+    "E6"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 7,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C8",
+   "claimId": "P1",
+   "contextId": "lab",
+   "establishedValue": "run 001 (four sections, profile interpreter) outcomes correct in kind, clause parser kept the 'identity ' prefix, fixed and disclosed; run 002 on harness-onion's .venv interpreter (PyYAML 6.0.2) read-only; both extends digests verified",
+   "evidence": [
+    "E4",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "PASS",
+   "sequence": 8,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C7",
+    "C8"
+   ],
+   "claimId": "P1",
+   "value": "on the published vectors and the identity rule's recorded evidence; the live chain is not replayed here",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C3",
+    "C4"
+   ],
+   "claimId": "P2",
+   "value": "on the published vectors",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C5",
+    "C6"
+   ],
+   "claimId": "P3",
+   "value": "refusal supported; the 'oldest layer' attribution unresolved (C6)",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "P1",
+   "delivered": "40 of 40 vectors match; the identity rule's step evidence is self-consistent; the live-chain step rule and the equivalence are not replayed",
+   "requirement": "H-01 P1: the history chain's accepted check set is monotone (R13 inheritance; the step rule)",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "PASS on the vectors"
+    }
+   ]
+  },
+  {
+   "claimId": "P2",
+   "delivered": "52 of 52 vectors match; bridged classes agree",
+   "requirement": "H-01 P2: published bytes are immutable under projection",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "P3",
+   "delivered": "24 of 24 vectors match and the v2 pin holds; the oldest-layer attribution is not fixed by the vectors",
+   "requirement": "H-01 P3: a pinned-byte edit refuses at the oldest layer that pinned it",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "PASS on refusal; attribution unresolved"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.export-architecture-afee03b9.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:c210099c0ca2dd24683756f95eeb7aa5b17ecf2ce171dd570a7933593f54318c",
+   "evidenceId": "E2",
+   "kind": "REGRESSION_RUN",
+   "producedBy": "Research-Lab.rl07_replay.run-002"
+  },
+  {
+   "contentDigest": "sha256:16aeaa017b3c329768449d069b1c8d9f9028c2c1c2631c12105691f26d025e0d",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.record-consistency.run-002"
+  },
+  {
+   "contentDigest": "sha256:870361cadadf0ade87f3da297ebf528e4deef0152245d3c44fafce13135b7d5f",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-002"
+  },
+  {
+   "contentDigest": "sha256:c8b5eb39034864b927b477d576578ee6227109baeada5fd3125346dfd3be6300",
+   "evidenceId": "E5",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:6761791742fc89ab2e9cd79ced470980c3c5ea6c0155e2ec0fc86c318b13ffe2",
+   "evidenceId": "E6",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1.2"
+  },
+  {
+   "contentDigest": "sha256:1ec764808aaf4e7f2a9eea2da605d0c12d172c5a8e4c23bf3ac79bbb1d07e753",
+   "evidenceId": "E7",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.chain_identity-v1.afee03b9"
+  },
+  {
+   "contentDigest": "sha256:23fe723ae060b13727118b5808541d0b40bfee22ac5e803955e324f4dd6d9a55",
+   "evidenceId": "E8",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.chain_identity_v2.afee03b9"
+  },
+  {
+   "contentDigest": "sha256:29483ec356f0d2b10f778fc5c4fe642df94795f8249daa088e7a06c995c67fb9",
+   "evidenceId": "E9",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.chain_identity_v3.afee03b9"
+  }
+ ],
+ "ledgerId": "RL-07-RESULTS-v1",
+ "rollouts": [
+  "run-001",
+  "run-002"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:6761791742fc89ab2e9cd79ced470980c3c5ea6c0155e2ec0fc86c318b13ffe2"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "sha256:c210099c0ca2dd24683756f95eeb7aa5b17ecf2ce171dd570a7933593f54318c",
+   "sha256:16aeaa017b3c329768449d069b1c8d9f9028c2c1c2631c12105691f26d025e0d",
+   "sha256:870361cadadf0ade87f3da297ebf528e4deef0152245d3c44fafce13135b7d5f",
+   "sha256:c8b5eb39034864b927b477d576578ee6227109baeada5fd3125346dfd3be6300",
+   "sha256:6761791742fc89ab2e9cd79ced470980c3c5ea6c0155e2ec0fc86c318b13ffe2",
+   "sha256:1ec764808aaf4e7f2a9eea2da605d0c12d172c5a8e4c23bf3ac79bbb1d07e753",
+   "sha256:23fe723ae060b13727118b5808541d0b40bfee22ac5e803955e324f4dd6d9a55",
+   "sha256:29483ec356f0d2b10f778fc5c4fe642df94795f8249daa088e7a06c995c67fb9"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "matches": 116,
+   "sections": 9,
+   "vectors": 116
+  },
+  "status": "PASS",
+  "unresolvedChecks": [
+   "C6",
+   "C7"
+  ]
+ }
+}

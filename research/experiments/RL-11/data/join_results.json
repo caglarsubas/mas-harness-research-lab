@@ -1,0 +1,515 @@
+{
+ "families": {
+  "D": 23,
+  "G_text": 11,
+  "G_vectors": 1541,
+  "M": 214,
+  "S": 69
+ },
+ "gate": {
+  "covered": 10,
+  "outcome": "INCONCLUSIVE",
+  "paths": 11,
+  "residual": 0,
+  "uncovered": 0,
+  "unresolved": 1
+ },
+ "paths": {
+  "18": {
+   "D": [],
+   "G": [
+    "i05-gate-channel:transcripts:T01",
+    "i05-gate-channel:transcripts:T09",
+    "i05-gate-channel:transcripts:T27",
+    "i05-gate-channel:transcripts:T28",
+    "i05-gate-channel:transcripts:T30",
+    "i05-gate-channel:transcripts:T31",
+    "i05-gate-channel:transcripts:T46",
+    "i05-gate-channel:transcripts:T48",
+    "i05-gate-channel:transcripts:T49",
+    "i05-gate-channel:transcripts:T66",
+    "i05-gate-channel:transcripts:T67",
+    "i05-gate-channel:transcripts:T69"
+   ],
+   "G_text": [
+    "admission-semantics-v4/README.md",
+    "i07-policy-write-v3/README.md",
+    "i05-gate-channel-authority.json",
+    "i05-gate-channel-v2-authority.json",
+    "i05-gate-channel-v4-authority.json",
+    "admission-semantics-v2-authority.json",
+    "admission-channel-v3-authority.json",
+    "edge-record-v9-authority.json",
+    "edge-record-v12-authority.json"
+   ],
+   "M": [],
+   "R": [
+    "i05-gate-channel-v3:transcripts:T27",
+    "i05-gate-channel-v3:transcripts:T28",
+    "i05-gate-channel-v3:transcripts:T30",
+    "i05-gate-channel-v3:transcripts:T31",
+    "i05-gate-channel-v3:transcripts:T90"
+   ],
+   "S": [],
+   "counts": {
+    "D": 0,
+    "G": 161,
+    "G_text": 9,
+    "M": 0,
+    "R": 5,
+    "S": 0,
+    "T04": 0
+   },
+   "covering_families": [
+    "G",
+    "G_text",
+    "R"
+   ],
+   "r10_residual": null,
+   "residual": true,
+   "status": "COVERED",
+   "tokens": [
+    "A3",
+    "ADMITTED_BEFORE_INVALIDATION",
+    "CREATE",
+    "RBAC"
+   ]
+  },
+  "19": {
+   "D": [],
+   "G": [],
+   "G_text": [],
+   "M": [
+    "A20",
+    "A21",
+    "A24",
+    "A25",
+    "A52",
+    "A63",
+    "A64",
+    "A66"
+   ],
+   "R": [],
+   "S": [
+    "HOST_CONTAINMENT#3"
+   ],
+   "counts": {
+    "D": 0,
+    "G": 0,
+    "G_text": 0,
+    "M": 8,
+    "R": 0,
+    "S": 1,
+    "T04": 0
+   },
+   "covering_families": [
+    "S",
+    "M"
+   ],
+   "r10_residual": null,
+   "residual": true,
+   "status": "COVERED",
+   "tokens": [
+    "RefuseManualStart",
+    "S4",
+    "planeon_containment_enabled=0",
+    "secure_mode_policyload"
+   ]
+  },
+  "20": {
+   "D": [
+    "hs53:H1"
+   ],
+   "G": [
+    "i05-gate-channel-v2:configRefusals:K02",
+    "i05-gate-channel-v2:transcripts:T47",
+    "i05-gate-channel-v2:transcripts:T95",
+    "i05-gate-channel-v2:transcripts:T96",
+    "i05-gate-channel-v3:configRefusals:K02",
+    "i05-gate-channel-v3:transcripts:T47",
+    "i05-gate-channel-v3:transcripts:T95",
+    "i05-gate-channel-v3:transcripts:T96"
+   ],
+   "G_text": [],
+   "M": [
+    "A01",
+    "A02",
+    "A60.1.name_connect",
+    "A60.2.name_connect",
+    "A60.3.name_connect",
+    "A60.4.name_connect",
+    "A60.5.name_connect",
+    "A60.6.name_connect"
+   ],
+   "R": [],
+   "S": [],
+   "counts": {
+    "D": 1,
+    "G": 8,
+    "G_text": 0,
+    "M": 9,
+    "R": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "covering_families": [
+    "M",
+    "D",
+    "G"
+   ],
+   "r10_residual": null,
+   "residual": false,
+   "status": "COVERED",
+   "tokens": [
+    "P2",
+    "name_connect"
+   ]
+  },
+  "21": {
+   "D": [],
+   "G": [
+    "i05-gate-channel:transcripts:T25",
+    "i05-gate-channel:transcripts:T31",
+    "i05-gate-channel:transcripts:T33",
+    "i05-gate-channel:transcripts:T34",
+    "i05-gate-channel:transcripts:T58",
+    "i05-gate-channel:transcripts:T66",
+    "i05-gate-channel:transcripts:T67",
+    "i05-gate-channel:transcripts:T74",
+    "i05-gate-channel:transcripts:T83",
+    "i05-gate-channel-v2:frames:G27",
+    "i05-gate-channel-v2:transcripts:T25",
+    "i05-gate-channel-v2:transcripts:T31"
+   ],
+   "G_text": [
+    "admission-semantics-v4/README.md",
+    "i07-policy-write-v3/README.md"
+   ],
+   "M": [],
+   "R": [
+    "i05-gate-channel-v3:transcripts:T25"
+   ],
+   "S": [],
+   "counts": {
+    "D": 0,
+    "G": 103,
+    "G_text": 2,
+    "M": 0,
+    "R": 1,
+    "S": 0,
+    "T04": 0
+   },
+   "covering_families": [
+    "G",
+    "G_text",
+    "R"
+   ],
+   "r10_residual": null,
+   "residual": true,
+   "status": "COVERED",
+   "tokens": [
+    "C6",
+    "HELD"
+   ]
+  },
+  "22": {
+   "D": [],
+   "G": [
+    "i05-gate-channel:transcripts:T05",
+    "i05-gate-channel:transcripts:T06",
+    "i05-gate-channel-v2:transcripts:T05",
+    "i05-gate-channel-v2:transcripts:T06",
+    "i05-gate-channel-v3:transcripts:T05",
+    "i05-gate-channel-v3:transcripts:T06"
+   ],
+   "G_text": [
+    "i05-gate-channel-v4/README.md"
+   ],
+   "M": [],
+   "R": [
+    "i05-gate-channel-v3:transcripts:T02",
+    "i05-gate-channel-v3:transcripts:T03",
+    "i05-gate-channel-v3:transcripts:T04",
+    "i05-gate-channel-v3:transcripts:T05",
+    "i05-gate-channel-v3:transcripts:T06",
+    "i05-gate-channel-v3:transcripts:T13",
+    "i05-gate-channel-v3:transcripts:T39",
+    "i05-gate-channel-v3:transcripts:T43"
+   ],
+   "S": [],
+   "counts": {
+    "D": 0,
+    "G": 6,
+    "G_text": 1,
+    "M": 0,
+    "R": 8,
+    "S": 0,
+    "T04": 0
+   },
+   "covering_families": [
+    "G",
+    "G_text",
+    "R"
+   ],
+   "r10_residual": "C4 stamp-equality branch declared unreachable (closed by C2's flush at ARM(B); vectored as T02/T03 only)",
+   "residual": true,
+   "status": "COVERED",
+   "tokens": [
+    "C4"
+   ]
+  },
+  "23": {
+   "D": [],
+   "G": [
+    "i05-gate-channel:transcripts:T30",
+    "i05-gate-channel:transcripts:T73",
+    "i05-gate-channel-v2:transcripts:T30",
+    "i05-gate-channel-v2:transcripts:T73",
+    "i05-gate-channel-v3:transcripts:T30",
+    "i05-gate-channel-v3:transcripts:T73",
+    "i05-gate-channel-v3:transcripts:T116",
+    "i07-policy-write-v2:transcripts:T53",
+    "i07-policy-write-v3:transcripts:T53"
+   ],
+   "G_text": [
+    "admission-semantics-v4/README.md",
+    "i07-policy-write-v3/README.md"
+   ],
+   "M": [
+    "A08"
+   ],
+   "R": [],
+   "S": [
+    "EFFECT_GATE#1",
+    "POLICY_WRITER#0"
+   ],
+   "counts": {
+    "D": 0,
+    "G": 9,
+    "G_text": 2,
+    "M": 1,
+    "R": 0,
+    "S": 2,
+    "T04": 0
+   },
+   "covering_families": [
+    "S",
+    "M",
+    "G",
+    "G_text"
+   ],
+   "r10_residual": null,
+   "residual": true,
+   "status": "COVERED",
+   "tokens": [
+    "I07",
+    "WRITE_OBJECT"
+   ]
+  },
+  "24": {
+   "D": [],
+   "G": [],
+   "G_text": [],
+   "M": [],
+   "R": [],
+   "S": [],
+   "counts": {
+    "D": 0,
+    "G": 0,
+    "G_text": 0,
+    "M": 0,
+    "R": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "covering_families": [],
+   "r10_residual": null,
+   "residual": false,
+   "status": "UNRESOLVED",
+   "tokens": []
+  },
+  "25": {
+   "D": [
+    "hs53:H1",
+    "hs53:O-T04-HS53"
+   ],
+   "G": [],
+   "G_text": [],
+   "M": [
+    "A60.8.connectto",
+    "A60.9.connectto",
+    "A60.10.connectto",
+    "A60.11.connectto",
+    "A60.12.connectto",
+    "A60.13.connectto",
+    "A60.14.connectto"
+   ],
+   "R": [],
+   "S": [
+    "BROKER#1",
+    "EFFECT_GATE#1",
+    "OBSERVER#1",
+    "OBSERVER#10",
+    "POLICY_WRITER#0",
+    "SERVER#1"
+   ],
+   "counts": {
+    "D": 2,
+    "G": 0,
+    "G_text": 0,
+    "M": 7,
+    "R": 0,
+    "S": 6,
+    "T04": 1
+   },
+   "covering_families": [
+    "S",
+    "M",
+    "D"
+   ],
+   "r10_residual": null,
+   "residual": false,
+   "status": "COVERED",
+   "tokens": [
+    "AF_UNIX",
+    "connectto"
+   ]
+  },
+  "26": {
+   "D": [],
+   "G": [
+    "i05-gate-channel-v2:configRefusals:K02",
+    "i05-gate-channel-v2:transcripts:T47",
+    "i05-gate-channel-v2:transcripts:T95",
+    "i05-gate-channel-v2:transcripts:T96",
+    "i05-gate-channel-v2:transcripts:T100",
+    "i05-gate-channel-v2:transcripts:T101",
+    "i05-gate-channel-v2:transcripts:T102",
+    "i05-gate-channel-v2:transcripts:T103",
+    "i05-gate-channel-v2:transcripts:T104",
+    "i05-gate-channel-v3:configRefusals:K02",
+    "i05-gate-channel-v3:transcripts:T47",
+    "i05-gate-channel-v3:transcripts:T95"
+   ],
+   "G_text": [],
+   "M": [
+    "A01",
+    "A02",
+    "A10"
+   ],
+   "R": [],
+   "S": [],
+   "counts": {
+    "D": 0,
+    "G": 18,
+    "G_text": 0,
+    "M": 3,
+    "R": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "covering_families": [
+    "M",
+    "G"
+   ],
+   "r10_residual": null,
+   "residual": false,
+   "status": "COVERED",
+   "tokens": [
+    "CSR",
+    "P2",
+    "P4"
+   ]
+  },
+  "27": {
+   "D": [
+    "hs53:E1",
+    "hs53:H2",
+    "he5:E1"
+   ],
+   "G": [
+    "i05-gate-channel-v2:frames:G10",
+    "i05-gate-channel-v2:frames:G32",
+    "i05-gate-channel-v3:frames:G32",
+    "i05-gate-channel-v3:frames:G34",
+    "admission-semantics-v2:claims:Q01",
+    "admission-semantics-v2:claims:Q02",
+    "admission-semantics-v2:claims:Q03",
+    "admission-semantics-v2:claims:Q06",
+    "admission-semantics-v2:claims:Q12",
+    "admission-semantics-v2:claims:Q14",
+    "admission-semantics-v3:claims:Q19",
+    "admission-semantics-v3:claims:Q20"
+   ],
+   "G_text": [
+    "i05-gate-channel-v4/README.md",
+    "admission-semantics-v4/README.md",
+    "i07-policy-write-v3/README.md",
+    "i05-gate-channel-v2-authority.json",
+    "admission-semantics-v2-authority.json",
+    "artifact-edges/operator-harness-engineering-v12.json"
+   ],
+   "M": [
+    "A47"
+   ],
+   "R": [],
+   "S": [
+    "POLICY_WRITER#0"
+   ],
+   "counts": {
+    "D": 3,
+    "G": 22,
+    "G_text": 6,
+    "M": 1,
+    "R": 0,
+    "S": 1,
+    "T04": 0
+   },
+   "covering_families": [
+    "S",
+    "M",
+    "D",
+    "G",
+    "G_text"
+   ],
+   "r10_residual": null,
+   "residual": true,
+   "status": "COVERED",
+   "tokens": [
+    "BPF_OBJ_GET",
+    "CAP_SYS_ADMIN",
+    "GET_FD_BY_ID",
+    "v2"
+   ]
+  },
+  "28": {
+   "D": [],
+   "G": [],
+   "G_text": [
+    "i05-gate-channel-v4/README.md"
+   ],
+   "M": [],
+   "R": [],
+   "S": [],
+   "counts": {
+    "D": 0,
+    "G": 0,
+    "G_text": 1,
+    "M": 0,
+    "R": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "covering_families": [
+    "G_text"
+   ],
+   "r10_residual": "no native-profile v4 T04 proof names A17, A18 or A38; T04-LABELS is a precondition only",
+   "residual": true,
+   "status": "COVERED",
+   "tokens": [
+    "dir search",
+    "prog_run"
+   ]
+  }
+ }
+}

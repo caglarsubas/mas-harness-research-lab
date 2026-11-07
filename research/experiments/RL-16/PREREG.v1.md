@@ -1,0 +1,38 @@
+# RL-16 preregistration: the cost model of the signed checkpoint (H-02, cost-model half)
+
+Status: FROZEN v1 (2026-11-05, light; the monitor's RESUME word: "Then RL-16"). This file's sha256 goes into the register. The shadow-period half of H-02 (the detection-delay measurement on live heads) waits for MET-PERF-047's first shadow verify and is a later id; this id covers what the published records allow today: a re-derivation, a growth fit, and a projection.
+
+Integrity check before the freeze, by counts and figures only: R00's cost split at 280 (11 lines; the figures quoted in DESIGN_CC2 rev 2 section 2) names argv 63's serial total, the chain-layer and head seconds, five slot bands and argv 63's K 8 wall; RL-01's verify-run dataset holds 27 verifier check-run summaries (PRs 207-232), 26 successful, 24 with a slot through RL-01's merge-decision rows, 23 successful with a slot in 253-278, an elapsed time and a run-mean load (RL-01 fitted the same 23). No fit was run before the freeze beyond RL-01's own (published; its K coefficient was unidentified because K and the test count were collinear, r 0.98).
+
+Researcher degrees of freedom, declared: the lab read DESIGN_CC2 rev 2 (through a masking filter) and its cost-split companion before this PREREG, so R00's figures 0.645 and 0.4195 were known when H-02a was written: H-02a is a re-derivation check of a published figure, not a discovery. The "about 13 s per slot" figure is the programme's own (RD-REPORT, from dry runs; RS-1 repeats it as reported). RL-01's datasets were extracted by the lab for H-07, before H-02 was framed (R7); the slot window 253-278 is RL-01's.
+
+## 1. Hypotheses (falsifiable)
+
+H-02a (re-derivation): from the published cost split's slot bands, the attested share of argv 63's serial time (the layers below the head) is 0.645 and the kept fraction at a 10 percent sample is 0.355 + 0.645 x 0.10 = 0.4195, as R00 states. Gate: PASS when the bands' sum agrees with the reported older-layer seconds within 1 percent, the lab's attested fraction is within 0.005 of 0.645 and the lab's kept fraction at 0.10 is within 0.005 of 0.4195; FAIL when any of the three differs by more; no UNRESOLVED region: the arithmetic is deterministic and every figure is present (a missing figure stops the model script before any output and is recorded as an instrument stop).
+
+H-02b (growth): in the K 6 era (slots 253-278, successful verifies), verify wall time grows with the slot at equal host load by about 13 s per slot, the report's figure. Model: elapsed = a + g x slot + l x load, ordinary least squares on the 23 runs; g's 95 percent percentile interval by a pairs bootstrap over runs (1,000 resamples, seed 20261105; a resample with fewer than 3 distinct slots or a singular system is dropped and counted; fewer than 900 defined resamples is UNRESOLVED). Minimum effect of interest: 5 s per slot either way (at 13 s per slot the floor rule fires every two or three slots; at 8 or less it would fire half as often; at 18 or more twice as often). Gate: PASS when the interval contains 13 and the estimate lies in [8, 18]; FAIL when the interval lies entirely outside [8, 18]; UNRESOLVED otherwise (the interval overlaps [8, 18] but PASS is not met, or fewer than 15 runs, or no interval). Expected outcome class, stated in advance: with 23 runs, a load coefficient near 50 s per unit load (RL-01) and slot and test count collinear, the interval will be wide; UNRESOLVED is the most likely class.
+
+H-02c (projection and detection delay), descriptive and never gated: for sample fractions 0.05, 0.10 and 0.20 with cadence 10, the kept fraction, argv 63's projected K 8 wall (R00's proportional-scaling method, labelled an estimate), the projected dry-run total (the other argv unchanged; the reader's own seconds excluded, unmeasured), the growth bound per cadence (10 x g), and the detection-delay model for a defect in an attested layer: detected in a verify with probability f, with certainty at the cadence rewrite; P(detected within k verifies) and the expected delay, maximum 10.
+
+Overall verdict: PASS when H-02a and H-02b both PASS; FAIL when either FAILs; UNRESOLVED otherwise.
+
+## 2. Inputs (pinned)
+
+| input | sha256 | origin |
+|---|---|---|
+| `data/cost_split280.txt` (R00's cost split at 280, byte-identical to its TOOLS companion of DESIGN_CC2 rev 2; read through the masking filter, which changed nothing) | fd05f765e7067b7d7aec4a38c5fa3e0eed9472af33a124d399250f0185f70872 | R00, harness-onion main c1b838be (slot 280); the TOOLS file carries no commit; the figures are those DESIGN_CC2 rev 2 (3b742672) publishes |
+| `experiments/RL-01/data/I1_rows.tsv` (merge-decision rows: pr, slot, elapsed, load, test count, conclusion, dates) | 6c5a1c58e087b74e5584ea218ff3c3660a087266022fe8266f626606bf232cec | RL-01, extracted from the bridge's merge-decision records at commit ee4f3a08 through the masking reader |
+| `experiments/RL-01/inputs/I2_verify_runs.tsv` (27 verifier check-run summaries, PRs 207-232; numeric and enum columns only) | 808bf769ab2bbc1e45a768816bc1bbf28ccbea052ff20a281b5b4c003532fb4b | RL-01, the monitor's masked export (MON-RL-M2) |
+
+Constants in the evaluator, as published: 0.645 and 0.4195 (DESIGN_CC2 rev 2 section 2); 13 s per slot (RD-REPORT); the band [8, 18] is the lab's.
+
+## 3. Design and compute (the lab's instruments, frozen)
+
+- Model script `tools/rl16_model.py`, sha256 1d171daedcf3c9cc0b40aeb4dc80302a4e8337aa1544ef0ee18d7412b91c7b8c: parses the cost split, sums the bands, fits the growth model with the bootstrap, computes the projection and the delay model; writes `data/rl16_model.json` (an output).
+- Evaluator `tools/rl16_eval.py`, sha256 d1666c73d0321c6b827c816b6a3e99826c790b36df26ed02a3145860e510815d: applies the gates above and writes `RESULTS.json` in the verdict-ledger form naming its own digest. The run pass writes no verdict by hand. Both are the lab's instruments on the bridge working tree, no commit of their own (the monitor's checkpoint commits `research/**`), custody by these 64-character digests checked by script at the freeze; a change after this freeze is a new PREREG version.
+- Compute: light, this host, standard library, CPython 3.12.4 (PATH default), `python3 -I -B`, under 2 s; deterministic apart from the seeded bootstrap; no GO needed; stream S2, queue class X; no ECU (not a product-coupled run).
+- Privacy: `privacy_scan.py` over every file of the folder before the report.
+
+## 4. What is PASS, FAIL, UNRESOLVED
+
+As the gates in section 1. A FAIL or UNRESOLVED is recorded as the finding; no re-tuning of the band, the window or the model under this id. The shadow-period measurement is a new id that names this one.

@@ -1,0 +1,144 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-30",
+   "contextId": "lab",
+   "establishedValue": "precondition: baseline build of the unmodified copy exit 0 in 0.81 s",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-30",
+   "contextId": "lab",
+   "establishedValue": "seeded attributed recall 10 of 18 (any refusal 14); per class [attributed, refused, n] {\"M1\": [3, 3, 3], \"M2\": [3, 3, 3], \"M3\": [2, 3, 3], \"M4\": [0, 2, 3], \"M5\": [2, 3, 3], \"M6\": [0, 0, 3]}; uncaught: [('M3', 'W04-PROBES-HUMAN', 'unattributed refusal'), ('M4', 'LINUX-PROBE-KIT-ADMISSION', 'unattributed refusal'), ('M4', 'W03', 'unattributed refusal'), ('M4', 'W04', 'built'), ('M5', 'MESH-TOLERANCE-001', 'unattributed refusal'), ('M6', 'RS-MEMO-RDACADEMIC', 'built'), ('M6', 'MASS', 'built'), ('M6', 'Bitter Lesson of Tool Calling', 'built')]; bound: 18 of 18",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-30",
+   "contextId": "lab",
+   "establishedValue": "controls refused 0 of 3 (bound 0): []",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-30",
+   "contextId": "lab",
+   "establishedValue": "refusal messages (validator's words, first 120 characters) with attribution: [{\"class\": \"M1\", \"target\": \"LINUX-PROBE-KIT-SCOPE\", \"field\": \"dependsOn\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: LINUX-PROBE-KIT-SCOPE: unknown dependency NO-SUCH-ITEM-999\"}, {\"class\": \"M1\", \"target\": \"UAT-CAMPAIGN-001\", \"field\": \"dependsOn\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: UAT-CAMPAIGN-001: unknown dependency NO-SUCH-ITEM-999\"}, {\"class\": \"M1\", \"target\": \"TECH-TRUTH-001\", \"field\": \"dependsOn\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: TECH-TRUTH-001: unknown dependency NO-SUCH-ITEM-999\"}, {\"class\": \"M2\", \"target\": \"PERF-035\", \"field\": \"evidenceState\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: PERF-035 is DONE but its evidenceState is PLANNED\"}, {\"class\": \"M2\", \"target\": \"SECCOMP-OBSERVER-LISTENER\", \"field\": \"evidenceState\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: SECCOMP-OBSERVER-LISTENER is DONE but its evidenceState is PLANNED\"}, {\"class\": \"M2\", \"target\": \"W02-CLEANUP\", \"field\": \"evidenceState\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: W02-CLEANUP is DONE but its evidenceState is PLANNED\"}, {\"class\": \"M3\", \"target\": \"KN-DOM-ADOPT-001\", \"field\": \"benefit\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: KN-DOM-ADOPT-001: rating B2 out of range\"}, {\"class\": \"M3\", \"target\": \"ADR-AMEND-0001-0002\", \"field\": \"benefit\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: ADR-AMEND-0001-0002: rating B2 out of range\"}, {\"class\": \"M3\", \"target\": \"W04-PROBES-HUMAN\", \"field\": \"benefit\", \"exit\": 1, \"attributed\": false, \"message\": \"roadmap.json: W04-PROBES-HUMAN: factor keys\"}, {\"class\": \"M4\", \"target\": \"LINUX-PROBE-KIT-ADMISSION\", \"field\": \"status\", \"exit\": 1, \"attributed\": false, \"message\": \"roadmap.json: LINUX-PROBE-KIT-001 is BLOCKED with nothing blocking it\"}, {\"class\": \"M4\", \"target\": \"W03\", \"field\": \"status\", \"exit\": 1, \"attributed\": false, \"message\": \"roadmap.json: W05 is BLOCKED with nothing blocking it\"}, {\"class\": \"M4\", \"target\": \"W04\", \"field\": \"status\", \"exit\": 0, \"attributed\": false, \"message\": \"\"}, {\"class\": \"M5\", \"target\": \"HE-GATE-002\", \"field\": \"harnesses\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: HE-GATE-002: harnesses needs a primary list, a secondary list and a why\"}, {\"class\": \"M5\", \"target\": \"MESH-TOLERANCE-001\", \"field\": \"codebases\", \"exit\": 1, \"attributed\": false, \"message\": \"roadmap.json: MESH-TOLERANCE-001: unknown codebase reference\"}, {\"class\": \"M5\", \"target\": \"CONF-DATA-001\", \"field\": \"id\", \"exit\": 1, \"attributed\": true, \"message\": \"roadmap.json: duplicate item id\"}, {\"class\": \"M6\", \"target\": \"RS-MEMO-RDACADEMIC\", \"field\": \"sha256\", \"exit\": 0, \"attributed\": false, \"message\": \"\"}, {\"class\": \"M6\", \"target\": \"MASS\", \"field\": \"sha256\", \"exit\": 0, \"attributed\": false, \"message\": \"\"}, {\"class\": \"M6\", \"target\": \"Bitter Lesson of Tool Calling\", \"field\": \"sha256\", \"exit\": 0, \"attributed\": false, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"RO-IMPL-R10\", \"field\": \"description\", \"exit\": 0, \"attributed\": false, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"updates\", \"field\": \"updates\", \"exit\": 0, \"attributed\": false, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"W04\", \"field\": \"title\", \"exit\": 0, \"attributed\": false, \"message\": \"\"}]",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+   ],
+   "claimId": "H-30",
+   "value": "attributed recall 10/18 (any refusal 14/18); false positives 0/3; precision 0.714; per class [attributed, refused, n] {\"M1\": [3, 3, 3], \"M2\": [3, 3, 3], \"M3\": [2, 3, 3], \"M4\": [0, 2, 3], \"M5\": [2, 3, 3], \"M6\": [0, 0, 3]}; baseline exit 0 in 0.81 s",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-30",
+   "delivered": "attributed recall 10/18 (any refusal 14/18); false positives 0/3; precision 0.714; per class [attributed, refused, n] {\"M1\": [3, 3, 3], \"M2\": [3, 3, 3], \"M3\": [2, 3, 3], \"M4\": [0, 2, 3], \"M5\": [2, 3, 3], \"M6\": [0, 0, 3]}; baseline exit 0 in 0.81 s",
+   "requirement": "H-30: the roadmap build's validators refuse every seeded inconsistency class and no benign control edit",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:ed7ce16d71376706b777b0623d7dec7e158c40219edf485bfd002ac018492cb1",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl15_mutate.run-001"
+  },
+  {
+   "contentDigest": "sha256:87f4ad6201fa260575f701ce24ed20039ad1e0d5d792d9c3c9b2bc20ddc1c580",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:bbe2877cf6960fc57c2414a1c0cca9e8751b5a099dca1310d0ce2ce133d91773",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl15_eval"
+  }
+ ],
+ "ledgerId": "RL-15-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:1e8dfc4a03dd9ba771282060fa13643fb4bee51c1f209e32e5e723731a51e77f"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:ed7ce16d71376706b777b0623d7dec7e158c40219edf485bfd002ac018492cb1",
+   "sha256:87f4ad6201fa260575f701ce24ed20039ad1e0d5d792d9c3c9b2bc20ddc1c580",
+   "sha256:1e8dfc4a03dd9ba771282060fa13643fb4bee51c1f209e32e5e723731a51e77f",
+   "sha256:bbe2877cf6960fc57c2414a1c0cca9e8751b5a099dca1310d0ce2ce133d91773"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "baseline_exit": 0,
+   "classes_partial": 2,
+   "classes_uncaught": 2,
+   "controls": 3,
+   "controls_refused": 0,
+   "interpreter": "3.12.4",
+   "precision_permille": 714,
+   "seeded": 18,
+   "seeded_attributed": 10,
+   "seeded_crashed": 0,
+   "seeded_refused_any": 14
+  },
+  "status": "FAIL",
+  "unresolvedChecks": []
+ }
+}

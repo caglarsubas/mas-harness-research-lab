@@ -1,0 +1,102 @@
+{
+ "K_range": [
+  253.0,
+  278.0
+ ],
+ "T_summary": {
+  "max": 1116.0,
+  "median": 935.0,
+  "min": 726.0
+ },
+ "dropped": {
+  "no_slot": 3,
+  "no_tests_passed": 1
+ },
+ "fit1_T": {
+  "bC": {
+   "ci95": [
+    -194.3488,
+    152.997
+   ],
+   "estimate": -25.921,
+   "excludes_zero": false
+  },
+  "bK": {
+   "ci95": [
+    -75.913,
+    265.1279
+   ],
+   "estimate": 99.8634,
+   "excludes_zero": false
+  },
+  "bL": {
+   "ci95": [
+    17.0497,
+    85.0782
+   ],
+   "estimate": 49.46,
+   "excludes_zero": true
+  },
+  "bootstrap_draws": 1000,
+  "clusters": 23,
+  "intercept": {
+   "ci95": [
+    902.0969,
+    959.9625
+   ],
+   "estimate": 931.4348,
+   "excludes_zero": true
+  },
+  "n": 23,
+  "r2": 0.6265
+ },
+ "fit2_logT": {
+  "bC": {
+   "ci95": [
+    -0.1984,
+    0.1988
+   ],
+   "estimate": -0.0064,
+   "excludes_zero": false
+  },
+  "bK": {
+   "ci95": [
+    -0.1105,
+    0.2728
+   ],
+   "estimate": 0.0878,
+   "excludes_zero": false
+  },
+  "bL": {
+   "ci95": [
+    0.0175,
+    0.0946
+   ],
+   "estimate": 0.0539,
+   "excludes_zero": true
+  },
+  "bootstrap_draws": 1000,
+  "clusters": 23,
+  "intercept": {
+   "ci95": [
+    6.7984,
+    6.8624
+   ],
+   "estimate": 6.8306,
+   "excludes_zero": true
+  },
+  "n": 23,
+  "r2": 0.6201
+ },
+ "pairwise_r": {
+  "CK": 0.982,
+  "CT": 0.636,
+  "KT": 0.641,
+  "LC": -0.124,
+  "LK": -0.161,
+  "LT": 0.353
+ },
+ "resamples": 1000,
+ "rows_used": 23,
+ "seed": 20261104
+}

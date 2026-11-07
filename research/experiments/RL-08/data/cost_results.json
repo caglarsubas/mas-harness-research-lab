@@ -1,0 +1,214 @@
+{
+ "B1_per_argv_cpu": {
+  "gini": 0.914,
+  "n": 64,
+  "top_1_share": 0.8639,
+  "top_5": [
+   [
+    "argv63",
+    0.8639
+   ],
+   [
+    "argv02",
+    0.0142
+   ],
+   [
+    "argv27",
+    0.0057
+   ],
+   [
+    "argv30",
+    0.0055
+   ],
+   [
+    "argv31",
+    0.0049
+   ]
+  ],
+  "top_k": 3,
+  "top_k_share": 0.8838,
+  "total": 3282.0099999999998
+ },
+ "B2_per_file_cpu": {
+  "gini": 0.4826,
+  "n": 141,
+  "top_5": [
+   [
+    "tests/test_native_profile_v4.py",
+    0.0617
+   ],
+   [
+    "tests/test_credential_lifecycle.py",
+    0.0419
+   ],
+   [
+    "tests/test_native_profile_v5.py",
+    0.0417
+   ],
+   [
+    "tests/test_selinux_matrix_v4.py",
+    0.0295
+   ],
+   [
+    "tests/test_ci_performance.py",
+    0.0271
+   ]
+  ],
+  "top_k": 14,
+  "top_k_share": 0.3449,
+  "total": 2580.765
+ },
+ "B3_per_layer_authority_bytes": {
+  "gini": 0.5322,
+  "n": 60,
+  "top_5": [
+   [
+    "02",
+    0.1221
+   ],
+   [
+    "34",
+    0.0415
+   ],
+   [
+    "35",
+    0.0392
+   ],
+   [
+    "33",
+    0.0373
+   ],
+   [
+    "27",
+    0.0369
+   ]
+  ],
+  "top_k": 6,
+  "top_k_share": 0.3137,
+  "total": 2099992579007
+ },
+ "B4_generic_scaffold_share": 0.3594,
+ "ab_keys": [
+  "B1",
+  "B2",
+  "B3",
+  "B4",
+  "B5",
+  "collected",
+  "laterLever",
+  "mode",
+  "modeNote",
+  "notPassedInHeadRuns",
+  "ownerAcceptance",
+  "ownerMode",
+  "plan",
+  "schemaVersion",
+  "serialSample",
+  "source",
+  "subject"
+ ],
+ "argv63_cpu_s": 2580.761,
+ "argv_total_cpu_s": 3282.0,
+ "argv_total_wall_s": 1130.7,
+ "authority_reads_per_path": {
+  "gini": 0.4315,
+  "n": 88,
+  "top_5": [
+   [
+    "architecture/i06-backend-profile-v4-authority.json",
+    0.055
+   ],
+   [
+    "architecture/diagnostic-caps-authority.json",
+    0.0543
+   ],
+   [
+    "architecture/lab-run-plan-authority.json",
+    0.0516
+   ],
+   [
+    "architecture/w03-plan-amend-2-authority.json",
+    0.0417
+   ],
+   [
+    "architecture/ci-runner-admission-authority.json",
+    0.0394
+   ]
+  ],
+  "top_k": 5,
+  "top_k_share": 0.242,
+  "total": 6360947
+ },
+ "gate": {
+  "B2_top_decile_share": 0.3449,
+  "B3_top_decile_share": 0.3137,
+  "outcome": "INCONCLUSIVE"
+ },
+ "per_layer_authority_reads": {
+  "gini": 0.5383,
+  "n": 60,
+  "top_5": [
+   [
+    "02",
+    0.1208
+   ],
+   [
+    "34",
+    0.042
+   ],
+   [
+    "35",
+    0.0397
+   ],
+   [
+    "33",
+    0.0378
+   ],
+   [
+    "27",
+    0.0375
+   ]
+  ],
+  "top_k": 6,
+  "top_k_share": 0.315,
+  "total": 4439153
+ },
+ "per_layer_own_authority_calls": {
+  "gini": 0.5382,
+  "n": 60,
+  "top_5": [
+   [
+    "02",
+    0.1218
+   ],
+   [
+    "34",
+    0.042
+   ],
+   [
+    "35",
+    0.0398
+   ],
+   [
+    "33",
+    0.0378
+   ],
+   [
+    "27",
+    0.0373
+   ]
+  ],
+  "top_k": 6,
+  "top_k_share": 0.3158,
+  "total": 4210468
+ },
+ "run": "20261021T1041",
+ "scaffold_class_cpu_s": {
+  "test_catalog_refuses_all_packet_substitution_and_loss": 88.654,
+  "test_every_predecessor_payload_is_checked_without_a_verdict_cache": 170.414,
+  "test_exact_current_source_and_complete_history_chain": 321.868,
+  "test_exact_inverse_and_forward_test_round_trip_across_layers": 19.205,
+  "test_newest_authority_is_freshly_checked_on_every_route": 84.507
+ },
+ "tests": 16560
+}

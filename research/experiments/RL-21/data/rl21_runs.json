@@ -1,0 +1,201 @@
+{
+ "authorityFiles": 114,
+ "broken": [
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-013",
+    "MET-PERF-018",
+    "MET-REPAIR-018"
+   ],
+   "path": "README.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-008",
+    "MET-PERF-013",
+    "MET-PERF-007"
+   ],
+   "path": "docs/DEVELOPMENT_STATUS.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-008",
+    "MET-PERF-013",
+    "MET-PERF-007"
+   ],
+   "path": "docs/MASTER_DEVELOPMENT_PLAN.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-008",
+    "MET-PERF-013",
+    "MET-PERF-007"
+   ],
+   "path": "docs/READINESS_INDEX.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-018",
+    "MET-ENFORCE-001",
+    "MET-PERF-017"
+   ],
+   "path": "docs/alpha-2/ACCOUNTING_SCOPE_AMENDMENT.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-013",
+    "MET-PERF-018",
+    "MET-REPAIR-018"
+   ],
+   "path": "docs/alpha-2/BENCHMARK_TRANSPORT.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-013",
+    "MET-PERF-007",
+    "MET-PERF-018"
+   ],
+   "path": "docs/alpha-2/CANONICAL_REPAIR_PLAN.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-018",
+    "MET-REPAIR-018",
+    "MET-ENFORCE-001"
+   ],
+   "path": "docs/alpha-2/COMPLETION_INTEGRATION.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-018",
+    "MET-REPAIR-018",
+    "MET-REPAIR-017"
+   ],
+   "path": "docs/alpha-2/CONFORMANCE_COMPLETION.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-013",
+    "MET-PERF-018",
+    "MET-REPAIR-018"
+   ],
+   "path": "docs/alpha-2/DOCUMENT_REPAIR_AUTHORITY.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-018",
+    "MET-REPAIR-018",
+    "MET-PERF-011"
+   ],
+   "path": "docs/alpha-2/DOCUMENT_REPAIR_PLAN.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-018",
+    "MET-ENFORCE-001",
+    "MET-PERF-014"
+   ],
+   "path": "docs/alpha-2/FACTORY_DIAGNOSTICS.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-018",
+    "MET-ENFORCE-001",
+    "MET-PERF-015"
+   ],
+   "path": "docs/alpha-2/GUARD_COST_REPAIR.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-008",
+    "MET-PERF-013",
+    "MET-PERF-007"
+   ],
+   "path": "docs/alpha-2/LIVE_BACKEND_READINESS.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-013",
+    "MET-PERF-018",
+    "MET-REPAIR-018"
+   ],
+   "path": "docs/alpha-2/PROVIDER_ADOPTION_ROADMAP.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-008",
+    "MET-PERF-013",
+    "MET-PERF-007"
+   ],
+   "path": "docs/repositories/00-harness-engineering.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-008",
+    "MET-PERF-013",
+    "MET-PERF-007"
+   ],
+   "path": "docs/repositories/12-mas-harness-conformance-labs.md"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-018",
+    "MET-PERF-017",
+    "MET-REPAIR-019"
+   ],
+   "path": "scripts/validate_accounting_scope.py"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-008",
+    "MET-PERF-013",
+    "MET-PERF-018"
+   ],
+   "path": "scripts/validate_backend_timing.py"
+  },
+  {
+   "ownersWithoutBaselineAmongOwners": [
+    "MET-PERF-016",
+    "MET-PERF-013",
+    "MET-PERF-018",
+    "MET-REPAIR-018"
+   ],
+   "path": "scripts/validate_benchmark_transport.py"
+  }
+ ],
+ "brokenCount": 139,
+ "chained": 0,
+ "changedEntries": 16415,
+ "changedInScope": 4335,
+ "changedLinked": 4335,
+ "changedOutOfScope": 12080,
+ "changedUnlinked": [],
+ "changedUnlinkedCount": 0,
+ "created": 1547,
+ "createdTwice": [],
+ "metaAuthorities": 22,
+ "metaBaselineForm": "str",
+ "otherAuthorities": [],
+ "ownedByMoreThanOne": 139,
+ "ownedPathsDistinct": 275,
+ "packetAuthorities": 92
+}

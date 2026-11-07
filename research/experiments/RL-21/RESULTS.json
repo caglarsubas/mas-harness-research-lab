@@ -1,0 +1,163 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-26a",
+   "contextId": "lab",
+   "establishedValue": "1547 paths created by 92 packet authorities; created twice: 0 []",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-26b",
+   "contextId": "lab",
+   "establishedValue": "changes to created paths 4335 of 16415 entries (12080 outside the export's scope); creator named among the changer's baseline packets 4335; unlinked 0 []",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-26c",
+   "contextId": "lab",
+   "establishedValue": "descriptive: paths owned by more than one meta authority 139 of 275; meta authorities 22; metaBaseline is a commit id (form str), so the ownership chain is git history outside the export and is not checked here",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-26a",
+   "value": "1547 paths created by 92 packet authorities; created twice: 0 []",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C2"
+   ],
+   "claimId": "H-26b",
+   "value": "changes to created paths 4335 of 16415 entries (12080 outside the export's scope); creator named among the changer's baseline packets 4335; unlinked 0 []",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C3"
+   ],
+   "claimId": "H-26c",
+   "value": "descriptive: paths owned by more than one meta authority 139 of 275; meta authorities 22; metaBaseline is a commit id (form str), so the ownership chain is git history outside the export and is not checked here",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-26a",
+   "delivered": "1547 paths created by 92 packet authorities; created twice: 0 []",
+   "requirement": "H-26a: every path under architecture/ is created by exactly one packet authority",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-26b",
+   "delivered": "changes to created paths 4335 of 16415 entries (12080 outside the export's scope); creator named among the changer's baseline packets 4335; unlinked 0 []",
+   "requirement": "H-26b: every change to a created path names its creator among the changer's baseline packets",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-26c",
+   "delivered": "descriptive: paths owned by more than one meta authority 139 of 275; meta authorities 22; metaBaseline is a commit id (form str), so the ownership chain is git history outside the export and is not checked here",
+   "requirement": "H-26c (descriptive, not gated): ownership of paths by meta authorities",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:6ceca48c13f46581ce03ef7e3f702066e2dd519ec6060b403b877ff4cb598e78",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl21_writers.run-001"
+  },
+  {
+   "contentDigest": "sha256:62a328dd5ca1663ba9681cbbf6c241f22662078cf7d8e7189e8cfa8b6933665e",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:091bad8289062c7d2f4f90cff1449331ab9440251187d3b7f5824654e0c0d181",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl21_eval"
+  }
+ ],
+ "ledgerId": "RL-21-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:9eb0389724ea22639db59e27bf24095f9821e537573e8afc7a9e33b89fc1e57a"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:6ceca48c13f46581ce03ef7e3f702066e2dd519ec6060b403b877ff4cb598e78",
+   "sha256:62a328dd5ca1663ba9681cbbf6c241f22662078cf7d8e7189e8cfa8b6933665e",
+   "sha256:9eb0389724ea22639db59e27bf24095f9821e537573e8afc7a9e33b89fc1e57a",
+   "sha256:091bad8289062c7d2f4f90cff1449331ab9440251187d3b7f5824654e0c0d181"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "broken_chains": 139,
+   "changed_in_scope": 4335,
+   "changed_unlinked": 0,
+   "created": 1547,
+   "created_twice": 0,
+   "owned_multi": 139
+  },
+  "status": "PASS",
+  "unresolvedChecks": []
+ }
+}

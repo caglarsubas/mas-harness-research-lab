@@ -1,0 +1,171 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-10a",
+   "contextId": "lab",
+   "establishedValue": "merged records 47: with date 47, with verify wall time 47, with review count 44; minimum coverage 0.936; bound 0.8",
+   "evidence": [
+    "E1",
+    "E4",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-10a",
+   "contextId": "lab",
+   "establishedValue": "throughput: 47 merges over 15 days = 3.13 per day; per ISO week (bridge / hosted): 2026-W43 12 / 8; 2026-W44 9 / 12; 2026-W45 3 / 3; verify s per merge median 743.374 (min 5.797, max 1116.0, n 47); per harness-onion run median 929.0 (n 27); review rounds per merge median 2.0 (min 1, max 8, n 44)",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-10b",
+   "contextId": "lab",
+   "establishedValue": "MON ids 1012, rule subset 111; rule subset by category {\"BRIEFS\": 2, \"COMPUTE\": 21, \"FILES\": 1, \"MERGE\": 3, \"OTHER\": 78, \"PRIVACY\": 5, \"SESSION\": 1}; OTHER fraction 0.703 (bound: at most 0.25 for PASS, above 0.40 FAIL); slot-bound rule ids 25 (below the 40 needed for the stability split); late-half fraction in an early category 0.308",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-10b",
+   "contextId": "lab",
+   "establishedValue": "design finding: the identifiers' named segments are incident-specific (a slip, a file, a check), not categorical; a keyword taxonomy over ids cannot cover the corpus; a taxonomy needs the rule text, which is a v2 design under a new id with the monitor's read permission for rule lines",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "FAIL",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2"
+   ],
+   "claimId": "H-10a",
+   "value": "measurable; 3.13 merges per day over 15 days, median verify 743 s per merge, median 2 review rounds",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C3",
+    "C4"
+   ],
+   "claimId": "H-10b",
+   "value": "the preregistered keyword taxonomy over identifiers fails (OTHER 0.70); the identifiers are not a taxonomy",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-10a",
+   "delivered": "coverage 0.936; three series produced",
+   "requirement": "H-10a: throughput and cost per packet are measurable from the handoff and merge-decision records",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-10b",
+   "delivered": "OTHER 0.703 of the rule subset; 25 slot-bound rule ids",
+   "requirement": "H-10b: the incident-to-rule corpus forms a stable taxonomy (keyword categories over MON identifiers)",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:e57bfac9cbc1dc4e9a5fac915486bc00c18e9772aca298314337c2211f5f0c9d",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl06_process.run-001"
+  },
+  {
+   "contentDigest": "sha256:c2d49f6435cc6962f92848ce2ec6cff04176d36940ede0aa20c6c303df014c2c",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:301c2783a215f41a9f9ded842eeeffc52530822e0295f239d9694f18ae64dce1",
+   "evidenceId": "E3",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  },
+  {
+   "contentDigest": "sha256:dd4f5600906e2249f636c6ed5edd487ab05d32571b0db2bb0d3ca7cb85b55303",
+   "evidenceId": "E4",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.rl05_predicate.run-002"
+  },
+  {
+   "contentDigest": "sha256:6c5a1c58e087b74e5584ea218ff3c3660a087266022fe8266f626606bf232cec",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.rl01_extract"
+  }
+ ],
+ "ledgerId": "RL-06-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:301c2783a215f41a9f9ded842eeeffc52530822e0295f239d9694f18ae64dce1"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:e57bfac9cbc1dc4e9a5fac915486bc00c18e9772aca298314337c2211f5f0c9d",
+   "sha256:c2d49f6435cc6962f92848ce2ec6cff04176d36940ede0aa20c6c303df014c2c",
+   "sha256:301c2783a215f41a9f9ded842eeeffc52530822e0295f239d9694f18ae64dce1",
+   "sha256:dd4f5600906e2249f636c6ed5edd487ab05d32571b0db2bb0d3ca7cb85b55303",
+   "sha256:6c5a1c58e087b74e5584ea218ff3c3660a087266022fe8266f626606bf232cec"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "coverage_permille": 936,
+   "merged": 47,
+   "mon_ids": 1012,
+   "other_permille": 703,
+   "rule_ids": 111
+  },
+  "status": "FAIL",
+  "unresolvedChecks": []
+ }
+}

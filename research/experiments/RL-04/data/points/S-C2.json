@@ -1,0 +1,129 @@
+{
+ "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "points": {
+  "S-C2": {
+   "arms": {
+    "advisory": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 166666,
+       "min": 0,
+       "p50": 0,
+       "p95": 90909
+      },
+      "lastMergeTick": {
+       "max": 146,
+       "min": 108,
+       "p50": 121,
+       "p95": 141
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 27
+    },
+    "leased": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 200000,
+       "min": 0,
+       "p50": 0,
+       "p95": 125000
+      },
+      "lastMergeTick": {
+       "max": 228,
+       "min": 113,
+       "p50": 153,
+       "p95": 225
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 0
+    }
+   },
+   "d_values": [
+    0,
+    0,
+    24510,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    41666,
+    0,
+    0,
+    -200000,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6410,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "family": "CENTRAL",
+   "items": 10,
+   "paired_d": {
+    "mean": -3981.7,
+    "median": 0,
+    "negative": 1,
+    "positive": 3,
+    "zero": 28
+   },
+   "workers": 2
+  }
+ },
+ "pooled_n_ge_2": {
+  "bootstrap95": [
+   -21199.8,
+   4872.4
+  ],
+  "mean_d": -3981.7,
+  "pairs": 32,
+  "resamples": 1000,
+  "seed": 20261104
+ },
+ "seeds": 32,
+ "wall_s": {
+  "S-C2": 0.16
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-22a",
+   "contextId": "lab",
+   "establishedValue": "three lab-written instances validate against the published schemas after at most two logged repairs each (ledger 0 repairs; manifest 2; event log 2); refusals seen: manifest model/harness as objects, budget keys, lock arrays non-empty, environment digest, seed object; event log non-zero ids, branch attribute sets",
+   "evidence": [
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_SCHEMA",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-22a",
+   "contextId": "lab",
+   "establishedValue": "checker sanity: 15 of 16 ledger positive vectors pass the lab's checker; one (L13) is refused by it, a limitation of the lab's stdlib checker or a vector the contract validates by a rule outside the schema (not read); the run-manifest positives were not validated because their kind labels (comparison, manifest, record, selection, split) were not mapped to schema files by the script; recorded, not repaired",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_SCHEMA",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 2,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-22b",
+   "contextId": "lab",
+   "establishedValue": "coverage: all 11 operations mapped (5 spans: RUN, AGENT_INVOKE, MODEL_CALL, TOOL_CALL, VERIFICATION; 6 point events: HOOK, HANDOFF, MESSAGE, ENVIRONMENT, CLAIM, MERGE)",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-22b",
+   "contextId": "lab",
+   "establishedValue": "name classes over 18 dotted names: known to the lab (unverified version) 9; span-type id the lab cannot confirm 3; local extension (planeon.*) 6; overlap with the README's never-emitted list (16 names): none; convention names are from the lab's knowledge, not fetched, version unverified; the contract pins open-telemetry/semantic-conventions-genai at 4e8a2812 (development)",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-22b",
+   "contextId": "lab",
+   "establishedValue": "the pinned conventions themselves are not checked by the lab (no network); the three span-type ids are unconfirmable; the contract's builder checks them against seven pinned files, which is the contract's own evidence, not the lab's",
+   "evidence": [
+    "E7"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2"
+   ],
+   "claimId": "H-22a",
+   "value": "interchange from the schema text alone holds for the three contracts; the lab's checker has one unexplained refusal on a contract positive (C2)",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C3",
+    "C4",
+    "C5"
+   ],
+   "claimId": "H-22b",
+   "value": "coherent on coverage and naming; the pinned conventions are unverified by the lab (C5)",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-22a",
+   "delivered": "three instances written from the schemas validate after at most two logged repairs each",
+   "requirement": "H-22a: the verdict-ledger, run-manifest and run-event-log contracts can be emitted by another platform from their published schemas alone",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-22b",
+   "delivered": "11 of 11 operations mapped; names are known convention names, unconfirmable span-type ids, or planeon.* extensions; no overlap with the never-emitted list",
+   "requirement": "H-22b: the multi-agent span and metric set is a coherent extension of the GenAI semantic conventions",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS with the conventions unverified"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.export-architecture-afee03b9.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:2146d45ed8e6b7eb8da65b0848764bab2b9853afa50dbe6d511ac6119517c0c1",
+   "evidenceId": "E2",
+   "kind": "SCHEMA_RESULT",
+   "producedBy": "Research-Lab.rl13_interchange.run-001"
+  },
+  {
+   "contentDigest": "sha256:7873e5fb78d7122b538e9b0a03224f1207b0a96a052da707af8e41d7b2aed9ae",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.emitter-ledger"
+  },
+  {
+   "contentDigest": "sha256:0ffdf87d7cdfbfaaf978621e8d79470602a19028c21125964f1a07c4205372b2",
+   "evidenceId": "E4",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.emitter-manifest"
+  },
+  {
+   "contentDigest": "sha256:b7d82fa1b8933e4aa24d53e5c593bbb77f750f9eae3bfb99df3affb0822fa116",
+   "evidenceId": "E5",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.emitter-eventlog"
+  },
+  {
+   "contentDigest": "sha256:d4113a1978ab3944cda0342383d79b94aaea355ebb6ffad378e447e247799555",
+   "evidenceId": "E6",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:2f7a6389072f3ae467b897d0f1a0904d0128437f81665ec1c2e8be88eadff33e",
+   "evidenceId": "E7",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  },
+  {
+   "contentDigest": "sha256:1bc341c2b947fe2ba5a3ffe6c7030c36459967d68f3e479b7c0fe589c861e653",
+   "evidenceId": "E8",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.MAPPING"
+  }
+ ],
+ "ledgerId": "RL-13-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:2f7a6389072f3ae467b897d0f1a0904d0128437f81665ec1c2e8be88eadff33e"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "sha256:2146d45ed8e6b7eb8da65b0848764bab2b9853afa50dbe6d511ac6119517c0c1",
+   "sha256:7873e5fb78d7122b538e9b0a03224f1207b0a96a052da707af8e41d7b2aed9ae",
+   "sha256:0ffdf87d7cdfbfaaf978621e8d79470602a19028c21125964f1a07c4205372b2",
+   "sha256:b7d82fa1b8933e4aa24d53e5c593bbb77f750f9eae3bfb99df3affb0822fa116",
+   "sha256:d4113a1978ab3944cda0342383d79b94aaea355ebb6ffad378e447e247799555",
+   "sha256:2f7a6389072f3ae467b897d0f1a0904d0128437f81665ec1c2e8be88eadff33e",
+   "sha256:1bc341c2b947fe2ba5a3ffe6c7030c36459967d68f3e479b7c0fe589c861e653"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "instances_valid": 3,
+   "ledger_positives_pass": 15,
+   "names": 18,
+   "operations_mapped": 11
+  },
+  "status": "PASS",
+  "unresolvedChecks": [
+   "C2",
+   "C5"
+  ]
+ }
+}

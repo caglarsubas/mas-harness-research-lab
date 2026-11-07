@@ -1,0 +1,239 @@
+{
+ "arms": {
+  "A1/C2": {
+   "duplicatedWorkRatioPpm": {
+    "max": 142857,
+    "min": 0,
+    "p50": 0,
+    "p95": 133333
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  },
+  "A1/C3": {
+   "duplicatedWorkRatioPpm": {
+    "max": 47619,
+    "min": 41666,
+    "p50": 45454,
+    "p95": 47619
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": true,
+    "lostWorkPpm": true
+   }
+  },
+  "A1/C4": {
+   "duplicatedWorkRatioPpm": {
+    "max": 80000,
+    "min": 0,
+    "p50": 0,
+    "p95": 47619
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": true,
+    "lostWorkPpm": true
+   }
+  },
+  "A1/C5": {
+   "duplicatedWorkRatioPpm": {
+    "max": 47619,
+    "min": 40000,
+    "p50": 43478,
+    "p95": 47619
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": true,
+    "lostWorkPpm": true
+   }
+  },
+  "A1/C7": {
+   "duplicatedWorkRatioPpm": {
+    "max": 0,
+    "min": 0,
+    "p50": 0,
+    "p95": 0
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": true,
+    "lostWorkPpm": true
+   }
+  },
+  "A2/C2": {
+   "duplicatedWorkRatioPpm": {
+    "max": 142857,
+    "min": 0,
+    "p50": 0,
+    "p95": 133333
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  },
+  "A2/C3": {
+   "duplicatedWorkRatioPpm": {
+    "max": 161290,
+    "min": 27777,
+    "p50": 34482,
+    "p95": 156250
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  },
+  "A2/C4": {
+   "duplicatedWorkRatioPpm": {
+    "max": 210526,
+    "min": 0,
+    "p50": 0,
+    "p95": 191489
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  },
+  "A2/C5": {
+   "duplicatedWorkRatioPpm": {
+    "max": 225000,
+    "min": 28571,
+    "p50": 38461,
+    "p95": 166666
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  },
+  "A2/C7": {
+   "duplicatedWorkRatioPpm": {
+    "max": 235294,
+    "min": 0,
+    "p50": 0,
+    "p95": 210526
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  },
+  "A3/C2": {
+   "duplicatedWorkRatioPpm": {
+    "max": 0,
+    "min": 0,
+    "p50": 0,
+    "p95": 0
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": true,
+    "lostWorkPpm": true
+   }
+  },
+  "A3/C3": {
+   "duplicatedWorkRatioPpm": {
+    "max": 172413,
+    "min": 34482,
+    "p50": 41666,
+    "p95": 45454
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": true,
+    "lostWorkPpm": true
+   }
+  },
+  "A3/C4": {
+   "duplicatedWorkRatioPpm": {
+    "max": 74074,
+    "min": 0,
+    "p50": 0,
+    "p95": 41666
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": true,
+    "lostWorkPpm": true
+   }
+  },
+  "A3/C5": {
+   "duplicatedWorkRatioPpm": {
+    "max": 281250,
+    "min": 33333,
+    "p50": 40000,
+    "p95": 178571
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  },
+  "A3/C7": {
+   "duplicatedWorkRatioPpm": {
+    "max": 148148,
+    "min": 0,
+    "p50": 0,
+    "p95": 142857
+   },
+   "sameQuantiles": true,
+   "sameTotals": true,
+   "wouldHoldBounds": {
+    "completionPpm": true,
+    "duplicatedWorkRatioPpm": false,
+    "lostWorkPpm": true
+   }
+  }
+ },
+ "armsAllSame": true,
+ "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "classesShaMatch": true,
+ "committedClassesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "export": "mas",
+ "mode": "--arms",
+ "seeds": 32,
+ "wall_s": {
+  "arms": 2.559
+ }
+}

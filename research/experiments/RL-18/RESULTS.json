@@ -1,0 +1,172 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-31a",
+   "contextId": "lab",
+   "establishedValue": "SHAPE vectors refused 18 of 18; valid vectors accepted 25 of 25; valid comparison vectors reproduced bit for bit 17 of 17; DECISION_MISMATCH vectors flagged 2 of 2",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-31b",
+   "contextId": "lab",
+   "establishedValue": "split valid True; manifests 0 of 640 valid; records 0 of 12; comparisons 9 of 9; refusals: [{\"runId\": \"DEFENDED-C2-s1\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"runId\": \"DEFENDED-C2-s2\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"runId\": \"DEFENDED-C2-s3\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:7a38e35a496f0af6\", \"recordId\": \"DEFENDED-completionPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:ca423f9c2f991025\", \"recordId\": \"DEFENDED-duplicatedWorkRatioPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:47063b46e27dc516\", \"recordId\": \"DEFENDED-lostWorkPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}]; gate: a built instance was refused by the contract's schema or the counts are short",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-31c",
+   "contextId": "lab",
+   "establishedValue": "cells (arm, metric): A1/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A1/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior True mean 3880 half 9104, campaign bounds hold in all classes False -> DISAGREE; A1/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A2/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A2/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior False mean -16275 half 21204, campaign bounds hold in all classes False -> agree; A2/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A3/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A3/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior True mean 3982 half 12676, campaign bounds hold in all classes False -> DISAGREE; A3/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; gate: 7 of 9 cells agree (6 or 7)",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "UNRESOLVED",
+   "sequence": 3,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-31a",
+   "value": "SHAPE vectors refused 18 of 18; valid vectors accepted 25 of 25; valid comparison vectors reproduced bit for bit 17 of 17; DECISION_MISMATCH vectors flagged 2 of 2",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C2"
+   ],
+   "claimId": "H-31b",
+   "value": "split valid True; manifests 0 of 640 valid; records 0 of 12; comparisons 9 of 9; refusals: [{\"runId\": \"DEFENDED-C2-s1\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"runId\": \"DEFENDED-C2-s2\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"runId\": \"DEFENDED-C2-s3\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:7a38e35a496f0af6\", \"recordId\": \"DEFENDED-completionPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:ca423f9c2f991025\", \"recordId\": \"DEFENDED-duplicatedWorkRatioPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:47063b46e27dc516\", \"recordId\": \"DEFENDED-lostWorkPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}]",
+   "verdict": "CONTRADICTED"
+  },
+  {
+   "checks": [
+    "C3"
+   ],
+   "claimId": "H-31c",
+   "value": "cells (arm, metric): A1/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A1/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior True mean 3880 half 9104, campaign bounds hold in all classes False -> DISAGREE; A1/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A2/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A2/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior False mean -16275 half 21204, campaign bounds hold in all classes False -> agree; A2/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A3/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A3/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior True mean 3982 half 12676, campaign bounds hold in all classes False -> DISAGREE; A3/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree",
+   "verdict": "UNRESOLVED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-31a",
+   "delivered": "SHAPE vectors refused 18 of 18; valid vectors accepted 25 of 25; valid comparison vectors reproduced bit for bit 17 of 17; DECISION_MISMATCH vectors flagged 2 of 2",
+   "requirement": "H-31a (instrument): the lab's validator and integer gate reproduce the contract's vectors",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-31b",
+   "delivered": "split valid True; manifests 0 of 640 valid; records 0 of 12; comparisons 9 of 9; refusals: [{\"runId\": \"DEFENDED-C2-s1\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"runId\": \"DEFENDED-C2-s2\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"runId\": \"DEFENDED-C2-s3\", \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:7a38e35a496f0af6\", \"recordId\": \"DEFENDED-completionPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:ca423f9c2f991025\", \"recordId\": \"DEFENDED-duplicatedWorkRatioPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}, {\"digest\": \"sha256:47063b46e27dc516\", \"recordId\": \"DEFENDED-lostWorkPpm\", \"valid\": false, \"where\": \"$.configuration.budget.tokensPerTask minimum\"}]",
+   "requirement": "H-31b: the CONF-MAS arms study is expressible as valid run manifests, evaluation records and comparisons",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL"
+    }
+   ]
+  },
+  {
+   "claimId": "H-31c",
+   "delivered": "cells (arm, metric): A1/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A1/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior True mean 3880 half 9104, campaign bounds hold in all classes False -> DISAGREE; A1/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A2/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A2/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior False mean -16275 half 21204, campaign bounds hold in all classes False -> agree; A2/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A3/completionPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree; A3/duplicatedWorkRatioPpm: gate WITHIN_NOISE nonInferior True mean 3982 half 12676, campaign bounds hold in all classes False -> DISAGREE; A3/lostWorkPpm: gate WITHIN_NOISE nonInferior True mean 0 half 0, campaign bounds hold in all classes True -> agree",
+   "requirement": "H-31c: the distribution gate's non-inferiority verdicts agree with the campaign's recorded bound verdicts per arm and metric",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "UNRESOLVED"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:bb3b5cc81e1b99333b2afa011c639ed8f78cf5aaa2429675a41fa058180fb816",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl18_manifest.run-001"
+  },
+  {
+   "contentDigest": "sha256:b9efff3370113786af1ed8efda8cb5e40e89bae2ce1942f81a89729078940264",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:56eb001ea48ac01f59597fb93864752de7d0c118ce9917486914f3ca662a0291",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl18_eval"
+  }
+ ],
+ "ledgerId": "RL-18-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:eca606be178d49dc4cac7bfe0130564af7fdc989715f5a1aec226aa0bbd832a3"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:bb3b5cc81e1b99333b2afa011c639ed8f78cf5aaa2429675a41fa058180fb816",
+   "sha256:b9efff3370113786af1ed8efda8cb5e40e89bae2ce1942f81a89729078940264",
+   "sha256:eca606be178d49dc4cac7bfe0130564af7fdc989715f5a1aec226aa0bbd832a3",
+   "sha256:56eb001ea48ac01f59597fb93864752de7d0c118ce9917486914f3ca662a0291"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "cells": 9,
+   "cells_agree": 7,
+   "cells_unresolved": 0,
+   "comparison_agree": 17,
+   "comparison_cases": 17,
+   "comparisons_valid": 9,
+   "manifests": 640,
+   "manifests_valid": 0,
+   "records_valid": 0,
+   "shape_cases": 18,
+   "shape_refused": 18,
+   "valid_accepted": 25,
+   "valid_cases": 25
+  },
+  "status": "FAIL",
+  "unresolvedChecks": [
+   "C3"
+  ]
+ }
+}

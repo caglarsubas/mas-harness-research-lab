@@ -1,0 +1,96 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-24-fig",
+   "contextId": "lab",
+   "establishedValue": "found 24 of 29 claims (0.828); by source {\"RS-1\": {\"claims\": 1, \"found\": 0}, \"RS-2\": {\"claims\": 11, \"found\": 9}, \"RS-3\": {\"claims\": 29, \"found\": 24}}; by paper {\"F2\": {\"claims\": 6, \"found\": 6}, \"F4a\": {\"claims\": 5, \"found\": 3}, \"F4b\": {\"claims\": 5, \"found\": 4}, \"F5\": {\"claims\": 6, \"found\": 6}, \"F6\": {\"claims\": 7, \"found\": 5}}; not found: ['F4a-4', 'F4a-5', 'F4b-5', 'F6-5', 'F6-6']; gate: 24 of 29 found (between 70 and 90 percent)",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "UNRESOLVED",
+   "sequence": 1,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-24-fig",
+   "value": "found 24 of 29 claims (0.828); by source {\"RS-1\": {\"claims\": 1, \"found\": 0}, \"RS-2\": {\"claims\": 11, \"found\": 9}, \"RS-3\": {\"claims\": 29, \"found\": 24}}; by paper {\"F2\": {\"claims\": 6, \"found\": 6}, \"F4a\": {\"claims\": 5, \"found\": 3}, \"F4b\": {\"claims\": 5, \"found\": 4}, \"F5\": {\"claims\": 6, \"found\": 6}, \"F6\": {\"claims\": 7, \"found\": 5}}; not found: ['F4a-4', 'F4a-5', 'F4b-5', 'F6-5', 'F6-6']",
+   "verdict": "UNRESOLVED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-24-fig",
+   "delivered": "found 24 of 29 claims (0.828); by source {\"RS-1\": {\"claims\": 1, \"found\": 0}, \"RS-2\": {\"claims\": 11, \"found\": 9}, \"RS-3\": {\"claims\": 29, \"found\": 24}}; by paper {\"F2\": {\"claims\": 6, \"found\": 6}, \"F4a\": {\"claims\": 5, \"found\": 3}, \"F4b\": {\"claims\": 5, \"found\": 4}, \"F5\": {\"claims\": 6, \"found\": 6}, \"F6\": {\"claims\": 7, \"found\": 5}}; not found: ['F4a-4', 'F4a-5', 'F4b-5', 'F6-5', 'F6-6']",
+   "requirement": "H-24 (figure grounding): the figures the three syntheses attribute to the five held papers are found in the papers' own text at a rate of at least 90 percent",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "UNRESOLVED"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:0a881349a4580a5383083d70bf42af23788f57c922e014f2609de470d88e61d0",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl19_figures.run-001"
+  },
+  {
+   "contentDigest": "sha256:6163a2258afb8e89da7a2484a926591675a1be5d78a56cae80ae51d81345d2d4",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:5b9f77ca8b41258986288550ef9b3b8f1d160f6860460239276987b070f54fc7",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl19_eval"
+  }
+ ],
+ "ledgerId": "RL-19-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:317c3088b12da2751ec3fff344d87cc80cfb1ed7d137030d24c4dfcc4839232d"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:0a881349a4580a5383083d70bf42af23788f57c922e014f2609de470d88e61d0",
+   "sha256:6163a2258afb8e89da7a2484a926591675a1be5d78a56cae80ae51d81345d2d4",
+   "sha256:317c3088b12da2751ec3fff344d87cc80cfb1ed7d137030d24c4dfcc4839232d",
+   "sha256:5b9f77ca8b41258986288550ef9b3b8f1d160f6860460239276987b070f54fc7"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "claims": 29,
+   "found": 24,
+   "rate_permille": 828
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C1"
+  ]
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-23-coord",
+   "contextId": "lab",
+   "establishedValue": "transcript vectors 28 of 32; binding vectors 10 of 11; rate 0.884; disagreements: [[\"B01\", null, \"REPLAY\", [\"a3\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B02\", null, \"REPLAY\", [\"q6\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B03\", null, \"REPLAY\", [\"q6\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B17\", \"UNKNOWN_REFERENCE\", \"REPLAY\", [\"a3\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"R05\", \"UNKNOWN_REFERENCE\", \"BINDING\", null]]; gate: 38 of 43 reproduced (between 70 and 95 percent)",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "UNRESOLVED",
+   "sequence": 1,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-23-coord",
+   "value": "transcript vectors 28 of 32; binding vectors 10 of 11; rate 0.884; disagreements: [[\"B01\", null, \"REPLAY\", [\"a3\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B02\", null, \"REPLAY\", [\"q6\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B03\", null, \"REPLAY\", [\"q6\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B17\", \"UNKNOWN_REFERENCE\", \"REPLAY\", [\"a3\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"R05\", \"UNKNOWN_REFERENCE\", \"BINDING\", null]]",
+   "verdict": "UNRESOLVED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-23-coord",
+   "delivered": "transcript vectors 28 of 32; binding vectors 10 of 11; rate 0.884; disagreements: [[\"B01\", null, \"REPLAY\", [\"a3\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B02\", null, \"REPLAY\", [\"q6\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B03\", null, \"REPLAY\", [\"q6\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"B17\", \"UNKNOWN_REFERENCE\", \"REPLAY\", [\"a3\", [\"ACCEPTED\", \"CONCURRENCY_LIMIT\"]]], [\"R05\", \"UNKNOWN_REFERENCE\", \"BINDING\", null]]",
+   "requirement": "H-23 (coordinator half): a board state machine written from the README alone reproduces at least 95 percent of the record's transcript and binding vectors",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "UNRESOLVED"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:1113270e3eac3b27ddcbcf77a969b65a35740c1bbceea028c05fa1ab7bfa778d",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl22_board.run-001"
+  },
+  {
+   "contentDigest": "sha256:9c0c21bfa29a1bbeabcebfcbb9f5e327fcb39882299b52a5887f7966a5ba3c52",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:07e6b0a6558269220964b1f882a2db84506fe628ffa5c36a449ada488222c358",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl22_eval"
+  }
+ ],
+ "ledgerId": "RL-22-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:511c8b669bd37c96910011931a36078e95f4ff7075d7f12a45402ce4a95b7e1e"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:1113270e3eac3b27ddcbcf77a969b65a35740c1bbceea028c05fa1ab7bfa778d",
+   "sha256:9c0c21bfa29a1bbeabcebfcbb9f5e327fcb39882299b52a5887f7966a5ba3c52",
+   "sha256:511c8b669bd37c96910011931a36078e95f4ff7075d7f12a45402ce4a95b7e1e",
+   "sha256:07e6b0a6558269220964b1f882a2db84506fe628ffa5c36a449ada488222c358"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "rate_permille": 884,
+   "reproduced": 38,
+   "vectors": 43
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C1"
+  ]
+ }
+}

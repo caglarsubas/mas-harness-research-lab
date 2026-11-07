@@ -1,0 +1,88 @@
+{
+ "descriptive": {
+  "addressed_fraction_by_severity": {
+   "MAJOR": {
+    "fraction": 0.684,
+    "n": 19
+   },
+   "MINOR": {
+    "fraction": 0.823,
+    "n": 130
+   },
+   "NOTE": {
+    "fraction": 0.809,
+    "n": 157
+   }
+  },
+  "blocks_fraction_by_severity": {
+   "MAJOR": 1.0,
+   "MINOR": 0.9,
+   "NOTE": 0.0
+  },
+  "dispositioned": 306,
+  "rounds_to_disposition_median": 1,
+  "severity_by_round_index": {
+   "1": {
+    "MAJOR": 16,
+    "MINOR": 66,
+    "NOTE": 84
+   },
+   "2": {
+    "MAJOR": 3,
+    "MINOR": 26,
+    "NOTE": 50
+   },
+   "3": {
+    "MINOR": 17,
+    "NOTE": 30
+   },
+   "4+": {
+    "MINOR": 41,
+    "NOTE": 64
+   }
+  }
+ },
+ "distinct_identities": 312,
+ "h09c": {
+  "carried": 57,
+  "fraction": 0.0,
+  "no_disposition_rows": 91,
+  "reraised": 0,
+  "wilson95": [
+   0.0,
+   0.0631
+  ]
+ },
+ "h09d": {
+  "fraction": 1.0,
+  "later_findings": 227,
+  "new": 227,
+  "outcome": "PASS",
+  "per_series_new_fraction_distribution": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "wilson95": [
+   0.9834,
+   1.0
+  ]
+ },
+ "lane_token_rows": 381,
+ "masked_id_rows": 16,
+ "rows": 397
+}

@@ -1,0 +1,119 @@
+{
+ "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "points": {
+  "S-C1": {
+   "arms": {
+    "advisory": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 166666,
+       "min": 0,
+       "p50": 0,
+       "p95": 166666
+      },
+      "lastMergeTick": {
+       "max": 154,
+       "min": 94,
+       "p50": 118,
+       "p95": 137
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 23
+    },
+    "leased": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 444444,
+       "min": 0,
+       "p50": 0,
+       "p95": 444444
+      },
+      "lastMergeTick": {
+       "max": 227,
+       "min": 94,
+       "p50": 139,
+       "p95": 210
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 0
+    }
+   },
+   "d_values": [
+    0,
+    0,
+    66666,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -444444,
+    0,
+    0,
+    0,
+    -444444,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "family": "CENTRAL",
+   "items": 5,
+   "paired_d": {
+    "mean": -25694.4,
+    "median": 0,
+    "negative": 2,
+    "positive": 1,
+    "zero": 29
+   },
+   "workers": 1
+  }
+ },
+ "seeds": 32,
+ "wall_s": {
+  "S-C1": 0.09
+ }
+}

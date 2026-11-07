@@ -1,0 +1,11 @@
+chain layers walked: 92 (slots 189..280); head module slot 280
+argv 63 serial (H1 per-file 'passed in'): 142 files, 2253.9 s in all
+  chain-layer test files: 88 (of 92 layers), 1465.3 s = 0.650; the head's 12.0 s; older layers 1453.3 s = 0.645
+  other test files: 54, 788.6 s = 0.350
+  slots 189-229: 39 test files, 442.7 s
+  slots 230-254: 23 test files, 624.6 s
+  slots 255-269: 15 test files, 214.5 s
+  slots 270-279: 10 test files, 171.6 s
+  slots 280-280: 1 test files, 12.0 s
+  top decile of layer test files (8): 483.9 s = 0.330 of the chain-layer test time
+dry run argv 1-62 and 64: chain-layer validator CLIs 14, 37.8 s; the rest 387.5 s; argv 63 wall 524.6 s

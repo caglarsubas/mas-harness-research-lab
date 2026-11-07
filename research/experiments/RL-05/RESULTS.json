@@ -1,0 +1,168 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-03",
+   "contextId": "lab",
+   "establishedValue": "merged records 47: PASS 39, FAIL 6, UNEVALUATED 2; bound: every merged record PASS",
+   "evidence": [
+    "E1",
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-03",
+   "contextId": "lab",
+   "establishedValue": "FAIL records are the six decided 2026-10-21 and 2026-10-22 (PRs 23, 209, 210, 32, 33, 24): V FALSE (no check-run reference) on 4, T FALSE (no transport approval, hosted) on 4; every record decided on or after 2026-10-24 is PASS or UNEVALUATED; no exception, erratum or slip field explains any FAIL",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-03",
+   "contextId": "lab",
+   "establishedValue": "conjuncts A (approver), I (decidedBy differs from approver) and H (every head-bound boolean true) are TRUE on all 47; R MISSING on 2 (PRs 25 and 8, no reviews field); by form: v1 PASS 36 FAIL 1 UNEVALUATED 2, older PASS 3 FAIL 5",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-03",
+   "contextId": "lab",
+   "establishedValue": "run 001 classed two bare-named bridge records as hosted (script defect, PRs 231 and 232); corrected in run 002 and disclosed; the predicate and bounds are unchanged",
+   "evidence": [
+    "E3",
+    "E4"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "FAIL",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-03",
+   "contextId": "lab",
+   "establishedValue": "five earliest-form records (2026-10-20/21: PRs 207, 208, 30, 22, 31) record the decision as mergeState CLEAN without a mergeCommit and fall outside the preregistered unit; descriptively FAIL 3, UNEVALUATED 2 (no check-run reference, no transport approval)",
+   "evidence": [
+    "E1",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+   ],
+   "claimId": "H-03",
+   "value": "FAIL as stated; holds for every record decided on or after 2026-10-24 that can be evaluated",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-03",
+   "delivered": "P holds for 39 of 47; 6 FAIL, all decided 2026-10-21/22 and lacking a mechanism their record form predates (check-run reference, transport approval); 2 UNEVALUATED (no reviews field)",
+   "requirement": "H-03: the merge predicate P = R and V and A and I and H and T holds for every merged packet (every merge-decision record with a merge commit)",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "PASS 39, FAIL 6, UNEVALUATED 2"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:dd4f5600906e2249f636c6ed5edd487ab05d32571b0db2bb0d3ca7cb85b55303",
+   "evidenceId": "E1",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.rl05_predicate.run-002"
+  },
+  {
+   "contentDigest": "sha256:c0cfa0172c0e49ed045156087350422a537553574daf1f09191d36897f837823",
+   "evidenceId": "E2",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl05_predicate.run-002"
+  },
+  {
+   "contentDigest": "sha256:84e42b9924ea9e5147e944a4f44e22535a8903ce87ed4a82b80b3a0ba75ed6df",
+   "evidenceId": "E3",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-002"
+  },
+  {
+   "contentDigest": "sha256:6faa04cd19f8a19b103d1f10660a40f8de0a671f72402fdeb7b4d8118f5e4e02",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:462f9cc1b6d3a5836949e7f5ba796f0a78eeadd14a52180ccc5cb49dab1a4502",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  }
+ ],
+ "ledgerId": "RL-05-RESULTS-v1",
+ "rollouts": [
+  "run-002"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:462f9cc1b6d3a5836949e7f5ba796f0a78eeadd14a52180ccc5cb49dab1a4502"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:dd4f5600906e2249f636c6ed5edd487ab05d32571b0db2bb0d3ca7cb85b55303",
+   "sha256:c0cfa0172c0e49ed045156087350422a537553574daf1f09191d36897f837823",
+   "sha256:84e42b9924ea9e5147e944a4f44e22535a8903ce87ed4a82b80b3a0ba75ed6df",
+   "sha256:6faa04cd19f8a19b103d1f10660a40f8de0a671f72402fdeb7b4d8118f5e4e02",
+   "sha256:462f9cc1b6d3a5836949e7f5ba796f0a78eeadd14a52180ccc5cb49dab1a4502"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "fail": 6,
+   "merged": 47,
+   "pass": 39,
+   "unevaluated": 2
+  },
+  "status": "FAIL",
+  "unresolvedChecks": [
+   "C5"
+  ]
+ }
+}

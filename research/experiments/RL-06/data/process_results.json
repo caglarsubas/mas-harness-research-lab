@@ -1,0 +1,113 @@
+{
+ "coverage": {
+  "merged": 47,
+  "min_coverage": 0.936,
+  "with_date": 47,
+  "with_review_count": 44,
+  "with_verify_elapsed": 47
+ },
+ "handoff_file_digests": {
+  "GATE-T5-PROMPTS.md": "46b456f9",
+  "HANDOFF.md": "f5c94454",
+  "LANE-DESIGN-UX.md": "051a23aa",
+  "LANE-PARALLEL.md": "86827111",
+  "LANE-PRIMARY.md": "13218b88",
+  "LANE-R00-HARNESS-ONION.md": "8759706f",
+  "LANE-R03.md": "b085d152",
+  "LANE-R04.md": "d8035cf8",
+  "LANE-R11.md": "583b1e4f",
+  "LANE-RESEARCH-LAB.md": "54f33c8f",
+  "LANE-TEMPLATE.md": "aa4c8b26",
+  "MONITOR.md": "a49a5dd2",
+  "PUBLISHED-PATHS-SCRUB.md": "e7d5b1bf",
+  "SESSIONS.md": "098de01b",
+  "STARTER-PROMPTS.md": "672edd76",
+  "STATE.md": "6ec5df84",
+  "VISIONARY.md": "f65033bf"
+ },
+ "taxonomy": {
+  "all_by_category": {
+   "BRIEFS": 19,
+   "COMPUTE": 185,
+   "FILES": 3,
+   "MERGE": 34,
+   "OTHER": 753,
+   "PRIVACY": 12,
+   "SESSION": 6
+  },
+  "all_ids": 1012,
+  "early_categories": [
+   "COMPUTE",
+   "OTHER"
+  ],
+  "late_fraction": 0.308,
+  "late_ids": 13,
+  "late_in_early_category": 4,
+  "median_slot": 275,
+  "other_fraction_rules": 0.703,
+  "rule_by_category": {
+   "BRIEFS": 2,
+   "COMPUTE": 21,
+   "FILES": 1,
+   "MERGE": 3,
+   "OTHER": 78,
+   "PRIVACY": 5,
+   "SESSION": 1
+  },
+  "rule_ids": 111,
+  "rule_ids_by_slot_decile": {
+   "250-259": {
+    "OTHER": 1
+   },
+   "260-269": {
+    "COMPUTE": 4,
+    "OTHER": 4
+   },
+   "270-279": {
+    "COMPUTE": 4,
+    "OTHER": 11,
+    "PRIVACY": 1
+   }
+  },
+  "slot_bound_rule_ids": 25
+ },
+ "throughput": {
+  "merges_per_day": 3.13,
+  "merges_per_week_by_class": {
+   "2026-W43": {
+    "bridge": 12,
+    "hosted": 8,
+    "unknown": 0
+   },
+   "2026-W44": {
+    "bridge": 9,
+    "hosted": 12,
+    "unknown": 0
+   },
+   "2026-W45": {
+    "bridge": 3,
+    "hosted": 3,
+    "unknown": 0
+   }
+  },
+  "review_rounds_per_merge": {
+   "max": 8,
+   "median": 2.0,
+   "min": 1,
+   "n": 44
+  },
+  "verify_s_per_harness_onion_run": {
+   "max": 1205.0,
+   "median": 929.0,
+   "min": 726.0,
+   "n": 27
+  },
+  "verify_s_per_merge": {
+   "max": 1116.0,
+   "median": 743.374,
+   "min": 5.797,
+   "n": 47
+  },
+  "window_days": 15
+ }
+}

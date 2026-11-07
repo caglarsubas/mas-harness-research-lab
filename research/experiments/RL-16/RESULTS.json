@@ -1,0 +1,145 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-02a",
+   "contextId": "lab",
+   "establishedValue": "bands sum 1453.4 vs reported 1453.3 (within 1 percent: True); attested 0.6448 vs 0.645 (within 0.005: True); kept at 0.10 0.4196 vs 0.4195 (within 0.005: True)",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-02b",
+   "contextId": "lab",
+   "establishedValue": "g 9.34 s per slot at equal load, 95 percent pairs bootstrap [5.73, 13.50] (1000 defined resamples), n 23 runs over slots 253-278, load coefficient 24.8 s per unit, R2 0.624; univariate slope 8.35; gate: the interval contains 13, the estimate lies in [8, 18] and the interval is at most 20 s wide",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-02b",
+   "contextId": "lab",
+   "establishedValue": "projection and detection-delay model, descriptive, never gated: f 0.05: kept 0.3874, argv 63 wall 203.2 s (saving 321.4 s), projected dry-run total 628.5 s, growth bound per cadence 93.4 s, P(detect within 1/3/5/10) {\"1\": 0.05, \"10\": 1.0, \"3\": 0.1426, \"5\": 0.2262}, expected delay 8.03 verifies (max 10); f 0.1: kept 0.4196, argv 63 wall 220.1 s (saving 304.5 s), projected dry-run total 645.4 s, growth bound per cadence 93.4 s, P(detect within 1/3/5/10) {\"1\": 0.1, \"10\": 1.0, \"3\": 0.271, \"5\": 0.4095}, expected delay 6.51 verifies (max 10); f 0.2: kept 0.4841, argv 63 wall 254.0 s (saving 270.6 s), projected dry-run total 679.3 s, growth bound per cadence 93.4 s, P(detect within 1/3/5/10) {\"1\": 0.2, \"10\": 1.0, \"3\": 0.488, \"5\": 0.6723}, expected delay 4.46 verifies (max 10)",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-02a",
+   "value": "bands sum 1453.4 vs reported 1453.3 (within 1 percent: True); attested 0.6448 vs 0.645 (within 0.005: True); kept at 0.10 0.4196 vs 0.4195 (within 0.005: True)",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C2",
+    "C3"
+   ],
+   "claimId": "H-02b",
+   "value": "g 9.34 s per slot at equal load, 95 percent pairs bootstrap [5.73, 13.50] (1000 defined resamples), n 23 runs over slots 253-278, load coefficient 24.8 s per unit, R2 0.624; univariate slope 8.35",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-02a",
+   "delivered": "bands sum 1453.4 vs reported 1453.3 (within 1 percent: True); attested 0.6448 vs 0.645 (within 0.005: True); kept at 0.10 0.4196 vs 0.4195 (within 0.005: True)",
+   "requirement": "H-02a: the attested share of argv 63 and the kept fraction at a 10 percent sample re-derive from the published cost split to R00's figures",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  },
+  {
+   "claimId": "H-02b",
+   "delivered": "g 9.34 s per slot at equal load, 95 percent pairs bootstrap [5.73, 13.50] (1000 defined resamples), n 23 runs over slots 253-278, load coefficient 24.8 s per unit, R2 0.624; univariate slope 8.35",
+   "requirement": "H-02b: the equal-load growth of verify time per slot in the K 6 era reproduces the report's about 13 s per slot within 5 s",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:1192173c9e491c6f0b629f7770c3e275bbfc1f25fcbad086604fc079e58ed792",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl16_model.run-001"
+  },
+  {
+   "contentDigest": "sha256:68b1e63653466e5813f50a71aac7225f02fbccd970db4966d57a6df5c5eee042",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:6d77ce41b73e6acf3a130f523c4fb023d4da58b4e05298bb074e1c99d64f7c27",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl16_eval"
+  }
+ ],
+ "ledgerId": "RL-16-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:8788236b586cfc390fc1f1a00ec093969f8d0838f85d46e7587e961b8c227b5f"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:1192173c9e491c6f0b629f7770c3e275bbfc1f25fcbad086604fc079e58ed792",
+   "sha256:68b1e63653466e5813f50a71aac7225f02fbccd970db4966d57a6df5c5eee042",
+   "sha256:8788236b586cfc390fc1f1a00ec093969f8d0838f85d46e7587e961b8c227b5f",
+   "sha256:6d77ce41b73e6acf3a130f523c4fb023d4da58b4e05298bb074e1c99d64f7c27"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "attested_permille": 645,
+   "defined_resamples": 1000,
+   "g_ci_hi_ds": 135,
+   "g_ci_lo_ds": 57,
+   "g_per_slot_ds": 93,
+   "kept_10_permille": 420,
+   "n_runs": 23
+  },
+  "status": "PASS",
+  "unresolvedChecks": []
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "cadence": 10,
+ "costSplit": {
+  "argv63_wall_k8_s": 524.6,
+  "attested_fraction": 0.6448,
+  "bands": {
+   "189-229": 442.7,
+   "230-254": 624.6,
+   "255-269": 214.5,
+   "270-279": 171.6,
+   "280-280": 12.0
+  },
+  "chain_files_s": 1465.3,
+  "cli_s": 37.8,
+  "head_s": 12.0,
+  "kept_fraction": {
+   "0.05": 0.3874,
+   "0.1": 0.4196,
+   "0.2": 0.4841
+  },
+  "older_s_from_bands": 1453.4,
+  "older_s_reported": 1453.3,
+  "rest_s": 387.5,
+  "serial_total_s": 2253.9
+ },
+ "fractions": [
+  0.05,
+  0.1,
+  0.2
+ ],
+ "growth": {
+  "defined_resamples": 1000,
+  "elapsed_range": [
+   726.0,
+   1116.0
+  ],
+  "fit": {
+   "a": -1731.8723456914342,
+   "g_per_slot": 9.337542087462307,
+   "l_per_load": 24.838689724641306,
+   "r2": 0.624331925533999
+  },
+  "g_ci95": [
+   5.730119022761585,
+   13.502669425899121
+  ],
+  "median_load": 7.2,
+  "n": 23,
+  "slots": [
+   253,
+   254,
+   255,
+   256,
+   257,
+   258,
+   259,
+   263,
+   264,
+   265,
+   266,
+   267,
+   268,
+   269,
+   270,
+   271,
+   272,
+   273,
+   274,
+   275,
+   276,
+   277,
+   278
+  ],
+  "undefined_resamples": 0,
+  "univariate_g_per_slot": 8.354585780332375
+ },
+ "projection": {
+  "0.05": {
+   "argv63_wall_k8_s": 203.2,
+   "detect_within_k_verifies": {
+    "1": 0.05,
+    "10": 1.0,
+    "3": 0.1426,
+    "5": 0.2262
+   },
+   "expected_detection_delay_verifies": 8.03,
+   "growth_bound_per_cadence_s": 93.4,
+   "kept_fraction": 0.3874,
+   "max_delay_verifies": 10,
+   "projected_dry_run_total_s": 628.5,
+   "saving_argv63_s": 321.4
+  },
+  "0.1": {
+   "argv63_wall_k8_s": 220.1,
+   "detect_within_k_verifies": {
+    "1": 0.1,
+    "10": 1.0,
+    "3": 0.271,
+    "5": 0.4095
+   },
+   "expected_detection_delay_verifies": 6.51,
+   "growth_bound_per_cadence_s": 93.4,
+   "kept_fraction": 0.4196,
+   "max_delay_verifies": 10,
+   "projected_dry_run_total_s": 645.4,
+   "saving_argv63_s": 304.5
+  },
+  "0.2": {
+   "argv63_wall_k8_s": 254.0,
+   "detect_within_k_verifies": {
+    "1": 0.2,
+    "10": 1.0,
+    "3": 0.488,
+    "5": 0.6723
+   },
+   "expected_detection_delay_verifies": 4.46,
+   "growth_bound_per_cadence_s": 93.4,
+   "kept_fraction": 0.4841,
+   "max_delay_verifies": 10,
+   "projected_dry_run_total_s": 679.3,
+   "saving_argv63_s": 270.6
+  }
+ },
+ "seed": 20261105
+}

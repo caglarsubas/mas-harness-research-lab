@@ -1,0 +1,256 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-09a",
+   "contextId": "lab",
+   "establishedValue": "not runnable: no oracle verdicts in J2 or in the merge-decision records (check_pr_oracles is a PASS string only); UNRESOLVED-by-input",
+   "evidence": [
+    "E1",
+    "E4"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-09b",
+   "contextId": "lab",
+   "establishedValue": "carried from v1: PASS_FOR_PUSH heads 11; matched in I2 9 (unmatched 2); refused 1; fraction 0.1111; Wilson 95% [0.0199, 0.435]; bound: at least 40 matched heads for a verdict",
+   "evidence": [
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-09c",
+   "contextId": "lab",
+   "establishedValue": "carried findings 57 (PARTLY, NOT, RECORDED); re-raised under the same identity 0; fraction 0.0; Wilson 95% [0.0, 0.0631]; no-disposition rows 91; descriptive, no bound",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-09d",
+   "contextId": "lab",
+   "establishedValue": "findings raised in round 2 or later 227; new identities 227; fraction 1.0; Wilson 95% [0.9834, 1.0]; bound: lower bound above 0.5",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-09d",
+   "contextId": "lab",
+   "establishedValue": "validity: 381 of 381 lane-token ids end their middle segment with the digits of roundRaised; 69 repeated identities are same-round full-form pairs; 0 identities span rounds; the identity rule cannot observe a re-raise, so C3 and C4 are vacuous under this id scheme",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C6",
+   "claimId": "H-09-descriptive",
+   "contextId": "lab",
+   "establishedValue": "severity by round index: round 1 MAJOR 16 MINOR 66 NOTE 84; round 2 MAJOR 3 MINOR 26 NOTE 50; round 3 MINOR 17 NOTE 30; round 4+ MINOR 41 NOTE 64; blocks fraction MAJOR 1.0 MINOR 0.9 NOTE 0.0; ADDRESSED fraction among dispositioned: MAJOR 0.684 (19), MINOR 0.823 (130), NOTE 0.809 (157); rounds to disposition median 1 (306 dispositioned)",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 6,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1"
+   ],
+   "claimId": "H-09a",
+   "value": "UNRESOLVED-by-input",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C2"
+   ],
+   "claimId": "H-09b",
+   "value": "below the head bound",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C3",
+    "C5"
+   ],
+   "claimId": "H-09c",
+   "value": "measure vacuous under the id scheme (C5)",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C4",
+    "C5"
+   ],
+   "claimId": "H-09d",
+   "value": "gate met vacuously; the identity rule encodes the round (C5), so the claim is not established",
+   "verdict": "UNRESOLVED"
+  },
+  {
+   "checks": [
+    "C6"
+   ],
+   "claimId": "H-09-descriptive",
+   "value": "later rounds raise MINOR and NOTE findings, MAJOR only in rounds 1-2; MAJOR findings are addressed least often (0.68)",
+   "verdict": "NEW_VALUE_ESTABLISHED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-09a",
+   "delivered": "not measurable: no oracle verdicts in any export",
+   "requirement": "H-09a: review rounds and the independent oracle find different findings",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "not run"
+    }
+   ]
+  },
+  {
+   "claimId": "H-09b",
+   "delivered": "1 of 9 matched heads (v1), below the 40-head bound",
+   "requirement": "H-09b: the verifier refuses a measurable fraction of PASS_FOR_PUSH heads",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "0.1111 on 9 heads"
+    }
+   ]
+  },
+  {
+   "claimId": "H-09c",
+   "delivered": "0 of 57 under the same identity; vacuous, ids carry the round",
+   "requirement": "H-09c: carried findings re-raised in later rounds, descriptive fraction",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "0.0"
+    }
+   ]
+  },
+  {
+   "claimId": "H-09d",
+   "delivered": "227 of 227; gate met; vacuous, ids carry the round",
+   "requirement": "H-09d: findings raised in round 2 or later are new identities in at least half the cases",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "1.0"
+    }
+   ]
+  },
+  {
+   "claimId": "H-09-descriptive",
+   "delivered": "computed on 397 findings",
+   "requirement": "descriptive finding table, not gated",
+   "rolloutValues": [
+    {
+     "rollout": "run-002",
+     "value": "see C6"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:d7e4ff31c02280b31f2cc7c9b463202e1b6a739c1458b6c84ce3fd2ce20fd3d5",
+   "evidenceId": "E1",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Lane-Monitor.export-J2.MON-RL-M3"
+  },
+  {
+   "contentDigest": "sha256:df47f6411d04af060090b50be66a7ad44e74d8172f6a07d9e396a4c97da437f0",
+   "evidenceId": "E2",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl02_v2.run-002"
+  },
+  {
+   "contentDigest": "sha256:fda4b978c590719a3f8d7a1f5dd99c01e77d0d806db785ef04e6fcae0875b512",
+   "evidenceId": "E3",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-002"
+  },
+  {
+   "contentDigest": "sha256:1a92705109ed1b410f565690c81c02fb5185832137deb7dcdc0dc98efaf96fd6",
+   "evidenceId": "E4",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v2"
+  },
+  {
+   "contentDigest": "sha256:2a6648f3e3cece436429c52d7503df1694093dc82ccc1593341aa909599afa70",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.RESULTS-v1"
+  }
+ ],
+ "ledgerId": "RL-02-RESULTS-v2",
+ "rollouts": [
+  "run-001",
+  "run-002"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:1a92705109ed1b410f565690c81c02fb5185832137deb7dcdc0dc98efaf96fd6"
+ },
+ "supersedes": "sha256:2a6648f3e3cece436429c52d7503df1694093dc82ccc1593341aa909599afa70",
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:d7e4ff31c02280b31f2cc7c9b463202e1b6a739c1458b6c84ce3fd2ce20fd3d5",
+   "sha256:df47f6411d04af060090b50be66a7ad44e74d8172f6a07d9e396a4c97da437f0",
+   "sha256:fda4b978c590719a3f8d7a1f5dd99c01e77d0d806db785ef04e6fcae0875b512",
+   "sha256:1a92705109ed1b410f565690c81c02fb5185832137deb7dcdc0dc98efaf96fd6",
+   "sha256:2a6648f3e3cece436429c52d7503df1694093dc82ccc1593341aa909599afa70"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "distinct_identities": 312,
+   "lane_token_rows": 381,
+   "later_findings": 227,
+   "rows": 397
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C1",
+   "C2",
+   "C5"
+  ]
+ }
+}

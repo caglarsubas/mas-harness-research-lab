@@ -1,0 +1,779 @@
+{
+ "blocks": [
+  {
+   "date": "2026-11-03",
+   "digests": 3,
+   "file": "LANE-DESIGN-UX.md",
+   "linePins": 0,
+   "monIdsNamed": 13,
+   "start": 6,
+   "words": 1760
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "linePins": 0,
+   "monIdsNamed": 3,
+   "start": 117,
+   "words": 249
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "linePins": 0,
+   "monIdsNamed": 1,
+   "start": 135,
+   "words": 222
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "linePins": 0,
+   "monIdsNamed": 3,
+   "start": 151,
+   "words": 170
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "linePins": 0,
+   "monIdsNamed": 2,
+   "start": 165,
+   "words": 237
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 1,
+   "file": "LANE-DESIGN-UX.md",
+   "linePins": 0,
+   "monIdsNamed": 2,
+   "start": 183,
+   "words": 1136
+  },
+  {
+   "date": "2026-11-03",
+   "digests": 7,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 1,
+   "start": 2,
+   "words": 125
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 6,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 3,
+   "start": 15,
+   "words": 540
+  },
+  {
+   "date": "2026-10-30",
+   "digests": 5,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 4,
+   "start": 77,
+   "words": 491
+  },
+  {
+   "date": "2026-10-29",
+   "digests": 4,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 4,
+   "start": 98,
+   "words": 342
+  },
+  {
+   "date": "2026-10-29",
+   "digests": 28,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 6,
+   "start": 106,
+   "words": 589
+  },
+  {
+   "date": "2026-10-28",
+   "digests": 34,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 14,
+   "start": 130,
+   "words": 1245
+  },
+  {
+   "date": "2026-10-27",
+   "digests": 76,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 27,
+   "start": 203,
+   "words": 2203
+  },
+  {
+   "date": "2026-10-25",
+   "digests": 276,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 6,
+   "monIdsNamed": 63,
+   "start": 385,
+   "words": 5681
+  },
+  {
+   "date": "2026-10-23",
+   "digests": 200,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 14,
+   "monIdsNamed": 98,
+   "start": 827,
+   "words": 7949
+  },
+  {
+   "date": "2026-10-21",
+   "digests": 13,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 15,
+   "start": 1526,
+   "words": 873
+  },
+  {
+   "date": "2026-10-19",
+   "digests": 132,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 32,
+   "start": 1604,
+   "words": 3990
+  },
+  {
+   "date": "2026-10-17",
+   "digests": 82,
+   "file": "LANE-PARALLEL.md",
+   "linePins": 0,
+   "monIdsNamed": 3,
+   "start": 1896,
+   "words": 9168
+  },
+  {
+   "date": "2026-11-03",
+   "digests": 1135,
+   "file": "LANE-PRIMARY.md",
+   "linePins": 5,
+   "monIdsNamed": 198,
+   "start": 0,
+   "words": 54923
+  },
+  {
+   "date": "2026-11-04",
+   "digests": 218,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 2,
+   "monIdsNamed": 43,
+   "start": 7,
+   "words": 3961
+  },
+  {
+   "date": "2026-11-04",
+   "digests": 27,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 0,
+   "monIdsNamed": 26,
+   "start": 280,
+   "words": 515
+  },
+  {
+   "date": "2026-11-03",
+   "digests": 292,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 0,
+   "monIdsNamed": 73,
+   "start": 326,
+   "words": 6281
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 409,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 4,
+   "monIdsNamed": 127,
+   "start": 823,
+   "words": 7072
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 57,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 0,
+   "monIdsNamed": 7,
+   "start": 1352,
+   "words": 1311
+  },
+  {
+   "date": "2026-10-31",
+   "digests": 77,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 2,
+   "monIdsNamed": 10,
+   "start": 1373,
+   "words": 1333
+  },
+  {
+   "date": "2026-10-31",
+   "digests": 28,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 0,
+   "monIdsNamed": 8,
+   "start": 1441,
+   "words": 574
+  },
+  {
+   "date": "2026-10-30",
+   "digests": 19,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 1,
+   "monIdsNamed": 7,
+   "start": 1487,
+   "words": 484
+  },
+  {
+   "date": "2026-10-30",
+   "digests": 5,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 0,
+   "monIdsNamed": 0,
+   "start": 1528,
+   "words": 149
+  },
+  {
+   "date": "2026-10-28",
+   "digests": 269,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "linePins": 2,
+   "monIdsNamed": 84,
+   "start": 1542,
+   "words": 7384
+  },
+  {
+   "date": "2026-11-04",
+   "digests": 14,
+   "file": "LANE-R03.md",
+   "linePins": 0,
+   "monIdsNamed": 2,
+   "start": 5,
+   "words": 351
+  },
+  {
+   "date": "2026-11-03",
+   "digests": 2,
+   "file": "LANE-R03.md",
+   "linePins": 0,
+   "monIdsNamed": 1,
+   "start": 34,
+   "words": 115
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 11,
+   "file": "LANE-R03.md",
+   "linePins": 0,
+   "monIdsNamed": 9,
+   "start": 45,
+   "words": 678
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 26,
+   "file": "LANE-R03.md",
+   "linePins": 0,
+   "monIdsNamed": 4,
+   "start": 95,
+   "words": 1075
+  },
+  {
+   "date": "2026-10-28",
+   "digests": 15,
+   "file": "LANE-R03.md",
+   "linePins": 0,
+   "monIdsNamed": 8,
+   "start": 182,
+   "words": 2271
+  },
+  {
+   "date": "2026-11-05",
+   "digests": 23,
+   "file": "LANE-R04.md",
+   "linePins": 0,
+   "monIdsNamed": 0,
+   "start": 5,
+   "words": 385
+  },
+  {
+   "date": "2026-11-03",
+   "digests": 13,
+   "file": "LANE-R04.md",
+   "linePins": 0,
+   "monIdsNamed": 0,
+   "start": 33,
+   "words": 512
+  },
+  {
+   "date": "2026-10-31",
+   "digests": 27,
+   "file": "LANE-R04.md",
+   "linePins": 2,
+   "monIdsNamed": 8,
+   "start": 89,
+   "words": 2846
+  },
+  {
+   "date": "2026-11-03",
+   "digests": 11,
+   "file": "LANE-R11.md",
+   "linePins": 0,
+   "monIdsNamed": 0,
+   "start": 36,
+   "words": 323
+  },
+  {
+   "date": "2026-11-01",
+   "digests": 11,
+   "file": "LANE-R11.md",
+   "linePins": 0,
+   "monIdsNamed": 1,
+   "start": 62,
+   "words": 575
+  },
+  {
+   "date": "2026-10-31",
+   "digests": 36,
+   "file": "LANE-R11.md",
+   "linePins": 1,
+   "monIdsNamed": 9,
+   "start": 113,
+   "words": 2359
+  }
+ ],
+ "files": [
+  {
+   "blocks": 6,
+   "datedMonIds": 6,
+   "file": "LANE-DESIGN-UX.md",
+   "sha256": "051a23aa2b04233a3e3ee72c41a04090ac0eb4a1852989bb2d96dc901da1ecf3"
+  },
+  {
+   "blocks": 12,
+   "datedMonIds": 31,
+   "file": "LANE-PARALLEL.md",
+   "sha256": "868271117f0a4737f3bafb0bc599002960b944e926fbc10b43dfd0f4322567e4"
+  },
+  {
+   "blocks": 1,
+   "datedMonIds": 49,
+   "file": "LANE-PRIMARY.md",
+   "sha256": "4b7fd1f236c36ecb2f7fb1eef2c74288e08e66708362be7e89f55e7778d33470"
+  },
+  {
+   "blocks": 10,
+   "datedMonIds": 13,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "sha256": "14995d97bf3c8ccd6dc0292f96d3c7f733b2194e52fe27cde27cae41b5412e3d"
+  },
+  {
+   "blocks": 5,
+   "datedMonIds": 9,
+   "file": "LANE-R03.md",
+   "sha256": "b085d152695af6c7362475fae75885440c9425d1f3553f4f25ef675d583d6421"
+  },
+  {
+   "blocks": 3,
+   "datedMonIds": 7,
+   "file": "LANE-R04.md",
+   "sha256": "9d9718e26815a32ca5aebe6763d0faacb47c4932fcd3b27c81d6422654ef8929"
+  },
+  {
+   "blocks": 3,
+   "datedMonIds": 8,
+   "file": "LANE-R11.md",
+   "sha256": "bc6d05d564d12ee75f66f358b3bde6926087acf173ff4ea42342cc972272b483"
+  },
+  {
+   "blocks": 0,
+   "datedMonIds": 0,
+   "file": "LANE-TEMPLATE.md",
+   "sha256": "aa4c8b26401e09927917ddc1c9d1677a347d4ee0cc0169527f17414897590274"
+  }
+ ],
+ "windows": [
+  {
+   "closed": "2026-11-01",
+   "days": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": null,
+   "typed": false,
+   "typedness": 0.0,
+   "typednessDigestsOnly": 0.0
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": null,
+   "typed": false,
+   "typedness": 0.0,
+   "typednessDigestsOnly": 0.0
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": null,
+   "typed": false,
+   "typedness": 0.0,
+   "typednessDigestsOnly": 0.0
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 0,
+   "file": "LANE-DESIGN-UX.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": null,
+   "typed": false,
+   "typedness": 0.0,
+   "typednessDigestsOnly": 0.0
+  },
+  {
+   "closed": "2026-11-03",
+   "days": 2,
+   "file": "LANE-DESIGN-UX.md",
+   "newMonIds": 5,
+   "opened": "2026-11-01",
+   "ratePerDay": 2.5,
+   "typed": true,
+   "typedness": 0.088,
+   "typednessDigestsOnly": 0.088
+  },
+  {
+   "closed": "2026-10-19",
+   "days": 2,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 0,
+   "opened": "2026-10-17",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 0.894,
+   "typednessDigestsOnly": 0.894
+  },
+  {
+   "closed": "2026-10-21",
+   "days": 2,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 0,
+   "opened": "2026-10-19",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 3.308,
+   "typednessDigestsOnly": 3.308
+  },
+  {
+   "closed": "2026-10-23",
+   "days": 2,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 2,
+   "opened": "2026-10-21",
+   "ratePerDay": 1.0,
+   "typed": true,
+   "typedness": 1.489,
+   "typednessDigestsOnly": 1.489
+  },
+  {
+   "closed": "2026-10-25",
+   "days": 2,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 2,
+   "opened": "2026-10-23",
+   "ratePerDay": 1.0,
+   "typed": true,
+   "typedness": 2.692,
+   "typednessDigestsOnly": 2.516
+  },
+  {
+   "closed": "2026-10-27",
+   "days": 2,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 1,
+   "opened": "2026-10-25",
+   "ratePerDay": 0.5,
+   "typed": true,
+   "typedness": 4.964,
+   "typednessDigestsOnly": 4.858
+  },
+  {
+   "closed": "2026-10-28",
+   "days": 1,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 2,
+   "opened": "2026-10-27",
+   "ratePerDay": 2.0,
+   "typed": true,
+   "typedness": 3.45,
+   "typednessDigestsOnly": 3.45
+  },
+  {
+   "closed": "2026-10-29",
+   "days": 1,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 5,
+   "opened": "2026-10-28",
+   "ratePerDay": 5.0,
+   "typed": true,
+   "typedness": 2.731,
+   "typednessDigestsOnly": 2.731
+  },
+  {
+   "closed": "2026-10-29",
+   "days": 0,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 0,
+   "opened": "2026-10-29",
+   "ratePerDay": null,
+   "typed": true,
+   "typedness": 1.17,
+   "typednessDigestsOnly": 1.17
+  },
+  {
+   "closed": "2026-10-30",
+   "days": 1,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 0,
+   "opened": "2026-10-29",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 4.754,
+   "typednessDigestsOnly": 4.754
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 2,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 0,
+   "opened": "2026-10-30",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 1.018,
+   "typednessDigestsOnly": 1.018
+  },
+  {
+   "closed": "2026-11-03",
+   "days": 2,
+   "file": "LANE-PARALLEL.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 1.111,
+   "typednessDigestsOnly": 1.111
+  },
+  {
+   "closed": "2026-10-30",
+   "days": 2,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 0,
+   "opened": "2026-10-28",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 3.67,
+   "typednessDigestsOnly": 3.643
+  },
+  {
+   "closed": "2026-10-30",
+   "days": 0,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 0,
+   "opened": "2026-10-30",
+   "ratePerDay": null,
+   "typed": true,
+   "typedness": 4.132,
+   "typednessDigestsOnly": 3.926
+  },
+  {
+   "closed": "2026-10-31",
+   "days": 1,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 2,
+   "opened": "2026-10-30",
+   "ratePerDay": 2.0,
+   "typed": true,
+   "typedness": 3.356,
+   "typednessDigestsOnly": 3.356
+  },
+  {
+   "closed": "2026-10-31",
+   "days": 0,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 0,
+   "opened": "2026-10-31",
+   "ratePerDay": null,
+   "typed": true,
+   "typedness": 5.926,
+   "typednessDigestsOnly": 5.776
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 1,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 1,
+   "opened": "2026-10-31",
+   "ratePerDay": 1.0,
+   "typed": true,
+   "typedness": 4.878,
+   "typednessDigestsOnly": 4.878
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 0,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": null,
+   "typed": true,
+   "typedness": 5.84,
+   "typednessDigestsOnly": 5.783
+  },
+  {
+   "closed": "2026-11-03",
+   "days": 2,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 4.348,
+   "typednessDigestsOnly": 4.348
+  },
+  {
+   "closed": "2026-11-04",
+   "days": 1,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 2,
+   "opened": "2026-11-03",
+   "ratePerDay": 2.0,
+   "typed": true,
+   "typedness": 4.649,
+   "typednessDigestsOnly": 4.649
+  },
+  {
+   "closed": "2026-11-04",
+   "days": 0,
+   "file": "LANE-R00-HARNESS-ONION.md",
+   "newMonIds": 0,
+   "opened": "2026-11-04",
+   "ratePerDay": null,
+   "typed": true,
+   "typedness": 5.554,
+   "typednessDigestsOnly": 5.504
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 4,
+   "file": "LANE-R03.md",
+   "newMonIds": 1,
+   "opened": "2026-10-28",
+   "ratePerDay": 0.25,
+   "typed": true,
+   "typedness": 0.661,
+   "typednessDigestsOnly": 0.661
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 0,
+   "file": "LANE-R03.md",
+   "newMonIds": 0,
+   "opened": "2026-11-01",
+   "ratePerDay": null,
+   "typed": true,
+   "typedness": 1.622,
+   "typednessDigestsOnly": 1.622
+  },
+  {
+   "closed": "2026-11-03",
+   "days": 2,
+   "file": "LANE-R03.md",
+   "newMonIds": 2,
+   "opened": "2026-11-01",
+   "ratePerDay": 1.0,
+   "typed": true,
+   "typedness": 2.419,
+   "typednessDigestsOnly": 2.419
+  },
+  {
+   "closed": "2026-11-04",
+   "days": 1,
+   "file": "LANE-R03.md",
+   "newMonIds": 0,
+   "opened": "2026-11-03",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 1.739,
+   "typednessDigestsOnly": 1.739
+  },
+  {
+   "closed": "2026-11-03",
+   "days": 3,
+   "file": "LANE-R04.md",
+   "newMonIds": 0,
+   "opened": "2026-10-31",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 1.019,
+   "typednessDigestsOnly": 0.949
+  },
+  {
+   "closed": "2026-11-05",
+   "days": 2,
+   "file": "LANE-R04.md",
+   "newMonIds": 0,
+   "opened": "2026-11-03",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 2.539,
+   "typednessDigestsOnly": 2.539
+  },
+  {
+   "closed": "2026-11-01",
+   "days": 1,
+   "file": "LANE-R11.md",
+   "newMonIds": 0,
+   "opened": "2026-10-31",
+   "ratePerDay": 0.0,
+   "typed": true,
+   "typedness": 1.568,
+   "typednessDigestsOnly": 1.526
+  },
+  {
+   "closed": "2026-11-03",
+   "days": 2,
+   "file": "LANE-R11.md",
+   "newMonIds": 5,
+   "opened": "2026-11-01",
+   "ratePerDay": 2.5,
+   "typed": true,
+   "typedness": 1.913,
+   "typednessDigestsOnly": 1.913
+  }
+ ]
+}

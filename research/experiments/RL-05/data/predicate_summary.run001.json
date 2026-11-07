@@ -1,0 +1,65 @@
+{
+ "by_conjunct": {
+  "A": {
+   "TRUE": 47
+  },
+  "H": {
+   "TRUE": 47
+  },
+  "I": {
+   "TRUE": 47
+  },
+  "R": {
+   "MISSING": 2,
+   "TRUE": 45
+  },
+  "T": {
+   "FALSE": 6,
+   "TRUE": 41
+  },
+  "V": {
+   "FALSE": 4,
+   "TRUE": 43
+  }
+ },
+ "by_form": {
+  "older": {
+   "FAIL": 5,
+   "PASS": 3
+  },
+  "v1": {
+   "FAIL": 3,
+   "PASS": 34,
+   "UNEVALUATED": 2
+  }
+ },
+ "by_repo_class": {
+  "bridge": {
+   "FAIL": 2,
+   "PASS": 20
+  },
+  "hosted": {
+   "FAIL": 6,
+   "PASS": 17,
+   "UNEVALUATED": 2
+  }
+ },
+ "by_status": {
+  "FAIL": 8,
+  "PASS": 37,
+  "UNEVALUATED": 2
+ },
+ "fail_prs": [
+  23,
+  209,
+  210,
+  32,
+  33,
+  24,
+  231,
+  232
+ ],
+ "merged": 47,
+ "non_merge": 6,
+ "records": 53
+}

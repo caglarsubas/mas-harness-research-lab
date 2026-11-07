@@ -1,0 +1,155 @@
+{
+ "descriptive": {
+  "by_form": {
+   "delta": {
+    "changes_required_fraction": 0.459,
+    "median_findings": 2.0,
+    "rounds": 37
+   },
+   "full": {
+    "changes_required_fraction": 0.642,
+    "median_findings": 4.0,
+    "rounds": 67
+   }
+  },
+  "by_round_index": {
+   "1": {
+    "changes_required_fraction": 0.714,
+    "changes_required_wilson95": [
+     0.5294,
+     0.8475
+    ],
+    "mean_findings": 5.93,
+    "median_disclosures": 8.0,
+    "median_findings": 6.0,
+    "median_major": 0.0,
+    "median_minor": 1.0,
+    "median_note": 3.0,
+    "rounds": 28,
+    "with_finding_fraction": 0.964,
+    "with_finding_wilson95": [
+     0.8229,
+     0.9937
+    ]
+   },
+   "2": {
+    "changes_required_fraction": 0.417,
+    "changes_required_wilson95": [
+     0.2447,
+     0.6117
+    ],
+    "mean_findings": 3.29,
+    "median_disclosures": 9.0,
+    "median_findings": 2.0,
+    "median_major": 0.0,
+    "median_minor": 0.0,
+    "median_note": 2.0,
+    "rounds": 24,
+    "with_finding_fraction": 0.708,
+    "with_finding_wilson95": [
+     0.5083,
+     0.8509
+    ]
+   },
+   "3": {
+    "changes_required_fraction": 0.529,
+    "changes_required_wilson95": [
+     0.3096,
+     0.7384
+    ],
+    "mean_findings": 2.76,
+    "median_disclosures": 8.0,
+    "median_findings": 3.0,
+    "median_major": 0.0,
+    "median_minor": 1.0,
+    "median_note": 2.0,
+    "rounds": 17,
+    "with_finding_fraction": 0.765,
+    "with_finding_wilson95": [
+     0.5274,
+     0.9045
+    ]
+   },
+   "4+": {
+    "changes_required_fraction": 0.6,
+    "changes_required_wilson95": [
+     0.4357,
+     0.7445
+    ],
+    "mean_findings": 3.0,
+    "median_disclosures": 10.0,
+    "median_findings": 3.0,
+    "median_major": 0.0,
+    "median_minor": 1.0,
+    "median_note": 2.0,
+    "rounds": 35,
+    "with_finding_fraction": 0.943,
+    "with_finding_wilson95": [
+     0.8139,
+     0.9842
+    ]
+   }
+  },
+  "by_series_kind": {
+   "contract": {
+    "max_rounds": 5,
+    "median_rounds_per_series": 3,
+    "rounds": 27,
+    "series": 10
+   },
+   "design": {
+    "max_rounds": 27,
+    "median_rounds_per_series": 3,
+    "rounds": 37,
+    "series": 5
+   },
+   "packet": {
+    "max_rounds": 10,
+    "median_rounds_per_series": 3,
+    "rounds": 40,
+    "series": 10
+   }
+  },
+  "duration_s": {
+   "max": 9071.0,
+   "median": 1170.0,
+   "n": 104
+  },
+  "interruptions": 12,
+  "later_rounds_with_finding": {
+   "fraction": 0.829,
+   "rounds": 76,
+   "wilson95": [
+    0.729,
+    0.8972
+   ],
+   "with_finding": 63
+  },
+  "rulings": {
+   "KEEP": 104,
+   "PENDING": 0,
+   "VOID": 0
+  },
+  "verdicts": {
+   "CHANGES_REQUIRED": 60,
+   "PASS_FOR_ADOPTION": 11,
+   "PASS_FOR_BUILD": 3,
+   "PASS_FOR_PRECHECK": 14,
+   "PASS_FOR_PUSH": 16
+  }
+ },
+ "dropped_junk": 1,
+ "h09b": {
+  "fraction": 0.1111,
+  "matched": 9,
+  "push_heads": 11,
+  "refused": 1,
+  "unmatched": 2,
+  "wilson95": [
+   0.0199,
+   0.435
+  ]
+ },
+ "rows_in": 105,
+ "rows_used": 104
+}

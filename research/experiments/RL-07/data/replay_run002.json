@@ -1,0 +1,895 @@
+{
+ "extends_digests_ok": {
+  "inheritance_extends_product_rule": true,
+  "product_rule_extends_identity_rule": true
+ },
+ "modules": {
+  "safe_load": true,
+  "v1": true,
+  "v2": true,
+  "v3": true
+ },
+ "sections": {
+  "allowedPaths": {
+   "expected_refuse": 4,
+   "matches": 6,
+   "mismatches": [],
+   "n": 6,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "AP1",
+     "observed": "OK"
+    },
+    {
+     "clause": "R11",
+     "expect": "refuse",
+     "expected_clause": "R11",
+     "id": "AP1-missing-product",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R11",
+     "expect": "refuse",
+     "expected_clause": "R11",
+     "id": "AP1-ghost-path",
+     "observed": "refuse"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "AP2",
+     "observed": "OK"
+    },
+    {
+     "clause": "R11",
+     "expect": "refuse",
+     "expected_clause": "R11",
+     "id": "AP2-missing-product",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R11",
+     "expect": "refuse",
+     "expected_clause": "R11",
+     "id": "AP2-ghost-path",
+     "observed": "refuse"
+    }
+   ]
+  },
+  "bindings": {
+   "expected_refuse": 13,
+   "matches": 14,
+   "mismatches": [],
+   "n": 14,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "B-K1",
+     "observed": "OK"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-empty",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-repeat",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-not-id",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-annotated-empty",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-chained-empty",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-tuple-target",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-walrus",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-import-as",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-annotated-k1",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-augmented",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-plain-then-annotated",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-nested",
+     "observed": "refuse"
+    },
+    {
+     "clause": "binding",
+     "expect": "refuse",
+     "expected_clause": "binding",
+     "id": "B-twice",
+     "observed": "refuse"
+    }
+   ]
+  },
+  "classForms_v2": {
+   "expected_refuse": 19,
+   "matches": 23,
+   "mismatches": [],
+   "n": 23,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "CF-K0",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "CF-K1",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "CF-K2",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "CF-K0+-274",
+     "observed": "OK"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K0-with-F1",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K0-with-F6",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-partial",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-guarded-return",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-guarded-digest",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-authority-early-return",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-guarded-pin",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-F7-moved",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-F7-weakened",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-keyset-order",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-other-kwarg",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-list-comprehension",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-reversed-operands",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-set-sum",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-successor-list",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF-K1-historical-bytes-guard",
+     "observed": "refuse"
+    },
+    {
+     "clause": "D",
+     "expect": "refuse",
+     "expected_clause": "D",
+     "id": "CF-K1-D-edit",
+     "observed": "refuse"
+    },
+    {
+     "clause": "G1",
+     "expect": "refuse",
+     "expected_clause": "G1",
+     "id": "CF-K1-G1-edit",
+     "observed": "refuse"
+    },
+    {
+     "clause": "G2",
+     "expect": "refuse",
+     "expected_clause": "G2",
+     "id": "CF-K1-G2-edit",
+     "observed": "refuse"
+    }
+   ]
+  },
+  "classForms_v3": {
+   "expected_refuse": 8,
+   "matches": 9,
+   "mismatches": [],
+   "n": 9,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "CF3-K1-278",
+     "observed": "OK"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F6-at-278",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F9-missing",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F9-after-for",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F6prime-at-277",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F9-guarded",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F9-repeated",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F9-swapped",
+     "observed": "refuse"
+    },
+    {
+     "clause": "P-form",
+     "expect": "refuse",
+     "expected_clause": "P-form",
+     "id": "CF3-F9-at-277-beside-F6",
+     "observed": "refuse"
+    }
+   ]
+  },
+  "counts": {
+   "expected_refuse": 6,
+   "matches": 9,
+   "mismatches": [],
+   "n": 9,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "C-K0",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "C-K1",
+     "observed": "OK"
+    },
+    {
+     "clause": "counts",
+     "expect": "refuse",
+     "expected_clause": "counts",
+     "id": "C-listed-not-added",
+     "observed": "refuse"
+    },
+    {
+     "clause": "counts",
+     "expect": "refuse",
+     "expected_clause": "counts",
+     "id": "C-unlisted-added",
+     "observed": "refuse"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "C-K2",
+     "observed": "OK"
+    },
+    {
+     "clause": "counts",
+     "expect": "refuse",
+     "expected_clause": "counts",
+     "id": "C-listed-not-added-K2",
+     "observed": "refuse"
+    },
+    {
+     "clause": "counts",
+     "expect": "refuse",
+     "expected_clause": "counts",
+     "id": "C-unlisted-added-K2",
+     "observed": "refuse"
+    },
+    {
+     "clause": "counts",
+     "expect": "refuse",
+     "expected_clause": "counts",
+     "id": "C-product-only",
+     "observed": "refuse"
+    },
+    {
+     "clause": "counts",
+     "expect": "refuse",
+     "expected_clause": "counts",
+     "id": "C-product-only-K2",
+     "observed": "refuse"
+    }
+   ]
+  },
+  "inheritance": {
+   "expected_refuse": 17,
+   "matches": 26,
+   "mismatches": [],
+   "n": 26,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-equal",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-insert-start",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-insert-middle",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-insert-end",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-ruled10-vs-001",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-B11-vs-002",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-K2",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-first-packet",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "I-cut-277",
+     "observed": "OK"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-drop",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-reorder",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-edit",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-276-shape",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-ruled10-vs-002",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-cut-278",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pin-missing",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pin-foreign",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pin-stale",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pin-digest",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pin-unexpected",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-tie",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-base-tie",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pred-disagree",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pred-none-present",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-pred-tie",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R13",
+     "expect": "refuse",
+     "expected_clause": "R13",
+     "id": "I-unreadable-line",
+     "observed": "refuse"
+    }
+   ]
+  },
+  "pin": {
+   "detail": {
+    "digest_equal": true,
+    "id": "V3-PIN",
+    "path": "scripts/chain_identity_v2.py",
+    "pin_v2_ok": true
+   },
+   "expected_refuse": 0,
+   "matches": 1,
+   "mismatches": [],
+   "n": 1
+  },
+  "products": {
+   "expected_refuse": 12,
+   "matches": 14,
+   "mismatches": [],
+   "n": 14,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "P-K1",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "P-K2",
+     "observed": "OK"
+    },
+    {
+     "clause": "R2",
+     "expect": "refuse",
+     "expected_clause": "R2",
+     "id": "R2-form",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R2",
+     "expect": "refuse",
+     "expected_clause": "R2",
+     "id": "R2-collision",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R2",
+     "expect": "refuse",
+     "expected_clause": "R2",
+     "id": "R2-id-field",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R3",
+     "expect": "refuse",
+     "expected_clause": "R3",
+     "id": "R3",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R8",
+     "expect": "refuse",
+     "expected_clause": "R8",
+     "id": "R8-id-form",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R8",
+     "expect": "refuse",
+     "expected_clause": "R8",
+     "id": "R8-unknown",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R12",
+     "expect": "refuse",
+     "expected_clause": "R12",
+     "id": "R12-two-lines",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R12",
+     "expect": "refuse",
+     "expected_clause": "R12",
+     "id": "R12-duplicate-key",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R12",
+     "expect": "refuse",
+     "expected_clause": "R12",
+     "id": "R12-L",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R3",
+     "expect": "refuse",
+     "expected_clause": "R3",
+     "id": "R3-K2",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R8",
+     "expect": "refuse",
+     "expected_clause": "R8",
+     "id": "R8-id-form-K2",
+     "observed": "refuse"
+    },
+    {
+     "clause": "R12",
+     "expect": "refuse",
+     "expected_clause": "R12",
+     "id": "R12-duplicate-key-K2",
+     "observed": "refuse"
+    }
+   ]
+  },
+  "steps": {
+   "expected_refuse": 9,
+   "matches": 14,
+   "mismatches": [],
+   "n": 14,
+   "rows": [
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "K1",
+     "observed": "OK"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K1-no-starred",
+     "observed": "refuse"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K1-pin-by-one",
+     "observed": "refuse"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K0-starred",
+     "observed": "refuse"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "K2",
+     "observed": "OK"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "K0+-275",
+     "observed": "OK"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K0+-275-c-depth",
+     "observed": "refuse"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K0+-275-s-pin",
+     "observed": "refuse"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K0+-v-wrong-layer",
+     "observed": "refuse"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "iv-189",
+     "observed": "OK"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "iv-189-no-product",
+     "observed": "refuse"
+    },
+    {
+     "clause": "",
+     "expect": "OK",
+     "expected_clause": null,
+     "id": "K0",
+     "observed": "OK"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K1-s-message",
+     "observed": "refuse"
+    },
+    {
+     "clause": "step",
+     "expect": "refuse",
+     "expected_clause": "step",
+     "id": "K0+-275-s-message",
+     "observed": "refuse"
+    }
+   ]
+  }
+ }
+}

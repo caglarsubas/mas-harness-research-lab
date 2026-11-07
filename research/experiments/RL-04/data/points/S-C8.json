@@ -1,0 +1,129 @@
+{
+ "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "points": {
+  "S-C8": {
+   "arms": {
+    "advisory": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 85106,
+       "min": 0,
+       "p50": 23255,
+       "p95": 69767
+      },
+      "lastMergeTick": {
+       "max": 169,
+       "min": 119,
+       "p50": 138,
+       "p95": 160
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 32
+    },
+    "leased": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 93750,
+       "min": 0,
+       "p50": 18518,
+       "p95": 87719
+      },
+      "lastMergeTick": {
+       "max": 268,
+       "min": 145,
+       "p50": 186,
+       "p95": 211
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 0
+    }
+   },
+   "d_values": [
+    5952,
+    0,
+    5486,
+    9474,
+    -65980,
+    0,
+    31306,
+    -12987,
+    26224,
+    4365,
+    0,
+    3120,
+    -51197,
+    10797,
+    16141,
+    12121,
+    5291,
+    0,
+    0,
+    44444,
+    3095,
+    5628,
+    4365,
+    -16564,
+    0,
+    9740,
+    5074,
+    5291,
+    -58712,
+    -72727,
+    0,
+    0
+   ],
+   "family": "CENTRAL",
+   "items": 40,
+   "paired_d": {
+    "mean": -2195.4,
+    "median": 4365,
+    "negative": 6,
+    "positive": 18,
+    "zero": 8
+   },
+   "workers": 8
+  }
+ },
+ "pooled_n_ge_2": {
+  "bootstrap95": [
+   -11459.3,
+   6017.7
+  ],
+  "mean_d": -2195.4,
+  "pairs": 32,
+  "resamples": 1000,
+  "seed": 20261104
+ },
+ "seeds": 32,
+ "wall_s": {
+  "S-C8": 0.69
+ }
+}

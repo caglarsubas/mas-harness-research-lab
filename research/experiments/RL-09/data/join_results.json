@@ -1,0 +1,325 @@
+{
+ "base_counterexamples_not_enumerated": 17,
+ "families": {
+  "D_amendment_items_obligations": 23,
+  "M_selinux_assertions": 214,
+  "S_seccomp_duties": 69,
+  "T04_rows": 8
+ },
+ "gate": {
+  "covered": 5,
+  "outcome": "FAIL",
+  "paths": 11,
+  "residual": 0,
+  "uncovered": 4,
+  "unresolved": 2
+ },
+ "paths": {
+  "18": {
+   "D": [],
+   "M": [],
+   "S": [],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    564,
+    566
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "UNCOVERED",
+   "tokens": [
+    "A3"
+   ]
+  },
+  "19": {
+   "D": [],
+   "M": [
+    "A20",
+    "A21",
+    "A24",
+    "A25",
+    "A52",
+    "A63",
+    "A64",
+    "A66"
+   ],
+   "S": [
+    "HOST_CONTAINMENT#3"
+   ],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 8,
+    "S": 1,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    567,
+    569
+   ],
+   "residual": true,
+   "same_in_hs53": true,
+   "status": "COVERED",
+   "tokens": [
+    "RefuseManualStart",
+    "S4",
+    "planeon_containment_enabled=0",
+    "secure_mode_policyload"
+   ]
+  },
+  "20": {
+   "D": [
+    "hs53:H1"
+   ],
+   "M": [
+    "A01",
+    "A02",
+    "A60.1.name_connect",
+    "A60.2.name_connect",
+    "A60.3.name_connect",
+    "A60.4.name_connect",
+    "A60.5.name_connect",
+    "A60.6.name_connect",
+    "A60.7.name_connect"
+   ],
+   "S": [],
+   "T04": [
+    "hs53:H1"
+   ],
+   "counts": {
+    "D": 1,
+    "M": 9,
+    "S": 0,
+    "T04": 1
+   },
+   "has_required": true,
+   "lines": [
+    570,
+    571
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "COVERED",
+   "tokens": [
+    "P2",
+    "name_connect"
+   ]
+  },
+  "21": {
+   "D": [],
+   "M": [],
+   "S": [],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    572,
+    573
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "UNCOVERED",
+   "tokens": [
+    "C6"
+   ]
+  },
+  "22": {
+   "D": [],
+   "M": [],
+   "S": [],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    574,
+    575
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "UNCOVERED",
+   "tokens": [
+    "C4"
+   ]
+  },
+  "23": {
+   "D": [],
+   "M": [],
+   "S": [],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    576,
+    577
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "UNRESOLVED",
+   "tokens": []
+  },
+  "24": {
+   "D": [],
+   "M": [],
+   "S": [],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    578,
+    579
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "UNRESOLVED",
+   "tokens": []
+  },
+  "25": {
+   "D": [
+    "hs53:H1"
+   ],
+   "M": [
+    "A60.8.connectto",
+    "A60.9.connectto",
+    "A60.10.connectto",
+    "A60.11.connectto",
+    "A60.12.connectto",
+    "A60.13.connectto",
+    "A60.14.connectto"
+   ],
+   "S": [],
+   "T04": [
+    "hs53:H1"
+   ],
+   "counts": {
+    "D": 1,
+    "M": 7,
+    "S": 0,
+    "T04": 1
+   },
+   "has_required": true,
+   "lines": [
+    580,
+    581
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "COVERED",
+   "tokens": [
+    "connectto"
+   ]
+  },
+  "26": {
+   "D": [],
+   "M": [
+    "A01",
+    "A02",
+    "A10"
+   ],
+   "S": [],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 3,
+    "S": 0,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    582,
+    583
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "COVERED",
+   "tokens": [
+    "P2",
+    "P4"
+   ]
+  },
+  "27": {
+   "D": [
+    "hs53:E1",
+    "hs53:H2",
+    "he5:E1"
+   ],
+   "M": [],
+   "S": [
+    "POLICY_WRITER#0"
+   ],
+   "T04": [],
+   "counts": {
+    "D": 3,
+    "M": 0,
+    "S": 1,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    584,
+    585
+   ],
+   "residual": true,
+   "same_in_hs53": true,
+   "status": "COVERED",
+   "tokens": [
+    "v2"
+   ]
+  },
+  "28": {
+   "D": [],
+   "M": [],
+   "S": [],
+   "T04": [],
+   "counts": {
+    "D": 0,
+    "M": 0,
+    "S": 0,
+    "T04": 0
+   },
+   "has_required": true,
+   "lines": [
+    586,
+    589
+   ],
+   "residual": false,
+   "same_in_hs53": true,
+   "status": "UNCOVERED",
+   "tokens": [
+    "dir search",
+    "prog_run"
+   ]
+  }
+ },
+ "residual_entries": [
+  "R-OBSERVER-TCP-LISTEN",
+  "R-HE5-POSTEXEC"
+ ]
+}

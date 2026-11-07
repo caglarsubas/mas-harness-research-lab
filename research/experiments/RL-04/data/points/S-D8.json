@@ -1,0 +1,129 @@
+{
+ "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "points": {
+  "S-D8": {
+   "arms": {
+    "advisory": {
+     "claimOverlapSeeds": 32,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 583333,
+       "min": 438356,
+       "p50": 511904,
+       "p95": 581632
+      },
+      "lastMergeTick": {
+       "max": 278,
+       "min": 210,
+       "p50": 242,
+       "p95": 276
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 32
+    },
+    "leased": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 76923,
+       "min": 0,
+       "p50": 18518,
+       "p95": 66666
+      },
+      "lastMergeTick": {
+       "max": 284,
+       "min": 158,
+       "p50": 198,
+       "p95": 240
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 0
+    }
+   },
+   "d_values": [
+    428959,
+    438356,
+    549903,
+    440351,
+    493037,
+    500000,
+    473386,
+    534740,
+    469643,
+    498417,
+    555555,
+    505291,
+    565476,
+    429288,
+    375484,
+    504070,
+    562402,
+    568421,
+    461538,
+    506172,
+    525887,
+    455491,
+    494047,
+    463300,
+    563829,
+    414319,
+    514815,
+    498040,
+    519231,
+    482352,
+    517647,
+    395834
+   ],
+   "family": "DECENTRALIZED",
+   "items": 40,
+   "paired_d": {
+    "mean": 490790.0,
+    "median": 498417,
+    "negative": 0,
+    "positive": 32,
+    "zero": 0
+   },
+   "workers": 8
+  }
+ },
+ "pooled_n_ge_2": {
+  "bootstrap95": [
+   474638.3,
+   507957.9
+  ],
+  "mean_d": 490790.0,
+  "pairs": 32,
+  "resamples": 1000,
+  "seed": 20261104
+ },
+ "seeds": 32,
+ "wall_s": {
+  "S-D8": 0.89
+ }
+}

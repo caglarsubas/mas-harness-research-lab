@@ -1,0 +1,7 @@
+8a3a09bb5dbc0880 host-interface-inputs/resolved/HOST_INTERFACE_SPEC.md
+fa7f36fb7d291ab5 host-interface-amendment-hs53/HOST_INTERFACE_SPEC.md
+e4255685a38f183d host-interface-amendment-hs53/amendment.json
+82ca60cd553c1779 host-interface-amendment-he5/amendment.json
+879909a86037b153 seccomp-allowlists-v5/allowlists.json
+3d2830b879f953ce selinux-matrix-v4/matrix.json
+574d2ab3441d111f host-interface-plan.json

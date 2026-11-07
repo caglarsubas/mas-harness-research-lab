@@ -1,0 +1,74 @@
+{
+ "checks": [
+  {
+   "checkId": "k1",
+   "claimId": "c1",
+   "contextId": "ctx",
+   "establishedValue": "2",
+   "evidence": [
+    "e1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "k1"
+   ],
+   "claimId": "c1",
+   "value": "2",
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "c1",
+   "delivered": "returns 2",
+   "requirement": "the function returns 2 for input 1",
+   "rolloutValues": [
+    {
+     "rollout": "r1",
+     "value": "2"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "ctx",
+   "inheritsFrom": [],
+   "role": "VERIFIER"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+   "evidenceId": "e1",
+   "kind": "TEST_RESULT",
+   "producedBy": "external-test-runner"
+  }
+ ],
+ "ledgerId": "ext-emitter-ledger-1",
+ "rollouts": [
+  "r1"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "policyViolations": [],
+  "producedBy": "ctx",
+  "scores": {},
+  "status": "PASS",
+  "unresolvedChecks": []
+ }
+}

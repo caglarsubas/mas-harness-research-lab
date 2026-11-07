@@ -1,0 +1,201 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-07a",
+   "contextId": "lab",
+   "establishedValue": "rows used 23 of 27 (bound: at least 20); dropped {\"no_slot\": 3, \"no_tests_passed\": 1}",
+   "evidence": [
+    "E1",
+    "E2",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-07a",
+   "contextId": "lab",
+   "establishedValue": "bK fit T 99.8634 [-75.913, 265.1279]; fit logT 0.0878 [-0.1105, 0.2728]; bound: 95% interval includes zero in both fits",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-07a",
+   "contextId": "lab",
+   "establishedValue": "bL fit T 49.46 [17.0497, 85.0782]; fit logT 0.0539 [0.0175, 0.0946]; bC fit T -25.921 [-194.3488, 152.997]; fit logT -0.0064 [-0.1984, 0.1988]; bound: at least one of bL, bC excludes zero with the same sign in both fits",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-07a",
+   "contextId": "lab",
+   "establishedValue": "pairwise r(C,K) = 0.982; the gate cannot separate test count from layer count at this collinearity; margin not defined",
+   "evidence": [
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-07a",
+   "contextId": "lab",
+   "establishedValue": "PREREG v1 section 3 keeps the capped run and drops runs without tests_passed; the capped run has none, so it was dropped: a rule conflict, recorded as a finding, not corrected",
+   "evidence": [
+    "E4",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "FAIL",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C6",
+   "claimId": "H-07b",
+   "contextId": "lab",
+   "establishedValue": "waits for I3 (Build-R00's K 6 vs K 8 A/B) under amendment v1.1; no run",
+   "evidence": [
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 6,
+   "target": "DELIVERED"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+   ],
+   "claimId": "H-07a",
+   "value": "PASS by the preregistered gate with one unresolved check (C4) and one finding (C5)",
+   "verdict": "SUPPORTED"
+  },
+  {
+   "checks": [
+    "C6"
+   ],
+   "claimId": "H-07b",
+   "value": "waits for I3",
+   "verdict": "UNRESOLVED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-07a",
+   "delivered": "load has an interval excluding zero in both fits; layer count's includes zero; test count and layer count are collinear (r 0.98) and not separated",
+   "requirement": "H-07a: verify-time growth since slot 255 is explained by host load and the outer suite's test count, not by layer count",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "PASS by gate; separation unresolved"
+    }
+   ]
+  },
+  {
+   "claimId": "H-07b",
+   "delivered": "not run; waits for I3",
+   "requirement": "H-07b: worker wall time at K 8 is non-inferior to K 6 on this host",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "not run"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:808bf769ab2bbc1e45a768816bc1bbf28ccbea052ff20a281b5b4c003532fb4b",
+   "evidenceId": "E1",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Lane-Monitor.export-I2.MON-RL-M1"
+  },
+  {
+   "contentDigest": "sha256:6c5a1c58e087b74e5584ea218ff3c3660a087266022fe8266f626606bf232cec",
+   "evidenceId": "E2",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.rl01_extract"
+  },
+  {
+   "contentDigest": "sha256:2746a58c0227641c5053a6c2f1c5271ecbdc3ace5ebb5f28bcb0f92d01218783",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl01_fit.run-001"
+  },
+  {
+   "contentDigest": "sha256:fc953ecc2a80dccadb10119a132de10bb98b06856cda17bd8a10f76cac6714fe",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:f0bdb2f7f3d52e2a816144012675329052a6ab9b04714a88d9e84d83f1c2897b",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  }
+ ],
+ "ledgerId": "RL-01-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:f0bdb2f7f3d52e2a816144012675329052a6ab9b04714a88d9e84d83f1c2897b"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:808bf769ab2bbc1e45a768816bc1bbf28ccbea052ff20a281b5b4c003532fb4b",
+   "sha256:6c5a1c58e087b74e5584ea218ff3c3660a087266022fe8266f626606bf232cec",
+   "sha256:2746a58c0227641c5053a6c2f1c5271ecbdc3ace5ebb5f28bcb0f92d01218783",
+   "sha256:fc953ecc2a80dccadb10119a132de10bb98b06856cda17bd8a10f76cac6714fe",
+   "sha256:f0bdb2f7f3d52e2a816144012675329052a6ab9b04714a88d9e84d83f1c2897b"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "bootstrap_draws": 1000,
+   "r2_fit1_permille": 626,
+   "r2_fit2_permille": 620,
+   "rows_used": 23
+  },
+  "status": "PASS",
+  "unresolvedChecks": [
+   "C4",
+   "C6"
+  ]
+ }
+}

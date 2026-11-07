@@ -1,0 +1,29 @@
+{
+ "allowList66": "66 of 66 layers satisfy the allow-list",
+ "bridged_classes_equal": true,
+ "bridgesChecked_recorded": 20,
+ "bridgesExplained_recorded": 20,
+ "bridges_consistent": true,
+ "bridges_explained_counted": 20,
+ "bumpClean_recorded": 19,
+ "bumpExceptions_recorded": [
+  241
+ ],
+ "bump_forms_seen": [
+  "[\"0879eb14..0879eb14 N=236 MET-ENFORCE-026: 46 non-old-head layers, edits {'i': 46, 'ii': 92, 'iv': 1, 'iii': 87, 'v': 1}, failures 0\"]",
+  "[\"27c54605..27c54605 N=252 MET-ENFORCE-038: 62 non-old-head layers, edits {'i': 62, 'ii': 124, 'iv': 1, 'iii': 119, 'v': 1}, failures 0\"]",
+  "[\"29c84b36..29c84b36 N=254 MET-ENFORCE-039: 64 non-old-head layers, edits {'i': 64, 'ii': 128, 'iv': 1, 'iii': 123, 'v': 1}, failures 0\"]",
+  "[\"35b733b5..35b733b5 N=251 MET-LINUX-007: 61 non-old-head layers, edits {'i': 61, 'ii': 122, 'iv': 1, 'iii': 117, 'v': 1}, failures 0\"]",
+  "[\"3cba1171..3cba1171 N=241 MET-PERF-040: 51 non-old-head layers, edits {'i': 50, 'ii': 100, 'iv': 1, 'iii': 96}, failures 1\", \"    239 validate_selinux_matrix_v3: node type For -> Assign in def:replay_v5_vectors\"]",
+  "[\"422bd18a..422bd18a N=247 MET-ENFORCE-034: 57 non-old-head layers, edits {'i': 57, 'ii': 114, 'iv': 1, 'iii': 109, 'v': 1}, failures 0\"]"
+ ],
+ "discrepancies": 0,
+ "inheritance_refusal_clauses": {
+  "R13": 17
+ },
+ "layers": 66,
+ "note": "pin_refusal_vectors counts inheritance vectors whose detail mentions a pin (the refusal field holds the clause R13 for all 17 refusals); corrected after run 002 from a first filter on the refusal field alone",
+ "pin_refusal_vectors": 5,
+ "pin_refusal_vectors_naming_a_slot": 0,
+ "steps_listed": 20
+}

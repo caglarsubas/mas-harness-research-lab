@@ -1,0 +1,182 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "totality: 15 ledger evidence kinds + 2 not-evidence names and 6 native classes all map to one level each; the ledger's consistencyOnly, notConfirmation and notEvidence lists equal the map's level-3, level-2 and level-1 sets",
+   "evidence": [
+    "E2",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_SCHEMA",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "clause 1: all 7 ledger vectors expecting CONSISTENCY_ONLY (2), CONSENSUS_ONLY (2) or NOT_EVIDENCE (3) carry an evidence item of the matching level; 0 violations",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "clause 2 as frozen ('no such vector carries a deterministic check that establishes a value from level-5 kinds on the delivered target'): violated by all 7 (L42, L43, L44, L79, L80, L81, L82); each such ledger holds two claims and the establishing check belongs to the other claim; the clause was scoped per ledger where the rule is per claim; recorded as a finding, not re-tuned",
+   "evidence": [
+    "E2",
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "native agreement: 13 negative vectors name an evidence class in their refusal: 1 offers LABEL_BOUND where OBSERVED is required (strictly below), 4 lack a required OBSERVED field, 8 offer an OBSERVED-only field in a LABEL_BOUND role's capture (above the role's ceiling); all consistent with the order; 0 violations",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "post hoc, not gated: per claim, the refused claim in each of the 7 vectors has 0 establishing passing deciding checks and carries exactly the weak level the code names (L44, L79-L82); L42 and L43 carry the not-evidence item outside any check (recorded as evidence only), which the ledger refuses on sight",
+   "evidence": [
+    "E4"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C6",
+   "claimId": "H-04",
+   "contextId": "lab",
+   "establishedValue": "asymmetries: OUT_OF_SCOPE (native) has no ledger counterpart; LABEL_BOUND, ENTRY_BOUND and DECLARED_T04 share PROOF_BOUND; NOT_CONFIRMATION (ledger) has no native counterpart; a shared vector set would need both records to emit the level with each item",
+   "evidence": [
+    "E5"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 6,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6"
+   ],
+   "claimId": "H-04",
+   "value": "FAIL as preregistered on clause 2 (C3); the per-claim reading (C5) shows the composition holding; a per-claim restatement is a new id",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-04",
+   "delivered": "maps total; native refusals agree; ledger refusals agree per claim but the frozen clause 2 was per ledger and fails on all 7 vectors",
+   "requirement": "H-04: the verdict ledger's evidence rule and the host record's evidence classes compose into one evidence algebra (one five-level order, both maps total, both records' refusals agree with the order)",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL by gate; agreement per claim"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.export-architecture-afee03b9.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:4cd6190ddf2bb6390df964211905e72b9cf25132b7dd1bd425f00663904de7ef",
+   "evidenceId": "E2",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl10_algebra.run-001"
+  },
+  {
+   "contentDigest": "sha256:3e598d6bc288a4c1b99318d253c7c222e1a36254e9786d1f9168a2bc52b58021",
+   "evidenceId": "E3",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.inputs-list"
+  },
+  {
+   "contentDigest": "sha256:d1bd456d6a080a60a209e1b02aeea5c58c6ce5803d020ae845b7555c1e87cbad",
+   "evidenceId": "E4",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:9e5db1c5540e120dfef31db7e305293f3377c8a76311097479de0f791b882021",
+   "evidenceId": "E5",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1"
+  }
+ ],
+ "ledgerId": "RL-10-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:9e5db1c5540e120dfef31db7e305293f3377c8a76311097479de0f791b882021"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "sha256:4cd6190ddf2bb6390df964211905e72b9cf25132b7dd1bd425f00663904de7ef",
+   "sha256:3e598d6bc288a4c1b99318d253c7c222e1a36254e9786d1f9168a2bc52b58021",
+   "sha256:d1bd456d6a080a60a209e1b02aeea5c58c6ce5803d020ae845b7555c1e87cbad",
+   "sha256:9e5db1c5540e120dfef31db7e305293f3377c8a76311097479de0f791b882021"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "c2_vectors": 7,
+   "c3_vectors": 13,
+   "clause2_violations": 7,
+   "ledger_vectors": 112,
+   "native_negatives": 444
+  },
+  "status": "FAIL",
+  "unresolvedChecks": [
+   "C6"
+  ]
+ }
+}

@@ -1,0 +1,179 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-18-widened",
+   "contextId": "lab",
+   "establishedValue": "paths 18-28: covered 10, residual 0, uncovered 0, unresolved 1; bound: every path covered or residual; per path: 18 COVERED via G/G_text/R (S 0, M 0, D 0, G 161, text 9, R 5; tokens A3,ADMITTED_BEFORE_INVALIDATION,CREATE,RBAC); 19 COVERED via S/M (S 1, M 8, D 0, G 0, text 0, R 0; tokens RefuseManualStart,S4,planeon_containment_enabled=0,secure_mode_policyload); 20 COVERED via M/D/G (S 0, M 9, D 1, G 8, text 0, R 0; tokens P2,name_connect); 21 COVERED via G/G_text/R (S 0, M 0, D 0, G 103, text 2, R 1; tokens C6,HELD); 22 COVERED via G/G_text/R (S 0, M 0, D 0, G 6, text 1, R 8; tokens C4); 23 COVERED via S/M/G/G_text (S 2, M 1, D 0, G 9, text 2, R 0; tokens I07,WRITE_OBJECT); 24 UNRESOLVED via none (S 0, M 0, D 0, G 0, text 0, R 0; tokens none); 25 COVERED via S/M/D (S 6, M 7, D 2, G 0, text 0, R 0; tokens AF_UNIX,connectto); 26 COVERED via M/G (S 0, M 3, D 0, G 18, text 0, R 0; tokens CSR,P2,P4); 27 COVERED via S/M/D/G/G_text (S 1, M 1, D 3, G 22, text 6, R 0; tokens BPF_OBJ_GET,CAP_SYS_ADMIN,GET_FD_BY_ID,v2); 28 COVERED via G_text (S 0, M 0, D 0, G 0, text 1, R 0; tokens dir search,prog_run)",
+   "evidence": [
+    "E2",
+    "E3",
+    "E4"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 1,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-18-widened",
+   "contextId": "lab",
+   "establishedValue": "expected-state cells (MON-RL-M17) against the join: 18: PINNED by vector (expected); join: R 5 cited transcripts + G rows: agrees; 21: PINNED by vector (expected); join: R T25 + G rows: agrees; 22: closed by the model via C2, vectored T02/T03 (expected); join: R 8 cited transcripts incl. T02, T03: agrees; 28: DECLARED_T04 until a proof id (expected); join: no S, M, D, T04 or vector row, one README text mention only: agrees in substance (documentary, not pinned)",
+   "evidence": [
+    "E2",
+    "E6"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 2,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-18-widened",
+   "contextId": "lab",
+   "establishedValue": "path 24 (an aggregation controller widening an aggregated ClusterRole; required: profile ...) yields no token under the widened rule (its terms are CamelCase names and prose), so the join was not attempted; missing clause for the next amendment: a clause token or operation name for the aggregation-controller requirement",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 3,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-18-widened",
+   "contextId": "lab",
+   "establishedValue": "weak matches disclosed: path 18's 161 G rows come mostly from the generic tokens CREATE and RBAC (the 5 cited transcripts are the strong rows); path 27's rows via v2 are generic; path 28 is covered by one README mention only (the i05-gate-channel v4 README names the cgroup directory search), which is documentary coverage, not a proof or a vector; open cells per MON-RL-M17: the admission-v4 Q12/Q13 replay for A3, C6's tombstone half, the C4 stamp-equality branch (unreachable by the model), a T04 proof id for 28",
+   "evidence": [
+    "E2"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C5",
+   "claimId": "H-18-widened",
+   "contextId": "lab",
+   "establishedValue": "counterexamples 1-17 remain UNRESOLVED-by-input (not enumerated in any published record)",
+   "evidence": [
+    "E6"
+   ],
+   "kind": "DETERMINISTIC_POLICY",
+   "outcome": "INCONCLUSIVE",
+   "sequence": 5,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+   ],
+   "claimId": "H-18-widened",
+   "value": "no path uncovered; one path not joinable by token (24); 18-28 otherwise closed by join, with 28 documentary only and the open cells of MON-RL-M17 recorded",
+   "verdict": "UNRESOLVED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-18-widened",
+   "delivered": "10 of 11 enumerated paths covered (18, 21, 22 by cited transcripts; 28 by a README mention only); 24 not joinable; 1-17 not enumerated",
+   "requirement": "H-18 widened: the union of the kernel-level records and the gate-channel contracts covers every effect path the threat model names, with a finite residual list",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "INCONCLUSIVE"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Build-R00.export-architecture-afee03b9.via-Lane-Monitor"
+  },
+  {
+   "contentDigest": "sha256:d7e1b6be9368604583fbe7ae8d9b2691fb29ac5c7fb0b9493768976c54a44b30",
+   "evidenceId": "E2",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl11_join.run-001"
+  },
+  {
+   "contentDigest": "sha256:5c314f6d14043410b1eae11cfa636033641ca8fe55a6b3efe218df38f5db5416",
+   "evidenceId": "E3",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.inputs-fifth-family"
+  },
+  {
+   "contentDigest": "sha256:ee408217a32c4e51d0a00d370a89b34b6c4339f181f104a5515ec52c1a62ecb0",
+   "evidenceId": "E4",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.inputs-four-families"
+  },
+  {
+   "contentDigest": "sha256:28cbcd629cf2bbe4b60a8d5396bfda61440fcc9df32c846241d764f36898d782",
+   "evidenceId": "E5",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:b06eabdb7d878795c268239c48541c8cf08dba156ebec3ba426d064e7c9c36d6",
+   "evidenceId": "E6",
+   "kind": "DOCUMENT_EXTRACT",
+   "producedBy": "Research-Lab.PREREG-v1.1"
+  }
+ ],
+ "ledgerId": "RL-11-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:b06eabdb7d878795c268239c48541c8cf08dba156ebec3ba426d064e7c9c36d6"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+   "sha256:d7e1b6be9368604583fbe7ae8d9b2691fb29ac5c7fb0b9493768976c54a44b30",
+   "sha256:5c314f6d14043410b1eae11cfa636033641ca8fe55a6b3efe218df38f5db5416",
+   "sha256:ee408217a32c4e51d0a00d370a89b34b6c4339f181f104a5515ec52c1a62ecb0",
+   "sha256:28cbcd629cf2bbe4b60a8d5396bfda61440fcc9df32c846241d764f36898d782",
+   "sha256:b06eabdb7d878795c268239c48541c8cf08dba156ebec3ba426d064e7c9c36d6"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "cited_rows_matched": 14,
+   "covered": 10,
+   "g_vector_rows": 1541,
+   "paths": 11,
+   "uncovered": 0,
+   "unresolved": 1
+  },
+  "status": "UNRESOLVED",
+  "unresolvedChecks": [
+   "C3",
+   "C4",
+   "C5"
+  ]
+ }
+}

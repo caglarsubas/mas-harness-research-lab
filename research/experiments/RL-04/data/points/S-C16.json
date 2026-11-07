@@ -1,0 +1,129 @@
+{
+ "classesSha256": "f8286bc8b6544dcd08c6b83b563fe78a2a493e83289354ae5707ae66d83e2d31",
+ "points": {
+  "S-C16": {
+   "arms": {
+    "advisory": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 45977,
+       "min": 0,
+       "p50": 21739,
+       "p95": 44444
+      },
+      "lastMergeTick": {
+       "max": 158,
+       "min": 130,
+       "p50": 139,
+       "p95": 157
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 32
+    },
+    "leased": {
+     "claimOverlapSeeds": 0,
+     "finishedSeeds": 32,
+     "readings": {
+      "completionPpm": {
+       "max": 1000000,
+       "min": 1000000,
+       "p50": 1000000,
+       "p95": 1000000
+      },
+      "duplicatedWorkRatioPpm": {
+       "max": 100000,
+       "min": 0,
+       "p50": 28037,
+       "p95": 86538
+      },
+      "lastMergeTick": {
+       "max": 237,
+       "min": 152,
+       "p50": 187,
+       "p95": 230
+      },
+      "lostWorkPpm": {
+       "max": 0,
+       "min": 0,
+       "p50": 0,
+       "p95": 0
+      }
+     },
+     "safetyAboveZeroSeeds": 0
+    }
+   },
+   "d_values": [
+    2101,
+    2895,
+    -5313,
+    17676,
+    -65910,
+    0,
+    -19662,
+    -98,
+    -31955,
+    -74774,
+    0,
+    7611,
+    2471,
+    -36778,
+    6846,
+    5229,
+    -1403,
+    3284,
+    1663,
+    -6447,
+    5346,
+    1522,
+    2104,
+    6168,
+    -5830,
+    5883,
+    2241,
+    2419,
+    -6417,
+    3144,
+    -34482,
+    0
+   ],
+   "family": "CENTRAL",
+   "items": 80,
+   "paired_d": {
+    "mean": -6577.1,
+    "median": 1663,
+    "negative": 12,
+    "positive": 17,
+    "zero": 3
+   },
+   "workers": 16
+  }
+ },
+ "pooled_n_ge_2": {
+  "bootstrap95": [
+   -14179.2,
+   -238.7
+  ],
+  "mean_d": -6577.1,
+  "pairs": 32,
+  "resamples": 1000,
+  "seed": 20261104
+ },
+ "seeds": 32,
+ "wall_s": {
+  "S-C16": 1.53
+ }
+}
