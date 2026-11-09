@@ -1,0 +1,230 @@
+{
+ "P0": {
+  "baseline": {
+   "crashed": false,
+   "exit": 0,
+   "message": "",
+   "messageLength": 0,
+   "refused": false,
+   "wall_s": 3.33
+  },
+  "layoutMessage": "the work copy must be named roadmap/ under its own parent (paper paths resolve from the repository root)",
+  "pass": true,
+  "refusesWrongLayout": true
+ },
+ "P1": {
+  "allChanged": true,
+  "edits": 21,
+  "pass": true,
+  "qualifying": {
+   "C": 214,
+   "M1": 214,
+   "M2": 85,
+   "M3": 214,
+   "M4": 4,
+   "M5": 642,
+   "M6": 68
+  },
+  "rows": [
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M1",
+    "field": "dependsOn",
+    "target": "LINUX-PROBE-KIT-SCOPE"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M1",
+    "field": "dependsOn",
+    "target": "RO-IMPL-R07"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M1",
+    "field": "dependsOn",
+    "target": "BROKER-CLONE-INTO-CGROUP"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M2",
+    "field": "evidenceState",
+    "target": "PERF-035"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M2",
+    "field": "evidenceState",
+    "target": "SECCOMP-OBSERVER-LISTENER"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M2",
+    "field": "evidenceState",
+    "target": "W02-CLEANUP"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M3",
+    "field": "benefit",
+    "target": "OP-ADOPT-001"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M3",
+    "field": "benefit",
+    "target": "EVOLUTION-SURFACE-001"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M3",
+    "field": "benefit",
+    "target": "LAB-REPO-001"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M4",
+    "field": "status",
+    "target": "W03"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M4",
+    "field": "status",
+    "target": "CHAIN-COMPACTION-002"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M4",
+    "field": "status",
+    "target": "W04"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M5",
+    "field": "harnesses",
+    "target": "HE-GATE-002"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M5",
+    "field": "codebases",
+    "target": "W04-PROBES-HUMAN"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M5",
+    "field": "id",
+    "target": "MODEL-AUX-001"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M6",
+    "field": "sha256",
+    "target": "RS-MEMO-RDACADEMIC"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "M6",
+    "field": "sha256",
+    "target": "MASS"
+   },
+   {
+    "catchable": false,
+    "changed": true,
+    "class": "M6",
+    "field": "sha256",
+    "target": "MCP faults"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "C",
+    "field": "description",
+    "target": "W04"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "C",
+    "field": "updates",
+    "target": "updates"
+   },
+   {
+    "catchable": true,
+    "changed": true,
+    "class": "C",
+    "field": "title",
+    "target": "W02b-F2"
+   }
+  ],
+  "uncatchable": [
+   "MCP faults"
+  ]
+ },
+ "P2": {
+  "fail_control": {
+   "catchable": 17,
+   "expected": "FAIL",
+   "ok": true,
+   "status": "FAIL"
+  },
+  "fail_no_new_rule": {
+   "catchable": 17,
+   "expected": "FAIL",
+   "ok": true,
+   "status": "FAIL"
+  },
+  "pass": true,
+  "unresolved_unattributed": {
+   "catchable": 17,
+   "expected": "UNRESOLVED",
+   "ok": true,
+   "status": "UNRESOLVED"
+  }
+ },
+ "P3": {
+  "negative": {
+   "exit": 0,
+   "message": "",
+   "refused": false
+  },
+  "pass": true,
+  "positive": {
+   "exit": 1,
+   "message": "roadmap.json: ADR-AMEND-0001-0002: unknown dependency NO-SUCH-ITEM-999",
+   "olderRule": "unknown dependency",
+   "refused": true,
+   "target": "ADR-AMEND-0001-0002"
+  }
+ },
+ "P4": {
+  "longMessageLength": 148,
+  "pass": true,
+  "readAsNew": true,
+  "readAsNewFirst120": false,
+  "tags": [
+   "(RL-15 v1)",
+   "(RL-15 v2)"
+  ],
+  "tagsMatchErratum": true
+ },
+ "interpreter": "3.12.4",
+ "overall": true
+}

@@ -1,0 +1,417 @@
+{
+ "base": {
+  "W03_PLAN.md": "a607ced9567f8b2ff81bba48e705905c0c4dfed18c6061c83a003abed81d5145",
+  "architecture-sources.json": "53d0ae4f1532dc7b267505f18f3e3db6394a8e540ba5d5f1b202b7ccb96beb76",
+  "architecture.html": "1933a5ebd8b9ffa910e99daa8187b3c96e92b089f88a3d8ad65cab21f2ef955e",
+  "build_architecture.py": "ae6178eeeb4cbb8a3b4110c809dffdbacc4c8f5b4830af2c989361c443476516",
+  "build_roadmap.py": "690cff6ac379da3deec621e21f614f43709ba673fe5715f6d650e196916d4901",
+  "evolution-surface.json": "0ff90ad7e2da7346cc30d5f88591e679d0e53eb1eb48240a82b1f6883b86a5e0",
+  "harness-reference.json": "90505aee326b3d33108a4fdc657250d649b8f1af16f3f437c43199b500d23753",
+  "history.json": "b94bc603dd3ad5a287353c809625da6555a0c1f09da79831acca4da3056ee586",
+  "release-profile.json": "f0b463e4b9cd40570dbb962c1f1cc4dec14afaeb1567dfd746581e04aefc3b9a",
+  "research/grounding/agensh.json": "3b7a8a8c20f247fc130148c515ec5100f9df36aacd23902b95e466552912042f",
+  "research/grounding/harness-zero.json": "d05aa7fb01c6bc14c53c4fd07d6331d01713b8551bdabc86a487aa577faf0124",
+  "research/grounding/harnessdev.json": "7c492514897b857f04f524e4f899d579dfd2f9c5ddc1dead3b731fc4393f9a00",
+  "research/grounding/hermes.json": "887d16024101effab759a992366b56784f06daa5176d9f2dc02d8fa38eb4c68e",
+  "research/grounding/jaz.json": "cd102e12616b868766dbe966f3a34cc805a6738993b7fae1540b388a3c515c3c",
+  "research/grounding/mass.json": "400e483cf757847a7d5b94faf7a62c4e3ba7b5d918d8e8a87147675dc75c2c6b",
+  "research/grounding/milo.json": "505e897ca3044fb6e8888c191b2dbb96e85d54a4b1e5c5910f354b0acb1cb0db",
+  "research/grounding/veriharness.json": "d1c32a9375900d4c3e169f524e3e52df2782c82cc9c1cda0519319e8b8de0559",
+  "research/mas-harness-research-claude.md": "c3f8aa7180c31c43ad25fdf564df218e1cc53ba09377d20ce1d2edbe409edc34",
+  "research/mas-harness-research-gemini.md": "00363eb38bfa0b0cfd02f1ea16a582d91e0965d528a72be6e7e0641f84fa1016",
+  "research/mas-harness-research-gpt.md": "5fcb877665c5d9b240d306c4d55745761c31b6458825fde41a4bd661cd73f9c3",
+  "research/papers/2502.02533-mass.pdf": "8e29ddf756e67b8e940325694351314b07cf4ed7902f6a3e9c9c2d9aa621b6ce",
+  "research/papers/2503.13657.pdf": "1b9e317a2a421e60ca2b2eda4a30844557a01e63286a790890c0ecef32d25460",
+  "research/papers/2609.01437v1-harnessdev.pdf": "3d428a73a6c792227ec5c768539eab6732f3540313ad066533b01332891288ec",
+  "research/papers/2609.24974v1-harness-zero.pdf": "e5fc1f3cf9d1e0f1630a94979824b6d91765ea2c5dc826362593f24fd89fa0ec",
+  "research/papers/2609.26781v1-agensh.pdf": "e502014e0f7e9e8594c70f231ee531b893af7f2501d8bc9ad6055ab30bd5be5a",
+  "research/papers/2609.26891v1-jaz.pdf": "067e77a33f6627d28c6305fab1365971c2ea3949bb250e88bdc696a24765ed8d",
+  "research/papers/2609.38349v1-milo.pdf": "c6f0f4318336be9b1d9b2f660dadd2c64a9e0b68376ef1d1114f09ac1d443e8d",
+  "research/papers/2610.00972v1-veriharness.pdf": "095d88ad30c83e0dff3e85d5892738f2474b32142727ac6a8f2b0ae0c41a54f0",
+  "research/papers/2610.07832v1-hermes.pdf": "9290824409254bd75df14ed25318537cce612b74efdfabbef0c1038ecd44c5dc",
+  "research/papers/fca-ai-good-poor-practice-2026-10-19-df1e275b.html": "df1e275b9f94bf4ccfb409f54d3f0d54bc9291fb749eec6a17ab6103d4f1cc96",
+  "research/papers/fsb-sound-practices-ai-final-report-2026-10-15-4e3ea6d2.pdf": "4e3ea6d2f52439f8aef6a27fc316a20eecacecd50b03dfca4e89f9f1de0ca6de",
+  "roadmap.html": "2b0e9036c2fa1a6d2d17bfbdc39f9dd12403cf1d953b6346495f8d0aaa819991",
+  "roadmap.json": "a365a8f6248fd616497e43d4c95caf9ad37d6930de719ce9f6dbdc3a640ca1d6",
+  "sessions.json": "90a66bb29fa880ae347102dfb469c74a379dfb7e09ee28a1dd5336995b9a4ca7",
+  "tech-stack.json": "c6bc474fcb5c47f61cbbab0c8a27451ad3f423d5f43a728729b98f43b44b9d2d"
+ },
+ "baseManifestDigest": "620799a075851f28bb7ab8966c93ecac418b19c9688ea4fe57cf2615dda03f89",
+ "baseManifestFiles": 35,
+ "baseline": {
+  "crashed": false,
+  "exit": 1,
+  "message": "roadmap.json: paper 2610.07832: the named file roadmap/research/papers/2610.07832v1-hermes.pdf is absent (RL-15 v2)",
+  "refused": true,
+  "wall_s": 0.21
+ },
+ "counts": {
+  "controls": 3,
+  "controlsNonZero": 3,
+  "controlsRefused": 3,
+  "perClass": {
+   "M1": [
+    3,
+    3,
+    3
+   ],
+   "M2": [
+    3,
+    3,
+    3
+   ],
+   "M3": [
+    2,
+    3,
+    3
+   ],
+   "M4": [
+    1,
+    3,
+    3
+   ],
+   "M5": [
+    2,
+    3,
+    3
+   ],
+   "M6": [
+    1,
+    3,
+    3
+   ]
+  },
+  "seeded": 18,
+  "seededAttributed": 12,
+  "seededCrashed": 0,
+  "seededRefused": 18
+ },
+ "interpreter": "3.12.4",
+ "qualifying": {
+  "C": 214,
+  "M1": 214,
+  "M2": 85,
+  "M3": 214,
+  "M4": 4,
+  "M5": 642,
+  "M6": 49
+ },
+ "runs": [
+  {
+   "attributed": true,
+   "class": "M1",
+   "crashed": false,
+   "exit": 1,
+   "field": "dependsOn",
+   "message": "roadmap.json: LINUX-PROBE-KIT-SCOPE: unknown dependency NO-SUCH-ITEM-999",
+   "refused": true,
+   "target": "LINUX-PROBE-KIT-SCOPE",
+   "tokens": [
+    "dependsOn",
+    "NO-SUCH-ITEM-999"
+   ],
+   "wall_s": 0.11
+  },
+  {
+   "attributed": true,
+   "class": "M1",
+   "crashed": false,
+   "exit": 1,
+   "field": "dependsOn",
+   "message": "roadmap.json: RO-IMPL-R07: unknown dependency NO-SUCH-ITEM-999",
+   "refused": true,
+   "target": "RO-IMPL-R07",
+   "tokens": [
+    "dependsOn",
+    "NO-SUCH-ITEM-999"
+   ],
+   "wall_s": 0.11
+  },
+  {
+   "attributed": true,
+   "class": "M1",
+   "crashed": false,
+   "exit": 1,
+   "field": "dependsOn",
+   "message": "roadmap.json: BROKER-CLONE-INTO-CGROUP: unknown dependency NO-SUCH-ITEM-999",
+   "refused": true,
+   "target": "BROKER-CLONE-INTO-CGROUP",
+   "tokens": [
+    "dependsOn",
+    "NO-SUCH-ITEM-999"
+   ],
+   "wall_s": 0.12
+  },
+  {
+   "attributed": true,
+   "class": "M2",
+   "crashed": false,
+   "exit": 1,
+   "field": "evidenceState",
+   "message": "roadmap.json: PERF-035 is DONE but its evidenceState is PLANNED",
+   "refused": true,
+   "target": "PERF-035",
+   "tokens": [
+    "evidenceState",
+    "PLANNED"
+   ],
+   "wall_s": 0.11
+  },
+  {
+   "attributed": true,
+   "class": "M2",
+   "crashed": false,
+   "exit": 1,
+   "field": "evidenceState",
+   "message": "roadmap.json: SECCOMP-OBSERVER-LISTENER is DONE but its evidenceState is PLANNED",
+   "refused": true,
+   "target": "SECCOMP-OBSERVER-LISTENER",
+   "tokens": [
+    "evidenceState",
+    "PLANNED"
+   ],
+   "wall_s": 0.12
+  },
+  {
+   "attributed": true,
+   "class": "M2",
+   "crashed": false,
+   "exit": 1,
+   "field": "evidenceState",
+   "message": "roadmap.json: W02-CLEANUP is DONE but its evidenceState is PLANNED",
+   "refused": true,
+   "target": "W02-CLEANUP",
+   "tokens": [
+    "evidenceState",
+    "PLANNED"
+   ],
+   "wall_s": 0.11
+  },
+  {
+   "attributed": true,
+   "class": "M3",
+   "crashed": false,
+   "exit": 1,
+   "field": "benefit",
+   "message": "roadmap.json: OP-ADOPT-001: rating B2 out of range",
+   "refused": true,
+   "target": "OP-ADOPT-001",
+   "tokens": [
+    "benefit",
+    "B2"
+   ],
+   "wall_s": 0.13
+  },
+  {
+   "attributed": true,
+   "class": "M3",
+   "crashed": false,
+   "exit": 1,
+   "field": "benefit",
+   "message": "roadmap.json: EVOLUTION-SURFACE-001: rating B2 out of range",
+   "refused": true,
+   "target": "EVOLUTION-SURFACE-001",
+   "tokens": [
+    "benefit",
+    "B2"
+   ],
+   "wall_s": 0.11
+  },
+  {
+   "attributed": false,
+   "class": "M3",
+   "crashed": false,
+   "exit": 1,
+   "field": "benefit",
+   "message": "roadmap.json: LAB-REPO-001: factor keys",
+   "refused": true,
+   "target": "LAB-REPO-001",
+   "tokens": [
+    "benefit",
+    "B2"
+   ],
+   "wall_s": 0.12
+  },
+  {
+   "attributed": false,
+   "class": "M4",
+   "crashed": false,
+   "exit": 1,
+   "field": "status",
+   "message": "roadmap.json: W05 is BLOCKED with nothing blocking it",
+   "refused": true,
+   "target": "W03",
+   "tokens": [
+    "updates",
+    "update"
+   ],
+   "wall_s": 0.11
+  },
+  {
+   "attributed": false,
+   "class": "M4",
+   "crashed": false,
+   "exit": 1,
+   "field": "status",
+   "message": "roadmap.json: CHAIN-COMPACTION-002: status READY -> DONE since the last snapshot (2026-11-07T22:02:54+08:00) with no upd",
+   "refused": true,
+   "target": "CHAIN-COMPACTION-002",
+   "tokens": [
+    "updates",
+    "update"
+   ],
+   "wall_s": 0.19
+  },
+  {
+   "attributed": true,
+   "class": "M4",
+   "crashed": false,
+   "exit": 1,
+   "field": "status",
+   "message": "roadmap.json: W04: status IN_PROGRESS -> DONE since the last snapshot (2026-11-07T22:02:54+08:00) with no updates entry ",
+   "refused": true,
+   "target": "W04",
+   "tokens": [
+    "updates",
+    "update"
+   ],
+   "wall_s": 0.2
+  },
+  {
+   "attributed": true,
+   "class": "M5",
+   "crashed": false,
+   "exit": 1,
+   "field": "harnesses",
+   "message": "roadmap.json: HE-GATE-002: harnesses needs a primary list, a secondary list and a why",
+   "refused": true,
+   "target": "HE-GATE-002",
+   "tokens": [
+    "harnesses",
+    "H99"
+   ],
+   "wall_s": 0.13
+  },
+  {
+   "attributed": false,
+   "class": "M5",
+   "crashed": false,
+   "exit": 1,
+   "field": "codebases",
+   "message": "roadmap.json: W04-PROBES-HUMAN: unknown codebase reference",
+   "refused": true,
+   "target": "W04-PROBES-HUMAN",
+   "tokens": [
+    "codebases",
+    "NO-SUCH-CODEBASE-999"
+   ],
+   "wall_s": 0.1
+  },
+  {
+   "attributed": true,
+   "class": "M5",
+   "crashed": false,
+   "exit": 1,
+   "field": "id",
+   "message": "roadmap.json: duplicate item id",
+   "refused": true,
+   "target": "MODEL-AUX-001",
+   "tokens": [
+    "duplicate",
+    "duplicated",
+    "MODEL-AUX-001"
+   ],
+   "wall_s": 0.1
+  },
+  {
+   "attributed": true,
+   "class": "M6",
+   "crashed": false,
+   "exit": 1,
+   "field": "sha256",
+   "message": "roadmap.json: research.sources[11].sha256: sha256 is not 64 lowercase hexadecimal characters (RL-15 v2)",
+   "refused": true,
+   "target": "RS-MEMO-RDACADEMIC",
+   "tokens": [
+    "sha256",
+    "RS-MEMO-RDACADEMIC",
+    "MAS-Harness / Planeon R&D Roadmap: Academic Evidence, Prioritisation and Agent-Executable Research Programme (owner-supplied to the Research-Lab, 60,459 bytes; the file stays with the owner, outside the bridge)"
+   ],
+   "wall_s": 0.18
+  },
+  {
+   "attributed": false,
+   "class": "M6",
+   "crashed": false,
+   "exit": 1,
+   "field": "sha256",
+   "message": "roadmap.json: paper 2610.07832: the named file roadmap/research/papers/2610.07832v1-hermes.pdf is absent (RL-15 v2)",
+   "refused": true,
+   "target": "MASS",
+   "tokens": [
+    "sha256",
+    "MASS",
+    "roadmap/research/papers/2502.02533-mass.pdf"
+   ],
+   "wall_s": 0.18
+  },
+  {
+   "attributed": false,
+   "class": "M6",
+   "crashed": false,
+   "exit": 1,
+   "field": "sha256",
+   "message": "roadmap.json: paper 2610.07832: the named file roadmap/research/papers/2610.07832v1-hermes.pdf is absent (RL-15 v2)",
+   "refused": true,
+   "target": "MCP faults",
+   "tokens": [
+    "sha256",
+    "MCP faults"
+   ],
+   "wall_s": 0.17
+  },
+  {
+   "attributed": false,
+   "class": "C",
+   "crashed": false,
+   "exit": 1,
+   "field": "description",
+   "message": "roadmap.json: paper 2610.07832: the named file roadmap/research/papers/2610.07832v1-hermes.pdf is absent (RL-15 v2)",
+   "refused": true,
+   "target": "W04",
+   "tokens": [
+    "description"
+   ],
+   "wall_s": 0.17
+  },
+  {
+   "attributed": true,
+   "class": "C",
+   "crashed": false,
+   "exit": 1,
+   "field": "updates",
+   "message": "roadmap.json: updates[280]: date '2026-11-05' carries no UTC offset (RL-15 v1)",
+   "refused": true,
+   "target": "updates",
+   "tokens": [
+    "updates"
+   ],
+   "wall_s": 0.19
+  },
+  {
+   "attributed": false,
+   "class": "C",
+   "crashed": false,
+   "exit": 1,
+   "field": "title",
+   "message": "roadmap.json: paper 2610.07832: the named file roadmap/research/papers/2610.07832v1-hermes.pdf is absent (RL-15 v2)",
+   "refused": true,
+   "target": "W02b-F2",
+   "tokens": [
+    "title"
+   ],
+   "wall_s": 0.15
+  }
+ ],
+ "seed": 20261105
+}

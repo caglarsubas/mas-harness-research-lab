@@ -1,5 +1,10 @@
 # Research-Lab repository: migration plan on paper (draft 2, 2026-11-06; nothing committed or pushed before the monitor's word)
 
+Status (2026-11-07, MON-RL-R13-MAIN and MON-RL-R13-FREEZE): the first commit happened on the owner's direct word as R13
+main cc92594d6daa (research/** from bridge a67b90a5, README.md, LICENSE, .gitignore, the manifest tools and
+research/MANIFEST.json; 236 files), recorded as the owner's initial commit; main stays there until bundle v7 serves R13,
+the lab works on branches only, and LAB-REPO-001 (draft 5) re-keys on that base. Section 1 below is kept as drafted.
+
 Owner proposal (2026-11-06, in the lab's chat): a lab repository to push and PR progress, with gpt-astra's feedback
 as issues. Open owner decisions: what gpt-astra is and its access; verifier-numbered or plain; public or private.
 The monitor's conditions: this plan before any commit; the repository added to issue tracking and lanes.json; the

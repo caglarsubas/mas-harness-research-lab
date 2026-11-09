@@ -1,11 +1,11 @@
 {
- "bridgeCommit": "2cb6a83a",
+ "bridgeCommit": "415cf244",
  "charter": {
-  "digest": "207cb431",
+  "digest": "6046110c",
   "sections": {
    "1. What it owns and what it may read": "- Owns: `research/**` on the bridge (this charter, `hypotheses/REGISTER.md`, one folder per experiment under\n  `experiments/<id>/` with its preregistration, run records, results ledger and report), `reads/` (design reads to the visionary and fetch asks), `research.html` with its data record, `handoff/LANE-RESEARCH-LAB.md`,\n  memory files named `research-<id>`. A repository of its own only when an experiment needs continuous integration\n  and the verifier; then the monitor numbers it under the session map and the owner installs the verifier's entry.\n- Reads, read-only: the roadmap record and the architecture snapshots; the published contracts of the platform\n  repository through git-archive exports at a pinned commit; the conformance-labs simulation harness through an\n  export at a pinned commit (never its oracle tests, never a worktree of another session); the programme's handoff\n  and merge-decision records through the masking reader; the R&D report (`visionary/RD-REPORT.md`). Nothing from the\n  operator repository beyond the published interface contracts.\n- Never: product code, packets, roadmap writes, the verifier, lanes.json or other sessions' files; no network unless\n  the owner approved the exact fetch; no cloud spend without an approved run plan.",
    "1a. The procedure (owner instruction, 2026-11-06, in the lab session)": "The lab works as a research team, per scope: observe the situation (roadmap, development, architecture, PRs: what is\ngoing on and why the scope matters now); hypothesise (what can be done for better performance, accuracy, assurance or\ncost); collect the data the hypothesis needs, from the platform's records, the repositories' exports and the\nliterature, each source by digest; design and test (the protocol below); report and prove. One progress document per\nscope under `research/progress/` is the owner's reading view and is kept current at every result. For the question\n\"what others have done so far\" the lab may use deep search (the session's web search and fetch tools; the owner's word\nof 2026-11-06); every source read is recorded with its identifier and digest, every fetch is reported to the monitor,\nand nothing from the programme's own records leaves the session in a query.",
-   "2. The experiment protocol": "Every experiment has an id `RL-nn`, a hypothesis from the register, and these records in order:\n\n1. Preregistration (`PREREG.md`), before any run: the hypothesis as a falsifiable statement; the inputs by sha256\n   (exports, records, fixtures) and the commit each came from; the design (factors, seeds with k >= 3 where the\n   run is stochastic, splits declared before the run); the bounds and the gate (the run-manifest contract's\n   paired, task-clustered interval and non-inferiority rule where they apply); the compute plan (light on this host\n   through the monitor's heavy queue, or a lab run plan for cloud capacity), with the stream (S1-S4) and, for product-coupled runs, the ECU count (one ECU = one pass over the four frozen banking use cases for one configuration tuple at k >= 3 seeds; a planning count, never a reported result); what counts as PASS, FAIL and\n   UNRESOLVED; and its sha256 recorded in the register.\n   1a. Independent review (`PREREG-REVIEW.md`), before any run, by a pass that holds only the PREREG, the register\n   row and this charter, never the run script: checks R1 falsifiable and exhaustive criteria; R2 clause scope (the\n   unit the hypothesis names is the unit the measurement counts); R3 every input by digest, present; R4 bounds with\n   units, gate, seeds, splits; R5 compute plan with stream and ECU count; R6 privacy; R7 the dataset's generation is\n   independent of the hypothesis or the dependence is declared. A FAIL returns the PREREG to a new version before it\n   is frozen; both digests go to the register. Adopted 2026-11-05 (RD-D1 (c)); applies from RL-14.\n2. Run records: one per run, with the environment digest, the seed, the wall time and host load, and the outputs by\n   reference (content hashes), never copied into the record.\n3. Results ledger (`RESULTS.json`): verdicts in the verdict-ledger form (PASS, FAIL or UNRESOLVED; evidence\n   references; the bound, the measured value and the margin; unresolved checks named). The verdict is computed by the lab's evaluator script from the run records and the ledger names that script's digest; it is never written by hand in the pass that ran the experiment. A breach of a preregistered\n   bound is a finding, never a reason to re-tune and re-run under the same id.\n4. Report (`REPORT.md`): one page; what was asked, what was measured, what it means, what it does not show, and\n   the proposal if any. Scanned for privacy before it leaves the folder.\n5. Proposal (`PROPOSAL.md`, optional): a design read for the roadmap visionary through the lane monitor, naming\n   the roadmap items it touches, the evidence state it would justify, and whether it is a roadmap shift. The\n   visionary rules under the owner's delegation or routes it to the owner; the lab never writes the roadmap.\n\nAn experiment that would change what the product ships is a candidate for the harness-admission gate (MAS-RA-005:\noffline evolution only, held-out tasks, an executor-model matrix, matched budgets); its artefact class in the\nevolution-surface record names who may propose, test, approve and activate it. The owner promotes; the lab proposes.",
+   "2. The experiment protocol": "Every experiment has an id `RL-nn`, a hypothesis from the register, and these records in order:\n\n1. Preregistration (`PREREG.md`), before any run: the hypothesis as a falsifiable statement; the inputs by sha256\n   (exports, records, fixtures) and the commit each came from; the design (factors, seeds with k >= 3 where the\n   run is stochastic, splits declared before the run); the bounds and the gate (the run-manifest contract's\n   paired, task-clustered interval and non-inferiority rule where they apply); the compute plan (light on this host\n   through the monitor's heavy queue, or a lab run plan for cloud capacity), with the stream (S1-S4) and, for product-coupled runs, the ECU count (one ECU = one pass over the four frozen banking use cases for one configuration tuple at k >= 3 seeds; a planning count, never a reported result); what counts as PASS, FAIL and\n   UNRESOLVED; and its sha256 recorded in the register. Before the review, the author's self-check (adopted\n   2026-11-08, meta-review 001; applies from RL-23): the gate is ordered, with its precedence stated and a region\n   for every outcome including a stop before any build; one sentence declares the narrowing from the register's\n   clause and names every proxy; every input carries a full sha256 and its commit or the words \"no commit exists\";\n   the instruments are pinned, and their existence at the freeze and their digest lengths are checked by script; a\n   constant taken from a document carries that document's digest.\n   1a. Independent review (`PREREG-REVIEW.md`), before any run, by a pass that holds only the PREREG, the register\n   row and this charter, never the run script: checks R1 falsifiable and exhaustive criteria; R2 clause scope (the\n   unit the hypothesis names is the unit the measurement counts); R3 every input by digest, present; R4 bounds with\n   units, gate, seeds, splits; R5 compute plan with stream and ECU count; R6 privacy; R7 the dataset's generation is\n   independent of the hypothesis or the dependence is declared. A FAIL returns the PREREG to a new version before it\n   is frozen; both digests go to the register. Adopted 2026-11-05 (RD-D1 (c)); applies from RL-14. From RL-23\n   (meta-review 001): the brief asks for every note found and requires none; a note that changes a gate region or\n   threshold makes a new version even when the verdict is PASS; the review record states custody, context and\n   model-family separation as three fields.\n   1b. Instrument preflight (`PREFLIGHT.md` in the experiment folder, or a section of the first run record), by the\n   run pass after the PREREG is frozen and before the gated run, separate from the blind review above (the reviewer\n   never sees the script or the preflight): (i) every seeded mutation or edit changes the bytes it targets and is a\n   case the form can express (a no-op or inexpressible edit is an invalid case, named before the run; RL-20's\n   one-node budget edit is the example); (ii) the units and denominators of every bound are checked on a\n   known-answer fixture; (iii) one known positive control passes and one known negative control fails the\n   evaluator; (iv) a value at each threshold boundary is exercised; (v) existence and computability: every class the\n   design draws from has at least one qualifying target in the pinned input, every field the evaluator reads is\n   present with the declared type, and every quantity the gate consumes is computable from the pinned inputs,\n   checked by counts without evaluating the gate (RL-15's and RL-21's pre-run stops are the cases); (vi) every\n   instrument edge case a review note names is exercised here or declared an invalid case before the run (RL-20's\n   one-node edit is the case); (v) and (vi) adopted 2026-11-08 (meta-review 001). A failed preflight stops the run and returns\n   the PREREG to a new version; the gated run never starts on an invalid instrument. Adopted 2026-11-07 (R13 issue\n   1, recommendation 7); applies from RL-23. A borrowed figure from the literature enters a bound only with its\n   claim-level context (definition, conditions, source lineage) recorded among the PREREG's inputs.\n2. Run records: one per run, with the environment digest, the seed, the wall time and host load, and the outputs by\n   reference (content hashes), never copied into the record.\n3. Results ledger (`RESULTS.json`): verdicts in the verdict-ledger form (PASS, FAIL or UNRESOLVED; evidence\n   references; the bound, the measured value and the margin; unresolved checks named). The verdict is computed by the lab's evaluator script from the run records and the ledger names that script's digest; it is never written by hand in the pass that ran the experiment. A breach of a preregistered\n   bound is a finding, never a reason to re-tune and re-run under the same id.\n   Each claim of the ledger has one row in `hypotheses/CLAIMS.json` (rendered as `CLAIMS.md` by\n   `tools/claims_check.py --render`): the verdict copied, the instrument's validity, the supported scope, the\n   unresolved clauses, the evidence type and the replication state, invalid cases beside the verdict, and the\n   decision the verdict justifies. The check fails when a row and its ledger disagree. Adopted 2026-11-07 (R13\n   issue 1, recommendation 1).\n4. Report (`REPORT.md`): one page; what was asked, what was measured, what it means, what it does not show, and\n   the proposal if any. Scanned for privacy before it leaves the folder. Standing items (adopted 2026-11-08,\n   meta-review 001, from the reviews' recurring notes): which UNRESOLVED sub-case occurred, if any; the per-unit\n   counts behind every verdict; every proxy named as a proxy; the verdict's wording as the register will record it,\n   under its operationalisation; what the result does not settle.\n5. Proposal (`PROPOSAL.md`, optional): a design read for the roadmap visionary through the lane monitor, naming\n   the roadmap items it touches, the evidence state it would justify, and whether it is a roadmap shift. The\n   visionary rules under the owner's delegation or routes it to the owner; the lab never writes the roadmap.\n6. Effort and decision columns in the register's experiment row (adopted 2026-11-07, R13 issue 1, recommendation\n   7; recorded from RL-23 on, `n/r` where an older row has no record): preparation, review and run minutes; the time\n   and item the experiment was blocked on; the decision its result changed or the input it produced.\n\nAn experiment that would change what the product ships is a candidate for the harness-admission gate (MAS-RA-005:\noffline evolution only, held-out tasks, an executor-model matrix, matched budgets); its artefact class in the\nevolution-surface record names who may propose, test, approve and activate it. The owner promotes; the lab proposes.",
    "3. Rules the session keeps": "- One repository, one session: the lab shares no path with any other session and edits nothing outside\n  `research/**` and its lane file.\n- Compute: at most one heavy job, only on the monitor's GO, never while a verify runs or a dry run measures; the\n  quiet-host rule for the platform's verifies binds the lab too. Heavy GOs follow the 60 / 25 / 15 split by queue class (Q qualification-critical, T topology, routing and memory, X the rest) over a rolling window of twenty GOs; the lab names the class in each GO request; light runs are outside the window. Larger runs follow the lab run-plan contract\n  (machine type, region, duration, dated cost estimate, lease, teardown and residual check) and the owner's approval\n  of the plan.\n- Evidence: every number in a report traces to a run record and an input digest; figures from papers are marked as\n  reported, not reproduced, unless the lab reproduced them. A result is reportable when it meets the six gates adopted from RS-2 (2026-11-05): a formal property checked against production vectors where one is claimed; a preregistered negative outcome still reported; an external baseline reproduced faithfully where one is used; a dataset generated independently of the hypothesis or the dependence declared; replication on a held-out split or a second verifier where the claim is about generalisation; an artefact another group could run.\n- Privacy: `privacy_scan.py` over every file before it is reported; no e-mail addresses, name tokens, the owner\n  handle, local paths, account names, key material or the legacy brand term in files, messages or memory.\n- Independence: the lab's results are inputs to campaign records and roadmap notes, not gates; the conformance labs\n  keep test strategy; the lab reads their harness, never their oracles.\n- Owner delegation of 2026-10-22: the lab answers its own questions with the recommended option and stops for the\n  owner on permissions (fetches, spend, a repository), critical choices (a hypothesis that needs product-level runs\n  before the planes exist) and anything that could shift the roadmap.\n- Usage: stop at a safe point when the account's 5-hour or weekly limit reaches 98 %.",
    "4. What the lab can do now and what waits": "Now, with no new infrastructure: the data studies on the programme's own records (the verify-time dataset, the\nchain ablation from the compaction cost report, review independence, process mining of the handoff records,\nadjudication rates) and simulation studies on an export of the conformance-labs deterministic harness (scaling and\nclaim collisions under leased and advisory claims). Waiting on the Alpha 2 path (plane bootstraps, the read-only\nprofile, the native Linux gate): the pairing matrix, the strategy experiment, the shadow-routing report and the cohort\nevaluation on the banking scenarios. The register marks each hypothesis READY or BLOCKED with the item it waits on.",
    "5. Interfaces": "- Owner: opens the session, approves fetches, spend and repositories, promotes candidates.\n- Lane-Monitor: the only owner interface for the lab; registration of `research/**`; the heavy queue; relays of\n  proposals and answers; checkpoints (the monitor folds this folder into its checkpoints and never edits it).\n- Roadmap-Visionary: receives proposals as design reads; records what the owner rules; keeps the register's roadmap\n  references current at its locks.\n- Build-R12-ConformanceLabs: the simulation harness is read at a pinned commit; a lab finding about a campaign goes\n  to R12 through the monitor as an input, never as a change to its files.",
@@ -15,15 +15,15 @@
  },
  "counts": {
   "blocked": 14,
-  "completed": 22,
-  "experiments": 22,
+  "completed": 23,
+  "experiments": 23,
   "hypotheses": 35,
   "ongoing": 0,
   "ready": 1,
-  "runs": 27,
+  "runs": 29,
   "verdicts": {
    "FAIL": 8,
-   "PASS": 7,
+   "PASS": 8,
    "UNRESOLVED": 7
   },
   "withExperiment": 20
@@ -120,7 +120,7 @@
    "id": "RL-01",
    "ledgerId": "RL-01-RESULTS-v2",
    "preregStatus": "FROZEN v1 (2026-11-04, after the monitor's MON-RL-M1: GO for the extractor, I2 delivered). H-07a runs under this version. H-07b runs only after amendment v1.1 records I3's digest; the amendment changes nothing else. The draft v0 (f03faedf) is superseded; its differences are listed in section 7. This file's sha256 goes into `research/hypotheses/REGISTER.md`.",
-   "registerLine": "v1.1 (2026-11-05): H-07a PASS by gate (C vs K unresolved, r 0.98); H-07b UNRESOLVED (one K 8 run against two K 6, non-comparable; as relayed: wall \u221210 percent, summed +18 percent); RESULTS bb670fd6 supersedes d1977cc2; REPORT 5f6af501",
+   "registerLine": "v1.1 (2026-11-05; v1, digest f0bdb2f7, was amended in place to v1.1 before the first bridge commit and no v1 file exists: a lapse before the kept-versions rule, recorded 2026-11-08 by prereg_check at the LAB-REPO-001 section-D run; the run version is v1.1): H-07a PASS by gate (C vs K unresolved, r 0.98); H-07b UNRESOLVED (one K 8 run against two K 6, non-comparable; as relayed: wall \u221210 percent, summed +18 percent); RESULTS bb670fd6 supersedes d1977cc2; REPORT 5f6af501",
    "report": {
     "asked": "**Asked.** Is verify-time growth since slot 255 explained by host load and the outer suite's test count rather than\nby the layer count (H-07a)? Is worker wall time at K 8 non-inferior to K 6 (H-07b; amendment v1.1 of 2026-11-05)?",
     "context": "**Context, not gated.** 23 of 27 runs ran under OPERATOR_OVERRIDE of the quiet-host gate, 4 under QUIET; gate wait\n(gate_after_s) ranged from 0 to 2,997 s. The outer suite's own time (suite_s, 417-678 s) is about half of wall time.\n\n**H-07b (as relayed, not reproduced).** Build-R00's A/B (K 6, K 8, K 6; summary sha256 85ab23bf, kept in R00's\nfolder; figures relayed by the monitor): worker phase 517.5 s and 540.7 s at K 6 against 472.2 s at K 8 (\u221210.8 %,\nbeyond the A-A spread of 23.2 s); wall \u221210.2 %; summed worker time +18.2 % (3,620 s against 3,004 s and 3,122 s)\nat a higher load mean (12.4 against 8.3 and 10.8). The K 8 run is marked non-comparable by R00 (the parent node failed\non the six-worker pins). Verdict **UNRESOLVED**: one run per arm against the preregistered three, and that one run\nnot comparable. Descriptively the direction is clear and consistent with H-07a: more workers finish sooner on the\nwall and spend more summed time, part of it on efficiency cores.",
@@ -1261,6 +1261,11 @@
    ],
    "data": [
     {
+     "bytes": 19861,
+     "digest": "fabc5690",
+     "file": "data/coverage_map.json"
+    },
+    {
      "bytes": 1073,
      "digest": "5c314f6d",
      "file": "data/inputs_fifth_family.txt"
@@ -1694,13 +1699,29 @@
      "file": "data/rl15_base_manifest.json"
     },
     {
+     "bytes": 8363,
+     "digest": "57babb5b",
+     "file": "data/rl15_gate_002.json"
+    },
+    {
      "bytes": 11012,
      "digest": "ed7ce16d",
      "file": "data/rl15_runs.json"
+    },
+    {
+     "bytes": 11247,
+     "digest": "a60da422",
+     "file": "data/rl15_runs_002.json"
+    },
+    {
+     "bytes": 11699,
+     "digest": "4153a89b",
+     "file": "data/rl15_runs_002a_invalid_layout.json"
     }
    ],
    "dates": [
-    "2026-11-05"
+    "2026-11-05",
+    "2026-11-07"
    ],
    "files": {
     "PREREG.md": "1e8dfc4a",
@@ -1715,7 +1736,7 @@
    "id": "RL-15",
    "ledgerId": "RL-15-RESULTS-v1",
    "preregStatus": "FROZEN v5 (2026-11-05, light; the monitor's RESUME word: \"Continue RL-15 (H-30) ... light, on a scratch copy of roadmap/ only, with PREREG-REVIEW first\"). v1 (56b2829f, `PREREG.v1.md`) FAILED review 1 on R2: the register's class \"stale snapshot digest\" had been replaced by unknown-key and duplicate-id edits without saying so. v2 restores that class as M6, keeps the lab's added class M5 declared as such, counts a seeded edit as caught only when the refusal names the edited item or field, reports precision, states that the precondition decides first, and pins the evaluator. v2 (532b08a3, `PREREG.v2.md`) FAILED review 2 on R3: the copied `research/papers/` files that M6 relies on and the interpreter were not pinned. v3 pins every file of the copied directory through a manifest, pins the interpreter, qualifies M4's targets so that M2's rule cannot fire on them, requires whole-token attribution, classifies crashes, and states M6c's expected outcome. v3 (cda3e838, `PREREG.v3.md`) PASSED review 3, but its instrument stopped before any seeded build: no READY item qualifies for M4 under v3's rule (all 51 READY items are PLANNED; `PREREG-REVIEW.md`). v4 draws M4 from open items (READY or IN_PROGRESS) with an evidence state consistent with DONE (exactly 3 qualify, all IN_PROGRESS, so the draw is fixed), records the qualifying count per class, and makes attribution specific to the seeded edit. v4 (cf9fe7a9, `PREREG.v4.md`) FAILED review 4 on R2: its hypothesis sentence still said \"naming the edited item or field\" while the unit counted only a token specific to the seeded edit; v5 aligns the wording, states the id rule per class, says what a stop before any build produces, and names where M4's count came from; the instruments are unchanged. All five digests go to the register. The experiment never touches the bridge's `roadmap/`: a pristine copy of that directory was made in the lab scratch (the base), a sibling work copy is re-created from the base before every build, and the mutation tool refuses a base path that is not in the scratch.",
-   "registerLine": "RUN 2026-11-05 (light, scratch copy of roadmap/ at fce8245b): FAIL as preregistered: attributed recall 10 of 18 (14 of 18 refused by any rule), 0 of 3 controls refused, precision 0.714; M1 3/3, M2 3/3, M3 2/3, M4 0/3 (no rule on update entries), M5 2/3, M6 0/3 (digests unchecked); five review rounds (v1-v4 FAIL, one instrument stop, v5 PASS); run-001 87f4ad62, RESULTS 050c553c, REPORT e5afa316; RL-15-PROPOSAL in the report",
+   "registerLine": "RUN 2026-11-05 (light, scratch copy of roadmap/ at fce8245b): FAIL as preregistered: attributed recall 10 of 18 (14 of 18 refused by any rule), 0 of 3 controls refused, precision 0.714; M1 3/3, M2 3/3, M3 2/3, M4 0/3 (no rule on update entries), M5 2/3, M6 0/3 (digests unchecked); five review rounds (v1-v4 FAIL, one instrument stop, v5 PASS); run-001 87f4ad62, RESULTS 050c553c, REPORT e5afa316; RL-15-PROPOSAL in the report; run-002 2026-11-07 on the lock-40 builder 690cff6a (export at ded99886, frozen tools and gate, MON-RL15-M54-RULED): refused 17 of 18, attributed 13 of 18, 1 of 3 controls refused (an entry without a UTC offset under the new date rule), FAIL region; M4 1/3/3 and M6 2/2/3 by the new validators; misses named in runs/run-002.md",
    "report": {
     "asked": "**Asked.** Do the roadmap build's validators refuse every seeded inconsistency class of the register (dangling\ndependency; status against evidence state; score drift; a status change without an update entry; a stale snapshot\ndigest) and the lab's added class (a stale reference), naming the seeded edit, and refuse none of three benign\ncontrol edits? Preregistered as v5 (1e8dfc4a) after four failed reviews and one instrument stop (v1 56b2829f, v2\n532b08a3, v3 cda3e838, v4 cf9fe7a9; `PREREG-REVIEW.md`). Everything ran on a pristine copy of `roadmap/` at bridge\ncommit fce8245b in the lab scratch; the bridge's `roadmap/` was never touched.",
     "limits": "**What it does not show.** Nothing about validators the lab did not seed; three edits per class; one record; the\nvalidators and the record share an author, so the four covered classes may reflect that author's own habits. The\ndigest class was seeded on research-source digests, the only digest-bearing fields of the record; the architecture\nsnapshots live in another file the build reads but the lab did not mutate.",
@@ -1730,6 +1751,11 @@
      "digest": "87f4ad62",
      "file": "runs/run-001.md",
      "title": "RL-15 run 001 (seeded-inconsistency benchmark for the roadmap build, light, scratch copy only)"
+    },
+    {
+     "digest": "b687dc7d",
+     "file": "runs/run-002.md",
+     "title": "RL-15 run 002 (re-run of the seeded-inconsistency benchmark on the lock-40 builder, light, scratch copy only)"
     }
    ],
    "scores": {
@@ -1750,6 +1776,105 @@
    "title": "RL-15 preregistration v5: a seeded-inconsistency benchmark for the roadmap build (H-30)",
    "unresolved": [],
    "verdict": "FAIL"
+  },
+  {
+   "checks": [
+    {
+     "claim": "H-30b",
+     "id": "C1",
+     "outcome": "PASS",
+     "target": "INTERMEDIATE",
+     "value": "precondition: layout {'parent': 'wp', 'work': 'roadmap'}; baseline build of the unmodified copy exit 0 in 3.64 s"
+    },
+    {
+     "claim": "H-30b",
+     "id": "C2",
+     "outcome": "PASS",
+     "target": "DELIVERED",
+     "value": "catchable refused 17 of 17; attributed 17 (new rules M4 2, M6 2; older rules 13; unattributed 0); per class [attributed, refused, n] {\"M1\": [3, 3, 3], \"M2\": [3, 3, 3], \"M3\": [3, 3, 3], \"M4\": [3, 3, 3], \"M5\": [3, 3, 3], \"M6\": [2, 2, 2]}; not refused: []; unattributed: []; bound: 17 of 17 refused, 0 unattributed, new rules M4 >= 2, M6 >= 2"
+    },
+    {
+     "claim": "H-30b",
+     "id": "C3",
+     "outcome": "PASS",
+     "target": "DELIVERED",
+     "value": "controls refused 0 of 3 (bound 0): []"
+    },
+    {
+     "claim": "H-30b",
+     "id": "C4",
+     "outcome": "PASS",
+     "target": "INTERMEDIATE",
+     "value": "uncatchable instance (declared, excluded from the denominator): ['built']; refusal messages (validator's words, whole message) with attribution: [{\"class\": \"M1\", \"target\": \"LINUX-PROBE-KIT-SCOPE\", \"field\": \"dependsOn\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: LINUX-PROBE-KIT-SCOPE: unknown dependency NO-SUCH-ITEM-999\"}, {\"class\": \"M1\", \"target\": \"RO-IMPL-R07\", \"field\": \"dependsOn\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: RO-IMPL-R07: unknown dependency NO-SUCH-ITEM-999\"}, {\"class\": \"M1\", \"target\": \"BROKER-CLONE-INTO-CGROUP\", \"field\": \"dependsOn\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: BROKER-CLONE-INTO-CGROUP: unknown dependency NO-SUCH-ITEM-999\"}, {\"class\": \"M2\", \"target\": \"PERF-035\", \"field\": \"evidenceState\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"is DONE but its evidenceState is\", \"message\": \"roadmap.json: PERF-035 is DONE but its evidenceState is PLANNED\"}, {\"class\": \"M2\", \"target\": \"SECCOMP-OBSERVER-LISTENER\", \"field\": \"evidenceState\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"is DONE but its evidenceState is\", \"message\": \"roadmap.json: SECCOMP-OBSERVER-LISTENER is DONE but its evidenceState is PLANNED\"}, {\"class\": \"M2\", \"target\": \"W02-CLEANUP\", \"field\": \"evidenceState\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"is DONE but its evidenceState is\", \"message\": \"roadmap.json: W02-CLEANUP is DONE but its evidenceState is PLANNED\"}, {\"class\": \"M3\", \"target\": \"OP-ADOPT-001\", \"field\": \"benefit\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"rating \\\\S+ out of range\", \"message\": \"roadmap.json: OP-ADOPT-001: rating B2 out of range\"}, {\"class\": \"M3\", \"target\": \"EVOLUTION-SURFACE-001\", \"field\": \"benefit\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"rating \\\\S+ out of range\", \"message\": \"roadmap.json: EVOLUTION-SURFACE-001: rating B2 out of range\"}, {\"class\": \"M3\", \"target\": \"LAB-REPO-001\", \"field\": \"benefit\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"factor keys\", \"message\": \"roadmap.json: LAB-REPO-001: factor keys\"}, {\"class\": \"M4\", \"target\": \"W03\", \"field\": \"status\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"is BLOCKED with nothing blocking it\", \"message\": \"roadmap.json: W05 is BLOCKED with nothing blocking it\"}, {\"class\": \"M4\", \"target\": \"CHAIN-COMPACTION-002\", \"field\": \"status\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: CHAIN-COMPACTION-002: status READY -> DONE since the last snapshot (2026-11-07T22:02:54+08:00) with no updates entry dated on or after it naming the item (RL-15 v1)\"}, {\"class\": \"M4\", \"target\": \"W04\", \"field\": \"status\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: W04: status IN_PROGRESS -> DONE since the last snapshot (2026-11-07T22:02:54+08:00) with no updates entry dated on or after it naming the item (RL-15 v1)\"}, {\"class\": \"M5\", \"target\": \"HE-GATE-002\", \"field\": \"harnesses\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"harnesses needs\", \"message\": \"roadmap.json: HE-GATE-002: harnesses needs a primary list, a secondary list and a why\"}, {\"class\": \"M5\", \"target\": \"W04-PROBES-HUMAN\", \"field\": \"codebases\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown codebase reference\", \"message\": \"roadmap.json: W04-PROBES-HUMAN: unknown codebase reference\"}, {\"class\": \"M5\", \"target\": \"MODEL-AUX-001\", \"field\": \"id\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"duplicate item id\", \"message\": \"roadmap.json: duplicate item id\"}, {\"class\": \"M6\", \"target\": \"RS-MEMO-RDACADEMIC\", \"field\": \"sha256\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: research.sources[11].sha256: sha256 is not 64 lowercase hexadecimal characters (RL-15 v2)\"}, {\"class\": \"M6\", \"target\": \"MASS\", \"field\": \"sha256\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: paper 2502.02533: roadmap/research/papers/2502.02533-mass.pdf hashes to 8e29ddf756e67b8e, not the recorded 0000000000000000 (RL-15 v2)\"}, {\"class\": \"M6\", \"target\": \"MCP faults\", \"field\": \"sha256\", \"exit\": 0, \"catchable\": false, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"W04\", \"field\": \"description\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"updates\", \"field\": \"updates\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"W02b-F2\", \"field\": \"title\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}]"
+    }
+   ],
+   "claims": [
+    {
+     "id": "H-30b",
+     "value": "catchable refused 17/17 (attributed 17: new rules 4 [M4 2, M6 2], older rules 13, unattributed 0); uncatchable instance ['built']; false positives 0/3; precision 1.000; per class [attributed, refused, n] {\"M1\": [3, 3, 3], \"M2\": [3, 3, 3], \"M3\": [3, 3, 3], \"M4\": [3, 3, 3], \"M5\": [3, 3, 3], \"M6\": [2, 2, 2]}; baseline exit 0 in 3.64 s",
+     "verdict": "SUPPORTED"
+    }
+   ],
+   "data": [
+    {
+     "bytes": 14564,
+     "digest": "f445e3c1",
+     "file": "data/rl15b_runs.json"
+    }
+   ],
+   "dates": [
+    "2026-11-07"
+   ],
+   "files": {
+    "PREREG.md": "e5a75db2",
+    "REPORT.md": "5a7ddc20",
+    "RESULTS.json": "d1810a57"
+   },
+   "hypothesisIds": [
+    "H-30"
+   ],
+   "id": "RL-15b",
+   "ledgerId": "RL-15b-RESULTS-v1",
+   "preregStatus": "FROZEN v1 (2026-11-07, light; the monitor's ruling MON-RL15-M54-RULED (c) and the visionary's restated expectation MON-RL15-D1-RESTATED, \"ERRATUM to RL15-D1\", folded into lock 41). A new id that names RL-15: RL-15's PREREG v5 (1e8dfc4a), run-001, RESULTS.json and REPORT.md stand unchanged; RL-15 run-002 (2026-11-07, frozen tools and gate on the lock-40 builder; `experiments/RL-15/runs/run-002.md`, data a60da422) is the record this restatement corrects for its three instrument defects. First experiment under charter step 1b (instrument preflight).",
+   "registerLine": "RUN 2026-11-07 (light, MON-RL15B-RUN-GO; fresh export at HEAD 8df395a5 = ded99886's roadmap/, builder 690cff6a asserted): PASS as preregistered: 17 of 17 catchable refused and attributed (lock-40 tags 4: M4 2 of 3, M6 2 of 2; older rules 13), unattributed 0, the declared uncatchable secondary-paper instance built, 0 of 3 controls refused, precision 1.000, 22 builds 15.2 s (25 with the preflight); preflight PASS (PREFLIGHT.md 73800f3e), review 1 PASS (PREREG-REVIEW.md 0ed078ab); run-001 af1e9122, RESULTS d1810a57, REPORT 5a7ddc20; equals the erratum's expectation instance by instance",
+   "report": {
+    "asked": "**Asked.** On the lock-40 roadmap builder (690cff6a), is every catchable seeded inconsistency instance of the\nregister's classes and the lab's added class refused, each refusal attributed to a named rule (a lock-40 rule by its\ntag, or the older rule of `load()` that ran first), with the lock-40 rules refusing at least 2 of 3 M4 and both\ncatchable M6 instances, and no benign control refused (H-30b)? Preregistered as v1 (e5a75db2) against the design\nauthority's restated expectation (ERRATUM to RL15-D1), with the instrument preflight of charter step 1b (PASS,\n`PREFLIGHT.md`) and one blind review (PASS, five non-blocking notes, `PREREG-REVIEW.md`). The new id that corrects\nRL-15 run-002's three instrument defects: the offset-less control, the 120-character capture and the instance no\nfile comparison can catch. Everything ran on a fresh export of `roadmap/` at bridge HEAD 8df395a5 (identical to the\npinned ded99886) in the lab scratch; the bridge's `roadmap/` was never touched.",
+    "limits": "**What it does not show.** A PASS here confirms the design authority's reading of RL-15 run-002 on a corrected\ninstrument rather than a fresh prediction: the targets, the messages and the counts were known before this PREREG\nwas written and the expectation was transcribed from the erratum (declared under R7; review note 5). Nothing about\nvalidators the lab did not seed; three edits per class, one record, one roadmap.json; the secondary-paper digest\nclass stays uncaught by design (no file to compare; 34 of the 45 secondary papers carry a digest and none a file);\nthe older rules' wordings are the lab's fixed list, so a differently worded refusal would have read as unattributed\n(none did); a crashing control would have been scored as a false positive (none crashed; review note 2).",
+    "means": "**What it means.** Both lock-40 validators do what RL15-D1 asked for what a file comparison can catch: a status\nchange to DONE with no update entry dated on or after it is refused, and a research digest that is malformed or\ndisagrees with its file is refused, each with a tagged message that names the item or source. RL-15's FAIL stands as\nthe record of the builder before lock 40 (M4 0 of 3, M6 0 of 3 attributed); RL-15 run-002 stands as the record of\nthe frozen instrument's three defects on the patched builder; RL-15b is the clean statement on a corrected\ninstrument.",
+    "measured": "**Measured.** 22 builds in 15.2 s at host load about 25 (run-001 af1e9122; data f445e3c1; RESULTS d1810a57), 25 light\nbuilds with the preflight. The unmodified copy builds clean (exit 0, 3.64 s). Of the 17 catchable seeded edits, 17\nwere refused and all 17 attributed: 4 by the lock-40 tags (M4 2 of 3 by the process rule, M6 2 of 2 by the digest\nrule) and 13 by an older rule of `load()` (the third M4 instance by \"is BLOCKED with nothing blocking it\", the rule\nthat runs first, as the erratum said). The declared uncatchable instance, a secondary paper's digest with no file to\ncompare, built. 0 of 3 controls exited non-zero; no build crashed. Precision 17 of 17 refusals (1.000).",
+    "proposal": "**Proposal.** None as a roadmap read. For the visionary (through the monitor): RL15-D1's expectation as restated\nby the erratum is met instance by instance; the RL-15b report enters as a research source by digest when the\nvisionary records it. A secondary paper's digest could only be checked against a file the bridge holds, which is a\nscope choice for the roadmap's research record, not a builder defect.",
+    "verdict": "**Verdict: PASS** (RESULTS.json): all 17 catchable instances refused and attributed, the new rules at the expected\ncounts (M4 2, M6 2), 0 controls refused; every number equals the preregistered expectation."
+   },
+   "reportTitle": "RL-15b report: the seeded-inconsistency benchmark restated for the lock-40 roadmap builder (H-30)",
+   "runs": [
+    {
+     "digest": "af1e9122",
+     "file": "runs/run-001.md",
+     "title": "RL-15b run 001 (the restated seeded-inconsistency benchmark on the lock-40 builder, light, scratch copy only)"
+    }
+   ],
+   "scores": {
+    "attributed": 17,
+    "baseline_exit": 0,
+    "by_new_rule": 4,
+    "by_older_rule": 13,
+    "catchable": 17,
+    "catchable_refused": 17,
+    "classes_uncaught": 0,
+    "controls": 3,
+    "controls_refused": 0,
+    "interpreter": "3.12.4",
+    "new_rule_m4": 2,
+    "new_rule_m6": 2,
+    "precision_permille": 1000,
+    "seeded_crashed": 0,
+    "unattributed": 0
+   },
+   "state": "COMPLETED",
+   "supersedes": null,
+   "title": "RL-15b preregistration: the seeded-inconsistency benchmark restated for the lock-40 roadmap builder (H-30)",
+   "unresolved": [],
+   "verdict": "PASS"
   },
   {
    "checks": [
@@ -2383,12 +2508,12 @@
    "verdict": "UNRESOLVED"
   }
  ],
- "generatedAt": "2026-11-07 07:22 UTC",
+ "generatedAt": "2026-11-09 01:59 UTC",
  "lane": {
-  "body": "- 2026-11-07 (session resumed from handover 13; RL-M41 \"resumed, paused\"): the owner unpaused the lab for one task,\n  R13's first packet (MON-RL-R13-PACKET: a product at slot 283, K = 4, gated by the 283 dry run under 1,100 s, else 284\n  at K = 1; R00 builds it, the lab says YES before c2). Drafted on paper as LAB-REPO-001 in\n  `research/reads/LAB-REPO-001-PACKET-DRAFT.md`: draft 1 b7f6421d (RL-M42, with five questions), draft 2 after the\n  monitor's answers and the visionary's rulings (RL-M43: LICENSE Apache-2.0; main = the owner's LICENSE-only first\n  commit, the route checks it; review record v2 = harness-onion's schema, two files per review from the first PR;\n  mirror drops tree links; CPython 3.12.14). Inputs: the platform at main 4b2be353 by git-archive export (tar\n  b0aadaf9, in this session's scratch). RL-11 correction (MON-RL-R13-ANSWERS): PREREG.md had been amended in place\n  after the run; restored PREREG.v1.md 89d6ee61, PREREG.v1.1.md b06eabdb (run version), PREREG.md v1.2 7c6b64fc;\n  register row updated. Owner change (MON-RL-R13-284): R13 moves to slot 284 (K 1) under bundle v7 (v6 refuses any\n  product outside its twelve; v7 adds the repository and the route keyed by the frozen YAML's sha256); the YAML\n  freezes before v7's c2 and changes only by a named delta; ci/run_packet_argv.py pins to 283's fixed runner (digest\n  from the monitor when 283's c1 freezes; never c2ed0852). Draft 3 4d738aa9 (RL-M44). Runner pin received\n  (MON-RL-RUNNER: 283 c1 ci/run_packet_argv.py sha256 c8ac40f0, 9084 B, 100755; provisional until 283's c2, two\n  reader probes may reopen c1) and filled: draft 4 5cfe26ab (RL-M45). NEXT: the final freeze before v7's c2 (after\n  283 merges; a new runner digest = a new named delta), then the YES on R00's built packet before 284's c2\n  (section F); everything else paused.\n- STATUS: STANDING BY (owner, 2026-11-06, via the monitor: experiments wait for arranged inputs; no searches or\n  fetches until an experiment needs one; weekly usage the reason). Resume point: 22 experiments closed and reported\n  through RL-M36; the procedure and progress documents in place (RL-M37); nothing in flight. On the monitor's word:\n  follow research/progress/README.md's procedure per scope, starting with the scope whose input arrives.\n  REPOSITORY (owner proposal 2026-11-06, in the lab's chat): a lab repository for PRs and gpt-astra issues; the\n  lab's proposal and three owner questions in RL-M38; the migration plan on paper in\n  research/reads/REPO-MIGRATION-PLAN.md (draft 1); the owner decided (2026-11-06): gpt-astra = another LLM provider's GitHub App with read and\n  issue-opening rights; verifier-numbered like the other sessions; public; repository created as\n  <owner>/mas-harness-research-lab (RL-M40 relayed); the repository is R13 (kind meta), registered by R00 at slot 282 with MET-VERIFY-007 and carried\n  by bundle v7; the page build must link into the repository (or drop tree links) before the bridge mirror form;\n  nothing committed or pushed before the bundle and the monitor's word (plan draft 2, section 3a).\n  Earlier the same day: ACTIVE. OWNER DIALOG (2026-11-06, in the lab's chat box): work as a research team by the\n  procedure observe / hypothesise / collect data / design and test / report and prove; one progress document per scope\n  for the owner (research/progress/README.md and S1..S6, kept current at every result, listed on the page); deep\n  search permitted for \"what others have done so far\" (the session's web search and fetch tools; sources by identifier\n  and digest; every fetch reported to the monitor; nothing from the records in a query); charter section 1a records it;\n  RL-M37 told the monitor. RL-19 (H-24 grounding step) RUN and CLOSED: UNRESOLVED as preregistered (24 of 29\n  figures found mechanically, 28 of 29 by hand; Harness-Bench's \"more than 5,000 trajectories\" not in its text).\n  RL-20 (H-25 TopologySpec half) RUN and CLOSED on the fresh c1b838be export (tar 79fb0d22, in the lab scratch):\n  H-25a PASS (52/52 vectors), H-25b FAIL as preregistered (21/22; the accepted edit a no-op on a one-node topology);\n  two classes unexpressible in the form. RL-21 (H-26 contract-text half) RUN and CLOSED: PASS under the\n  creator-linkage operationalisation (the authority records: one creator per published path, every change names its\n  creator); the authority map and the trace half stay BLOCKED. Twenty-one experiments. The monitor's GO for H-23 (paper)\n  followed (RL-M35 reply); RL-22 (H-23 coordinator half: a clean-room board state machine from MAS-RA-004's README\n  section A2, run on the 32 transcript and 11 binding vectors; VERIFY's ledger binding declared un-modelled) has\n  RUN and CLOSED: UNRESOLVED as preregistered (38 of 43 vectors from the README alone; the concurrency scope and the\n  two outside models are the points to ask the author); RL-M36 sent. Twenty-two experiments. NEXT: nothing light is\n  READY without an input; the monitor arranges inputs (R10 transcript export for H-29; owner run plan for H-33; R12\n  oracle run for H-34) when needed; H-02's shadow half waits for MET-PERF-047; a corrected coordinator machine is a\n  new id if the monitor wants it. This session's context is near its limit: resume from here after compaction.\n  Earlier (the STOP of 2026-11-06 early): RL-18 CLOSED and reported (RL-M30); RL-19 then not started: no PREREG; the only thing done was an instrument\n  trial (a standard-library text extraction over the five held papers) that ran slowly and was stopped at the order;\n  its outcome is unknown and nothing was recorded; the five held files stay by digest in the lab scratch. On the\n  monitor's resume word: RL-19's PREREG (figure check of RS-1/2/3 against the five held papers; decide the extraction\n  method first: a stdlib extractor if the trial shows digits, else page reads), its review, run; then the fresh\n  c1b838be architecture export for H-25/H-26 (approved to follow without a new word). Earlier the same day: ACTIVE\n  since the monitor's RESUME after the 5-hour reset. RS-3 received from the owner in the lab session (2026-11-05,\n  \"Academic Papers for Planeon Roadmap.md\", sha256 930f89a0d252f948b5a393044007e4b8e87174f6617d4cad586fa9eea63ab840,\n  745,965 B with 62 embedded images): read in `research/reads/RD-ACADEMIC-PAPERS-LAB-READ.md`; register H-32..H-35\n  added (all BLOCKED); the second-tier fetch ask restated with its identifiers (MAS-ProVe now arXiv 2602.03053);\n  no copy kept; nothing fetched. RL-17 (H-27 replay half) RUN and CLOSED: FAIL as preregistered (deterministic; C3\n  reproduces; duplicates refused; stale replays refused by holder/state, UNRESOLVED on the version clause; the log\n  does not replay merges through a fresh board). RL-18 (H-31) RUN and CLOSED: FAIL as preregistered on expressibility (the manifest form\n  needs a positive token budget; a simulation has none), the lab's gate reproducing all 85 contract vectors, agreement\n  7 of 9; RL-18-PROPOSAL in the report. NEXT (the monitor's standing word, light, PREREG review first): RL-19 (the\n  five held papers' figures checked against RS-1/2/3), then the fresh architecture export at c1b838be for H-25/H-26. RL-15 (H-30) RUN and CLOSED: FAIL as preregistered (the\n  expected class): attributed recall 10 of 18, 0 false positives; the process rule (status change without an update\n  entry) and the digest rule are not covered by build_roadmap's validators; RL-15-PROPOSAL (two candidate validators)\n  in the report, for the visionary through the monitor. Five review rounds under v5 1e8dfc4a; the run used a scratch\n  copy of roadmap/ at bridge fce8245b only. RL-16 (H-02 cost-model half) RUN and CLOSED: PASS (attested share\n  re-derived; equal-load growth 9.34 s per slot [5.73, 13.50]; the 5/10/20 percent table at cadence 10); two review\n  rounds under v2 8788236b. Sixteen experiments run. NEXT (light, by the lab's score): H-25 (static checker over the\n  TopologySpec vectors), H-26 (one writer per governed state, contract-text half), H-27 (replay on the b4bbea79\n  export), H-31 (MAS-RA-002's gate on the CONF-MAS ledgers); each needs an export or the RL-03/RL-04 scratch export\n  (kept) and a PREREG review first. The shadow-period half of H-02 waits for MET-PERF-047. Earlier today: ACTIVE since the monitor's MON-RL-RESUME\n  relay (2026-11-05, after the usage reset). RL-M23 (re-opened,\n  standing by) and RL-M24 (the design read) sent to the monitor. Done on resume, in the MON-RL-M22 order: (1) the\n  lab's (a)-(e) design read, v2 after the owner supplied both roadmap files in the lab session:\n  `research/reads/RD-ROADMAP-LAB-READ.md`; RS-1 = RS-MEMO-RDROADMAP (sha256 checked against the recorded value before\n  reading); RS-2 = a second, new owner-supplied document \"Academic Evidence, Prioritisation and Agent-Executable\n  Research Programme\", sha256 5b30977bfef178e097728c37618983b1f0d6273b99e5c2c6e2150d9a50b4441e (60,459 B, 505 lines),\n  proposed to the visionary as RS-MEMO-RDACADEMIC, OWNER_SUPPLIED; no copy kept of either (MON-RL-M21). (2) the\n  visionary's register suggestions reconciled (read section 8): register columns stream / P/E / outside RS-1 /\n  outside RS-2, rows H-25..H-31, milestones M-G1..M-G4; charter edits (PREREG review step 1a, evaluator rule, ECU in\n  the run-plan form, 60/25/15 by queue class, six reportable-result gates). (3) the seven-source fetch list restated\n  with RS-2's identifiers as the lab's own ask: `research/reads/FETCH-ASK-2026-11-05.md`; nothing fetched.\n  Condition (v) and Q-CC2-4 read for R00 and the visionary: `research/reads/CC2-CONDITION-V-LAB-READ.md` (adopt (v)\n  bounded; N_shadow (a) one cadence, 10 slots; 15 s reader cap; disagreement classes A/B/C restart the count).\n- FETCHES (owner \"The 5 identified lines (Recommended)\", second tier \"Not now\"): six GETs done, five held (F2, F4a, F4b,\n  F5, F6), F7 a bot-challenge page, never retried; record `research/reads/FETCH-RECORD-2026-11-05.md`; files by digest\n  in the lab scratch only.\n- RL-14 (H-28 observational half): RUN 2026-11-05 under PREREG v4 02ef7761 after reviews 1-3 FAIL and review 4 PASS\n  (charter step 1a, first use): UNRESOLVED as preregistered (rho +0.124, clustered interval [-0.413, +0.358], n 23);\n  run-001 bcfa5c1b, RESULTS 93f2bc9c; inputs pinned at bridge 46c7d6e2 and extracted at that commit because two lane\n  files had moved on by the run. CLOSED under this id.\n- NEXT (light, no GO needed, by the lab's score): RL-15 H-30 (scratch copy of roadmap/ only); RL-16 H-02 cost model\n  T(N); then H-25, H-26, H-27, H-31 halves. Each gets PREREG-REVIEW.md before its run. The H-02 shadow-record\n  experiment waits for MET-PERF-047's first shadow verify.\n- PAUSE HISTORY: PAUSED 2026-11-04/05 by MON-RL-PAUSE at weekly 61 percent; resumed as above. Thirteen experiments run (RL-01..RL-13); every one has PREREG, run record(s),\n  RESULTS in the verdict-ledger form and a REPORT; nothing committed (the monitor's checkpoint folds research/**\n  and this file). Both scratch exports (RL-03's conformance-labs tests/mas at b4bbea79; RL-07's harness-onion\n  architecture at afee03b9, with the chain, cost-report, host-interface, gate-channel, ledger, run-manifest and\n  run-events subtrees extracted) stay in the lab scratch until the monitor's word; move to the Trash, never rm.\n- OWNER DECISION (2026-11-05, given directly in the lab session: \"Yes, on resume\"): the owner-supplied document\n  \"R&D Roadmap for MAS-Harness / Planeon\" (markdown, 42792 bytes, sha256 61fa9041f2399f52..., kept by the owner; the lab holds no copy\n  yet) is applied on resume as a design read to the visionary through the monitor: (a) potential and effort scores per\n  register hypothesis, recomputed from our records; (b) its four decision gates as register milestones tied to H-02,\n  H-06, H-12, H-17; (c) independent review of every PREREG before its run (RL-10's clause slip is the case); (d) its\n  ECU compute unit and 60/25/15 split for the run-plan form; (e) six candidate hypotheses (static workflow checking,\n  one authoritative writer per governed state, concurrency/replay correctness, typed memory and handoff, gate\n  interleaving, a seeded-inconsistency benchmark for the roadmap build). Its dates, staffing figures and citations\n  stay as reported, not reproduced. Filing (MON-RL-M21): no second copy; lock 29 at 279's merge records it as research\n  source RS-MEMO-RDROADMAP by full sha256, OWNER_SUPPLIED; the visionary's read is visionary/RD-ROADMAP-READ.md 5836de7f\n  and its lock-29 staging visionary/LOCK29-RD-D1.md f0264b57 (not read by the lab under the pause).\n- FIRST ITEMS ON RESUME, in the order of MON-RL-M22 (owner: \"what research-lab said is more important than what\n  visionary said\"): (1) the lab's (a)-(e) design read above, first and leading; (2) the visionary's section-2 register\n  edits (stream and outside-rank columns, milestones M-A2..A4, H-25, the H-09 note, the runner/evaluator split in\n  research/README.md) weighed as input and reconciled to the lab's read where they differ, the visionary reconciling its\n  roadmap notes to the lab's read before they apply; (3) the seven-source fetch list as the lab's own ask, approved\n  through the monitor.\n- LIVING PAGE (owner 2026-11-05, built under the pause as the owner's direct ask; location research/ confirmed by the\n  owner, \"Keep under research/\"): research/research.html, rendered by\n  research/build_research.py from the register, every experiment folder, the charter and this block, with\n  research/research.json (the data record, sha256 prefix per source) and research/history.json (a snapshot when counts\n  or verdicts change). Rule: rebuild after every RESULTS or REPORT is written and at every RL-M milestone, scan the\n  three outputs, name the page digest in the milestone message; the monitor's checkpoint carries them with research/**. The owner's \"Yes, on resume\" sets what is done on resume; the\n  resume word itself comes from the monitor after slot 279 merges.\n- On resume: (1) read this block and the register's RL rows; (2) the only READY items without an experiment are\n  H-23 (clean-room implementation sketch of the topology/coordination contracts against their vectors; paper) and\n  H-24 (the crosswalk method note; paper); (3) BLOCKED items wait on their named roadmap items; (4) H-07b gets\n  arms when a K 8 PERF packet's verifies exist; (5) RL-02's oracle side and finding identity wait on the\n  DECISION-LEDGER-001 / REVIEW-RECORD-SERIES-001 notes; (6) counterexamples 1-17 wait on a host-interface amendment.\n- RL-13 (H-22): PREREG 2f7a6389, MAPPING 1bc341c2, run-001 d4113a19 (two logged repairs per instance), RESULTS bc0ee3b8 PASS with\n  two unresolved checks (one contract positive refused by the lab's checker; the pinned conventions unverified),\n  REPORT dcb63e6c. CLOSED.\n\n- OPENED 2026-11-04; registered by the monitor on `research/**` + this file. Monitor rules: light work free; heavy\n  runs on its GO only, one job, never during a harness-onion verify or heavy R00 step; no sampler word (the test\n  runner's, the launcher's, the verifier script's names) on command lines during heavy jobs; masked exports per\n  experiment; proposals to the visionary through it; R12 oracles are `test_oracle*.py` + TOOLS/masra010*/** (never\n  read). Runs use the profile interpreter 3.12.14, `-I -B`, TMPDIR in the lab scratch.\n- RL-01 (H-07): PREREG v1.1 db893373; RESULTS bb670fd6 (v2, supersedes d1977cc2), REPORT 5f6af501. H-07a PASS by gate\n  (load drives; C vs K collinear, unresolved). H-07b UNRESOLVED: I3 (R00's K 6/8/6 at bd882493, summary sha256\n  85ab23bf, relayed figures only) is one K 8 run, non-comparable. CLOSED unless R00 runs more arms.\n- RL-02 (H-09): v2 RESULTS 226bd62d UNRESOLVED (no oracle record; ids carry the round). Proposals ruled by the\n  visionary (MON-RL-M6): RL-02 (a) finding identity \u2192 REVIEW-RECORD-SERIES-001 scope, gate material, owner approval;\n  RL-02 (b) oracle block \u2192 DECISION-LEDGER-001 note. CLOSED until those land.\n- RL-05 (H-03): FAIL as stated; P_t proposed \u2192 DECISION-LEDGER-001 note. CLOSED.\n- RL-03 (H-19 first clause): PASS (RESULTS 213d27e6, REPORT aa5ddd1a; runs 001-003 on GO-RL03-1/2/3): the four breach\n  rows and the 15 arm pairs reproduce exactly on pin b4bbea79 (export 90fdfe4d in the lab scratch, kept for RL-04).\n  CLOSED.\n- RL-04 (H-13 + H-19 second clause): RUN on GO-RL04 (640 runs, 8 s, point by point; script 01d4e4d4, the frozen\n  b6d585e4 plus raw paired differences in the output, disclosed in run-001 e1bcd872). RESULTS 9c9116c4 (overall UNRESOLVED\n  for H-13a by input; H-13b PASS by gate; H-19 second clause PASS as 'lower than advisory', 'vanish' false), REPORT\n  5fbc3a25. Finding: the whole leasing effect is the DECENTRALIZED family's; CENTRAL shows none and pays about 30\n  percent makespan for leases. RL-04-PROPOSAL ruled (visionary via MON-RL-M9; not a roadmap shift, not gate material; dated notes at lock\n  29 at 279's merge): MAS-STRATEGY-001 (leases required where claims are peer-to-peer, optional under one\n  coordinator), MAS-RA-004 (the contract mandates leases in both modes; a topology-conditional successor would be\n  CONTRACT material through R00; claimOverlap 0 in all 640 leased runs is the safety evidence), MAS-RA-010-F\n  ('vanish' measured as bounded). Register rows H-13 and H-19 carry the ruled wording. CLOSED. The\n  scratch export is kept until the monitor confirms R12 needs nothing more; then Trash.\n- RL-06 (H-10): RUN light (MON-RL-M8 go-ahead): PREREG 301c2783, run-001 c2d49f64, RESULTS 49802c4e (H-10a PASS: 3.1 merges a\n  day, verify median 743 s per merge, 2 review rounds; H-10b FAIL as preregistered: a keyword taxonomy over MON ids\n  leaves 70 percent OTHER, the ids are incident-specific), REPORT 42bfbc07. CLOSED; a text-level v2 only with the\n  monitor's permission to classify rule lines (counts only).\n- RL-07 (H-01): RUN light on the architecture export 948a20fa (afee03b9) with the four evaluator modules (v1 1ec76480,\n  v2 23fe723a, v3 29483ec3, safe_yaml 99c67356; MON-RL-M10b/c), run 002 on harness-onion's .venv interpreter (PyYAML)\n  read-only. PREREG 67617917 (v1.2), runs c8b5eb39 / 870361ca, RESULTS acf365ff PASS on the published vectors (116 of 116) and the\n  identity rule's evidence; unresolved: live-chain step rule and equivalence not replayed, P3's 'oldest layer' not\n  fixed by the vectors (input for R00: add the refusing slot to pin-refusal vectors). REPORT 69758154. CLOSED.\n- RL-08 (H-08): RUN light on the cost report inside the RL-07 export (MON-RL-M10b ruling, MON-RL-M11 go-ahead):\n  PREREG 1e085298, run-001 859332ff, RESULTS 59d261c7 UNRESOLVED (H-08a no refusal history; H-08b between bounds: top-decile\n  shares 0.34 files / 0.31 layers, Gini about 0.5; argv 63 = 0.86 of verify CPU, descriptive), REPORT 3c99a158. CLOSED.\n- RL-09 (H-18): RUN light on the export's published records (MON-RL-M13 GO; inputs listed first, accepted):\n  PREREG 4387dbff, run-001 0837ee60, RESULTS aa69f568 FAIL as preregistered on paths 18-28 (5 covered, 4 uncovered: gate-rule\n  paths A3/C4/C6 and a cgroup search; 2 untestable; 1-17 not enumerated anywhere published, per the monitor's search),\n  REPORT 81d2cf84 with RL-09-PROPOSAL (each counterexample names its enforcing family; H-18 widened to the gate-channel\n  contracts), to relay. CLOSED; a v2 with the gate-channel and admission records as a fifth family is a new id.\n- RL-10 (H-04): RUN light (MON-RL-M14): PREREG 9e5db1c5, run-001 d1bd456d, RESULTS 023591f8 FAIL as preregistered (C2 clause 2 was\n  scoped per ledger, the rule is per claim; per claim the composition holds: 7/7 ledger refusals and 13/13 native\n  refusals agree with the shared five-level order; both maps total), REPORT 1a999a40. CLOSED; a per-claim restatement is\n  a new id only on the monitor's word.\n- RL-11 (H-18 widened, MON-RL-M15 GO; R10's cited ids MON-RL-M16; the visionary's cells MON-RL-M17 as expected\n  state): PREREG b06eabdb, run-001 28cbcd62, RESULTS b6d7d416 UNRESOLVED (no path uncovered; 10 of 11 covered, 24 not joinable\n  by token, 28 by a README mention only; cells agree), REPORT b2acd25f with the W03 note inputs (MON-RL-M19 routing correction applied) (closed by join / missing\n  clause per path). CLOSED.\n- RL-12 (H-04 per claim, MON-RL-M18 GO): PREREG d1763b97, run-001 f6cda7ff, RESULTS 72d2060f PASS (7/7 per claim, 2 vacuous;\n  13/13 native), REPORT eba7fd47; disclosed as a restatement of RL-10's post-hoc reading. CLOSED.\n- Twelve experiments run (RL-01..RL-12). READY register items without an experiment: H-22/H-23/H-24 (paper).\n- READY register items without an experiment after RL-11: H-22/H-23/H-24 (paper).\n- Not committed: the monitor folds `research/**` and this file into its checkpoints.",
-  "digest": "ea525123",
-  "header": "2026-11-07, PAUSED by the owner's word via the monitor, except LAB-REPO-001's freeze and the YES before 284's c2; resume only on the monitor's word",
-  "status": "PAUSED"
+  "body": "",
+  "digest": "a21d1927",
+  "header": "",
+  "status": "ACTIVE"
  },
  "reads": [
   {
@@ -2427,6 +2552,11 @@
    "title": "S6: what others have done, and what it changes here"
   },
   {
+   "digest": "29cac1df",
+   "file": "reads/BRIDGE-CHANGES-SINCE-CC92594D.md",
+   "title": "Bridge research/** changes since R13 main cc92594d6daa (manifest bridge a67b90a5)"
+  },
+  {
    "digest": "5ba84a50",
    "file": "reads/CC2-CONDITION-V-LAB-READ.md",
    "title": "Research-Lab read of condition (v), shadow mode for CHAIN-COMPACTION-002 (G1), and Q-CC2-4 (N_shadow), 2026-11-05"
@@ -2442,9 +2572,29 @@
    "title": "Fetch record, 2026-11-05: the owner-approved lines of FETCH-ASK-2026-11-05 (b824fb24)"
   },
   {
-   "digest": "5cfe26ab",
+   "digest": "3037ea86",
    "file": "reads/LAB-REPO-001-PACKET-DRAFT.md",
-   "title": "LAB-REPO-001: R13's first task packet, drafted by the Research-Lab (draft 4, 2026-11-07; paper only)"
+   "title": "LAB-REPO-001: R13's first task packet, drafted by the Research-Lab (draft 6.6, 2026-11-09; the YAML frozen at draft 6.1 before bundle v7's c2; paper only)"
+  },
+  {
+   "digest": "96e5797a",
+   "file": "reads/LAB-REPO-001-YES.md",
+   "title": "LAB-REPO-001: the Research-Lab's YES on R00's built packet (final-head pass, at c8 of slot 284)"
+  },
+  {
+   "digest": "26b9a759",
+   "file": "reads/PREREG-REVIEW-META-REVIEW-001-TABLES.md",
+   "title": "PREREG review meta-review 001: tables (generated by `tools/prereg_review_meta.py --render`)"
+  },
+  {
+   "digest": "ee75767f",
+   "file": "reads/PREREG-REVIEW-META-REVIEW-001.md",
+   "title": "PREREG review meta-review 001: what the blind reviews found, and what the protocol takes from them"
+  },
+  {
+   "digest": "100295c1",
+   "file": "reads/R13-ISSUE-1-TRIAGE.md",
+   "title": "R13 issue 1 triage: \"Initial research review: claim validity, reproducibility, and experiment priorities\""
   },
   {
    "digest": "583ee445",
@@ -2457,13 +2607,18 @@
    "title": "Research-Lab design read of the two owner-supplied R&D roadmap documents (RD-D1), v2, 2026-11-05"
   },
   {
-   "digest": "cf48e682",
+   "digest": "cf6eb2a1",
    "file": "reads/REPO-MIGRATION-PLAN.md",
    "title": "Research-Lab repository: migration plan on paper (draft 2, 2026-11-06; nothing committed or pushed before the monitor's word)"
+  },
+  {
+   "digest": "b1e85b7b",
+   "file": "reads/REVIEW-RECORD-DATA-DICTIONARY.md",
+   "title": "Review-record data dictionary (R13 issue 1, recommendation 4)"
   }
  ],
  "register": {
-  "digest": "acf48fa4",
+  "digest": "1a4effd8",
   "hypotheses": [
    {
     "bucket": "RUN",
@@ -2612,7 +2767,7 @@
     "outside2": "A2 92/68 1.35",
     "pe": "4/3 1.33",
     "section": "A2, C2",
-    "status": "RL-02 v1+v2 RUN: UNRESOLVED; no oracle record exists; finding ids are per round (no cross-round identity)",
+    "status": "RL-02 v1+v2 RUN: UNRESOLVED; no oracle record exists; finding ids are per round (no cross-round identity); RL-02-PROPOSAL DISPOSED (VIS-R13-I1-RL, lock 29 notes of 2026-11-05): part 1 a clause of REVIEW-RECORD-SERIES-001's packet, part 2 a note on DECISION-LEDGER-001 (oracle block); H-09a/c/d UNRESOLVED-by-input until both land (no slot yet)",
     "stream": "S2 (X)"
    },
    {
@@ -2942,7 +3097,8 @@
    {
     "bucket": "RUN",
     "experiments": [
-     "RL-15"
+     "RL-15",
+     "RL-15b"
     ],
     "firstStep": "a second operationalisation (architecture snapshots) is a new id",
     "hypothesis": "build_roadmap's validators catch every seeded inconsistency class (dangling dependency, status against evidence state, score drift, missing update entry, stale snapshot digest) on a scratch copy, with the false-positive rate on the frozen snapshot reported",
@@ -2953,7 +3109,7 @@
     "outside2": "A5 71/34 2.09",
     "pe": "3/1 3.00",
     "section": "A5",
-    "status": "RL-15 FAIL as preregistered (the expected class): shape rules covered (dangling dependency, status against evidence, factor range, references, duplicate id), the process rule (status change without an update entry) and the digest rule not covered; 0 false positives; closed under this id; RL-15-PROPOSAL (two candidate validators) to the visionary",
+    "status": "RL-15 FAIL as preregistered (the expected class): shape rules covered (dangling dependency, status against evidence, factor range, references, duplicate id), the process rule (status change without an update entry) and the digest rule not covered; 0 false positives; closed under this id; RL-15-PROPOSAL (two candidate validators) to the visionary; RL-15-PROPOSAL ACCEPTED (VIS-RL15, 2026-11-05), not yet built: one reviewed builder change staged as its own lock before lock 40; after it the lab re-runs the 18 seeds + 3 controls on the monitor's word (expected 18 of 18 caught, 0 of 3 false alarms; RL15-D1); RL-15b (2026-11-07, new id on the lock-40 builder 690cff6a, expectation = the ERRATUM to RL15-D1) PASS as preregistered: 17 of 17 catchable refused and attributed (new rules M4 2, M6 2), 0 of 3 controls; the secondary-paper digest instance uncatchable by design",
     "stream": "S4 (X)"
    },
    {
@@ -3073,8 +3229,8 @@
     "folder": "`experiments/RL-01/`",
     "hypothesis": "H-07",
     "id": "RL-01",
-    "prereg": "v1 f0bdb2f7, v1.1 db893373",
-    "state": "v1.1 (2026-11-05): H-07a PASS by gate (C vs K unresolved, r 0.98); H-07b UNRESOLVED (one K 8 run against two K 6, non-comparable; as relayed: wall \u221210 percent, summed +18 percent); RESULTS bb670fd6 supersedes d1977cc2; REPORT 5f6af501"
+    "prereg": "v1.1 db893373 (the run version; the v1 file was not kept, see the state column)",
+    "state": "v1.1 (2026-11-05; v1, digest f0bdb2f7, was amended in place to v1.1 before the first bridge commit and no v1 file exists: a lapse before the kept-versions rule, recorded 2026-11-08 by prereg_check at the LAB-REPO-001 section-D run; the run version is v1.1): H-07a PASS by gate (C vs K unresolved, r 0.98); H-07b UNRESOLVED (one K 8 run against two K 6, non-comparable; as relayed: wall \u221210 percent, summed +18 percent); RESULTS bb670fd6 supersedes d1977cc2; REPORT 5f6af501"
    },
    {
     "folder": "`experiments/RL-02/`",
@@ -3172,7 +3328,14 @@
     "hypothesis": "H-30",
     "id": "RL-15",
     "prereg": "v1 56b2829f, v2 532b08a3, v3 cda3e838, v4 cf9fe7a9, v5 1e8dfc4a (run)",
-    "state": "RUN 2026-11-05 (light, scratch copy of roadmap/ at fce8245b): FAIL as preregistered: attributed recall 10 of 18 (14 of 18 refused by any rule), 0 of 3 controls refused, precision 0.714; M1 3/3, M2 3/3, M3 2/3, M4 0/3 (no rule on update entries), M5 2/3, M6 0/3 (digests unchecked); five review rounds (v1-v4 FAIL, one instrument stop, v5 PASS); run-001 87f4ad62, RESULTS 050c553c, REPORT e5afa316; RL-15-PROPOSAL in the report"
+    "state": "RUN 2026-11-05 (light, scratch copy of roadmap/ at fce8245b): FAIL as preregistered: attributed recall 10 of 18 (14 of 18 refused by any rule), 0 of 3 controls refused, precision 0.714; M1 3/3, M2 3/3, M3 2/3, M4 0/3 (no rule on update entries), M5 2/3, M6 0/3 (digests unchecked); five review rounds (v1-v4 FAIL, one instrument stop, v5 PASS); run-001 87f4ad62, RESULTS 050c553c, REPORT e5afa316; RL-15-PROPOSAL in the report; run-002 2026-11-07 on the lock-40 builder 690cff6a (export at ded99886, frozen tools and gate, MON-RL15-M54-RULED): refused 17 of 18, attributed 13 of 18, 1 of 3 controls refused (an entry without a UTC offset under the new date rule), FAIL region; M4 1/3/3 and M6 2/2/3 by the new validators; misses named in runs/run-002.md"
+   },
+   {
+    "folder": "`experiments/RL-15b/`",
+    "hypothesis": "H-30 (restated, claim H-30b)",
+    "id": "RL-15b",
+    "prereg": "v1 e5a75db2",
+    "state": "RUN 2026-11-07 (light, MON-RL15B-RUN-GO; fresh export at HEAD 8df395a5 = ded99886's roadmap/, builder 690cff6a asserted): PASS as preregistered: 17 of 17 catchable refused and attributed (lock-40 tags 4: M4 2 of 3, M6 2 of 2; older rules 13), unattributed 0, the declared uncatchable secondary-paper instance built, 0 of 3 controls refused, precision 1.000, 22 builds 15.2 s (25 with the preflight); preflight PASS (PREFLIGHT.md 73800f3e), review 1 PASS (PREREG-REVIEW.md 0ed078ab); run-001 af1e9122, RESULTS d1810a57, REPORT 5a7ddc20; equals the erratum's expectation instance by instance"
    },
    {
     "folder": "`experiments/RL-16/`",
@@ -3227,6 +3390,51 @@
  },
  "title": "Research-Lab living page",
  "tools": [
+  {
+   "digest": "0990fbd1",
+   "doc": "Check research/hypotheses/CLAIMS.json against the verdict ledgers, and render CLAIMS.md from it.",
+   "file": "tools/claims_check.py"
+  },
+  {
+   "digest": "bb536406",
+   "doc": "Write research/MANIFEST.json: every file in the repository by sha256.",
+   "file": "tools/make_manifest.py"
+  },
+  {
+   "digest": "5511aeec",
+   "doc": "Verify research/MANIFEST.json against the repository tree.",
+   "file": "tools/manifest_check.py"
+  },
+  {
+   "digest": "374a4c60",
+   "doc": "Page check (LAB-REPO-001): rebuilds the research page's data record in memory with build_research.py (the lane",
+   "file": "tools/page_check.py"
+  },
+  {
+   "digest": "16001f66",
+   "doc": "Preregistration and review-record check (LAB-REPO-001): every experiment folder holds a frozen PREREG, its ledger and",
+   "file": "tools/prereg_check.py"
+  },
+  {
+   "digest": "8415ebc2",
+   "doc": "Meta-review of the lab's blind PREREG reviews (charter step 1a).",
+   "file": "tools/prereg_review_meta.py"
+  },
+  {
+   "digest": "de3bd1b6",
+   "doc": "Privacy check (LAB-REPO-001): scans the manifest's file set plus README.md, LICENSE and the lab's own ci/ files for",
+   "file": "tools/privacy_check.py"
+  },
+  {
+   "digest": "284ca154",
+   "doc": "Evaluator re-derivation (LAB-REPO-001; widened by R13 issue 1, recommendation 2): rerun_table.json names every",
+   "file": "tools/rerun_results.py"
+  },
+  {
+   "digest": "34299eaa",
+   "doc": "Completeness check of the review-record data dictionary against a record schema or a folder of records.",
+   "file": "tools/review_record_dictionary_check.py"
+  },
   {
    "digest": "b1874941",
    "doc": "RL-01 allowlist extractor: reads merge-decision records and prints only numeric / enum columns.",
@@ -3321,6 +3529,16 @@
    "digest": "b35e6009",
    "doc": "RL-15 (H-30): seeded-inconsistency benchmark for the roadmap build, on a scratch copy only.",
    "file": "tools/rl15_mutate.py"
+  },
+  {
+   "digest": "2d6c349b",
+   "doc": "RL-15b evaluator (PREREG v1): applies the three-region gate over the catchable denominator, with the visionary's",
+   "file": "tools/rl15b_eval.py"
+  },
+  {
+   "digest": "865d5754",
+   "doc": "RL-15b (H-30 restated): seeded-inconsistency benchmark for the roadmap build on the lock-40 builder, scratch copy only.",
+   "file": "tools/rl15b_mutate.py"
   },
   {
    "digest": "6d77ce41",

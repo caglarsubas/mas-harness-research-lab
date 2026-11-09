@@ -1,0 +1,342 @@
+{
+ "baseline": {
+  "exit": 0,
+  "wall_s": 0.0
+ },
+ "capture": "whole message",
+ "counts": {
+  "attributed": 17,
+  "byNewRule": 4,
+  "byOlderRule": 13,
+  "catchable": 17,
+  "catchableRefused": 17,
+  "controls": 3,
+  "controlsNonZero": 0,
+  "controlsRefused": 0,
+  "newRulePerClass": {
+   "M4": 2,
+   "M6": 2
+  },
+  "perClass": {
+   "M1": [
+    3,
+    3,
+    3
+   ],
+   "M2": [
+    3,
+    3,
+    3
+   ],
+   "M3": [
+    3,
+    3,
+    3
+   ],
+   "M4": [
+    3,
+    3,
+    3
+   ],
+   "M5": [
+    3,
+    3,
+    3
+   ],
+   "M6": [
+    2,
+    2,
+    2
+   ]
+  },
+  "seeded": 18,
+  "seededCrashed": 0,
+  "seededRefused": 17,
+  "unattributedRefusals": 0,
+  "uncatchable": 1,
+  "uncatchableOutcome": [
+   "built"
+  ]
+ },
+ "interpreter": "synthetic",
+ "layout": {
+  "parent": "x",
+  "work": "roadmap"
+ },
+ "runs": [
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M1",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-0: unknown dependency ",
+   "refused": true,
+   "target": "M1-0"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M1",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-1: unknown dependency ",
+   "refused": true,
+   "target": "M1-1"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M1",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-2: unknown dependency ",
+   "refused": true,
+   "target": "M1-2"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M2",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-0: unknown dependency ",
+   "refused": true,
+   "target": "M2-0"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M2",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-1: unknown dependency ",
+   "refused": true,
+   "target": "M2-1"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M2",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-2: unknown dependency ",
+   "refused": true,
+   "target": "M2-2"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M3",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-0: unknown dependency ",
+   "refused": true,
+   "target": "M3-0"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M3",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-1: unknown dependency ",
+   "refused": true,
+   "target": "M3-1"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M3",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-2: unknown dependency ",
+   "refused": true,
+   "target": "M3-2"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": true,
+   "attributedToOlderRule": null,
+   "catchable": true,
+   "class": "M4",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-0: unknown dependency (RL-15 v1)",
+   "refused": true,
+   "target": "M4-0"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": true,
+   "attributedToOlderRule": null,
+   "catchable": true,
+   "class": "M4",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-1: unknown dependency (RL-15 v1)",
+   "refused": true,
+   "target": "M4-1"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M4",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-2: unknown dependency ",
+   "refused": true,
+   "target": "M4-2"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M5",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-0: unknown dependency ",
+   "refused": true,
+   "target": "M5-0"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M5",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-1: unknown dependency ",
+   "refused": true,
+   "target": "M5-1"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": "unknown dependency",
+   "catchable": true,
+   "class": "M5",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-2: unknown dependency ",
+   "refused": true,
+   "target": "M5-2"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": true,
+   "attributedToOlderRule": null,
+   "catchable": true,
+   "class": "M6",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-0: unknown dependency (RL-15 v2)",
+   "refused": true,
+   "target": "M6-0"
+  },
+  {
+   "attributed": true,
+   "attributedToNewRule": true,
+   "attributedToOlderRule": null,
+   "catchable": true,
+   "class": "M6",
+   "crashed": false,
+   "exit": 1,
+   "field": "f",
+   "message": "roadmap.json: X-1: unknown dependency (RL-15 v2)",
+   "refused": true,
+   "target": "M6-1"
+  },
+  {
+   "attributed": false,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": null,
+   "catchable": false,
+   "class": "M6",
+   "crashed": false,
+   "exit": 0,
+   "field": "sha256",
+   "message": "",
+   "refused": false,
+   "target": "SP"
+  },
+  {
+   "attributed": false,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": null,
+   "catchable": true,
+   "class": "C",
+   "crashed": false,
+   "exit": 0,
+   "field": "f",
+   "message": "",
+   "refused": false,
+   "target": "c0"
+  },
+  {
+   "attributed": false,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": null,
+   "catchable": true,
+   "class": "C",
+   "crashed": false,
+   "exit": 0,
+   "field": "f",
+   "message": "",
+   "refused": false,
+   "target": "c1"
+  },
+  {
+   "attributed": false,
+   "attributedToNewRule": false,
+   "attributedToOlderRule": null,
+   "catchable": true,
+   "class": "C",
+   "crashed": false,
+   "exit": 0,
+   "field": "f",
+   "message": "",
+   "refused": false,
+   "target": "c2"
+  }
+ ],
+ "seed": 20261105
+}

@@ -1,0 +1,14 @@
+{
+ "fail_class_zero_refusals": {
+  "expected": "FAIL",
+  "ok": true,
+  "status": "FAIL"
+ },
+ "note": "review note 3 addendum, evaluator only, no build",
+ "pass": true,
+ "unresolved_m4_one_new_rule": {
+  "expected": "UNRESOLVED",
+  "ok": true,
+  "status": "UNRESOLVED"
+ }
+}
