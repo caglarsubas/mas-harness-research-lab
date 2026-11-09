@@ -41,23 +41,57 @@ Every experiment has an id `RL-nn`, a hypothesis from the register, and these re
    run is stochastic, splits declared before the run); the bounds and the gate (the run-manifest contract's
    paired, task-clustered interval and non-inferiority rule where they apply); the compute plan (light on this host
    through the monitor's heavy queue, or a lab run plan for cloud capacity), with the stream (S1-S4) and, for product-coupled runs, the ECU count (one ECU = one pass over the four frozen banking use cases for one configuration tuple at k >= 3 seeds; a planning count, never a reported result); what counts as PASS, FAIL and
-   UNRESOLVED; and its sha256 recorded in the register.
+   UNRESOLVED; and its sha256 recorded in the register. Before the review, the author's self-check (adopted
+   2026-11-08, meta-review 001; applies from RL-23): the gate is ordered, with its precedence stated and a region
+   for every outcome including a stop before any build; one sentence declares the narrowing from the register's
+   clause and names every proxy; every input carries a full sha256 and its commit or the words "no commit exists";
+   the instruments are pinned, and their existence at the freeze and their digest lengths are checked by script; a
+   constant taken from a document carries that document's digest.
    1a. Independent review (`PREREG-REVIEW.md`), before any run, by a pass that holds only the PREREG, the register
    row and this charter, never the run script: checks R1 falsifiable and exhaustive criteria; R2 clause scope (the
    unit the hypothesis names is the unit the measurement counts); R3 every input by digest, present; R4 bounds with
    units, gate, seeds, splits; R5 compute plan with stream and ECU count; R6 privacy; R7 the dataset's generation is
    independent of the hypothesis or the dependence is declared. A FAIL returns the PREREG to a new version before it
-   is frozen; both digests go to the register. Adopted 2026-11-05 (RD-D1 (c)); applies from RL-14.
+   is frozen; both digests go to the register. Adopted 2026-11-05 (RD-D1 (c)); applies from RL-14. From RL-23
+   (meta-review 001): the brief asks for every note found and requires none; a note that changes a gate region or
+   threshold makes a new version even when the verdict is PASS; the review record states custody, context and
+   model-family separation as three fields.
+   1b. Instrument preflight (`PREFLIGHT.md` in the experiment folder, or a section of the first run record), by the
+   run pass after the PREREG is frozen and before the gated run, separate from the blind review above (the reviewer
+   never sees the script or the preflight): (i) every seeded mutation or edit changes the bytes it targets and is a
+   case the form can express (a no-op or inexpressible edit is an invalid case, named before the run; RL-20's
+   one-node budget edit is the example); (ii) the units and denominators of every bound are checked on a
+   known-answer fixture; (iii) one known positive control passes and one known negative control fails the
+   evaluator; (iv) a value at each threshold boundary is exercised; (v) existence and computability: every class the
+   design draws from has at least one qualifying target in the pinned input, every field the evaluator reads is
+   present with the declared type, and every quantity the gate consumes is computable from the pinned inputs,
+   checked by counts without evaluating the gate (RL-15's and RL-21's pre-run stops are the cases); (vi) every
+   instrument edge case a review note names is exercised here or declared an invalid case before the run (RL-20's
+   one-node edit is the case); (v) and (vi) adopted 2026-11-08 (meta-review 001). A failed preflight stops the run and returns
+   the PREREG to a new version; the gated run never starts on an invalid instrument. Adopted 2026-11-07 (R13 issue
+   1, recommendation 7); applies from RL-23. A borrowed figure from the literature enters a bound only with its
+   claim-level context (definition, conditions, source lineage) recorded among the PREREG's inputs.
 2. Run records: one per run, with the environment digest, the seed, the wall time and host load, and the outputs by
    reference (content hashes), never copied into the record.
 3. Results ledger (`RESULTS.json`): verdicts in the verdict-ledger form (PASS, FAIL or UNRESOLVED; evidence
    references; the bound, the measured value and the margin; unresolved checks named). The verdict is computed by the lab's evaluator script from the run records and the ledger names that script's digest; it is never written by hand in the pass that ran the experiment. A breach of a preregistered
    bound is a finding, never a reason to re-tune and re-run under the same id.
+   Each claim of the ledger has one row in `hypotheses/CLAIMS.json` (rendered as `CLAIMS.md` by
+   `tools/claims_check.py --render`): the verdict copied, the instrument's validity, the supported scope, the
+   unresolved clauses, the evidence type and the replication state, invalid cases beside the verdict, and the
+   decision the verdict justifies. The check fails when a row and its ledger disagree. Adopted 2026-11-07 (R13
+   issue 1, recommendation 1).
 4. Report (`REPORT.md`): one page; what was asked, what was measured, what it means, what it does not show, and
-   the proposal if any. Scanned for privacy before it leaves the folder.
+   the proposal if any. Scanned for privacy before it leaves the folder. Standing items (adopted 2026-11-08,
+   meta-review 001, from the reviews' recurring notes): which UNRESOLVED sub-case occurred, if any; the per-unit
+   counts behind every verdict; every proxy named as a proxy; the verdict's wording as the register will record it,
+   under its operationalisation; what the result does not settle.
 5. Proposal (`PROPOSAL.md`, optional): a design read for the roadmap visionary through the lane monitor, naming
    the roadmap items it touches, the evidence state it would justify, and whether it is a roadmap shift. The
    visionary rules under the owner's delegation or routes it to the owner; the lab never writes the roadmap.
+6. Effort and decision columns in the register's experiment row (adopted 2026-11-07, R13 issue 1, recommendation
+   7; recorded from RL-23 on, `n/r` where an older row has no record): preparation, review and run minutes; the time
+   and item the experiment was blocked on; the decision its result changed or the input it produced.
 
 An experiment that would change what the product ships is a candidate for the harness-admission gate (MAS-RA-005:
 offline evolution only, held-out tasks, an executor-model matrix, matched budgets); its artefact class in the

@@ -1,0 +1,126 @@
+{
+ "base": {
+  "commit": "e515f0b83ca4b3cda9dca02acb6ac0db623b66df",
+  "repository": "Harness-Engineering",
+  "tree": "8b57aedb7e043eba2b01a8c2f5a89f6285985935"
+ },
+ "briefSha256": "96e5797a35ce81bfa254868105bfeef060562cbec42fc2c193013968d1a4f77c",
+ "checked": [
+  {
+   "check": "F0: c8's changed paths against the base e515f0b8 (two git-archive exports compared through the kit's pruned walk) against the meta YAML's allowedPaths",
+   "result": "PASS. pruned walk (head: 2477 files kept, 1 dirs pruned, 5 closed files dropped; base: 2461 kept): A 16, M 282, D 0 seen; the meta YAML's 300 allowedPaths = the seen paths plus 2 closed paths the lab does not read (the monitor's A + M count)"
+  },
+  {
+   "check": "F1: task-packets/LAB-REPO-001.yaml equals section A byte for byte at 8ae5c7fd",
+   "result": "PASS. task-packets/LAB-REPO-001.yaml 8ae5c7fd, 20123 B, a new path; equals section A's extraction by the fence rule"
+  },
+  {
+   "check": "F2: docs/repositories/13-mas-harness-research-lab.md: section B's text, fenced-tree roots = the YAML's authorized roots, title, PR packets",
+   "result": "PASS. plan 13 bc19f6a5 (new path) equals section B's fenced block byte for byte; roots ['.gitignore', 'LICENSE', 'README.md', 'ci', 'research'] = the YAML's; title exact; PR packets names LAB-REPO-001 once; 14 plans"
+  },
+  {
+   "check": "F3-C1: schemas/repositories.schema.json stays byte-equal; no C1 enum edit (Q-LAB-10, ruled (a))",
+   "result": "PASS. schemas/repositories.schema.json 8b1841a7 byte-equal (repositoryId enum 13, no research-lab): no C1 enum edit, as MET-REGISTRY-001's contract 1 states; R13 is admitted by the successor record's schema (F14)"
+  },
+  {
+   "check": "F3-C2: C2's ADR line in docs/adr/0001-repository-boundaries.md; the registry file byte-equal",
+   "result": "PASS. ADR 0001 baccff68 modified: the R13 kind-meta boundary line, no other session writes there, names the successor registry record, fourteen repositories; architecture/repositories.yaml byte-equal"
+  },
+  {
+   "check": "F3-C3: C3 as the reader and the counts: validate_readiness.py, validate_architecture.py, validate_reuse.py by diff (one count line)",
+   "result": "PASS. validate_readiness f60e7fdb: EXPECTED_REPOSITORIES 13 without R13 (contract 1), no Phase-0 constant, EXPECTED_PACKET_COUNT 295, composed rows asserted 14 via registry_rows; validate_architecture 161c6628: successor map + 14; validate_reuse 8e21f01e: the diff against the base is one line pair, 293 to 295, nothing else (2 diff lines)"
+  },
+  {
+   "check": "F3-C5: rule.json, chain_identity_v2.py, chain_identity_v3.py byte-equal; no in-place rule.json edit; no name check against rule.json",
+   "result": "PASS. rule.json 5e6e6821, chain_identity_v2.py 23fe723a, chain_identity_v3.py 29483ec3 byte-equal to the base and absent from the changed paths; no in-place rule.json edit"
+  },
+  {
+   "check": "F3-C6: task-packets/README.md: the 284 rows",
+   "result": "PASS. task-packets/README.md 428e82d9: row 294 MET-REGISTRY-001 (K = 1, 295 packets at slot 284, the successor registry record, publishes LAB-REPO-001); row 295 LAB-REPO-001 in mas-harness-research-lab, the one LAB-REPO-001 row"
+  },
+  {
+   "check": "F4: the registration: R13 kind meta with releaseSet: EXCLUDED, and the release lock's conditions",
+   "result": "PASS. R13 kind meta with releaseSet EXCLUDED in the composed rows; check_release_lock.py d6138729 reads the composed rows, refuses EXCLUDED on a non-meta repository and takes the release set minus EXCLUDED"
+  },
+  {
+   "check": "F5: the SUCCESSOR registration rule record and function (VIS-284, VIS-284-CR1 C1-3), re-run at c8",
+   "result": "PASS. function e8635f23 and record 4405e9da are new paths; V2_SHA256 = chain_identity_v2.py's sha256; the record's extends names rule.json 5e6e6821 and the function e8635f23 with their clauses; allowedNames [{fromSlot 284, add [mas-harness-research-lab]}]; load() accepts the real bytes; allowed_names at 283 = 12 names without R13, at 284 = 13 with it; a one-byte change to the function: refused (registration extends)"
+  },
+  {
+   "check": "F6: the route clause's base equals R13 main at the YES",
+   "result": "PASS. the route clause (inside the byte-equal YAML) names the base cc92594d6daa; the lab's local clone's main is cc92594d6daa (no fetch)"
+  },
+  {
+   "check": "F7: this PR's review record v2 and its YES brief are among the deliverables",
+   "result": "PASS. the YAML's deliverables name research/reads/LAB-REPO-001-YES.md and research/reviews/LAB-REPO-001-yes-r1.json"
+  },
+  {
+   "check": "F8: the runner pin equals harness-onion main e515f0b8's runner c8ac40f0",
+   "result": "PASS. ci/run_packet_argv.py c8ac40f0, 9084 B, mode 755 in the head, byte-equal to the base e515f0b8's"
+  },
+  {
+   "check": "F9: rerun_table.json's schema and counts, by the packet's own command",
+   "result": "PASS. the YAML's rerun command on the bridge: rc 0, RERUN OK: 23 entries; LEDGER_REDERIVED 10, RAW_REPRODUCED 0, INDEPENDENT_REPLICATION 0, RECORDED 13; table 29dfb885"
+  },
+  {
+   "check": "F10: the 284 meta YAML task-packets/MET-REGISTRY-001.yaml and its authority's productPackets block, re-run at c8",
+   "result": "PASS. task-packets/MET-REGISTRY-001.yaml 455cd736 (new path): id, repository Harness-Engineering, branch, predecessors [MET-VERIFY-007]; objective K = 1, 295 packets at slot 284, publishes task-packets/LAB-REPO-001.yaml; contract 3 names the product by path and the frozen digest; evidence 14 repositories and 295 packets; excluded names the registry, its schema and the release files; the authority b47b2309 productPackets block holds one entry naming LAB-REPO-001 and the frozen digest (keys ['LAB-REPO-001'])"
+  },
+  {
+   "check": "F11: the built YAML's sha256 is the one the v7 route keys",
+   "result": "PASS. 8ae5c7fd at c2, the digest the v7 route keys"
+  },
+  {
+   "check": "F12: section A's rule checks on the YAML against c8's task-packet schema and runner",
+   "result": "PASS. id matches the schema's pattern and the file stem; branch codex/lab-repo-001-repository-bootstrap matches and starts with codex/lab-repo-001; repository one inline line; 6 argv arrays free of the runner's 10 forbidden tokens, no shell executable, no uv; offlineExecution = EXPECTED_EXECUTION; prefetchCommands []; 9 allowedPaths none absolute/escaping/wild"
+  },
+  {
+   "check": "F13: the eleven byte-equal files (VIS-284-ARGV, VIS-284-LPORACLE-2, MET-REGISTRY-001 contract 1), re-hashed",
+   "result": "PASS. byte-equal to the base and absent from the changed paths: repositories.yaml 02190a66, repositories.schema.json 8b1841a7, evidence-policy.yaml ead30b57, fixture-release-set.yaml 7597ebe4, repos.lock.json 6067ca5e, test_release_lock.py 41f1e773, rule.json 5e6e6821, chain_identity_v2.py 23fe723a, chain_identity_v3.py 29483ec3, language-placement.json 5e4c76bd, 0010-language-placement.md e4c7504b"
+  },
+  {
+   "check": "F14: the SUCCESSOR REGISTRY RECORD with its schema pin, and the composition reader registry_rows, re-run at c8",
+   "result": "PASS. successor registry record 9c129674 (new path) pins its schema b2d07238 by digest and holds one row {research-lab, mas-harness-research-lab, kind meta, dependsOn [], releaseSet EXCLUDED}; registry_rows(head) = 14 rows = the base's 13 names + R13, ids unique; registry_rows(base) = 13; a tampered schema pin: refused (registration registry)"
+  },
+  {
+   "check": "F15: the successor placement record with its schema pin and source spans, and placement_rows, re-run at c8",
+   "result": "PASS. successor placement record 17fc67ef (new path) pins its schema 26c4e874 by digest; one row research-lab/mas-harness-research-lab, R13, PYTHON, Python 3.12.14, decision for LAB-REPO-001; its 2 source spans are located once by digest inside their sections with their evidence tokens present (13-mas-harness-research-lab.md 1-line span at line 73 of ## Testing, verification, and acceptance (display lines [73, 73]); 00-harness-engineering.md 1-line span at line 1604 of ## PR packets (display lines [1604, 1604])); placement_rows(head) = 14 = the base's 13 + R13, placement_rows(base) = 13; a tampered schema pin: refused (registration placement)"
+  }
+ ],
+ "disclosures": [
+  "Read route: git archive of c8 into a fresh scratch directory, compared with the base's and the c2 export through the kit's pruned walk, never in place; no network; python3 -I -B; TMPDIR in the scratch; no bytecode left",
+  "The check script (scratch, unpublished) sha256 4c90ddd650d931b29518ff894416c43ae471e217ff676b28947153ef50251e47; counts and digests only; all twenty checks re-run (F5, F10, F14, F15 as agreed, the rest as re-hash by the same script); the composition reader and the successor function imported from the export with tampered-pin negative controls",
+  "The reviewer authored the packet draft; the YES is the author's check against its own section F",
+  "Supersedes in place: round 1 (YES 3af085ec, record 8dd36ef1, subject c1 212d6343857633703994bb53df1eb8a069d0101a, checkpoint 6302bdc0) and the second pass (YES 835be39e, record 9f582542, subject c2 e22e75a1a83b8e24a7e990119dfabb0eccd28878, accepted MON-LAB-284-YES2-OK); both stay in the bridge history",
+  "The D5a oracle test added at c5 is a closed path for the lab: hashed by the walk, never read",
+  "R13 main at cc92594d by the monitor's word and the lab's local clone; no fetch word"
+ ],
+ "findings": [],
+ "kind": "research/reads/LAB-REPO-001-YES.md",
+ "notChecked": [
+  "c8's edits outside section F beyond their presence: the cascade edits, the review-record rider briefs.json, the master plan and plan 00 lines, tests/conftest.py (bounded recursion raise, gc.freeze()), ci/parallel_suite_weights.json, the D5a oracle test and its identity record, the hunk-class record, language_placement.py beyond its reader call, validate_met_registry_001.py with its tests and the authority beyond the productPackets block",
+  "R00's validators, tests and the 64 inherited commands were not run by the lab; constants and conditions were read; only the composition reader and the successor function were imported from the export and run in scratch",
+  "full JSON-schema validation of the YAML; section A's enumerated rules were checked against c8's schema and runner",
+  "2 modified paths under names the kit's pruned walk prunes, and the content of the D5a oracle test: counted, not read"
+ ],
+ "questions": [
+  "Q-LAB-9 (record form under the frozen file set): (a) ruled standing by the monitor (MON-LAB-284-YES2-OK); this pass is written in place at the two frozen paths with round 1 on its subject c8",
+  "Q-LAB-10 (the registry schema and EXPECTED_REPOSITORIES at thirteen): (a) ruled standing as the VIS-284-ARGV reading (MON-LAB-284-YES2-OK), noted to the visionary at lock 46"
+ ],
+ "reviewDate": "2026-11-09",
+ "reviewer": {
+  "model": "claude-fable-5-1",
+  "role": "Research-Lab session: the packet author's YES on R00's built packet (not an independent review)"
+ },
+ "round": 1,
+ "rulesSha256": "3037ea86129f73838567666be4503f254923888d926c42f9db73c4e2cc4d77cb",
+ "schemaVersion": "planeon.review-record/v2",
+ "series": "LAB-REPO-001/yes",
+ "subject": {
+  "commit": "a641e7bb82085cd49e1863c241d5f0ebb84e33d0",
+  "repository": "Harness-Engineering",
+  "tree": "323c61bce61418fb2179d54866ca21800b6ca0d5"
+ },
+ "verdict": "YES_AT_FINAL_HEAD_C8: 20 PASS, 0 FAIL, 0 PENDING on R00's final head c8; supersedes the accepted c2 pass (e22e75a1) in place; round 1 of the series on its subject (Q-LAB-9 (a), ruled standing); Q-LAB-10 (a) ruled standing as the VIS-284-ARGV reading",
+ "wrapperSha256": null
+}

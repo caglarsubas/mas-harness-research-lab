@@ -1,0 +1,684 @@
+{
+  "addedAfterClose": "2026-11-07 (R13 issue 1, recommendation 6); RL-11's PREREG, run record, RESULTS.json and REPORT.md are unchanged",
+  "derivedFrom": {
+    "path": "research/experiments/RL-11/data/join_results.json",
+    "sha256": "d7e1b6be9368604583fbe7ae8d9b2691fb29ac5c7fb0b9493768976c54a44b30"
+  },
+  "evidenceLevels": {
+    "CITED_TRANSCRIPT": "an R10 gate transcript cited by id exercises the path",
+    "DOCUMENTARY": "a README or authority sentence names the path (a citation match, not a native refusal)",
+    "NATIVE_RECORD_ROW": "a kernel-level allowlist, matrix or descriptor row cites the path's clause",
+    "NONE": "no row of any family",
+    "PROOF": "a T04 proof row names the path",
+    "VECTOR": "a published gate-channel or admission vector refuses or admits the path"
+  },
+  "experiment": "RL-11",
+  "hypothesis": "H-18 (widened)",
+  "paths": [
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 1,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 2,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 3,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 4,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 5,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 6,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 7,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 8,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 9,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 10,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 11,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 12,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 13,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 14,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 15,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 16,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "counted by the plan record, enumerated in no published record; input request to the threat model's owner (R13 issue 1, rec 6)",
+      "path": 17,
+      "rl09": "NOT_ENUMERATED",
+      "rl11": "NOT_ENUMERATED",
+      "rowsByFamily": {},
+      "status": "NOT_ENUMERATED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "effect-gate channel, admission and policy-writer vectors (I05 v1-v4, admission v2-v4, I07 v1-v3)",
+          "evidenceLevel": "VECTOR",
+          "family": "G",
+          "rows": 161
+        },
+        {
+          "component": "R10 gate transcripts cited by id (relayed through the monitor)",
+          "evidenceLevel": "CITED_TRANSCRIPT",
+          "family": "R",
+          "rows": 5
+        },
+        {
+          "component": "READMEs, authorities, artifact-edge registry and edge-record authorities as text rows",
+          "evidenceLevel": "DOCUMENTARY",
+          "family": "G_text",
+          "rows": 9
+        }
+      ],
+      "evidenceLevel": "VECTOR",
+      "note": "G rows come from generic tokens (CREATE, RBAC); the cited transcripts are the strong rows",
+      "path": 18,
+      "r10Residual": null,
+      "residual": true,
+      "rl09": "UNCOVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 161,
+        "G_text": 9,
+        "M": 0,
+        "R": 5,
+        "S": 0,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "A3",
+        "ADMITTED_BEFORE_INVALIDATION",
+        "CREATE",
+        "RBAC"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "seccomp duties (kernel allowlist, v5)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "S",
+          "rows": 1
+        },
+        {
+          "component": "SELinux matrix assertions (v4)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "M",
+          "rows": 8
+        }
+      ],
+      "evidenceLevel": "NATIVE_RECORD_ROW",
+      "path": 19,
+      "r10Residual": null,
+      "residual": true,
+      "rl09": "COVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 0,
+        "G_text": 0,
+        "M": 8,
+        "R": 0,
+        "S": 1,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "RefuseManualStart",
+        "S4",
+        "planeon_containment_enabled=0",
+        "secure_mode_policyload"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "SELinux matrix assertions (v4)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "M",
+          "rows": 9
+        },
+        {
+          "component": "descriptor-set items and obligations (HS53, HE5 amendments)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "D",
+          "rows": 1
+        },
+        {
+          "component": "effect-gate channel, admission and policy-writer vectors (I05 v1-v4, admission v2-v4, I07 v1-v3)",
+          "evidenceLevel": "VECTOR",
+          "family": "G",
+          "rows": 8
+        }
+      ],
+      "evidenceLevel": "NATIVE_RECORD_ROW",
+      "path": 20,
+      "r10Residual": null,
+      "residual": false,
+      "rl09": "COVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 1,
+        "G": 8,
+        "G_text": 0,
+        "M": 9,
+        "R": 0,
+        "S": 0,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "P2",
+        "name_connect"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "effect-gate channel, admission and policy-writer vectors (I05 v1-v4, admission v2-v4, I07 v1-v3)",
+          "evidenceLevel": "VECTOR",
+          "family": "G",
+          "rows": 103
+        },
+        {
+          "component": "R10 gate transcripts cited by id (relayed through the monitor)",
+          "evidenceLevel": "CITED_TRANSCRIPT",
+          "family": "R",
+          "rows": 1
+        },
+        {
+          "component": "READMEs, authorities, artifact-edge registry and edge-record authorities as text rows",
+          "evidenceLevel": "DOCUMENTARY",
+          "family": "G_text",
+          "rows": 2
+        }
+      ],
+      "evidenceLevel": "VECTOR",
+      "path": 21,
+      "r10Residual": null,
+      "residual": true,
+      "rl09": "UNCOVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 103,
+        "G_text": 2,
+        "M": 0,
+        "R": 1,
+        "S": 0,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "C6",
+        "HELD"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "effect-gate channel, admission and policy-writer vectors (I05 v1-v4, admission v2-v4, I07 v1-v3)",
+          "evidenceLevel": "VECTOR",
+          "family": "G",
+          "rows": 6
+        },
+        {
+          "component": "R10 gate transcripts cited by id (relayed through the monitor)",
+          "evidenceLevel": "CITED_TRANSCRIPT",
+          "family": "R",
+          "rows": 8
+        },
+        {
+          "component": "READMEs, authorities, artifact-edge registry and edge-record authorities as text rows",
+          "evidenceLevel": "DOCUMENTARY",
+          "family": "G_text",
+          "rows": 1
+        }
+      ],
+      "evidenceLevel": "VECTOR",
+      "note": "closed by the model through C2's flush; vectored as T02/T03 only (MON-RL-M17 expected cell)",
+      "path": 22,
+      "r10Residual": "C4 stamp-equality branch declared unreachable (closed by C2's flush at ARM(B); vectored as T02/T03 only)",
+      "residual": true,
+      "rl09": "UNCOVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 6,
+        "G_text": 1,
+        "M": 0,
+        "R": 8,
+        "S": 0,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "C4"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "seccomp duties (kernel allowlist, v5)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "S",
+          "rows": 2
+        },
+        {
+          "component": "SELinux matrix assertions (v4)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "M",
+          "rows": 1
+        },
+        {
+          "component": "effect-gate channel, admission and policy-writer vectors (I05 v1-v4, admission v2-v4, I07 v1-v3)",
+          "evidenceLevel": "VECTOR",
+          "family": "G",
+          "rows": 9
+        },
+        {
+          "component": "READMEs, authorities, artifact-edge registry and edge-record authorities as text rows",
+          "evidenceLevel": "DOCUMENTARY",
+          "family": "G_text",
+          "rows": 2
+        }
+      ],
+      "evidenceLevel": "NATIVE_RECORD_ROW",
+      "path": 23,
+      "r10Residual": null,
+      "residual": true,
+      "rl09": "UNRESOLVED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 9,
+        "G_text": 2,
+        "M": 1,
+        "R": 0,
+        "S": 2,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "I07",
+        "WRITE_OBJECT"
+      ]
+    },
+    {
+      "enforcingComponents": [],
+      "evidenceLevel": "NONE",
+      "note": "no token joins; path 24's join gap is an input request (R13 issue 1, rec 6)",
+      "path": 24,
+      "r10Residual": null,
+      "residual": false,
+      "rl09": "UNRESOLVED",
+      "rl11": "UNRESOLVED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 0,
+        "G_text": 0,
+        "M": 0,
+        "R": 0,
+        "S": 0,
+        "T04": 0
+      },
+      "status": "UNRESOLVED",
+      "tokens": []
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "T04 proofs named by amendment rows",
+          "evidenceLevel": "PROOF",
+          "family": "T04",
+          "rows": 1
+        },
+        {
+          "component": "seccomp duties (kernel allowlist, v5)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "S",
+          "rows": 6
+        },
+        {
+          "component": "SELinux matrix assertions (v4)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "M",
+          "rows": 7
+        },
+        {
+          "component": "descriptor-set items and obligations (HS53, HE5 amendments)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "D",
+          "rows": 2
+        }
+      ],
+      "evidenceLevel": "PROOF",
+      "path": 25,
+      "r10Residual": null,
+      "residual": false,
+      "rl09": "COVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 2,
+        "G": 0,
+        "G_text": 0,
+        "M": 7,
+        "R": 0,
+        "S": 6,
+        "T04": 1
+      },
+      "status": "COVERED",
+      "tokens": [
+        "AF_UNIX",
+        "connectto"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "SELinux matrix assertions (v4)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "M",
+          "rows": 3
+        },
+        {
+          "component": "effect-gate channel, admission and policy-writer vectors (I05 v1-v4, admission v2-v4, I07 v1-v3)",
+          "evidenceLevel": "VECTOR",
+          "family": "G",
+          "rows": 18
+        }
+      ],
+      "evidenceLevel": "NATIVE_RECORD_ROW",
+      "path": 26,
+      "r10Residual": null,
+      "residual": false,
+      "rl09": "COVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 18,
+        "G_text": 0,
+        "M": 3,
+        "R": 0,
+        "S": 0,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "CSR",
+        "P2",
+        "P4"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "seccomp duties (kernel allowlist, v5)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "S",
+          "rows": 1
+        },
+        {
+          "component": "SELinux matrix assertions (v4)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "M",
+          "rows": 1
+        },
+        {
+          "component": "descriptor-set items and obligations (HS53, HE5 amendments)",
+          "evidenceLevel": "NATIVE_RECORD_ROW",
+          "family": "D",
+          "rows": 3
+        },
+        {
+          "component": "effect-gate channel, admission and policy-writer vectors (I05 v1-v4, admission v2-v4, I07 v1-v3)",
+          "evidenceLevel": "VECTOR",
+          "family": "G",
+          "rows": 22
+        },
+        {
+          "component": "READMEs, authorities, artifact-edge registry and edge-record authorities as text rows",
+          "evidenceLevel": "DOCUMENTARY",
+          "family": "G_text",
+          "rows": 6
+        }
+      ],
+      "evidenceLevel": "NATIVE_RECORD_ROW",
+      "note": "G rows come from a generic token (v2); native rows S/M/D carry it",
+      "path": 27,
+      "r10Residual": null,
+      "residual": true,
+      "rl09": "COVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 3,
+        "G": 22,
+        "G_text": 6,
+        "M": 1,
+        "R": 0,
+        "S": 1,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "BPF_OBJ_GET",
+        "CAP_SYS_ADMIN",
+        "GET_FD_BY_ID",
+        "v2"
+      ]
+    },
+    {
+      "enforcingComponents": [
+        {
+          "component": "READMEs, authorities, artifact-edge registry and edge-record authorities as text rows",
+          "evidenceLevel": "DOCUMENTARY",
+          "family": "G_text",
+          "rows": 1
+        }
+      ],
+      "evidenceLevel": "DOCUMENTARY",
+      "note": "documentary only (a README sentence); no native row, vector or proof",
+      "path": 28,
+      "r10Residual": "no native-profile v4 T04 proof names A17, A18 or A38; T04-LABELS is a precondition only",
+      "residual": true,
+      "rl09": "UNCOVERED",
+      "rl11": "COVERED",
+      "rowsByFamily": {
+        "D": 0,
+        "G": 0,
+        "G_text": 1,
+        "M": 0,
+        "R": 0,
+        "S": 0,
+        "T04": 0
+      },
+      "status": "COVERED",
+      "tokens": [
+        "dir search",
+        "prog_run"
+      ]
+    }
+  ],
+  "schemaVersion": "planeon.research.coverage-map/v1",
+  "statusKey": {
+    "COVERED": "at least one row of any family",
+    "NOT_ENUMERATED": "counterexamples 1-17: counted, never enumerated",
+    "UNCOVERED": "tokens found, no row (RL-09 four-family result)",
+    "UNRESOLVED": "the path's text yields no join token"
+  },
+  "summary": {
+    "byLevel": {
+      "CITED_TRANSCRIPT": 0,
+      "DOCUMENTARY": 1,
+      "NATIVE_RECORD_ROW": 5,
+      "NONE": 18,
+      "PROOF": 1,
+      "VECTOR": 3
+    },
+    "enumerated": 11,
+    "notEnumerated": 17,
+    "rl11Gate": {
+      "covered": 10,
+      "outcome": "INCONCLUSIVE",
+      "paths": 11,
+      "residual": 0,
+      "uncovered": 0,
+      "unresolved": 1
+    }
+  }
+}

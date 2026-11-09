@@ -1,0 +1,828 @@
+{
+ "entries": [
+  {
+   "externalInputs": [
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "808bf769ab2bbc1e45a768816bc1bbf28ccbea052ff20a281b5b4c003532fb4b",
+     "source": "research/experiments/RL-01/inputs/I2_verify_runs.tsv"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "6c5a1c58e087b74e5584ea218ff3c3660a087266022fe8266f626606bf232cec",
+     "source": "research/experiments/RL-01/data/I1_rows.tsv"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "2746a58c0227641c5053a6c2f1c5271ecbdc3ace5ebb5f28bcb0f92d01218783",
+     "source": "research/experiments/RL-01/data/fit_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "fc953ecc2a80dccadb10119a132de10bb98b06856cda17bd8a10f76cac6714fe",
+     "source": "research/experiments/RL-01/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "db8933735c666dc4b42dd47c67300940f929cfeb8da44e4d49aa34c737168a29",
+     "source": "research/experiments/RL-01/PREREG.md"
+    },
+    {
+     "availability": "UNPUBLISHED",
+     "commit": "none",
+     "retrieval": "relayed by the lane monitor in a session message; the digest is of the relayed text as recorded in the run record",
+     "sha256": "85ab23bff6d46f109b9ddc0e987690905d1abb558b2a6207281565e82d51e14f",
+     "source": "the K 6 versus K 8 A/B summary of Build-R00 (I3 of RL-01), relayed as text by the Lane-Monitor"
+    }
+   ],
+   "folder": "RL-01",
+   "ledger": "research/experiments/RL-01/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "d7e4ff31c02280b31f2cc7c9b463202e1b6a739c1458b6c84ce3fd2ce20fd3d5",
+     "source": "research/experiments/RL-02/inputs/J2_findings_r00.tsv"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "df47f6411d04af060090b50be66a7ad44e74d8172f6a07d9e396a4c97da437f0",
+     "source": "research/experiments/RL-02/data/v2_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "fda4b978c590719a3f8d7a1f5dd99c01e77d0d806db785ef04e6fcae0875b512",
+     "source": "research/experiments/RL-02/runs/run-002.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "1a92705109ed1b410f565690c81c02fb5185832137deb7dcdc0dc98efaf96fd6",
+     "source": "research/experiments/RL-02/PREREG.v2.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "2a6648f3e3cece436429c52d7503df1694093dc82ccc1593341aa909599afa70",
+     "source": "research/experiments/RL-02/RESULTS.v1.json"
+    }
+   ],
+   "folder": "RL-02",
+   "ledger": "research/experiments/RL-02/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); every input is in this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "b4bbea795e5a61d4ddc1815ddb8b0b58c2fe23b3",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M4); reproducible from that repository at that commit",
+     "sha256": "90fdfe4d75a8ade4a8d9652d3dbfbe0093afd4343d52dc72962a1135393e1000",
+     "source": "git-archive export (tar) of mas-harness-conformance-labs tests/mas at main b4bbea79, oracle tests excluded"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "0273413616b276db5e9fc8d1948763dc6ae13fc0f8cc7b9d1881866293ac7739",
+     "source": "research/experiments/RL-03/data/classes_run.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "3ffb2fd31667cba95b944fea5e6c7655017460fa4fdc901eb377ed77734ad8cc",
+     "source": "research/experiments/RL-03/data/arms_run.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "7925ed33acb720cf5541fe684825c022ba59762977449e926a53941328e702d3",
+     "source": "research/experiments/RL-03/runs/run-002.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "8e36a972152f068d9604f2676ce78b2fdab93963d943044ff521fb05cf502386",
+     "source": "research/experiments/RL-03/runs/run-003.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "82d84774c1b30a5499c7f9cfac391e5f4ea3aa6bccd43ee412b4f52bbce691ad",
+     "source": "research/experiments/RL-03/PREREG.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "48c921fddc4d7a93450b997783097830ab59a3469e8dce4ddf81ad242a75be3c",
+     "source": "research/experiments/RL-03/runs/run-001.md"
+    }
+   ],
+   "folder": "RL-03",
+   "ledger": "research/experiments/RL-03/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "b4bbea795e5a61d4ddc1815ddb8b0b58c2fe23b3",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M4); reproducible from that repository at that commit",
+     "sha256": "90fdfe4d75a8ade4a8d9652d3dbfbe0093afd4343d52dc72962a1135393e1000",
+     "source": "git-archive export (tar) of mas-harness-conformance-labs tests/mas at main b4bbea79, oracle tests excluded"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "a36f4d801eca00e8880b2c5ca6295edf9e8be719a04a220d7afc523ea299eb34",
+     "source": "research/experiments/RL-04/data/rl04_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "e1bcd8724da481fe3b5a6aa95ec9101e86e9257e441be5e3ca027d0fbc952aee",
+     "source": "research/experiments/RL-04/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "45b0e50f15e90faf996c24968232f8f9b1c73d9851d697333d3bbca2e05fa428",
+     "source": "research/experiments/RL-04/PREREG.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in another experiment folder of this tree, named as the source",
+     "sha256": "213d27e6e2c7bc46f511bf64f632e621d0e7aa97a6cff5f9d0dad7a9134a9e0c",
+     "source": "research/experiments/RL-03/RESULTS.json"
+    }
+   ],
+   "folder": "RL-04",
+   "ledger": "research/experiments/RL-04/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "dd4f5600906e2249f636c6ed5edd487ab05d32571b0db2bb0d3ca7cb85b55303",
+     "source": "research/experiments/RL-05/data/predicate_rows.tsv"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "c0cfa0172c0e49ed045156087350422a537553574daf1f09191d36897f837823",
+     "source": "research/experiments/RL-05/data/predicate_summary.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "84e42b9924ea9e5147e944a4f44e22535a8903ce87ed4a82b80b3a0ba75ed6df",
+     "source": "research/experiments/RL-05/runs/run-002.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "6faa04cd19f8a19b103d1f10660a40f8de0a671f72402fdeb7b4d8118f5e4e02",
+     "source": "research/experiments/RL-05/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "462f9cc1b6d3a5836949e7f5ba796f0a78eeadd14a52180ccc5cb49dab1a4502",
+     "source": "research/experiments/RL-05/PREREG.md"
+    }
+   ],
+   "folder": "RL-05",
+   "ledger": "research/experiments/RL-05/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); every input is in this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "e57bfac9cbc1dc4e9a5fac915486bc00c18e9772aca298314337c2211f5f0c9d",
+     "source": "research/experiments/RL-06/data/process_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "c2d49f6435cc6962f92848ce2ec6cff04176d36940ede0aa20c6c303df014c2c",
+     "source": "research/experiments/RL-06/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "301c2783a215f41a9f9ded842eeeffc52530822e0295f239d9694f18ae64dce1",
+     "source": "research/experiments/RL-06/PREREG.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in another experiment folder of this tree, named as the source",
+     "sha256": "dd4f5600906e2249f636c6ed5edd487ab05d32571b0db2bb0d3ca7cb85b55303",
+     "source": "research/experiments/RL-05/data/predicate_rows.tsv"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in another experiment folder of this tree, named as the source",
+     "sha256": "6c5a1c58e087b74e5584ea218ff3c3660a087266022fe8266f626606bf232cec",
+     "source": "research/experiments/RL-01/data/I1_rows.tsv"
+    }
+   ],
+   "folder": "RL-06",
+   "ledger": "research/experiments/RL-06/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); every input is in this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M10); reproducible from that repository at that commit",
+     "sha256": "948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+     "source": "git-archive export (tar) of harness-onion architecture/ at main afee03b9"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "c210099c0ca2dd24683756f95eeb7aa5b17ecf2ce171dd570a7933593f54318c",
+     "source": "research/experiments/RL-07/data/replay_run002.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "16aeaa017b3c329768449d069b1c8d9f9028c2c1c2631c12105691f26d025e0d",
+     "source": "research/experiments/RL-07/data/record_consistency.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "870361cadadf0ade87f3da297ebf528e4deef0152245d3c44fafce13135b7d5f",
+     "source": "research/experiments/RL-07/runs/run-002.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "c8b5eb39034864b927b477d576578ee6227109baeada5fd3125346dfd3be6300",
+     "source": "research/experiments/RL-07/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "6761791742fc89ab2e9cd79ced470980c3c5ea6c0155e2ec0fc86c318b13ffe2",
+     "source": "research/experiments/RL-07/PREREG.md"
+    },
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "read from the platform repository at the named commit through the lane monitor's export",
+     "sha256": "1ec764808aaf4e7f2a9eea2da605d0c12d172c5a8e4c23bf3ac79bbb1d07e753",
+     "source": "harness-onion scripts chain_identity.py (the v1 model) at main afee03b9"
+    },
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "read from the platform repository at the named commit through the lane monitor's export",
+     "sha256": "23fe723ae060b13727118b5808541d0b40bfee22ac5e803955e324f4dd6d9a55",
+     "source": "harness-onion scripts chain_identity_v2.py at main afee03b9"
+    },
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "read from the platform repository at the named commit through the lane monitor's export",
+     "sha256": "29483ec356f0d2b10f778fc5c4fe642df94795f8249daa088e7a06c995c67fb9",
+     "source": "harness-onion scripts chain_identity_v3.py at main afee03b9"
+    }
+   ],
+   "folder": "RL-07",
+   "ledger": "research/experiments/RL-07/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 4 inputs held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "inside the lane monitor's architecture export at the named commit (MON-RL-M10b)",
+     "sha256": "ea50f1d56df9fac17eacfc5c04271e540d18676f15d3d6c811e1e4076f4dde44",
+     "source": "harness-onion architecture chain-compaction cost-report.json at main afee03b9"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "705c455d5f9001aecc524e3b4863596417f8b537939e7e308fd00213cf05eb54",
+     "source": "research/experiments/RL-08/data/cost_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "859332ff8fb128cc4997924aab28db5455fab9fbb68b939806f36caccb5115a3",
+     "source": "research/experiments/RL-08/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "1e0852982c76bd1f6981a9b667a33aa01ad7a4f2a8f4dc304fc74f06d83b89a9",
+     "source": "research/experiments/RL-08/PREREG.md"
+    }
+   ],
+   "folder": "RL-08",
+   "ledger": "research/experiments/RL-08/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M10); reproducible from that repository at that commit",
+     "sha256": "948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+     "source": "git-archive export (tar) of harness-onion architecture/ at main afee03b9"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "09d155aa0ad47f2151d0ae67464a1188915e17b2cab76f66e24eca178fd1acc5",
+     "source": "research/experiments/RL-09/data/join_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "ee408217a32c4e51d0a00d370a89b34b6c4339f181f104a5515ec52c1a62ecb0",
+     "source": "research/experiments/RL-09/data/inputs.txt"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "0837ee606525020b8e4d2f8e9b52e380db74adf8c162b953b3139aa21582f308",
+     "source": "research/experiments/RL-09/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "4387dbff7422e47a4de27af3e32ac8d47c224f5c0e7de91d2f369929c2b4556a",
+     "source": "research/experiments/RL-09/PREREG.md"
+    }
+   ],
+   "folder": "RL-09",
+   "ledger": "research/experiments/RL-09/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M10); reproducible from that repository at that commit",
+     "sha256": "948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+     "source": "git-archive export (tar) of harness-onion architecture/ at main afee03b9"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "4cd6190ddf2bb6390df964211905e72b9cf25132b7dd1bd425f00663904de7ef",
+     "source": "research/experiments/RL-10/data/algebra_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in another experiment folder of this tree, named as the source",
+     "sha256": "3e598d6bc288a4c1b99318d253c7c222e1a36254e9786d1f9168a2bc52b58021",
+     "source": "research/experiments/RL-12/data/inputs.txt"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "d1bd456d6a080a60a209e1b02aeea5c58c6ce5803d020ae845b7555c1e87cbad",
+     "source": "research/experiments/RL-10/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "9e5db1c5540e120dfef31db7e305293f3377c8a76311097479de0f791b882021",
+     "source": "research/experiments/RL-10/PREREG.md"
+    }
+   ],
+   "folder": "RL-10",
+   "ledger": "research/experiments/RL-10/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M10); reproducible from that repository at that commit",
+     "sha256": "948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+     "source": "git-archive export (tar) of harness-onion architecture/ at main afee03b9"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "d7e1b6be9368604583fbe7ae8d9b2691fb29ac5c7fb0b9493768976c54a44b30",
+     "source": "research/experiments/RL-11/data/join_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "5c314f6d14043410b1eae11cfa636033641ca8fe55a6b3efe218df38f5db5416",
+     "source": "research/experiments/RL-11/data/inputs_fifth_family.txt"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in another experiment folder of this tree, named as the source",
+     "sha256": "ee408217a32c4e51d0a00d370a89b34b6c4339f181f104a5515ec52c1a62ecb0",
+     "source": "research/experiments/RL-09/data/inputs.txt"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "28cbcd629cf2bbe4b60a8d5396bfda61440fcc9df32c846241d764f36898d782",
+     "source": "research/experiments/RL-11/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "b06eabdb7d878795c268239c48541c8cf08dba156ebec3ba426d064e7c9c36d6",
+     "source": "research/experiments/RL-11/PREREG.v1.1.md"
+    }
+   ],
+   "folder": "RL-11",
+   "ledger": "research/experiments/RL-11/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M10); reproducible from that repository at that commit",
+     "sha256": "948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+     "source": "git-archive export (tar) of harness-onion architecture/ at main afee03b9"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "b05c67f315f78bbbd06721ab658e85ab878913654d922c4302b73054c7dde838",
+     "source": "research/experiments/RL-12/data/algebra_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "3e598d6bc288a4c1b99318d253c7c222e1a36254e9786d1f9168a2bc52b58021",
+     "source": "research/experiments/RL-12/data/inputs.txt"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "f6cda7ffeebd92d370edcba19082aea0b0c4d6a287e1369a861f55407a252044",
+     "source": "research/experiments/RL-12/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "d1763b9785d4184b26201eb256059b31c524485f55d1192c3fa04687095ab4b8",
+     "source": "research/experiments/RL-12/PREREG.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in another experiment folder of this tree, named as the source",
+     "sha256": "023591f8e51cba5436398e5b2e29520d501b39e537b40af65b683510d4956842",
+     "source": "research/experiments/RL-10/RESULTS.json"
+    }
+   ],
+   "folder": "RL-12",
+   "ledger": "research/experiments/RL-12/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "externalInputs": [
+    {
+     "availability": "OWNER_HELD",
+     "commit": "afee03b93da691cb113da495e3be7e39695756aa",
+     "retrieval": "git archive made by the lane monitor at the named commit (MON-RL-M10); reproducible from that repository at that commit",
+     "sha256": "948a20fabc1353b9003999f4bb43c9a1c7b43276da6436f501d3c1a58dcadb81",
+     "source": "git-archive export (tar) of harness-onion architecture/ at main afee03b9"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "2146d45ed8e6b7eb8da65b0848764bab2b9853afa50dbe6d511ac6119517c0c1",
+     "source": "research/experiments/RL-13/data/interchange_results.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "7873e5fb78d7122b538e9b0a03224f1207b0a96a052da707af8e41d7b2aed9ae",
+     "source": "research/experiments/RL-13/data/emitter_ledger.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "0ffdf87d7cdfbfaaf978621e8d79470602a19028c21125964f1a07c4205372b2",
+     "source": "research/experiments/RL-13/data/emitter_manifest.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "b7d82fa1b8933e4aa24d53e5c593bbb77f750f9eae3bfb99df3affb0822fa116",
+     "source": "research/experiments/RL-13/data/emitter_eventlog.json"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "d4113a1978ab3944cda0342383d79b94aaea355ebb6ffad378e447e247799555",
+     "source": "research/experiments/RL-13/runs/run-001.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "2f7a6389072f3ae467b897d0f1a0904d0128437f81665ec1c2e8be88eadff33e",
+     "source": "research/experiments/RL-13/PREREG.md"
+    },
+    {
+     "availability": "IN_TREE",
+     "commit": "none",
+     "retrieval": "committed in this experiment folder",
+     "sha256": "1bc341c2b947fe2ba5a3ffe6c7030c36459967d68f3e479b7c0fe589c861e653",
+     "source": "research/experiments/RL-13/MAPPING.md"
+    }
+   ],
+   "folder": "RL-13",
+   "ledger": "research/experiments/RL-13/RESULTS.json",
+   "level": "RECORDED",
+   "reason": "ledger predates the evaluator rule adopted with RL-14 (no evaluator digest among its evidence; the verdict was written by the lab's pass from the run records); 1 input held outside this tree"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl14_eval.py",
+    "research/experiments/RL-14/data/rl14_windows.json",
+    "research/experiments/RL-14/PREREG.md",
+    "research/experiments/RL-14/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl14_eval.py",
+   "evaluatorSha256": "ac639ff85852f60a10071aec1acbb898eac5757ef4afbe46c68c8b1798cb616a",
+   "folder": "RL-14",
+   "ledger": "research/experiments/RL-14/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "02ef7761ce5835b60f62d825551799e5b445ef296a93950e2396b84f06674a8a"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl15_eval.py",
+    "research/experiments/RL-15/data/rl15_runs.json",
+    "research/experiments/RL-15/PREREG.md",
+    "research/experiments/RL-15/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl15_eval.py",
+   "evaluatorSha256": "bbe2877cf6960fc57c2414a1c0cca9e8751b5a099dca1310d0ce2ce133d91773",
+   "folder": "RL-15",
+   "ledger": "research/experiments/RL-15/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "1e8dfc4a03dd9ba771282060fa13643fb4bee51c1f209e32e5e723731a51e77f"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl15b_eval.py",
+    "research/experiments/RL-15b/data/rl15b_runs.json",
+    "research/experiments/RL-15b/PREREG.md",
+    "research/experiments/RL-15b/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl15b_eval.py",
+   "evaluatorSha256": "2d6c349b221ce54e563d595a295746084f1b38a654055b862fdb831da14392de",
+   "folder": "RL-15b",
+   "ledger": "research/experiments/RL-15b/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "e5a75db2bec1d94970d1f5adca5260bd021b653a04b176ce115ee16bcc3a674f"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl16_eval.py",
+    "research/experiments/RL-16/data/rl16_model.json",
+    "research/experiments/RL-16/PREREG.md",
+    "research/experiments/RL-16/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl16_eval.py",
+   "evaluatorSha256": "6d77ce41b73e6acf3a130f523c4fb023d4da58b4e05298bb074e1c99d64f7c27",
+   "folder": "RL-16",
+   "ledger": "research/experiments/RL-16/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "8788236b586cfc390fc1f1a00ec093969f8d0838f85d46e7587e961b8c227b5f"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl17_eval.py",
+    "research/experiments/RL-17/data/rl17_runs.json",
+    "research/experiments/RL-17/PREREG.md",
+    "research/experiments/RL-17/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl17_eval.py",
+   "evaluatorSha256": "2671984a41cb5da1225411199ba248fa7e035f52bbeef151b9a7d7b0906a702c",
+   "folder": "RL-17",
+   "ledger": "research/experiments/RL-17/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "77015690d73e9f7499bde1437cd49d74713f13cccddcab9bdc150e439edca027"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl18_eval.py",
+    "research/experiments/RL-18/data/rl18_runs.json",
+    "research/experiments/RL-18/PREREG.md",
+    "research/experiments/RL-18/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl18_eval.py",
+   "evaluatorSha256": "56eb001ea48ac01f59597fb93864752de7d0c118ce9917486914f3ca662a0291",
+   "folder": "RL-18",
+   "ledger": "research/experiments/RL-18/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "eca606be178d49dc4cac7bfe0130564af7fdc989715f5a1aec226aa0bbd832a3"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl19_eval.py",
+    "research/experiments/RL-19/data/rl19_runs.json",
+    "research/experiments/RL-19/PREREG.md",
+    "research/experiments/RL-19/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl19_eval.py",
+   "evaluatorSha256": "5b9f77ca8b41258986288550ef9b3b8f1d160f6860460239276987b070f54fc7",
+   "folder": "RL-19",
+   "ledger": "research/experiments/RL-19/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "317c3088b12da2751ec3fff344d87cc80cfb1ed7d137030d24c4dfcc4839232d"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl20_eval.py",
+    "research/experiments/RL-20/data/rl20_runs.json",
+    "research/experiments/RL-20/PREREG.md",
+    "research/experiments/RL-20/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl20_eval.py",
+   "evaluatorSha256": "56ba25ce3ead2ee39f56e7ad3db288d2b44bf81cb7430b61c8b95461b1e8fe7d",
+   "folder": "RL-20",
+   "ledger": "research/experiments/RL-20/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "4f12f24f23d441ac96f2c8dff0fdefcc2e8019a3662928e840b3ad12417adb13"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl21_eval.py",
+    "research/experiments/RL-21/data/rl21_runs.json",
+    "research/experiments/RL-21/PREREG.md",
+    "research/experiments/RL-21/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl21_eval.py",
+   "evaluatorSha256": "091bad8289062c7d2f4f90cff1449331ab9440251187d3b7f5824654e0c0d181",
+   "folder": "RL-21",
+   "ledger": "research/experiments/RL-21/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "9eb0389724ea22639db59e27bf24095f9821e537573e8afc7a9e33b89fc1e57a"
+  },
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "-B",
+    "research/tools/rl22_eval.py",
+    "research/experiments/RL-22/data/rl22_runs.json",
+    "research/experiments/RL-22/PREREG.md",
+    "research/experiments/RL-22/runs/run-001.md",
+    "OUT"
+   ],
+   "evaluator": "research/tools/rl22_eval.py",
+   "evaluatorSha256": "07e6b0a6558269220964b1f882a2db84506fe628ffa5c36a449ada488222c358",
+   "folder": "RL-22",
+   "ledger": "research/experiments/RL-22/RESULTS.json",
+   "level": "LEDGER_REDERIVED",
+   "preregSha256": "511c8b669bd37c96910011931a36078e95f4ff7075d7f12a45402ce4a95b7e1e"
+  }
+ ],
+ "levels": [
+  "LEDGER_REDERIVED",
+  "RAW_REPRODUCED",
+  "INDEPENDENT_REPLICATION",
+  "RECORDED"
+ ],
+ "note": "One entry per experiment folder (LAB-REPO-001, R13 issue 1 recommendation 2). LEDGER_REDERIVED: the argv reproduces RESULTS.json byte for byte, OUT replaced by a TMPDIR path. RECORDED: the reason and one externalInputs object per ledger evidence entry; availability IN_TREE names a path of this tree, OWNER_HELD a file reproducible from the owner's repositories at the named commit, UNPUBLISHED a relayed record kept outside any repository.",
+ "schemaVersion": "planeon.research.rerun-table/v1"
+}

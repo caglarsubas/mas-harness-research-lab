@@ -1,0 +1,148 @@
+{
+ "checks": [
+  {
+   "checkId": "C1",
+   "claimId": "H-30b",
+   "contextId": "lab",
+   "establishedValue": "precondition: layout {'parent': 'x', 'work': 'roadmap'}; baseline build of the unmodified copy exit 0 in 0.00 s",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 1,
+   "target": "INTERMEDIATE"
+  },
+  {
+   "checkId": "C2",
+   "claimId": "H-30b",
+   "contextId": "lab",
+   "establishedValue": "catchable refused 14 of 17; attributed 14 (new rules M4 2, M6 2; older rules 10; unattributed 0); per class [attributed, refused, n] {\"M1\": [0, 0, 3], \"M2\": [3, 3, 3], \"M3\": [3, 3, 3], \"M4\": [3, 3, 3], \"M5\": [3, 3, 3], \"M6\": [2, 2, 2]}; not refused: [('M1', 'M1-0', 'built'), ('M1', 'M1-1', 'built'), ('M1', 'M1-2', 'built')]; unattributed: []; bound: 17 of 17 refused, 0 unattributed, new rules M4 >= 2, M6 >= 2",
+   "evidence": [
+    "E1",
+    "E3"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "FAIL",
+   "sequence": 2,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C3",
+   "claimId": "H-30b",
+   "contextId": "lab",
+   "establishedValue": "controls refused 0 of 3 (bound 0): []",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 3,
+   "target": "DELIVERED"
+  },
+  {
+   "checkId": "C4",
+   "claimId": "H-30b",
+   "contextId": "lab",
+   "establishedValue": "uncatchable instance (declared, excluded from the denominator): ['built']; refusal messages (validator's words, whole message) with attribution: [{\"class\": \"M1\", \"target\": \"M1-0\", \"field\": \"f\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"M1\", \"target\": \"M1-1\", \"field\": \"f\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"M1\", \"target\": \"M1-2\", \"field\": \"f\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"M2\", \"target\": \"M2-0\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-0: unknown dependency \"}, {\"class\": \"M2\", \"target\": \"M2-1\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-1: unknown dependency \"}, {\"class\": \"M2\", \"target\": \"M2-2\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-2: unknown dependency \"}, {\"class\": \"M3\", \"target\": \"M3-0\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-0: unknown dependency \"}, {\"class\": \"M3\", \"target\": \"M3-1\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-1: unknown dependency \"}, {\"class\": \"M3\", \"target\": \"M3-2\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-2: unknown dependency \"}, {\"class\": \"M4\", \"target\": \"M4-0\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: X-0: unknown dependency (RL-15 v1)\"}, {\"class\": \"M4\", \"target\": \"M4-1\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: X-1: unknown dependency (RL-15 v1)\"}, {\"class\": \"M4\", \"target\": \"M4-2\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-2: unknown dependency \"}, {\"class\": \"M5\", \"target\": \"M5-0\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-0: unknown dependency \"}, {\"class\": \"M5\", \"target\": \"M5-1\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-1: unknown dependency \"}, {\"class\": \"M5\", \"target\": \"M5-2\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": false, \"olderRule\": \"unknown dependency\", \"message\": \"roadmap.json: X-2: unknown dependency \"}, {\"class\": \"M6\", \"target\": \"M6-0\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: X-0: unknown dependency (RL-15 v2)\"}, {\"class\": \"M6\", \"target\": \"M6-1\", \"field\": \"f\", \"exit\": 1, \"catchable\": true, \"newRule\": true, \"olderRule\": null, \"message\": \"roadmap.json: X-1: unknown dependency (RL-15 v2)\"}, {\"class\": \"M6\", \"target\": \"SP\", \"field\": \"sha256\", \"exit\": 0, \"catchable\": false, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"c0\", \"field\": \"f\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"c1\", \"field\": \"f\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}, {\"class\": \"C\", \"target\": \"c2\", \"field\": \"f\", \"exit\": 0, \"catchable\": true, \"newRule\": false, \"olderRule\": null, \"message\": \"\"}]",
+   "evidence": [
+    "E1"
+   ],
+   "kind": "DETERMINISTIC_TEST",
+   "outcome": "PASS",
+   "sequence": 4,
+   "target": "INTERMEDIATE"
+  }
+ ],
+ "claimVerdicts": [
+  {
+   "checks": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+   ],
+   "claimId": "H-30b",
+   "value": "catchable refused 14/17 (attributed 14: new rules 4 [M4 2, M6 2], older rules 10, unattributed 0); uncatchable instance ['built']; false positives 0/3; precision 1.000; per class [attributed, refused, n] {\"M1\": [0, 0, 3], \"M2\": [3, 3, 3], \"M3\": [3, 3, 3], \"M4\": [3, 3, 3], \"M5\": [3, 3, 3], \"M6\": [2, 2, 2]}; baseline exit 0 in 0.00 s",
+   "verdict": "CONTRADICTED"
+  }
+ ],
+ "claims": [
+  {
+   "claimId": "H-30b",
+   "delivered": "catchable refused 14/17 (attributed 14: new rules 4 [M4 2, M6 2], older rules 10, unattributed 0); uncatchable instance ['built']; false positives 0/3; precision 1.000; per class [attributed, refused, n] {\"M1\": [0, 0, 3], \"M2\": [3, 3, 3], \"M3\": [3, 3, 3], \"M4\": [3, 3, 3], \"M5\": [3, 3, 3], \"M6\": [2, 2, 2]}; baseline exit 0 in 0.00 s",
+   "requirement": "H-30 restated (RL-15b, ERRATUM to RL15-D1): on the lock-40 builder every catchable seeded inconsistency instance is refused, each refusal is attributed to a named rule (a new rule by its tag, or the older rule that runs first), the new rules refuse at least 2 of 3 M4 and both catchable M6 instances, and no benign control edit is refused",
+   "rolloutValues": [
+    {
+     "rollout": "run-001",
+     "value": "FAIL"
+    }
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "contextId": "lab",
+   "inheritsFrom": [],
+   "role": "EVALUATOR"
+  }
+ ],
+ "evidence": [
+  {
+   "contentDigest": "sha256:0d68143543011d6291c0cf9466271b048d963dcbb73832b949e1ab94c639e595",
+   "evidenceId": "E1",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl15b_mutate.run-001"
+  },
+  {
+   "contentDigest": "sha256:a44b47129da2062b03681ad88e5c84ba2a617aa5fc53976b11135414d2c8be9b",
+   "evidenceId": "E2",
+   "kind": "ENVIRONMENT_STATE",
+   "producedBy": "Research-Lab.run-record-001"
+  },
+  {
+   "contentDigest": "sha256:2d6c349b221ce54e563d595a295746084f1b38a654055b862fdb831da14392de",
+   "evidenceId": "E3",
+   "kind": "ARTIFACT",
+   "producedBy": "Research-Lab.rl15b_eval"
+  }
+ ],
+ "ledgerId": "RL-15b-RESULTS-v1",
+ "rollouts": [
+  "run-001"
+ ],
+ "schemaVersion": "planeon.internal.verdict-ledger/v1",
+ "subject": {
+  "scopeDigest": "sha256:e5a75db2bec1d94970d1f5adca5260bd021b653a04b176ce115ee16bcc3a674f"
+ },
+ "supersedes": null,
+ "verdict": {
+  "evidenceRefs": [
+   "sha256:0d68143543011d6291c0cf9466271b048d963dcbb73832b949e1ab94c639e595",
+   "sha256:a44b47129da2062b03681ad88e5c84ba2a617aa5fc53976b11135414d2c8be9b",
+   "sha256:e5a75db2bec1d94970d1f5adca5260bd021b653a04b176ce115ee16bcc3a674f",
+   "sha256:2d6c349b221ce54e563d595a295746084f1b38a654055b862fdb831da14392de"
+  ],
+  "policyViolations": [],
+  "producedBy": "lab",
+  "scores": {
+   "attributed": 14,
+   "baseline_exit": 0,
+   "by_new_rule": 4,
+   "by_older_rule": 10,
+   "catchable": 17,
+   "catchable_refused": 14,
+   "classes_uncaught": 1,
+   "controls": 3,
+   "controls_refused": 0,
+   "interpreter": "synthetic",
+   "new_rule_m4": 2,
+   "new_rule_m6": 2,
+   "precision_permille": 1000,
+   "seeded_crashed": 0,
+   "unattributed": 0
+  },
+  "status": "FAIL",
+  "unresolvedChecks": []
+ }
+}
