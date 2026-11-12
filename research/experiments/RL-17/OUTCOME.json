@@ -1,0 +1,33 @@
+{
+ "attempts": [
+  {
+   "attempt": 1,
+   "class": "NONE",
+   "evidence": {
+    "anchor": null,
+    "path": "experiments/RL-17/RESULTS.json",
+    "sha256": "7f8a3356a45d0dac1e63d5d46a269d8e45786dbcb8d3f3d0464e2ca1c09b0401"
+   },
+   "outcome": "COMPLETED_NO_STOP",
+   "preregDigest": {
+    "prefix": "77015690",
+    "sha256": "77015690d73e9f7499bde1437cd49d74713f13cccddcab9bdc150e439edca027",
+    "source": "experiments/RL-17/PREREG.md as it stands"
+   },
+   "preregVersion": "v2",
+   "reviewRounds": 2,
+   "reviewVerdict": "PASS",
+   "stageReached": "RESULTS",
+   "stop": null
+  }
+ ],
+ "experiment": "RL-17",
+ "notes": [],
+ "recordedBy": {
+  "date": "2026-11-09",
+  "mode": "backfill",
+  "sha256": "3556e846521e787f3e13c7b86b0426482c29dfd071450ff6e62d6b9de6149b10",
+  "tool": "research/tools/outcome_record.py"
+ },
+ "schemaVersion": "planeon.research.experiment-outcome/v1"
+}

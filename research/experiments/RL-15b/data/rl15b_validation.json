@@ -1,0 +1,97 @@
+{
+ "checks": [
+  {
+   "checkId": "V5",
+   "detail": "21 rows, 0 malformed fields",
+   "failureKind": null,
+   "name": "row types",
+   "outcome": "PASS"
+  },
+  {
+   "checkId": "V1",
+   "detail": "21 of 21 present, 0 missing, 0 extra",
+   "failureKind": null,
+   "name": "case identities equal the frozen case set",
+   "outcome": "PASS"
+  },
+  {
+   "checkId": "V2",
+   "detail": "0 duplicated identities",
+   "failureKind": null,
+   "name": "no duplicate case",
+   "outcome": "PASS"
+  },
+  {
+   "checkId": "V3",
+   "detail": "short 0 class(es), over 0 class(es)",
+   "failureKind": null,
+   "name": "rows per class (M1 to M6 three each, controls three)",
+   "outcome": "PASS"
+  },
+  {
+   "checkId": "V4",
+   "detail": "0 flag mismatches; uncatchable rows 1 (expected 1, the declared instance)",
+   "failureKind": null,
+   "name": "catchable flags and the one declared exclusion",
+   "outcome": "PASS"
+  },
+  {
+   "checkId": "V6",
+   "detail": "0 inconsistent rows",
+   "failureKind": null,
+   "name": "field consistency (exit, refusal, attribution, crash, message length)",
+   "outcome": "PASS"
+  },
+  {
+   "checkId": "V7",
+   "detail": "0 of 16 count keys differ",
+   "failureKind": null,
+   "name": "supplied counts equal the recount from rows",
+   "outcome": "PASS"
+  },
+  {
+   "checkId": "V8",
+   "detail": "0 of 12 score keys differ; E1 bound True",
+   "failureKind": null,
+   "name": "the frozen ledger's scores equal the gate quantities re-derived from rows, and its E1 names this record",
+   "outcome": "PASS"
+  }
+ ],
+ "derivedGateQuantities": {
+  "attributed": 17,
+  "by_new_rule": 4,
+  "by_older_rule": 13,
+  "catchable": 17,
+  "catchable_refused": 17,
+  "classes_uncaught": 0,
+  "controls": 3,
+  "controls_refused": 0,
+  "new_rule_m4": 2,
+  "new_rule_m6": 2,
+  "seeded_crashed": 0,
+  "unattributed": 0
+ },
+ "generatedAt": "2026-11-09T10:59:56Z",
+ "inputs": {
+  "caseSet": {
+   "path": "research/experiments/RL-15b/data/rl15b_case_set.json",
+   "sha256": "35525dd90cbf8d7782aa43b0d5d2780580871c4c3fa746f6b82a6c01344a47b8"
+  },
+  "ledger": {
+   "path": "research/experiments/RL-15b/RESULTS.json",
+   "sha256": "d1810a578bc1b0d262e7821cae5c6ad794cbb069c5ec9b152a3defff4e9887d9"
+  },
+  "runs": {
+   "path": "research/experiments/RL-15b/data/rl15b_runs.json",
+   "sha256": "f445e3c161a311e676c6ffa824e88d7a410a1ac883cdcb75c531c5055a563490"
+  }
+ },
+ "interpreter": "CPython 3.12.14",
+ "note": "outcomes are VALID, INCOMPLETE or INVALID; this record carries no verdict and alters no ledger",
+ "outcome": "VALID",
+ "schemaVersion": "planeon.research.case-set-validation/v1",
+ "validator": {
+  "path": "research/tools/rl15b_validate.py",
+  "sha256": "31ae73e498f329d65a86bf62d617206e8ac06d03dea71e4e338e26a15f7ced86"
+ }
+}

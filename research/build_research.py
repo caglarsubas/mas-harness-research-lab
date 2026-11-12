@@ -192,7 +192,8 @@ def charter() -> dict:
 
 def lane() -> dict:
     text = LANE.read_text(encoding="utf-8")
-    m = re.search(r"^## Resume here \(([^)]*)\)\s*\n(.*?)(?=^## )", text, re.S | re.M)
+    # the header is the rest of the heading line up to its last ")", so nested parentheses inside it are kept
+    m = re.search(r"^## Resume here \(([^\n]*)\)[ \t]*\n(.*?)(?=^## )", text, re.S | re.M)
     header, body = (m.group(1), m.group(2)) if m else ("", "")
     hu = header.upper()
     status = "ACTIVE" if "ACTIVE" in hu else ("PAUSED" if "PAUSED" in hu or "STANDING BY" in body.upper() else "ACTIVE")

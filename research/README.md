@@ -47,8 +47,10 @@ Every experiment has an id `RL-nn`, a hypothesis from the register, and these re
    clause and names every proxy; every input carries a full sha256 and its commit or the words "no commit exists";
    the instruments are pinned, and their existence at the freeze and their digest lengths are checked by script; a
    constant taken from a document carries that document's digest.
+   Every denominator and control count the gate consumes is a constant pinned in the PREREG, never read from the run
+   record alone (adopted 2026-11-09, R13 issue 3).
    1a. Independent review (`PREREG-REVIEW.md`), before any run, by a pass that holds only the PREREG, the register
-   row and this charter, never the run script: checks R1 falsifiable and exhaustive criteria; R2 clause scope (the
+   row and this charter, never the run script (custody per SC-D2 D, at the end of this section): checks R1 falsifiable and exhaustive criteria; R2 clause scope (the
    unit the hypothesis names is the unit the measurement counts); R3 every input by digest, present; R4 bounds with
    units, gate, seeds, splits; R5 compute plan with stream and ECU count; R6 privacy; R7 the dataset's generation is
    independent of the hypothesis or the dependence is declared. A FAIL returns the PREREG to a new version before it
@@ -67,10 +69,25 @@ Every experiment has an id `RL-nn`, a hypothesis from the register, and these re
    present with the declared type, and every quantity the gate consumes is computable from the pinned inputs,
    checked by counts without evaluating the gate (RL-15's and RL-21's pre-run stops are the cases); (vi) every
    instrument edge case a review note names is exercised here or declared an invalid case before the run (RL-20's
-   one-node edit is the case); (v) and (vi) adopted 2026-11-08 (meta-review 001). A failed preflight stops the run and returns
+   one-node edit is the case); (v) and (vi) adopted 2026-11-08 (meta-review 001); (vii) acceptance boundary: the
+   evaluator, or the companion validator paired with it, is shown to reject a run record missing a whole class, one
+   missing every control, one whose supplied summary disagrees with its rows, one with a duplicated case and one with
+   a missing case, while the original record still yields the recorded result; the case set, denominators and control
+   count the gate consumes are pinned in the PREREG, never read from the run record alone; adopted 2026-11-09 (R13
+   issue 3; RL-15b's companion validation, `tools/rl15b_validate.py` with `tools/rl15b_boundary.py`, is the case). A
+   failed preflight stops the run and returns
    the PREREG to a new version; the gated run never starts on an invalid instrument. Adopted 2026-11-07 (R13 issue
    1, recommendation 7); applies from RL-23. A borrowed figure from the literature enters a bound only with its
    claim-level context (definition, conditions, source lineage) recorded among the PREREG's inputs.
+   1c. Outcome record (`OUTCOME.json` in the experiment folder, form `planeon.research.experiment-outcome/v1`, written
+   by `tools/outcome_record.py`): one entry per attempt (a PREREG version taken to review or to a run) with the stage
+   reached, the outcome (COMPLETED_NO_STOP, STOPPED or PENDING), a stop's stage, cause and detector (REVIEW,
+   LAB_PREFLIGHT, LAB_RUN, AUDIT), its class (CAUGHT_BY_PREFLIGHT, ESCAPED_TO_GATED_RUN, ESCAPED_TO_AUDIT, FALSE_BLOCK,
+   NONE) and the evidence digest; written at every stop and at each gated run's start, closed when the results ledger
+   exists. `tools/outcome_collect.py` reads every id in the register's experiments table and fails on an absent or
+   malformed record, so a pending run is never counted as a clean one; RL-01 to RL-22 were backfilled from their
+   records on 2026-11-09 (two stops: RL-15 under v3, RL-21 under v1). The H-36 cohort starts at RL-23. Adopted
+   2026-11-09 (R13 issue 4).
 2. Run records: one per run, with the environment digest, the seed, the wall time and host load, and the outputs by
    reference (content hashes), never copied into the record.
 3. Results ledger (`RESULTS.json`): verdicts in the verdict-ledger form (PASS, FAIL or UNRESOLVED; evidence
@@ -97,6 +114,8 @@ An experiment that would change what the product ships is a candidate for the ha
 offline evolution only, held-out tasks, an executor-model matrix, matched budgets); its artefact class in the
 evolution-surface record names who may propose, test, approve and activate it. The owner promotes; the lab proposes.
 
+Protocol freeze and custody (SC-D2, owner "(a) All A-K (Recommended)", relayed as MON-SC-D2 on 2026-11-10; source research/reads/LAB-SELF-CRITIQUE.md 8cf22653, checkpoint 4d136150; correction F of SC-D1 still pauses the lab's heavy share until one deployable runs end to end): E. Protocol freeze: README section 2 closes at its text of 2026-11-10; a new step needs a named pre-run stop or escaped defect it would have caught; H-36's cohort decides whether 1b (v) to (vii) stay. C. Instrument checks are not experiments: an expected-class FAIL (the form cannot express the case) is a preflight finding; an RL id is spent only where both outcomes are possible. D. Review custody (in force now): a PREREG's blind reviewer is briefed by the Lane-Monitor from the lab's frozen file, or runs under a different model family, and PREREG-REVIEW.md says which; the lab's own passes review nothing of the lab's.
+
 ## 3. Rules the session keeps
 
 - One repository, one session: the lab shares no path with any other session and edits nothing outside
@@ -115,6 +134,18 @@ evolution-surface record names who may propose, test, approve and activate it. T
   owner on permissions (fetches, spend, a repository), critical choices (a hypothesis that needs product-level runs
   before the planes exist) and anything that could shift the roadmap.
 - Usage: stop at a safe point when the account's 5-hour or weekly limit reaches 98 %.
+- SC-D2 rules (owner "(a) All A-K (Recommended)", relayed as MON-SC-D2 on 2026-11-10; source research/reads/LAB-SELF-CRITIQUE.md 8cf22653, checkpoint 4d136150; correction F of SC-D1 still pauses the lab's heavy share until one deployable runs end to end):
+  - A. Hypothesis gate: a new hypothesis names the observed failure, incident, pending owner question or release-gate claim it serves; a "does contract X have property Y" check goes to a conformance list (one row, no RL id) unless the property is disputed.
+  - B. Depth: when rounds resume, one question at a time; the first two are H-12's matrix on paper (no compute) and the RL-16 shadow-half successor on the real shadow records; nothing else until one closes.
+  - C. Instrument checks are not experiments: an expected-class FAIL (the form cannot express the case) is a preflight finding; an RL id is spent only where both outcomes are possible.
+  - D. Review custody (in force now): a PREREG's blind reviewer is briefed by the Lane-Monitor from the lab's frozen file, or runs under a different model family, and PREREG-REVIEW.md says which; the lab's own passes review nothing of the lab's.
+  - E. Protocol freeze: README section 2 closes at its text of 2026-11-10; a new step needs a named pre-run stop or escaped defect it would have caught; H-36's cohort decides whether 1b (v) to (vii) stay.
+  - F. Consumption column: every claim row and register experiment row names the decision or input it fed (CONSUMED, INPUT or NONE) with the lock or note digest, filled at each visionary lock; the page shows consumed against recorded (page change on resume, with I).
+  - G. Design reads: a read that adds a mechanism to the chain states the frequency of the case it serves (measured or bounded) and the mechanism's cost; with the frequency unknown, the read recommends the no-mechanism option.
+  - H. Publication: the lab repository takes the bridge folder at each checkpoint the owner approves, by the six-command recipe, with no packet drafting; drafts are for product packets.
+  - I. Reading view (on resume): progress/ is generated by build_research.py from the data record; the lane file keeps the resume block and the last ten entries, older entries archived.
+  - J. Cost (on resume): minutes and token counts per experiment and per review round from RL-23 on; the lab's usage share reported with every milestone that ran anything.
+  - K. Message budget (in force now): one monitor message a day unless a GO or a ruling is needed.
 
 ## 4. What the lab can do now and what waits
 

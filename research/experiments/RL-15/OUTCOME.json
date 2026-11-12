@@ -1,0 +1,59 @@
+{
+ "attempts": [
+  {
+   "attempt": 1,
+   "class": "ESCAPED_TO_GATED_RUN",
+   "evidence": {
+    "anchor": "## Instrument stop before any seeded build, under v3",
+    "path": "experiments/RL-15/PREREG-REVIEW.md",
+    "sha256": "9f8b743b12cedd5fdbfaff68fe2a50c658229e807fec27e8b4e8169bcbb4cfaf"
+   },
+   "outcome": "STOPPED",
+   "preregDigest": {
+    "prefix": "cda3e838",
+    "sha256": "cda3e83823ba12fef6c8f1c47dda21059531e40e4a38b9f1ee92bf7454727456",
+    "source": "experiments/RL-15/PREREG.v3.md (the superseded version, kept)"
+   },
+   "preregVersion": "v3",
+   "reviewRounds": 3,
+   "reviewVerdict": "PASS",
+   "stageReached": "GATED_RUN",
+   "stop": {
+    "cause": "the mutation tool stopped while drawing M4's targets: no READY item carried an evidence state the class needs; the baseline had built, no seeded build ran (review 3's note 2 made real); v4 redrew M4 and went to review 4",
+    "detector": "LAB_RUN",
+    "stage": "GATED_RUN"
+   }
+  },
+  {
+   "attempt": 2,
+   "class": "NONE",
+   "evidence": {
+    "anchor": null,
+    "path": "experiments/RL-15/RESULTS.json",
+    "sha256": "050c553cfeb86c6d17a4f59fe8c081b0ec63d880285994f17a38b96752e71556"
+   },
+   "outcome": "COMPLETED_NO_STOP",
+   "preregDigest": {
+    "prefix": "1e8dfc4a",
+    "sha256": "1e8dfc4a03dd9ba771282060fa13643fb4bee51c1f209e32e5e723731a51e77f",
+    "source": "experiments/RL-15/PREREG.md as it stands"
+   },
+   "preregVersion": "v5",
+   "reviewRounds": 2,
+   "reviewVerdict": "PASS",
+   "stageReached": "RESULTS",
+   "stop": null
+  }
+ ],
+ "experiment": "RL-15",
+ "notes": [
+  "run-002 (the corrected record) is a second run under the same version, not a new attempt"
+ ],
+ "recordedBy": {
+  "date": "2026-11-09",
+  "mode": "backfill",
+  "sha256": "3556e846521e787f3e13c7b86b0426482c29dfd071450ff6e62d6b9de6149b10",
+  "tool": "research/tools/outcome_record.py"
+ },
+ "schemaVersion": "planeon.research.experiment-outcome/v1"
+}

@@ -1,0 +1,57 @@
+{
+ "attempts": [
+  {
+   "attempt": 1,
+   "class": "CAUGHT_BY_PREFLIGHT",
+   "evidence": {
+    "anchor": "the lab's own inventory showed",
+    "path": "experiments/RL-21/PREREG-REVIEW.md",
+    "sha256": "cd6c0f6ada881bf5118591028edf28fc61bbc2f2bd69932cfd8fa50441dec5b0"
+   },
+   "outcome": "STOPPED",
+   "preregDigest": {
+    "prefix": "73c96e89",
+    "sha256": "73c96e897e3918db426b160ddd62290a9c47e2d8f531f21e52a66662c7e44d97",
+    "source": "experiments/RL-21/PREREG.v1.md (the superseded version, kept)"
+   },
+   "preregVersion": "v1",
+   "reviewRounds": 1,
+   "reviewVerdict": "PASS",
+   "stageReached": "PREFLIGHT",
+   "stop": {
+    "cause": "before any run the lab's own inventory showed the meta authorities' metaBaseline is a commit id, not a packet id, so H-26c's chain rule was not computable from the export; v2 made H-26c descriptive and went to review 2",
+    "detector": "LAB_PREFLIGHT",
+    "stage": "PREFLIGHT"
+   }
+  },
+  {
+   "attempt": 2,
+   "class": "NONE",
+   "evidence": {
+    "anchor": null,
+    "path": "experiments/RL-21/RESULTS.json",
+    "sha256": "824504393782069b99cedf23097f2028524867c1213d76548dd05e018ebbaeca"
+   },
+   "outcome": "COMPLETED_NO_STOP",
+   "preregDigest": {
+    "prefix": "9eb03897",
+    "sha256": "9eb0389724ea22639db59e27bf24095f9821e537573e8afc7a9e33b89fc1e57a",
+    "source": "experiments/RL-21/PREREG.md as it stands"
+   },
+   "preregVersion": "v2",
+   "reviewRounds": 1,
+   "reviewVerdict": "PASS",
+   "stageReached": "RESULTS",
+   "stop": null
+  }
+ ],
+ "experiment": "RL-21",
+ "notes": [],
+ "recordedBy": {
+  "date": "2026-11-09",
+  "mode": "backfill",
+  "sha256": "3556e846521e787f3e13c7b86b0426482c29dfd071450ff6e62d6b9de6149b10",
+  "tool": "research/tools/outcome_record.py"
+ },
+ "schemaVersion": "planeon.research.experiment-outcome/v1"
+}
