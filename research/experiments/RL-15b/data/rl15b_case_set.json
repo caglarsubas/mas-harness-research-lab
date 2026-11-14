@@ -1,0 +1,164 @@
+{
+ "cases": [
+  {
+   "catchable": true,
+   "class": "M1",
+   "field": "dependsOn",
+   "target": "LINUX-PROBE-KIT-SCOPE"
+  },
+  {
+   "catchable": true,
+   "class": "M1",
+   "field": "dependsOn",
+   "target": "RO-IMPL-R07"
+  },
+  {
+   "catchable": true,
+   "class": "M1",
+   "field": "dependsOn",
+   "target": "BROKER-CLONE-INTO-CGROUP"
+  },
+  {
+   "catchable": true,
+   "class": "M2",
+   "field": "evidenceState",
+   "target": "PERF-035"
+  },
+  {
+   "catchable": true,
+   "class": "M2",
+   "field": "evidenceState",
+   "target": "SECCOMP-OBSERVER-LISTENER"
+  },
+  {
+   "catchable": true,
+   "class": "M2",
+   "field": "evidenceState",
+   "target": "W02-CLEANUP"
+  },
+  {
+   "catchable": true,
+   "class": "M3",
+   "field": "benefit",
+   "target": "OP-ADOPT-001"
+  },
+  {
+   "catchable": true,
+   "class": "M3",
+   "field": "benefit",
+   "target": "EVOLUTION-SURFACE-001"
+  },
+  {
+   "catchable": true,
+   "class": "M3",
+   "field": "benefit",
+   "target": "LAB-REPO-001"
+  },
+  {
+   "catchable": true,
+   "class": "M4",
+   "field": "status",
+   "target": "W03"
+  },
+  {
+   "catchable": true,
+   "class": "M4",
+   "field": "status",
+   "target": "CHAIN-COMPACTION-002"
+  },
+  {
+   "catchable": true,
+   "class": "M4",
+   "field": "status",
+   "target": "W04"
+  },
+  {
+   "catchable": true,
+   "class": "M5",
+   "field": "harnesses",
+   "target": "HE-GATE-002"
+  },
+  {
+   "catchable": true,
+   "class": "M5",
+   "field": "codebases",
+   "target": "W04-PROBES-HUMAN"
+  },
+  {
+   "catchable": true,
+   "class": "M5",
+   "field": "id",
+   "target": "MODEL-AUX-001"
+  },
+  {
+   "catchable": true,
+   "class": "M6",
+   "field": "sha256",
+   "target": "RS-MEMO-RDACADEMIC"
+  },
+  {
+   "catchable": true,
+   "class": "M6",
+   "field": "sha256",
+   "target": "MASS"
+  },
+  {
+   "catchable": false,
+   "class": "M6",
+   "field": "sha256",
+   "target": "MCP faults"
+  },
+  {
+   "catchable": true,
+   "class": "C",
+   "field": "description",
+   "target": "W04"
+  },
+  {
+   "catchable": true,
+   "class": "C",
+   "field": "updates",
+   "target": "updates"
+  },
+  {
+   "catchable": true,
+   "class": "C",
+   "field": "title",
+   "target": "W02b-F2"
+  }
+ ],
+ "declaredUncatchable": {
+  "class": "M6",
+  "field": "sha256",
+  "target": "MCP faults"
+ },
+ "derivedFrom": {
+  "path": "experiments/RL-15/data/rl15_runs_002.json",
+  "seed": 20261105,
+  "sha256": "a60da42246cfd5880ed024fc551591fb3e5fab6c8ced94d40a592bdbc8a47d7e"
+ },
+ "expected": {
+  "catchable": 17,
+  "catchablePerClass": {
+   "M1": 3,
+   "M2": 3,
+   "M3": 3,
+   "M4": 3,
+   "M5": 3,
+   "M6": 2
+  },
+  "controls": 3,
+  "rowsPerClass": {
+   "C": 3,
+   "M1": 3,
+   "M2": 3,
+   "M3": 3,
+   "M4": 3,
+   "M5": 3,
+   "M6": 3
+  },
+  "seeded": 18,
+  "uncatchable": 1
+ },
+ "schemaVersion": "planeon.research.rl15b-case-set/v1"
+}

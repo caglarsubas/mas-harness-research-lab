@@ -1,0 +1,103 @@
+{
+ "completion": {
+  "everyMutationRejected": true,
+  "frozenEvaluatorPassesMutations": 5,
+  "originalValid": true
+ },
+ "experiment": "RL-15b",
+ "inputs": {
+  "boundaryTool": "4e86669aa590a49bc55b1e56e2c73d82df5e9af817661a5f82c21b32d6121099",
+  "caseSet": "35525dd90cbf8d7782aa43b0d5d2780580871c4c3fa746f6b82a6c01344a47b8",
+  "frozenEvaluator": "2d6c349b221ce54e563d595a295746084f1b38a654055b862fdb831da14392de",
+  "ledger": "d1810a578bc1b0d262e7821cae5c6ad794cbb069c5ec9b152a3defff4e9887d9",
+  "runs": "f445e3c161a311e676c6ffa824e88d7a410a1ac883cdcb75c531c5055a563490",
+  "validator": "31ae73e498f329d65a86bf62d617206e8ac06d03dea71e4e338e26a15f7ced86"
+ },
+ "rows": [
+  {
+   "countsRecomputed": null,
+   "description": "the committed record, unchanged",
+   "frozenEvaluator": "PASS",
+   "frozenEvaluatorScores": {
+    "catchable": 17,
+    "catchable_refused": 17,
+    "controls": 3,
+    "controls_refused": 0
+   },
+   "mutation": "original",
+   "recordSha256": "f445e3c161a311e676c6ffa824e88d7a410a1ac883cdcb75c531c5055a563490",
+   "validator": "VALID"
+  },
+  {
+   "countsRecomputed": true,
+   "description": "every M1 row removed, every aggregate recomputed (denominator 14, M1 reads [0, 0, 0])",
+   "frozenEvaluator": "PASS",
+   "frozenEvaluatorScores": {
+    "catchable": 14,
+    "catchable_refused": 14,
+    "controls": 3,
+    "controls_refused": 0
+   },
+   "mutation": "drop_class_M1",
+   "recordSha256": "068e21e8daf4cc8d2838227474b245bab9483911ec8a190898325a7868deec38",
+   "validator": "INCOMPLETE"
+  },
+  {
+   "countsRecomputed": true,
+   "description": "every control removed, aggregates recomputed (controls 0 of 0)",
+   "frozenEvaluator": "PASS",
+   "frozenEvaluatorScores": {
+    "catchable": 17,
+    "catchable_refused": 17,
+    "controls": 0,
+    "controls_refused": 0
+   },
+   "mutation": "drop_controls",
+   "recordSha256": "9f841a6bcc2729fa6e7c017d6d95ea75cd55eb4068a647dfa48f7858e57a4847",
+   "validator": "INCOMPLETE"
+  },
+  {
+   "countsRecomputed": false,
+   "description": "the first seeded row set to built and unattributed with exit 0, the supplied counts kept as they were",
+   "frozenEvaluator": "PASS",
+   "frozenEvaluatorScores": {
+    "catchable": 17,
+    "catchable_refused": 17,
+    "controls": 3,
+    "controls_refused": 0
+   },
+   "mutation": "stale_counts",
+   "recordSha256": "b57fb2398099ed15ac38d1c50e72b24de683afa3d8a690afaee637813733cd1a",
+   "validator": "INVALID"
+  },
+  {
+   "countsRecomputed": true,
+   "description": "the second seeded row appended again, aggregates recomputed (denominator 18 with one identity twice)",
+   "frozenEvaluator": "PASS",
+   "frozenEvaluatorScores": {
+    "catchable": 18,
+    "catchable_refused": 18,
+    "controls": 3,
+    "controls_refused": 0
+   },
+   "mutation": "duplicate_case",
+   "recordSha256": "af5017d9302caab6f3207ac87520aee4f4b83776018bac607cee5e4a993f3385",
+   "validator": "INVALID"
+  },
+  {
+   "countsRecomputed": true,
+   "description": "one M3 row removed, aggregates recomputed (denominator 16, M3 reads [2, 2, 2])",
+   "frozenEvaluator": "PASS",
+   "frozenEvaluatorScores": {
+    "catchable": 16,
+    "catchable_refused": 16,
+    "controls": 3,
+    "controls_refused": 0
+   },
+   "mutation": "missing_case",
+   "recordSha256": "768b65cb8322037ec8f095b6a5182f58d0887db2944c108017009b9df90f3f0f",
+   "validator": "INCOMPLETE"
+  }
+ ],
+ "schemaVersion": "planeon.research.acceptance-boundary/v1"
+}
