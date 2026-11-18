@@ -1,0 +1,454 @@
+{
+ "date": "2026-11-13",
+ "evaluatorSha256": "a2aeed826521cf373912fd99f77f3e41edcc87b3ca5c194a28dc27ab2834fba0",
+ "experiment": "RL-23",
+ "fixtures": [
+  {
+   "expected": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "fixture": "F1-positive-control",
+   "got": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "ok": true,
+   "sha256": "1befecb5af8584c086d564b80de702a40b98ca052b2987342fe7b064959d8845"
+  },
+  {
+   "expected": {
+    "H-37": "NOT SUPPORTED",
+    "H-38": "NOT SUPPORTED",
+    "H-39": "NOT SUPPORTED",
+    "H-40": "NOT SUPPORTED",
+    "H-41": "NOT SUPPORTED",
+    "H-42": "NOT SUPPORTED",
+    "H-43": "NOT SUPPORTED",
+    "H-44": "NOT SUPPORTED"
+   },
+   "fixture": "F2-negative-control",
+   "got": {
+    "H-37": "NOT SUPPORTED",
+    "H-38": "NOT SUPPORTED",
+    "H-39": "NOT SUPPORTED",
+    "H-40": "NOT SUPPORTED",
+    "H-41": "NOT SUPPORTED",
+    "H-42": "NOT SUPPORTED",
+    "H-43": "NOT SUPPORTED",
+    "H-44": "NOT SUPPORTED"
+   },
+   "ok": true,
+   "sha256": "d3777d5ddb5dd634b61170451449bf59a8dcc7204bbac398cbac5e1bc9c3619d"
+  },
+  {
+   "expected": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "fixture": "F3-boundary-at",
+   "got": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "ok": true,
+   "sha256": "c94445f64fcef8ee4a8898fe0f6d2a6603b0aa01a18b70e07e6f439adec4c2d7"
+  },
+  {
+   "expected": {
+    "H-37": "NOT SUPPORTED",
+    "H-38": "NOT SUPPORTED",
+    "H-39": "NOT SUPPORTED",
+    "H-40": "NOT SUPPORTED",
+    "H-41": "NOT SUPPORTED",
+    "H-42": "NOT SUPPORTED",
+    "H-43": "NOT SUPPORTED",
+    "H-44": "NOT SUPPORTED"
+   },
+   "fixture": "F4-boundary-above",
+   "got": {
+    "H-37": "NOT SUPPORTED",
+    "H-38": "NOT SUPPORTED",
+    "H-39": "NOT SUPPORTED",
+    "H-40": "NOT SUPPORTED",
+    "H-41": "NOT SUPPORTED",
+    "H-42": "NOT SUPPORTED",
+    "H-43": "NOT SUPPORTED",
+    "H-44": "NOT SUPPORTED"
+   },
+   "ok": true,
+   "sha256": "7931afc4853988fc5698079eba147fdac49e3c7ec67d0f9535267efb4a3fdb07"
+  },
+  {
+   "expected": {
+    "H-37": "UNRESOLVED U1",
+    "H-38": "UNRESOLVED U1",
+    "H-39": "UNRESOLVED U1",
+    "H-40": "UNRESOLVED U1",
+    "H-41": "UNRESOLVED U1",
+    "H-42": "UNRESOLVED U1",
+    "H-43": "UNRESOLVED U1",
+    "H-44": "UNRESOLVED U1"
+   },
+   "fixture": "F5-below-minimum-n",
+   "got": {
+    "H-37": "UNRESOLVED U1",
+    "H-38": "UNRESOLVED U1",
+    "H-39": "UNRESOLVED U1",
+    "H-40": "UNRESOLVED U1",
+    "H-41": "UNRESOLVED U1",
+    "H-42": "UNRESOLVED U1",
+    "H-43": "UNRESOLVED U1",
+    "H-44": "UNRESOLVED U1"
+   },
+   "ok": true,
+   "sha256": "7adc1365879dbd8f6fec08ae332b9ac1bd4df35203acba7e47784f77b46cc57a"
+  },
+  {
+   "expected": {
+    "H-37": "UNRESOLVED U2",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "UNRESOLVED U2",
+    "H-42": "UNRESOLVED U2",
+    "H-43": "SUPPORTED",
+    "H-44": "UNRESOLVED U2"
+   },
+   "fixture": "F6-missing-measure",
+   "got": {
+    "H-37": "UNRESOLVED U2",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "UNRESOLVED U2",
+    "H-42": "UNRESOLVED U2",
+    "H-43": "SUPPORTED",
+    "H-44": "UNRESOLVED U2"
+   },
+   "ok": true,
+   "sha256": "e7d26ec3fd8f138aeb09a79bd96cc5c9d2035ddc1a5ff25a9fa51cb19f68a687"
+  },
+  {
+   "expected": {
+    "H-37": "UNRESOLVED U3",
+    "H-38": "UNRESOLVED U3",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U3",
+    "H-41": "UNRESOLVED U3",
+    "H-42": "UNRESOLVED U3",
+    "H-43": "UNRESOLVED U3",
+    "H-44": "UNRESOLVED U3"
+   },
+   "fixture": "F7-all-flagged",
+   "got": {
+    "H-37": "UNRESOLVED U3",
+    "H-38": "UNRESOLVED U3",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U3",
+    "H-41": "UNRESOLVED U3",
+    "H-42": "UNRESOLVED U3",
+    "H-43": "UNRESOLVED U3",
+    "H-44": "UNRESOLVED U3"
+   },
+   "ok": true,
+   "sha256": "875f5cea4b3d3db2ebe6f58e0bcca1f4c6ecdc018d803a5543354a433eb407f6"
+  },
+  {
+   "expected": {
+    "H-37": "UNRESOLVED U3",
+    "H-38": "UNRESOLVED U3",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U3",
+    "H-41": "UNRESOLVED U3",
+    "H-42": "UNRESOLVED U3",
+    "H-43": "UNRESOLVED U3",
+    "H-44": "UNRESOLVED U3"
+   },
+   "fixture": "F8-change-flags-days-and-slots",
+   "got": {
+    "H-37": "UNRESOLVED U3",
+    "H-38": "UNRESOLVED U3",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U3",
+    "H-41": "UNRESOLVED U3",
+    "H-42": "UNRESOLVED U3",
+    "H-43": "UNRESOLVED U3",
+    "H-44": "UNRESOLVED U3"
+   },
+   "ok": true,
+   "sha256": "b70d3fdea00ca2e721982ceb64be5ee59dc49b1a97ed1f01eb3158de9c06febc"
+  },
+  {
+   "expected": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "UNRESOLVED U1",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "expectedExcluded": {
+    "H-41": {
+     "no intervention": 2
+    }
+   },
+   "fixture": "F9-excluded-and-fidelity",
+   "got": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "UNRESOLVED U1",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "gotExcluded": {
+    "H-41": {
+     "no intervention": 2
+    }
+   },
+   "ok": true,
+   "sha256": "337ab902365e1e4b7547ee876ad1fdb62cb5b217eb37fe04d915e6ee45ff1472"
+  },
+  {
+   "expected": {
+    "H-37": "UNRESOLVED U2",
+    "H-38": "UNRESOLVED U2",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U2",
+    "H-41": "UNRESOLVED U2",
+    "H-42": "UNRESOLVED U2",
+    "H-43": "UNRESOLVED U2",
+    "H-44": "UNRESOLVED U2"
+   },
+   "fixture": "F10-missing-fidelity",
+   "got": {
+    "H-37": "UNRESOLVED U2",
+    "H-38": "UNRESOLVED U2",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U2",
+    "H-41": "UNRESOLVED U2",
+    "H-42": "UNRESOLVED U2",
+    "H-43": "UNRESOLVED U2",
+    "H-44": "UNRESOLVED U2"
+   },
+   "ok": true,
+   "sha256": "66ac46be7cdf83842c1b9a5542aaefc97621fbf7ceebea4d12dde6a94f248df1"
+  },
+  {
+   "expected": {
+    "H-37": "UNRESOLVED U3",
+    "H-38": "UNRESOLVED U3",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U2",
+    "H-41": "UNRESOLVED U2",
+    "H-42": "UNRESOLVED U2",
+    "H-43": "UNRESOLVED U2",
+    "H-44": "UNRESOLVED U2"
+   },
+   "fixture": "F11-missing-scopeDate",
+   "got": {
+    "H-37": "UNRESOLVED U3",
+    "H-38": "UNRESOLVED U3",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U2",
+    "H-41": "UNRESOLVED U2",
+    "H-42": "UNRESOLVED U2",
+    "H-43": "UNRESOLVED U2",
+    "H-44": "UNRESOLVED U2"
+   },
+   "ok": true,
+   "sha256": "b0f4ccd02aed29580069d5660a3ad4878128ff322cc82960f5a56f506bd1c176"
+  },
+  {
+   "expected": {
+    "H-37": "SUPPORTED",
+    "H-38": "UNRESOLVED U2",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "fixture": "F12-guard-no-observations",
+   "got": {
+    "H-37": "SUPPORTED",
+    "H-38": "UNRESOLVED U2",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "ok": true,
+   "sha256": "2cfc0d2145d37e67f94bd04b7fa60968824ac62629629ded9c3dbe1b1c1c68e8"
+  },
+  {
+   "expected": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U1",
+    "H-41": "UNRESOLVED U1",
+    "H-42": "UNRESOLVED U1",
+    "H-43": "UNRESOLVED U1",
+    "H-44": "UNRESOLVED U1"
+   },
+   "expectedExcluded": {
+    "H-37": {
+     "confounder evidence missing": 1
+    },
+    "H-38": {
+     "confounder evidence missing": 1
+    },
+    "H-40": {
+     "confounder evidence missing": 1,
+     "fidelity missing": 1
+    },
+    "H-43": {
+     "confounder evidence missing": 1,
+     "fidelity missing": 1
+    }
+   },
+   "fixture": "F13-partial-evidence",
+   "got": {
+    "H-37": "SUPPORTED",
+    "H-38": "SUPPORTED",
+    "H-39": "SUPPORTED",
+    "H-40": "UNRESOLVED U1",
+    "H-41": "UNRESOLVED U1",
+    "H-42": "UNRESOLVED U1",
+    "H-43": "UNRESOLVED U1",
+    "H-44": "UNRESOLVED U1"
+   },
+   "gotExcluded": {
+    "H-37": {
+     "confounder evidence missing": 1
+    },
+    "H-38": {
+     "confounder evidence missing": 1
+    },
+    "H-40": {
+     "confounder evidence missing": 1,
+     "fidelity missing": 1
+    },
+    "H-43": {
+     "confounder evidence missing": 1,
+     "fidelity missing": 1
+    }
+   },
+   "ok": true,
+   "sha256": "3ca2149d183eedb81d6eb1a8b1daf19888c1c70cc7cb47310c09f28e5cb29365"
+  },
+  {
+   "expected": {
+    "H-37": "SUPPORTED",
+    "H-38": "UNRESOLVED U1",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "expectedExcluded": {
+    "H-38": {
+     "overshoot evidence (a 5-hour window ending on the day) missing": 5
+    }
+   },
+   "fixture": "F14-partial-window-coverage",
+   "got": {
+    "H-37": "SUPPORTED",
+    "H-38": "UNRESOLVED U1",
+    "H-39": "SUPPORTED",
+    "H-40": "SUPPORTED",
+    "H-41": "SUPPORTED",
+    "H-42": "SUPPORTED",
+    "H-43": "SUPPORTED",
+    "H-44": "SUPPORTED"
+   },
+   "gotExcluded": {
+    "H-38": {
+     "overshoot evidence (a 5-hour window ending on the day) missing": 5
+    }
+   },
+   "ok": true,
+   "sha256": "eec066aedf54f3f2dae1d940d30f82241fe347dd9251395817d92c80e98bd688"
+  },
+  {
+   "expected": "MISSING_CLASS",
+   "fixture": "R1-missing-class",
+   "got": "MISSING_CLASS",
+   "ok": true,
+   "sha256": "f0bef192b2b5098623e8a3fa72a8d640043431bb670236a32edb8d9f9867c6a2"
+  },
+  {
+   "expected": "DUPLICATE",
+   "fixture": "R2-duplicate-unit",
+   "got": "DUPLICATE",
+   "ok": true,
+   "sha256": "7412bb35038d9f337247705bf7b31a3763924b74c2f54c10d0f779f86a51dce3"
+  },
+  {
+   "expected": "PRODUCER_PIN",
+   "fixture": "R3-producer-pin",
+   "got": "PRODUCER_PIN",
+   "ok": true,
+   "sha256": "3b8851cceddf526781706ec5bba9199713d50419be5234770ea9d7d74bbc1bed"
+  },
+  {
+   "expected": "TYPE",
+   "fixture": "R4-type",
+   "got": "TYPE",
+   "ok": true,
+   "sha256": "86f57181dfd72a755cab9ac6c2f1c313170da7765bb902e18df1047919e7368f"
+  },
+  {
+   "expected": "ENUM",
+   "fixture": "R5-enum",
+   "got": "ENUM",
+   "ok": true,
+   "sha256": "c0e7b4bef3b8975a55e11a6440050f2d154d2eebe121d12c072180a78a0e5c65"
+  },
+  {
+   "expected": "TYPE",
+   "fixture": "R6-invalid-date",
+   "got": "TYPE",
+   "ok": true,
+   "sha256": "2123bb460dba5be0f00127b9099e7beaacaeaf5b63b08c28a516b8b36a97d77b"
+  }
+ ],
+ "preregSha256": "2bbd97287add1ee547beafd8e807eb98c3d81da2b9ce6b17c030a2b4ac4d8942",
+ "schemaVersion": "planeon.research.preflight/v1",
+ "status": "PASS"
+}

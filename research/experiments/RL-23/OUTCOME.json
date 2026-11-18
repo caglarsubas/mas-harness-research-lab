@@ -1,0 +1,60 @@
+{
+ "attempts": [
+  {
+   "attempt": 1,
+   "class": "CAUGHT_BY_PREFLIGHT",
+   "evidence": {
+    "anchor": "## Finding P1",
+    "path": "experiments/RL-23/PREFLIGHT.md",
+    "sha256": "f5751eac408c48ada977d134c401ec75a29e00f8165b9cd96602036b037668d4"
+   },
+   "outcome": "STOPPED",
+   "preregDigest": {
+    "prefix": "0fa0d594",
+    "sha256": "0fa0d594174c7092033e0a6a722fefad39ce0ccbc3590d9d4a68b03bf51d5271",
+    "source": "the frozen PREREG at this attempt (v3 after review r2)"
+   },
+   "preregVersion": "v3",
+   "reviewRounds": 2,
+   "reviewVerdict": "PASS",
+   "stageReached": "PREFLIGHT",
+   "stop": {
+    "cause": "preflight finding P1: the frozen slot form carried no date, so 'units after a change' (U3 for H-40 to H-44) was not computable from the pinned form; v4 adds scopeDate to slots[]; no delivery was opened",
+    "detector": "LAB_PREFLIGHT",
+    "stage": "PREFLIGHT"
+   }
+  },
+  {
+   "attempt": 2,
+   "class": "NONE",
+   "evidence": null,
+   "outcome": "PENDING",
+   "preregDigest": {
+    "prefix": "2bbd9728",
+    "sha256": "2bbd97287add1ee547beafd8e807eb98c3d81da2b9ce6b17c030a2b4ac4d8942",
+    "source": "the frozen PREREG at this attempt"
+   },
+   "preregVersion": "v4",
+   "reviewRounds": 2,
+   "reviewVerdict": "PASS",
+   "stageReached": "PREFLIGHT",
+   "stop": null
+  }
+ ],
+ "experiment": "RL-23",
+ "notes": [
+  "2026-11-12: review r1 of v1 (467c636c) read CHANGES_REQUIRED (FAIL); v2 frozen; attempt 1 continues on v2 with the round counted, as the backfill counts rounds per attempt (RL-15: three rounds, one attempt)",
+  "2026-11-12: review r2 of v2 (969489d7) read CHANGES_REQUIRED (FAIL); v3 frozen with the monitor's constant correction (MON-LAB-FACTORY-6); no round 3 (C5): the verdict field turns PASS on the monitor's claims check",
+  "2026-11-12: series closed at 2 reviewer rounds by script-checked claims (MON-LAB-FACTORY-7, PASS); attempt 1 stays PENDING at stage PREFLIGHT until the evaluator's preflight passes",
+  "2026-11-12: attempt 1 (v3; reviews 1-2, closed PASS by claims) STOPPED at PREFLIGHT by finding P1 (computability, charter 1b (v)); attempt 2 opens on v4 and inherits the closed series (rounds 2, PASS) pending the monitor's check of the extended claims",
+  "2026-11-13: bridge issue 6 (the owner's automated reviewer) ACCEPTED: evaluator 9c08695c read missing fidelity, a missing scopeDate and an empty windows list as evidence; fixed as a2aeed82 (evidence-aware gate, named exclusions, window coverage), preflight PASS 20 fixtures (14 unchanged + F10 to F14, R6); an instrument defect, not a protocol one: attempt 2 stays PENDING on v4, no delivery opened",
+  "2026-11-15: attempt 2's collection opened under PREREG v4 2bbd9728 (MON-C15-R13; the bridge's PARALLEL-LANES-C15 section 5, tier LIGHT; owner 2026-11-15 'apply A, B and D'): run record experiments/RL-23/runs/run-001.md; no delivery opened yet (the pre-period aggregate delivery is announced for 2026-11-15); every measure comes from the monitor's aggregates (PREREG section 6), so the lab's own collection is the run record, the delivery log and the pre-registered spot-check method; stageReached stays PREFLIGHT until the gated evaluation at the stop (2026-11-26, or earlier when every post unit is complete); attempt 2 stays PENDING."
+ ],
+ "recordedBy": {
+  "date": "2026-11-12",
+  "mode": "add",
+  "sha256": "3556e846521e787f3e13c7b86b0426482c29dfd071450ff6e62d6b9de6149b10",
+  "tool": "research/tools/outcome_record.py"
+ },
+ "schemaVersion": "planeon.research.experiment-outcome/v1"
+}
