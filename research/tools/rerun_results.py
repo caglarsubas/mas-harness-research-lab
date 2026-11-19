@@ -5,7 +5,13 @@ raw source in the tree; INDEPENDENT_REPLICATION entries compare a second ledger'
 reason and externalInputs (source, commit, sha256, availability, retrieval), each sha256 among the ledger's evidence.
 The PREREG argument is the file whose digest the ledger names. Counts only; writes under TMPDIR only. Standard library.
 
+A PENDING folder (no RESULTS.json, and its OUTCOME.json's last attempt is PENDING: a frozen experiment whose ledger does not
+exist yet; MON-292-RL-M101-RULE, Q-SYNC2-1 (a), the twin of prereg_check's PENDING rule) has nothing to re-derive: it needs no
+table entry and an entry naming it is refused (PENDING_ENTRY). A folder without a ledger that is not PENDING still fails the
+count. The OK line names the pending folders' count.
+
 usage: python3 -I -B research/tools/rerun_results.py TABLE_JSON
+       python3 -I -B research/tools/rerun_results.py --self-test     (four PENDING vectors in temporary trees)
 """
 import hashlib
 import json
@@ -162,22 +168,37 @@ def check_recorded(entry: dict, root: Path, refs: set, problems: list) -> None:
                 problems.append("IN_TREE_INPUT_MISSING:%s:%d" % (name, i))
 
 
-def main(argv: list) -> int:
-    if len(argv) != 1:
-        print("usage: rerun_results.py TABLE_JSON")
-        return 2
-    table = Path(argv[0]).resolve()
+def pending_folder(folder: Path) -> bool:
+    """True for a folder with no RESULTS.json whose OUTCOME.json's last attempt is PENDING (charter step 1c)."""
+    record = folder / "OUTCOME.json"
+    if (folder / "RESULTS.json").exists() or not record.is_file():
+        return False
+    try:
+        doc = json.loads(record.read_text(encoding="utf-8"))
+    except (ValueError, UnicodeDecodeError):
+        return False
+    attempts = doc.get("attempts") if isinstance(doc, dict) else None
+    if not isinstance(attempts, list) or not attempts or not isinstance(attempts[-1], dict):
+        return False
+    return attempts[-1].get("outcome") == "PENDING"
+
+
+def check_table(table: Path):
+    """Returns (problems, counts, pending) for one table: the problem lines, the entries checked per level, the PENDING folders."""
     root = table.parent.parent.parent
     doc = json.loads(table.read_text(encoding="utf-8"))
     problems, counts = [], {level: 0 for level in LEVELS}
     if not (isinstance(doc, dict) and doc.get("schemaVersion") == SCHEMA and isinstance(doc.get("entries"), list)):
-        print("TABLE_SHAPE:" + table.relative_to(root).as_posix())
-        print("RERUN FAIL: 1 problems")
-        return 1
-    folders = sorted(p.name for p in (root / "research" / "experiments").glob("RL-*") if p.is_dir())
+        return ["TABLE_SHAPE:" + table.relative_to(root).as_posix()], counts, 0
+    experiments = root / "research" / "experiments"
+    folders = sorted(p.name for p in experiments.glob("RL-*") if p.is_dir())
+    pending = [name for name in folders if pending_folder(experiments / name)]
     names = [e.get("folder") for e in doc["entries"] if isinstance(e, dict)]
     for name in folders:
-        if names.count(name) != 1:
+        if name in pending:
+            if names.count(name):
+                problems.append("PENDING_ENTRY:%s:%d" % (name, names.count(name)))
+        elif names.count(name) != 1:
             problems.append("FOLDER_ENTRY_COUNT:%s:%d" % (name, names.count(name)))
     for name in names:
         if name not in folders:
@@ -186,7 +207,7 @@ def main(argv: list) -> int:
         scratch = Path(tmp)
         for entry in doc["entries"]:
             name = entry.get("folder") if isinstance(entry, dict) else None
-            if name not in folders or names.count(name) != 1:
+            if name not in folders or name in pending or names.count(name) != 1:
                 continue
             level = entry.get("level")
             if level not in LEVELS:
@@ -214,12 +235,54 @@ def main(argv: list) -> int:
             check_rederive(entry, root, ledger, refs, scratch, problems)
             if level == "INDEPENDENT_REPLICATION":
                 check_replication(entry, root, ledger, problems)
+    return problems, counts, len(pending)
+
+
+def self_test() -> int:
+    """Four PENDING vectors (MON-292-RL-M101-RULE), each in its own temporary tree with an otherwise empty table: a PENDING
+    folder without an entry, accepted; a folder without a ledger that is not PENDING, still refused; a PENDING folder with an
+    entry, refused; a PENDING record beside a RESULTS.json, not pending, so the missing entry is refused."""
+    vectors = [("RL-90", "PENDING", False, False, [], 1),
+               ("RL-91", "STOPPED", False, False, ["FOLDER_ENTRY_COUNT:RL-91:0"], 0),
+               ("RL-92", "PENDING", False, True, ["PENDING_ENTRY:RL-92:1"], 1),
+               ("RL-93", "PENDING", True, False, ["FOLDER_ENTRY_COUNT:RL-93:0"], 0)]
+    failures = 0
+    for name, outcome, ledger, entry, expected, expected_pending in vectors:
+        with tempfile.TemporaryDirectory(prefix="rerun-selftest-") as tmp:
+            root = Path(tmp)
+            folder = root / "research" / "experiments" / name
+            folder.mkdir(parents=True)
+            (folder / "OUTCOME.json").write_text(json.dumps({"experiment": name, "attempts": [{"attempt": 1, "outcome": outcome}]}), encoding="utf-8")
+            if ledger:
+                (folder / "RESULTS.json").write_text("{}", encoding="utf-8")
+            table = root / "research" / "tools" / "rerun_table.json"
+            table.parent.mkdir(parents=True)
+            entries = [{"folder": name, "level": "RECORDED"}] if entry else []
+            table.write_text(json.dumps({"schemaVersion": SCHEMA, "entries": entries}), encoding="utf-8")
+            problems, _, pending = check_table(table)
+            if sorted(problems) != sorted(expected) or pending != expected_pending:
+                failures += 1
+                print("SELFTEST VECTOR %s: got %s pending %d, expected %s pending %d" % (name, sorted(problems), pending, sorted(expected), expected_pending))
+    if failures:
+        print("SELFTEST FAIL: %d of %d vectors" % (failures, len(vectors)))
+        return 1
+    print("SELFTEST OK: %d vectors" % len(vectors))
+    return 0
+
+
+def main(argv: list) -> int:
+    if argv == ["--self-test"]:
+        return self_test()
+    if len(argv) != 1:
+        print("usage: rerun_results.py TABLE_JSON | --self-test")
+        return 2
+    problems, counts, pending = check_table(Path(argv[0]).resolve())
     if problems:
         for line in problems:
             print(line)
         print("RERUN FAIL: %d problems" % len(problems))
         return 1
-    print("RERUN OK: %d entries; %s" % (sum(counts.values()), ", ".join("%s %d" % (k, counts[k]) for k in LEVELS)))
+    print("RERUN OK: %d entries (%d pending); %s" % (sum(counts.values()), pending, ", ".join("%s %d" % (k, counts[k]) for k in LEVELS)))
     return 0
 
 

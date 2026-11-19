@@ -1,0 +1,166 @@
+{
+ "schemaVersion": "planeon.research.progress-scopes/v1",
+ "note": "The hand-kept map behind the generated progress view (rule I, 2026-11-17): which experiments and hypotheses belong to which scope, and the dated hand-written context. build_research.py writes progress/README.md and the S files from this map and the data record; every experiment must sit in exactly one scope or the build stops.",
+ "intro": "Owner instruction (2026-11-06, in the lab session): work like a research team following a scientific procedure, keep a\nprogress document per scope the owner can read, and use deep search when the question is \"what others have done so\nfar\". The procedure the lab follows, per scope:\n\n1. Observe: what is going on in the roadmap, the repositories, the architecture and the PRs, and why this scope matters now.\n2. Hypothesise: what could be done for better performance, accuracy, assurance or cost (the register's H-rows).\n3. Collect: the data the hypothesis needs, from the platform's own records, the repositories' exports and the literature\n   (digest-pinned; outside sources through deep search, recorded with their identifiers).\n4. Design and test: a preregistration, an independent review of it, the run, a verdict in the ledger form.\n5. Report and prove: a one-page report with what was measured, what it means and what it does not show; proposals to the\n   roadmap visionary through the lane monitor.",
+ "scopes": [
+  {
+   "id": "S1",
+   "file": "S1-history-chain.md",
+   "title": "S1: the history chain and the cost of re-proving everything",
+   "question": "How much does re-proving the whole history cost, and what does the signed checkpoint buy?",
+   "experiments": [
+    "RL-01",
+    "RL-07",
+    "RL-08",
+    "RL-16"
+   ],
+   "hypotheses": [
+    "H-01",
+    "H-02",
+    "H-07",
+    "H-08"
+   ],
+   "listReads": false,
+   "readingDate": "2026-11-06",
+   "reading": {
+    "observe": "Every harness-onion packet re-executes the whole accepted history (92 layers at slot 280) on every verify. Verify time reached the owner's 1,000 s floor and the 1,200 s cap (slots 272-280: 956 to 1,162 s); the owner adopted eight workers (PERF-046) and chose the signed checkpoint with sampled re-execution (CHAIN-COMPACTION-002, G1) with four conditions; a fifth, shadow mode, was the lab's to rule on. Why now: the cap is the programme's hardest number and every contract packet pays it.",
+    "data": "The verifier's masked run records (27 runs, PRs 207-232) and the merge-decision rows (RL-01); the cost split at 280 (R00's cost_split280, 11 lines); the architecture export at afee03b9 (RL-07: identity rule, vectors); DESIGN_CC2 rev 2 (R00, read masked).",
+    "results": "Load drives verify time (about 25-50 s per unit of run-mean load); growth at equal load is 9.3 s per slot (interval 5.7 to 13.5), reproducing the report's 13 s within the band; the attested share of argv 63 is 0.645 and a 10 percent sample keeps argv 63 near 220 s with an expected defect-detection delay of 6.5 verifies and a hard bound of 10 at cadence 10; the chain vectors replay exactly; cost is spread, not concentrated (Gini about 0.5; argv 63 is 0.86 of CPU). Verdicts: RL-01 PASS by gate (H-07a), RL-07 PASS, RL-08 UNRESOLVED (no refusal history), RL-16 PASS.",
+    "next": "H-02's shadow half when MET-PERF-047's first shadow verify exists (the measured per-layer seconds and the sample's agreement replace the proportional bound); an Ekstazi-style file-dependency arm as a comparison, named for R00."
+   }
+  },
+  {
+   "id": "S2",
+   "file": "S2-review-and-process.md",
+   "title": "S2: review independence, the merge predicate and the programme's own process",
+   "question": "Do reviews, the oracle and the verifier find different things, and does the programme's own process leave a measurable trace?",
+   "experiments": [
+    "RL-02",
+    "RL-05",
+    "RL-06",
+    "RL-14",
+    "RL-23"
+   ],
+   "hypotheses": [
+    "H-03",
+    "H-09",
+    "H-10",
+    "H-28",
+    "H-32"
+   ],
+   "listReads": false,
+   "readingDate": "2026-11-06",
+   "reading": {
+    "observe": "Every merge rests on independent review rounds, an owner-held verifier and head-bound approval; the programme records every decision and every monitor rule in dated handoff files. Why now: the custody model is the programme's A2 differentiator and its evidence lives only in these records.",
+    "data": "Merge-decision records and review records through the masking reader; the verifier's refusals after PASS_FOR_PUSH; the lanes' handoff files (40 resume blocks); the dated MON rules (1,012 identifiers).",
+    "results": "The process is measurable from its records; the predicate holds from 2026-10-24; finding identity across rounds and an oracle record do not exist yet, so review independence cannot be measured until REVIEW-RECORD-SERIES-001 lands; pinning in resume blocks does not predict fewer rules.",
+    "next": "H-09 and H-32 when the review-record series gives finding identity; a text-level rule taxonomy on the monitor's permission; the \"correlated-error floor\" (same model family for author and reviewer) as a column."
+   }
+  },
+  {
+   "id": "S3",
+   "file": "S3-coordination-contracts.md",
+   "title": "S3: the multi-agent coordination contracts",
+   "question": "Are the multi-agent contracts (topology, board, run manifest, ledgers) correct, replayable and implementable by another runtime?",
+   "experiments": [
+    "RL-03",
+    "RL-04",
+    "RL-13",
+    "RL-17",
+    "RL-18",
+    "RL-20",
+    "RL-21",
+    "RL-22"
+   ],
+   "hypotheses": [
+    "H-13",
+    "H-19",
+    "H-22",
+    "H-23",
+    "H-25",
+    "H-26",
+    "H-27",
+    "H-31"
+   ],
+   "listReads": false,
+   "readingDate": "2026-11-06",
+   "reading": {
+    "observe": "The platform's multi-agent runtime is contracts first: TopologySpec and the coordinator board (MAS-RA-004), the run manifest and distribution gate (MAS-RA-002), the verdict ledger (MAS-RA-001), run events (MAS-RA-003), and the conformance labs' simulation campaigns (CONF-MAS-001..005) with their ledgers. Why now: the literature says more agents often hurt; the contracts bound topology by design; whether they are correct, replayable and implementable by others decides B3's publishability and the admission gate.",
+    "data": "The conformance-labs export at b4bbea79 (the harness, 13 classes, 32 seeds, ledgers); harness-onion's architecture at afee03b9 and c1b838be (records, schemas, 85 + 95 vectors, 114 authority records).",
+    "results": "The contracts are deterministic, their vectors reproduce from the records alone, and two of them have been re-implemented clean-room; replay safety rests on durable state, not the event log; the paired gate and per-class bounds answer different questions; a simulation has no token budget.",
+    "next": "The mid-run stale-version vector (R12); the fault-class half of H-27 (DATA-CORRECTNESS-001); the strategy envelope when its record exists; the authority map from the creator-and-basis graph."
+   }
+  },
+  {
+   "id": "S4",
+   "file": "S4-host-enforcement.md",
+   "title": "S4: host enforcement completeness and the evidence algebra",
+   "question": "Is the host's enforcement complete and is its evidence one algebra?",
+   "experiments": [
+    "RL-09",
+    "RL-10",
+    "RL-11",
+    "RL-12"
+   ],
+   "hypotheses": [
+    "H-04",
+    "H-18",
+    "H-20"
+   ],
+   "listReads": false,
+   "readingDate": "2026-11-06",
+   "reading": {
+    "observe": "The native profile composes seccomp allowlists, a SELinux matrix, descriptor sets and T04 proofs per role, with gate-channel contracts beside them; Alpha 2 waits on native Linux qualification. Why now: the literature says the primitives are mature and the risk is compositional completeness.",
+    "data": "The architecture export at afee03b9: allowlists, matrix, host-interface amendments, threat statements, the verdict-ledger and native-profile records; the visionary's coverage cells; R10's cited transcripts.",
+    "results": "Coverage is nearly complete where the records enumerate paths, and the gap is enumeration itself (counterexamples 1-17); the evidence algebra holds per claim with one five-level order and total maps.",
+    "next": "A host-interface amendment that enumerates paths 1-17 (named for R10 through the monitor); the first native run as the case study (H-20) when CONF-LINUX-001 exists."
+   }
+  },
+  {
+   "id": "S5",
+   "file": "S5-records-as-data.md",
+   "title": "S5: the programme's planning and literature records as checkable data",
+   "question": "Can the programme's planning and literature records be checked by script?",
+   "experiments": [
+    "RL-15",
+    "RL-15b",
+    "RL-19"
+   ],
+   "hypotheses": [
+    "H-24",
+    "H-30"
+   ],
+   "listReads": false,
+   "readingDate": "2026-11-06",
+   "reading": {
+    "observe": "The roadmap is a scored JSON record built by script with validators; the research crosswalk pins papers and figures by digest; outside syntheses report figures the programme repeats. Why now: these records are the programme's memory, and a wrong figure or an unchecked status travels.",
+    "data": "A pristine copy of roadmap/ at fce8245b (never the bridge's own); the five papers the owner approved, held by digest; the three owner-supplied syntheses.",
+    "results": "The roadmap build refuses what it can see in one file and not what needs a second record or a digest check; the syntheses' figures hold except one shared misreading.",
+    "next": "The two validators if the visionary takes them; a space-aware extractor for a wider figure check."
+   }
+  },
+  {
+   "id": "S6",
+   "file": "S6-literature.md",
+   "title": "S6: what others have done, and what it changes here",
+   "question": "What have others done, and what does it change in our hypotheses?",
+   "experiments": [],
+   "hypotheses": [
+    "H-32",
+    "H-33",
+    "H-34",
+    "H-35"
+   ],
+   "listReads": true,
+   "readingDate": "2026-11-06",
+   "reading": {
+    "observe": "The owner supplied three outside syntheses (RS-1 61fa9041, RS-2 5b30977b, RS-3 930f89a0) over the programme's R&D report, with streams, scores, decision gates and literature; the owner approved five papers for fetching and permits deep search for this question from 2026-11-06.",
+    "hypotheses": "The three independence variables for review (custody, context, model family); the configuration tuple as the unit of evaluation and the precision-optimal repeat count; the 45 percent single-agent threshold and the linear coordination predictor for topology choice; AgentLTL's three constraint types for gate interleaving; MPBench's write channels for memory; shadow-first compaction and routing.",
+    "data": "Held and read: Agentproof (arXiv 2603.20356), Harness-Bench (2605.27922), the repeated-running paper (2606.00920), the Nature Machine Intelligence collaboration study (DOI 10.1038/s42256-026-01268-y), the memory poisoning study (2606.04329). Not held: the oversight study (a challenge page; never retried). Second tier (MAS-ProVe 2602.03053, VeriHarness 2610.00972, AgentLTL 2607.02599, SAFER 2510.10193, Styx, Ekstazi, LDFI, the PREreview): identifiers on record, owner \"Not now\".",
+    "experiments": "The three design reads (RD-ROADMAP-LAB-READ v2; RD-ACADEMIC-PAPERS-LAB-READ); RL-19's figure check.",
+    "results": "The syntheses agree on streams, the 60/25/15 split, shadow-first compaction and the configuration tuple; their scores are advisory beside ours; 28 of 29 of their figures hold; four register hypotheses (H-32..H-35) and three candidate classes came from them.",
+    "next": "Deep search per scope when a hypothesis needs \"what others have done\": the first asks are the coordination-contract literature (interchange formats for agent assurance; replay via durable state) and the checkpoint-sampling literature (regression test selection with safety bounds); each source recorded by identifier and digest, each fetch reported to the monitor."
+   }
+  }
+ ]
+}

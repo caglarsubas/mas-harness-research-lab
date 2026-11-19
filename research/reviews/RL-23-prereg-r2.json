@@ -1,0 +1,231 @@
+{
+ "briefSha256": "4023596b8116f8121e6f4853283b5df8348fef2d0ee8f9cf19a160d1a87e9fab",
+ "checked": [
+  {
+   "check": "round-1 closure RV1-1",
+   "result": "CLOSED: H-37 \u00a72:49 and H-39 \u00a72:54 state \"Guard: none\"; H-41 \u00a72:57-58 and H-42 \u00a72:59-61 carry the defect guard as worded; region 5 \u00a77:179-182 lists the guards and names each comparator. A residual gap is filed as RV2-5."
+  },
+  {
+   "check": "round-1 closure RV1-2",
+   "result": "CLOSED: \u00a77:179-182 (H-43 comparator 4, in line with RV1-6); pre overshoots descriptive."
+  },
+  {
+   "check": "round-1 closure RV1-3",
+   "result": "CLOSED: \u00a73:92-95, as worded."
+  },
+  {
+   "check": "round-1 closure RV1-4",
+   "result": "CLOSED: \u00a73:88 (288 transitional, post 289-292), \u00a74:113 (the 288 rounds are dropped), \u00a72:55."
+  },
+  {
+   "check": "round-1 closure RV1-5",
+   "result": "CLOSED: \u00a72:64-67. The \"(0.75 and 0.85 of them)\" is approximate (0.75 x 487K = 365.25K); harmless because the constants are declared absolute."
+  },
+  {
+   "check": "round-1 closure RV1-6",
+   "result": "CLOSED: \u00a72:62-63, \u00a73:89; register H-43 reads \"4 (slot 288's count)\"."
+  },
+  {
+   "check": "round-1 closure RV1-7",
+   "result": "PARTLY: the fidelity, 288 partly-treated and bundle rows (\u00a75:133,135,137) are as worded; the changes row \u00a75:134 and \u00a76:154 add \"compactions\", which is not in the round-1 wording (RV2-1)."
+  },
+  {
+   "check": "round-1 closure RV1-8",
+   "result": "CLOSED: \u00a76:152-153, \u00a76:156 `kind`, \u00a73:89 H-43 minimum. The single-value field is filed as RV2-4."
+  },
+  {
+   "check": "round-1 closure RV1-9",
+   "result": "CLOSED: \u00a76:163-165."
+  },
+  {
+   "check": "round-1 closure RV1-10",
+   "result": "CLOSED: \u00a70:24-26 adds \"or the brief\" (accepted: the brief is a pinned input, \u00a70:19); \u00a74:99-101 also drops a clause (RV2-6)."
+  },
+  {
+   "check": "round-1 closure RV1-11",
+   "result": "CLOSED: \u00a72:57, \u00a74:115, \u00a76:157 `dryC2Runs`."
+  },
+  {
+   "check": "round-1 closure RV1-12",
+   "result": "CLOSED: \u00a72:52-54, \u00a73:87."
+  },
+  {
+   "check": "round-1 closure RV1-13",
+   "result": "CLOSED: \u00a71:39."
+  },
+  {
+   "check": "round-1 closure RV1-14",
+   "result": "CLOSED: \u00a74:117."
+  },
+  {
+   "check": "round-1 closure RV1-15",
+   "result": "CLOSED: \u00a72:74-76."
+  },
+  {
+   "check": "round-1 closure RV1-16",
+   "result": "PARTLY: I ACCEPT the deviation. The median form matches the other guards, and round 1 itself said \"Accepted as registered\". But the descriptive total that \u00a714:264 promises in \"section 2 (H-44), section 9\" appears in neither section (RV2-2)."
+  },
+  {
+   "check": "round-1 closure RV1-17",
+   "result": "CLOSED: \u00a77:178; \u00a75:129 and \u00a75:134 are the rows that send to U3."
+  },
+  {
+   "check": "round-1 closure RV1-18",
+   "result": "CLOSED: \u00a74:121 first interval; \u00a76:165-167 spot-check, kept outside the gate. The baseline consistency is filed as RV2-3."
+  },
+  {
+   "check": "round-1 closure RV1-19",
+   "result": "CLOSED: no action needed. The counts 1/11/7 and the 19 table rows match the round-1 file."
+  },
+  {
+   "check": "Check 3",
+   "result": "Check 3: every other v1-to-v2 change is a closure, a pin, a digest, the registration record (\u00a70:1,9-12; \u00a711:221-222) or the self-check (\u00a713:242-243)."
+  },
+  {
+   "check": "Check 4",
+   "result": "Check 4: the windows, slot ranges, IDs and register rows H-37..H-44 and RL-23 agree with v2; the gate order is unchanged, and exactly one region applies, except the defects in RV2-1 and RV2-5."
+  },
+  {
+   "check": "Check 5",
+   "result": "Check 5: \u00a712 holds. The only post-intervention numbers (\u00a71:39) are labelled \"not a result\", and \"consistent with\" is kept (\u00a71:32, \u00a77:190).  ## Disclosures - Read: PREREG.md and PREREG.v1.md (shasum; wc; diff -u v1 v2 in full via sed ranges 1-239, cut at 400 chars; sed v2 14-26, 29-34, 124-138, 172-191, 192-212, 213-244; greps over v2 with -n); the r1 file (shasum; wc; cat -n); REGISTER.md (sed 47-54 and 110, cut at 700 chars). Each command first ran an existence test on the PAUSE path (never PAUSED); the scratchpad folder got one existence test. - Slip: the locating grep over REGISTER.md printed 12-character prefixes of lines 46 (H-36), 85 (table header) and 125 (rule J), outside the named rows. - Not checked (outside scope): FACTORY-IMPROVEMENTS.md and the brief digest; whether 09:58 was the 288 scope message (RV2-3); \u00a713's script claims. No network, environment, git config, transcripts, deliveries or ~/.claude read."
+  }
+ ],
+ "disclosures": [
+  "custody: the Lane-Monitor briefed a fresh reviewer from the frozen v2; the lab did not brief it and saw the brief only after the verdict, to write this record",
+  "context: a fresh subagent context holding the brief; launch and finish times not given by the monitor",
+  "modelFamilySeparation: reviewer claude-opus-5-5 (Claude Opus); author Claude Fable; different families",
+  "the brief file here is a redacted copy of the monitor's verbatim prompt (8 of 34 lines changed: local paths replaced by placeholders); the verbatim prompt's sha256 prefix is cde3ed3934a5adb5 and is held by the monitor; briefSha256 is the copy's",
+  "review output RL23-REVIEW-R2-83db5a01.md, sha256 83db5a011f5f8dadb7381f58641d203b9797d8beb8b7203cabb2a9f62ae838ae, copied verbatim into experiments/RL-23/PREREG-REVIEW.md",
+  "closure: PREREG v3 0fa0d594174c7092033e0a6a722fefad39ce0ccbc3590d9d4a68b03bf51d5271 takes every RV2 fix as worded (RV2-3 in its second wording, on the monitor's statement that 09:58 is the first counted step report) and the monitor's correction of the 288 minutes-per-step constant (MON-LAB-FACTORY-6); no round 3 (C5)",
+  "reviewer: Read: PREREG.md and PREREG.v1.md (shasum; wc; diff -u v1 v2 in full via sed ranges 1-239, cut at 400 chars; sed v2 14-26, 29-34, 124-138, 172-191, 192-212, 213-244; greps over v2 with -n); the r1 file (shasum; wc; cat -n); REGISTER.md (sed 47-54 and 110, cut at 700 chars). Each command first ran an existence test on the PAUSE path (never PAUSED); the scratchpad folder got one existence test.",
+  "reviewer: Slip: the locating grep over REGISTER.md printed 12-character prefixes of lines 46 (H-36), 85 (table header) and 125 (rule J), outside the named rows."
+ ],
+ "dispositions": [
+  {
+   "id": "RV2-1",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  },
+  {
+   "id": "RV2-2",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  },
+  {
+   "id": "RV2-3",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  },
+  {
+   "id": "RV2-4",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  },
+  {
+   "id": "RV2-5",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  },
+  {
+   "id": "RV2-6",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  },
+  {
+   "id": "RV2-7",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  },
+  {
+   "id": "RV2-8",
+   "note": "PREREG v3 section 15",
+   "status": "ADDRESSED"
+  }
+ ],
+ "findings": [
+  {
+   "blocks": true,
+   "finding": "v2 adds routine compactions (four on 2026-11-12 alone, \u00a74:122; and the compaction point is H8's own setting) to the dated `changes[]` rule \"units after a change are flagged; all post units flagged gives U3\". A compaction dated in the post window before slot 289, or on 2026-11-13, therefore sends H-40 to H-44 (and at least flags most post days) to U3 by construction, whatever the data show.",
+   "id": "RV2-1",
+   "location": "\u00a75:134 + \u00a76:154",
+   "requiredChange": "in \u00a75:134 replace \", compactions\" with \", a change to a compaction setting\" and append to its handling \"; routine compactions are not changes and flag no unit\"; in \u00a76:154 replace \"compaction\" with \"compaction-setting change\".",
+   "severity": "MAJOR"
+  },
+  {
+   "blocks": true,
+   "finding": "The RV1-16 closure cites a descriptive slip total that no section of v2 states.",
+   "id": "RV2-2",
+   "location": "\u00a714:264 vs \u00a72:64-67, \u00a79:198-206",
+   "requiredChange": "append to H-44 (\u00a72:67) \"The total of lost-detail slips over post slots is reported descriptively.\" and change the \u00a714:264 location cell to \"section 2 (H-44)\".",
+   "severity": "MINOR"
+  },
+  {
+   "blocks": true,
+   "finding": "The new \"the first interval starts at the scope message\" rule gives N intervals for N step reports when the scope message comes before the first report. The pinned 288 baseline is 25 reports, 24 intervals from 09:58, and it does not say that 09:58 is the scope message, so post slots may be measured with one more interval than the baseline behind 18.87.",
+   "id": "RV2-3",
+   "location": "\u00a74:121",
+   "requiredChange": "append to the 288 cell \"(the 09:58 point is the scope message)\" if the monitor confirms this; otherwise replace the clause with \"the first interval starts at the first step report, as in 288's 24 intervals\".",
+   "severity": "MINOR"
+  },
+  {
+   "blocks": true,
+   "finding": "`fanOut3PlusStartUsage` holds one percent per window, but a window can hold several fan-outs, and the H-38 guard (\u00a77:180) flips on which one is recorded.",
+   "id": "RV2-4",
+   "location": "\u00a76:152-153 vs \u00a74:109",
+   "requiredChange": "\"(the highest percent at which a fan-out of 3 or more sessions started inside the window, or null)\".",
+   "severity": "MINOR"
+  },
+  {
+   "blocks": true,
+   "finding": "The new H-41/H-42 defect guards read H-40's pre slots 285-287, but section 3 sets no pre minimum for them. If those pre defects are missing, region 5 cannot be computed and SUPPORTED can be reached with the guard untested, which is the RV1-1 risk again.",
+   "id": "RV2-5",
+   "location": "\u00a73:89 + \u00a77:180-181",
+   "requiredChange": "\u00a73:89 minimum \"3 post slots, and for H-41 and H-42 also 2 pre slots (285 to 287) with later-found defects (H-43: 3 post product slots)\".",
+   "severity": "MINOR"
+  },
+  {
+   "blocks": false,
+   "finding": "v2 drops v1's \"named in the file, and this document is re-versioned if that figure is not available\", which goes beyond RV1-10's wording. It is acceptable because the pre medians now come from the delivery.",
+   "id": "RV2-6",
+   "location": "\u00a74:99-101 (check 3)",
+   "requiredChange": "append \"a pre unit without the figure is not a unit (section 7, U1)\".",
+   "severity": "NOTE"
+  },
+  {
+   "blocks": false,
+   "finding": "The tag list omits \"baseline partly treated\" (\u00a75:135).",
+   "id": "RV2-7",
+   "location": "\u00a77:189",
+   "requiredChange": "'(\"unmatched shape\", \"single baseline\", \"baseline partly treated\")'.",
+   "severity": "NOTE"
+  },
+  {
+   "blocks": false,
+   "finding": "\"This text is frozen as `experiments/RL-23/PREREG.md` v1\" is now stale.",
+   "id": "RV2-8",
+   "location": "\u00a711:215",
+   "requiredChange": "\"This text was first frozen as `experiments/RL-23/PREREG.md` v1 (kept as `PREREG.v1.md`), with its digest in the register's RL-23 row\".",
+   "severity": "NOTE"
+  }
+ ],
+ "kind": "research/reviews/RL-23-prereg-r2-brief.md",
+ "notChecked": [
+  "Not checked (outside scope): FACTORY-IMPROVEMENTS.md and the brief digest; whether 09:58 was the 288 scope message (RV2-3); \u00a713's script claims. No network, environment, git config, transcripts, deliveries or ~/.claude read."
+ ],
+ "questions": [],
+ "reviewDate": "2026-11-12",
+ "reviewer": {
+  "model": "claude-opus-5-5",
+  "role": "blind reviewer, delta-scoped round 2: a fresh general-purpose subagent of the Lane-Monitor session, briefed by the monitor from the frozen v2 (rule D); a different model family from the lab's author (Claude Fable)"
+ },
+ "round": 2,
+ "rulesSha256": null,
+ "schemaVersion": "planeon.review-record/v2",
+ "series": "RL-23/prereg",
+ "subject": {
+  "path": "research/experiments/RL-23/PREREG.v2.md",
+  "sha256": "969489d78f6029b78ac3846968355f0032b183cb7b32f226b149b25218ceaf88"
+ },
+ "verdict": "FAIL (as written: CHANGES_REQUIRED; 1 MAJOR, 4 MINOR, 3 NOTE; round 1: 17 CLOSED, 2 PARTLY; the RV1-16 deviation accepted)",
+ "wrapperSha256": null
+}

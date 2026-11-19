@@ -1,0 +1,882 @@
+{
+ "changes": [
+  {
+   "date": "2026-11-13",
+   "kind": "monitor restart"
+  }
+ ],
+ "clock": "host-local",
+ "days": [
+  {
+   "accountSwitches": 0,
+   "calls": 1000,
+   "date": "2026-11-05",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 400000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 144,
+   "watchFirings": 72
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 700,
+   "date": "2026-11-13",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": true,
+    "h2": true,
+    "h3": true
+   },
+   "meanContextTokens": 280000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 40,
+   "watchFirings": 24
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 1000,
+   "date": "2026-11-06",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 400000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 144,
+   "watchFirings": 72
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 700,
+   "date": "2026-11-14",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": true,
+    "h2": true,
+    "h3": true
+   },
+   "meanContextTokens": 280000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 40,
+   "watchFirings": 24
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 1000,
+   "date": "2026-11-07",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 400000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 144,
+   "watchFirings": 72
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 700,
+   "date": "2026-11-15",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": true,
+    "h2": true,
+    "h3": true
+   },
+   "meanContextTokens": 280000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 40,
+   "watchFirings": 24
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 1000,
+   "date": "2026-11-08",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 400000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 144,
+   "watchFirings": 72
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 700,
+   "date": "2026-11-16",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": true,
+    "h2": true,
+    "h3": true
+   },
+   "meanContextTokens": 280000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 40,
+   "watchFirings": 24
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 1000,
+   "date": "2026-11-09",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 400000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 144,
+   "watchFirings": 72
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 700,
+   "date": "2026-11-17",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": true,
+    "h2": true,
+    "h3": true
+   },
+   "meanContextTokens": 280000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 40,
+   "watchFirings": 24
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 1000,
+   "date": "2026-11-10",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 400000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 144,
+   "watchFirings": 72
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 700,
+   "date": "2026-11-18",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": true,
+    "h2": true,
+    "h3": true
+   },
+   "meanContextTokens": 280000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 40,
+   "watchFirings": 24
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 1000,
+   "date": "2026-11-11",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 400000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 144,
+   "watchFirings": 72
+  },
+  {
+   "accountSwitches": 0,
+   "calls": 700,
+   "date": "2026-11-19",
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h1": true,
+    "h2": true,
+    "h3": true
+   },
+   "meanContextTokens": 280000,
+   "messagesHandled": 100,
+   "session": "Lane-Monitor",
+   "watchCalls": 40,
+   "watchFirings": 24
+  }
+ ],
+ "loadEvents": [
+  {
+   "at": "2026-11-06T10:00",
+   "kind": "verify-start",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-13T10:00",
+   "kind": "verify-start",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-06T10:10",
+   "kind": "push",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-13T10:10",
+   "kind": "push",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-06T10:20",
+   "kind": "worktree",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-13T10:20",
+   "kind": "worktree",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-07T10:00",
+   "kind": "verify-start",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-14T10:00",
+   "kind": "verify-start",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-07T10:10",
+   "kind": "push",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-14T10:10",
+   "kind": "push",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-07T10:20",
+   "kind": "worktree",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-14T10:20",
+   "kind": "worktree",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-08T10:00",
+   "kind": "verify-start",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-15T10:00",
+   "kind": "verify-start",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-08T10:10",
+   "kind": "push",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-15T10:10",
+   "kind": "push",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-08T10:20",
+   "kind": "worktree",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-15T10:20",
+   "kind": "worktree",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-09T10:00",
+   "kind": "verify-start",
+   "load1": 12.0,
+   "load15": 10.0,
+   "load5": 11.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-16T10:00",
+   "kind": "verify-start",
+   "load1": 8.0,
+   "load15": 8.0,
+   "load5": 8.0,
+   "otherAppLoad": false
+  },
+  {
+   "at": "2026-11-15T12:00",
+   "kind": "push",
+   "load1": 30.0,
+   "load15": 15.0,
+   "load5": 20.0,
+   "otherAppLoad": true
+  }
+ ],
+ "period": {
+  "from": "2026-11-05",
+  "to": "2026-11-19"
+ },
+ "producedAt": "2026-11-20",
+ "producer": {
+  "extractSha256": "ec0b1d9d27d11759000000000000000000000000000000000000000000000000",
+  "meterSha256": "44d6f454ce86fd53000000000000000000000000000000000000000000000000"
+ },
+ "schemaVersion": "planeon.research.factory-aggregates/v1",
+ "slots": [
+  {
+   "accountSwitches": 0,
+   "c2Builds": 5,
+   "dryC2Runs": 0,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": false,
+    "h5": false,
+    "h6": false,
+    "h7": false,
+    "h8": false
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 1,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 4,
+   "machineryRepairs": 1,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 487000,
+   "rulingsWaited": 16,
+   "scopeDate": "2026-11-06",
+   "scopeToPacketR1Hours": 8.5,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 3
+    },
+    {
+     "name": "source",
+     "rounds": 3
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 285,
+   "stepMinutesMean": 18.9
+  },
+  {
+   "accountSwitches": 0,
+   "c2Builds": 5,
+   "dryC2Runs": 0,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": false,
+    "h5": false,
+    "h6": false,
+    "h7": false,
+    "h8": false
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 1,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 4,
+   "machineryRepairs": 1,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 487000,
+   "rulingsWaited": 16,
+   "scopeDate": "2026-11-07",
+   "scopeToPacketR1Hours": 8.5,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 3
+    },
+    {
+     "name": "source",
+     "rounds": 3
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 286,
+   "stepMinutesMean": 18.9
+  },
+  {
+   "accountSwitches": 0,
+   "c2Builds": 5,
+   "dryC2Runs": 0,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": false,
+    "h5": false,
+    "h6": false,
+    "h7": false,
+    "h8": false
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 1,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 4,
+   "machineryRepairs": 1,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 487000,
+   "rulingsWaited": 16,
+   "scopeDate": "2026-11-08",
+   "scopeToPacketR1Hours": 8.5,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 3
+    },
+    {
+     "name": "source",
+     "rounds": 3
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 287,
+   "stepMinutesMean": 18.9
+  },
+  {
+   "accountSwitches": 0,
+   "c2Builds": 5,
+   "dryC2Runs": 0,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": false,
+    "h5": false,
+    "h6": false,
+    "h7": false,
+    "h8": false
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 1,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 4,
+   "machineryRepairs": 1,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 487000,
+   "rulingsWaited": 16,
+   "scopeDate": "2026-11-09",
+   "scopeToPacketR1Hours": 8.5,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 3
+    },
+    {
+     "name": "source",
+     "rounds": 3
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 288,
+   "stepMinutesMean": 18.9
+  },
+  {
+   "accountSwitches": 0,
+   "c2Builds": 3,
+   "dryC2Runs": 1,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": true,
+    "h5": true,
+    "h6": true,
+    "h7": true,
+    "h8": true
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 0,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 3,
+   "machineryRepairs": 0,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 300000,
+   "rulingsWaited": 8,
+   "scopeToPacketR1Hours": 5.0,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 2
+    },
+    {
+     "name": "source",
+     "rounds": 2
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 289,
+   "stepMinutesMean": 15.0
+  },
+  {
+   "accountSwitches": 0,
+   "c2Builds": 3,
+   "dryC2Runs": 1,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": true,
+    "h5": true,
+    "h6": true,
+    "h7": true,
+    "h8": true
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 0,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 3,
+   "machineryRepairs": 0,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 300000,
+   "rulingsWaited": 8,
+   "scopeToPacketR1Hours": 5.0,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 2
+    },
+    {
+     "name": "source",
+     "rounds": 2
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 290,
+   "stepMinutesMean": 15.0
+  },
+  {
+   "accountSwitches": 0,
+   "c2Builds": 3,
+   "dryC2Runs": 1,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": true,
+    "h5": true,
+    "h6": true,
+    "h7": true,
+    "h8": true
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 0,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 3,
+   "machineryRepairs": 0,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 300000,
+   "rulingsWaited": 8,
+   "scopeToPacketR1Hours": 5.0,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 2
+    },
+    {
+     "name": "source",
+     "rounds": 2
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 291,
+   "stepMinutesMean": 15.0
+  },
+  {
+   "accountSwitches": 0,
+   "c2Builds": 3,
+   "dryC2Runs": 1,
+   "fanOuts3Plus": 0,
+   "fidelity": {
+    "h4": true,
+    "h5": true,
+    "h6": true,
+    "h7": true,
+    "h8": true
+   },
+   "kind": "product",
+   "laterDefects": {
+    "oracleFailures": 1,
+    "packetMajor": 0,
+    "postMergeIssues7d": 0
+   },
+   "lostDetailSlips": 0,
+   "machineryMajor": 3,
+   "machineryRepairs": 0,
+   "ownerWindowShare": 0.5,
+   "r00Calls": 500,
+   "r00MeanContextTokens": 300000,
+   "rulingsWaited": 8,
+   "scopeToPacketR1Hours": 5.0,
+   "series": [
+    {
+     "name": "contract",
+     "rounds": 2
+    },
+    {
+     "name": "source",
+     "rounds": 2
+    },
+    {
+     "name": "PACKET",
+     "rounds": 1
+    }
+   ],
+   "shape": {
+    "k": 1,
+    "machinery": false,
+    "parts": 2
+   },
+   "slot": 292,
+   "stepMinutesMean": 15.0
+  }
+ ],
+ "windows": [
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 90,
+   "windowEnd": "2026-11-13T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-05T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 90,
+   "windowEnd": "2026-11-14T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-06T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 90,
+   "windowEnd": "2026-11-15T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-07T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 90,
+   "windowEnd": "2026-11-16T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-08T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 90,
+   "windowEnd": "2026-11-17T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-09T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 90,
+   "windowEnd": "2026-11-18T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-10T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 90,
+   "windowEnd": "2026-11-19T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": null,
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-11T05:00"
+  },
+  {
+   "fanOut3PlusStartUsage": 81,
+   "usageAtStop": 100,
+   "windowEnd": "2026-11-14T22:00"
+  }
+ ]
+}

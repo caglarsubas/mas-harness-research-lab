@@ -1,0 +1,930 @@
+{
+ "changes": [],
+ "clock": "host-local",
+ "days": [
+  {
+   "accountSwitches": 1,
+   "calls": 449,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 654365,
+   "session": "Lane-Monitor",
+   "weightedMtok": 34.68
+  },
+  {
+   "calls": 673,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 545029,
+   "session": "Build-R00-HarnessOnion",
+   "weightedMtok": 45.32
+  },
+  {
+   "calls": 31,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 522176,
+   "session": "Build-R03-IndustryPacks",
+   "weightedMtok": 2.59
+  },
+  {
+   "calls": 184,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 425724,
+   "session": "Build-R04-ControlPlane",
+   "weightedMtok": 9.81
+  },
+  {
+   "calls": 6,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 116973,
+   "session": "Build-R10-Operator",
+   "weightedMtok": 0.16
+  },
+  {
+   "calls": 247,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 466774,
+   "session": "Build-R11-Distribution",
+   "weightedMtok": 13.91
+  },
+  {
+   "calls": 196,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 341210,
+   "session": "Build-R12-ConformanceLabs",
+   "weightedMtok": 9.29
+  },
+  {
+   "calls": 4,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 93433,
+   "session": "Design-UX",
+   "weightedMtok": 0.09
+  },
+  {
+   "calls": 147,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 406490,
+   "session": "Research-Lab",
+   "weightedMtok": 9.15
+  },
+  {
+   "calls": 198,
+   "date": "2026-11-05",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 325405,
+   "session": "Roadmap-Visionary",
+   "weightedMtok": 10.07
+  },
+  {
+   "calls": 590,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 518497,
+   "session": "Lane-Monitor",
+   "weightedMtok": 34.25
+  },
+  {
+   "calls": 1305,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 526019,
+   "session": "Build-R00-HarnessOnion",
+   "weightedMtok": 84.38
+  },
+  {
+   "calls": 8,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 115348,
+   "session": "Build-R03-IndustryPacks",
+   "weightedMtok": 0.18
+  },
+  {
+   "calls": 8,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 109666,
+   "session": "Build-R04-ControlPlane",
+   "weightedMtok": 0.17
+  },
+  {
+   "calls": 12,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 124272,
+   "session": "Build-R10-Operator",
+   "weightedMtok": 0.27
+  },
+  {
+   "calls": 21,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 359857,
+   "session": "Build-R11-Distribution",
+   "weightedMtok": 2.24
+  },
+  {
+   "calls": 239,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 365905,
+   "session": "Build-R12-ConformanceLabs",
+   "weightedMtok": 12.53
+  },
+  {
+   "calls": 11,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 104884,
+   "session": "Design-UX",
+   "weightedMtok": 0.19
+  },
+  {
+   "calls": 58,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 824198,
+   "session": "Research-Lab",
+   "weightedMtok": 9.14
+  },
+  {
+   "calls": 204,
+   "date": "2026-11-06",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 348879,
+   "session": "Roadmap-Visionary",
+   "weightedMtok": 10.75
+  },
+  {
+   "accountSwitches": 1,
+   "calls": 604,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 608841,
+   "session": "Lane-Monitor",
+   "weightedMtok": 40.5
+  },
+  {
+   "calls": 1458,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 520734,
+   "session": "Build-R00-HarnessOnion",
+   "weightedMtok": 92.17
+  },
+  {
+   "calls": 50,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 164755,
+   "session": "Build-R03-IndustryPacks",
+   "weightedMtok": 1.36
+  },
+  {
+   "calls": 20,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 451897,
+   "session": "Build-R04-ControlPlane",
+   "weightedMtok": 1.49
+  },
+  {
+   "calls": 5,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 131592,
+   "session": "Build-R10-Operator",
+   "weightedMtok": 0.17
+  },
+  {
+   "calls": 46,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 166769,
+   "session": "Build-R11-Distribution",
+   "weightedMtok": 1.27
+  },
+  {
+   "calls": 30,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 502254,
+   "session": "Build-R12-ConformanceLabs",
+   "weightedMtok": 3.17
+  },
+  {
+   "calls": 4,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 292577,
+   "session": "Design-UX",
+   "weightedMtok": 0.41
+  },
+  {
+   "calls": 150,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 218752,
+   "session": "Research-Lab",
+   "weightedMtok": 6.18
+  },
+  {
+   "calls": 158,
+   "date": "2026-11-07",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 364147,
+   "session": "Roadmap-Visionary",
+   "weightedMtok": 11.84
+  },
+  {
+   "calls": 557,
+   "date": "2026-11-08",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 595718,
+   "session": "Lane-Monitor",
+   "weightedMtok": 35.8
+  },
+  {
+   "calls": 1557,
+   "date": "2026-11-08",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 486342,
+   "session": "Build-R00-HarnessOnion",
+   "weightedMtok": 90.39
+  },
+  {
+   "calls": 113,
+   "date": "2026-11-08",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 154425,
+   "session": "Build-R03-IndustryPacks",
+   "weightedMtok": 2.41
+  },
+  {
+   "calls": 82,
+   "date": "2026-11-08",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 169810,
+   "session": "Build-R04-ControlPlane",
+   "weightedMtok": 2.11
+  },
+  {
+   "calls": 100,
+   "date": "2026-11-08",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 170706,
+   "session": "Build-R11-Distribution",
+   "weightedMtok": 2.41
+  },
+  {
+   "calls": 108,
+   "date": "2026-11-08",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 186519,
+   "session": "Research-Lab",
+   "weightedMtok": 4.4
+  },
+  {
+   "calls": 209,
+   "date": "2026-11-08",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 297328,
+   "session": "Roadmap-Visionary",
+   "weightedMtok": 10.26
+  },
+  {
+   "accountSwitches": 1,
+   "calls": 824,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 375262,
+   "session": "Lane-Monitor",
+   "weightedMtok": 35.54
+  },
+  {
+   "calls": 1987,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 508261,
+   "session": "Build-R00-HarnessOnion",
+   "weightedMtok": 120.34
+  },
+  {
+   "calls": 5,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 164033,
+   "session": "Build-R03-IndustryPacks",
+   "weightedMtok": 0.21
+  },
+  {
+   "calls": 4,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 228508,
+   "session": "Build-R04-ControlPlane",
+   "weightedMtok": 0.3
+  },
+  {
+   "calls": 4,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 186796,
+   "session": "Build-R10-Operator",
+   "weightedMtok": 0.25
+  },
+  {
+   "calls": 7,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 210702,
+   "session": "Build-R11-Distribution",
+   "weightedMtok": 0.35
+  },
+  {
+   "calls": 88,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 151110,
+   "session": "Build-R12-ConformanceLabs",
+   "weightedMtok": 2.36
+  },
+  {
+   "calls": 5,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 350344,
+   "session": "Design-UX",
+   "weightedMtok": 0.53
+  },
+  {
+   "calls": 137,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 256024,
+   "session": "Research-Lab",
+   "weightedMtok": 7.42
+  },
+  {
+   "calls": 166,
+   "date": "2026-11-09",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 327880,
+   "session": "Roadmap-Visionary",
+   "weightedMtok": 10.16
+  },
+  {
+   "calls": 484,
+   "date": "2026-11-10",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 724348,
+   "session": "Lane-Monitor",
+   "weightedMtok": 37.87
+  },
+  {
+   "calls": 1223,
+   "date": "2026-11-10",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 489347,
+   "session": "Build-R00-HarnessOnion",
+   "weightedMtok": 69.04
+  },
+  {
+   "calls": 23,
+   "date": "2026-11-10",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 189411,
+   "session": "Design-UX",
+   "weightedMtok": 0.92
+  },
+  {
+   "calls": 24,
+   "date": "2026-11-10",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 157535,
+   "session": "Research-Lab",
+   "weightedMtok": 0.87
+  },
+  {
+   "calls": 215,
+   "date": "2026-11-10",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 251633,
+   "session": "Roadmap-Visionary",
+   "weightedMtok": 10.46
+  },
+  {
+   "calls": 872,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 389509,
+   "session": "Lane-Monitor",
+   "weightedMtok": 40.11
+  },
+  {
+   "calls": 787,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 490096,
+   "session": "Build-R00-HarnessOnion",
+   "weightedMtok": 49.82
+  },
+  {
+   "calls": 52,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 198364,
+   "session": "Build-R03-IndustryPacks",
+   "weightedMtok": 2.42
+  },
+  {
+   "calls": 96,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 153583,
+   "session": "Build-R04-ControlPlane",
+   "weightedMtok": 2.58
+  },
+  {
+   "calls": 6,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 191549,
+   "session": "Build-R10-Operator",
+   "weightedMtok": 1.12
+  },
+  {
+   "calls": 15,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 96162,
+   "session": "Build-R11-Distribution",
+   "weightedMtok": 0.41
+  },
+  {
+   "calls": 50,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 224949,
+   "session": "Build-R12-ConformanceLabs",
+   "weightedMtok": 2.47
+  },
+  {
+   "calls": 349,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 293317,
+   "session": "Design-UX",
+   "weightedMtok": 16.29
+  },
+  {
+   "calls": 141,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 259194,
+   "session": "Reference-Lab",
+   "weightedMtok": 5.86
+  },
+  {
+   "calls": 14,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 122287,
+   "session": "Research-Lab",
+   "weightedMtok": 0.73
+  },
+  {
+   "calls": 151,
+   "date": "2026-11-11",
+   "fidelity": {
+    "h1": false,
+    "h2": false,
+    "h3": false
+   },
+   "meanContextTokens": 589335,
+   "session": "Roadmap-Visionary",
+   "weightedMtok": 14.32
+  }
+ ],
+ "loadEvents": [],
+ "period": {
+  "from": "2026-11-05",
+  "to": "2026-11-11"
+ },
+ "producedAt": "2026-11-15",
+ "producer": {
+  "extractSha256": "ec0b1d9d27d11759c4ad40428e0d2abd8c8dd0756b14ed3007070a031ed59fa3",
+  "meterSha256": "44d6f454ce86fd53c71c43c2f49c269454121d265ad6076966d339dee848e14c"
+ },
+ "provenance": {
+  "omitted": {
+   "days.fanOuts3Plus, windows.fanOut3PlusStartUsage": "no record of session fan-outs in the period",
+   "days.messagesHandled": "no producer or record counts cross-session messages",
+   "days.watchFirings, days.watchCalls": "the meter does not attribute calls to the watch; the records give only a schedule (72/day) and an approximate ~144",
+   "loadEvents": "not derivable from this delivery's inputs (verifier log and checkpoint Host lines were not inputs)",
+   "slots.dryC2Runs, rulingsWaited, scopeToPacketR1Hours, machineryRepairs, machineryMajor, lostDetailSlips, fanOuts3Plus, ownerWindowShare": "no producer or record gives them",
+   "slots.kind, slots.shape": "no record classifies 285-287",
+   "slots.laterDefects.oracleFailures": "the records give blind-run failure counts but not which count as later-found defects (slips vs defects, several runs)",
+   "slots.laterDefects.postMergeIssues7d": "every 7-day window is still open on 2026-11-15",
+   "slots.r00Calls, slots.r00MeanContextTokens": "the slots share days (285 and 286 on 2026-11-09, 286 and 287 on 2026-11-11), so a slot's days are not separable in the meter's day rows",
+   "slots[285,286].stepMinutesMean": "the extractor captures no 285 report and not 286's first reports",
+   "slots[286].laterDefects.packetMajor": "PACKET r1-r3 were CHANGES_REQUIRED; the records do not give their MAJOR counts"
+  },
+  "producers": [
+   {
+    "command": "python3 -IB <home>/.local/state/harness-onion-ci/lane-guard/token_meter.py --days 12 --json <tmp>/meter.json > <tmp>/meter.txt",
+    "name": "token_meter.py",
+    "runOn": "2026-11-15",
+    "sha256": "44d6f454ce86fd53c71c43c2f49c269454121d265ad6076966d339dee848e14c",
+    "used": "days[]: per lane per day, sessions of one lane summed; calls = turns; meanContextTokens = (input + cache write + cache read) / calls; weightedMtok = (input + 1.25 cache write + 0.1 cache read + 5 output) / 1e6 (weights from FACTORY-IMPROVEMENTS.md; checked against the meter's printed ctx/turn and wcost on all 129 rows: 0 mismatches); lane = the meter's _titles; only the 11 lane names kept (1 non-lane session-days in the period dropped); session ids not delivered; main sessions only (subagents are not metered, as in the FACTORY-IMPROVEMENTS.md baseline)"
+   },
+   {
+    "commands": [
+     {
+      "command": "python3 -IB <home>/.local/state/harness-onion-ci/lane-guard/step_report_extract.py Build-R00-HarnessOnion 2026-11-11 --from 09:44 --to 17:40 <home>/.claude/projects/<workspace>/<monitor-transcript-1..4>.jsonl",
+      "output": "reports 25 intervals 24 span_min 475.19 mean_min_per_step 19.80",
+      "used": "slots[287].stepMinutesMean: the 23 reports carrying 287's ids (R00-287-*), 09:44:39 R00-287-DESIGN to 17:39:51 R00-287-C3C, the last report before R00-287-PKT1-LAUNCHED 17:53:55; 2 reports without a 287 id excluded (R00-SLIP-CHECKPOINT-LOCK, R00-USAGE-STOP); mean = span_min / 22"
+     },
+     {
+      "command": "python3 -IB <home>/.local/state/harness-onion-ci/lane-guard/step_report_extract.py Build-R00-HarnessOnion 2026-11-12 --from 09:58 --to 19:07 <home>/.claude/projects/<workspace>/<monitor-transcript-4>.jsonl",
+      "output": "reports 30 intervals 29 span_min 548.16 mean_min_per_step 18.90",
+      "used": "check only: reproduces the pinned slot-288 constant (PREREG section 4)"
+     },
+     {
+      "command": "python3 -IB <home>/.local/state/harness-onion-ci/lane-guard/step_report_extract.py Build-R00-HarnessOnion 2026-11-09 <home>/.claude/projects/<workspace>/<monitor-transcript-1..4>.jsonl",
+      "output": "reports 2 intervals 1 span_min 259.26 mean_min_per_step 259.26",
+      "used": "no 285 or 286 report captured on 2026-11-09, so stepMinutesMean is omitted for 285 and 286"
+     },
+     {
+      "command": "python3 -IB <home>/.local/state/harness-onion-ci/lane-guard/step_report_extract.py Build-R00-HarnessOnion 2026-11-10 <home>/.claude/projects/<workspace>/<monitor-transcript-1..4>.jsonl",
+      "output": "reports 86 intervals 85 span_min 1408.43 mean_min_per_step 16.57",
+      "used": "286 reports start 00:25; its 2026-11-09 reports are not captured (see above)"
+     }
+    ],
+    "name": "step_report_extract.py",
+    "runOn": "2026-11-15",
+    "sha256": "ec0b1d9d27d11759c4ad40428e0d2abd8c8dd0756b14ed3007070a031ed59fa3"
+   }
+  ],
+  "records": [
+   {
+    "name": "bridge:handoff/STATE.md",
+    "sha256": "1d35c45230966bd9e80fce02feebaa191fb13d122bc15cab1eda88eb247963f0"
+   },
+   {
+    "name": "bridge:handoff/FACTORY-IMPROVEMENTS.md",
+    "sha256": "d4111fa48e78429b2c373252af3097ebab8ce610f70b2b1598fa362dd2dd8236"
+   },
+   {
+    "name": "bridge:handoff/merge-decisions/2026-11-09-harness-onion-PR242.json",
+    "sha256": "80de37ebcc374e4fe6fc9d42541f38497f8fc93fa097ff0e63c2d2d9c826e8a1"
+   },
+   {
+    "name": "bridge:handoff/merge-decisions/2026-11-11-harness-onion-PR243.json",
+    "sha256": "3d9f25bec30036c006361cc4a3c287e4d87e58f58ec344feac86b4d01034af2b"
+   },
+   {
+    "name": "bridge:handoff/merge-decisions/2026-11-12-harness-onion-PR244.json",
+    "sha256": "a82f1b4b9e85fbca8a6645af9d44d3bba829b18aaabc9f92ef55937f95ef0c19"
+   },
+   {
+    "name": "monitor-memory:harness-onion-handover-14-monitor.md",
+    "sha256": "621f17ec85a33ac3f131493b403b4eb5f2564a59dbb60e012f21c08bd8f40aa6"
+   },
+   {
+    "name": "monitor-memory:archive-handovers.md",
+    "sha256": "eb8428026713dd4952cb89ac008c012e87054788532c68450ef49031bc0bb9dc"
+   }
+  ],
+  "revision": {
+   "changes": [
+    "windowEnd values as host-local time (the +08:00 offset removed; the clock member states the zone)",
+    "windows without their identity windowEnd excluded (no recorded reset time): 2",
+    "slots without kind excluded (no record states product or machinery): [285, 286, 287]",
+    "loadEvents present as an empty array: NOT COLLECTED in this delivery (the verifier log and checkpoint Host lines were not inputs); an empty array here means unavailable, not zero events (issue #6's missing-evidence rule)"
+   ],
+   "date": "2026-11-16",
+   "excluded": {
+    "slots": [
+     285,
+     286,
+     287
+    ],
+    "windows": [
+     {
+      "usageAtStop": 95
+     },
+     {
+      "usageAtStop": 100
+     }
+    ]
+   },
+   "reason": "bridge issue #11: pass rl23_factory.py check (ingestion contract) without inventing evidence",
+   "supersedes": {
+    "file": "pre-period-2026-11-05_11.json",
+    "sha256": "11445fda9dd7a977b1d1423047a371436478c2d7ce1d5f7d0d92198ab2d9c575"
+   },
+   "version": "v2"
+  },
+  "sources": {
+   "changes": "empty: no improvement step, convention or compaction-setting change is dated in the period (FACTORY-IMPROVEMENTS.md, all on or after 2026-11-12); the meter shows one model per lane in the period; the monitor's session moves at the three handovers are delivered as accountSwitches; PREREG section 5 scopes changes[] to the post window",
+   "days.accountSwitches": "STATE.md handovers 12-14 (account B resumed 2026-11-05 ~17:15; other account 2026-11-07 ~13:05; target account 2026-11-09 ~14:25); monitor rows only; other days omitted (a switch can go unrecorded, so zero is not derivable)",
+   "days.fidelity": "FACTORY-IMPROVEMENTS.md: step 1 done 2026-11-12 ~11:10, step 2 sent 2026-11-12, step 3 done 2026-11-12 ~11:05, step 9 (C9) 2026-11-12; all false in the period",
+   "slots.accountSwitches": "285: handover 14 (2026-11-09 ~14:10-14:25) fell inside the slot; 286 and 287 omitted (zero not derivable)",
+   "slots.c2Builds": "commits named in the records: 285 c2; 286 c2, c2b, c2c, c2d, c2e, c2f; 287 c2, c2b",
+   "slots.fidelity": "FACTORY-IMPROVEMENTS.md: step 4 rule to R00 at 288; steps 11-13 from slot 289; step 14 trial on slot 289; all false for 285-287",
+   "slots.laterDefects.packetMajor": "285: r1 2 MINOR + 3 NOTE, r2 2 NOTE (PR242 record); 287: r1 3 NOTE, r2 2 NOTE (STATE.md)",
+   "slots.scopeDate": "285: STATE.md (slot set to 285 after 284 merged 2026-11-09 09:53); 286: STATE.md (slot 286 and its design GO, 2026-11-09 ~18:22-18:45); 287: handover-14 memory (2026-11-11 ~09:50, VIS-287-SCOPE)",
+   "slots.series": "285: CR1 then closed by claims (STATE.md), PACKET r1-r2 (PR242 record); 286: CR1, no CR2 (STATE.md), PACKET r1-r4 (PR243 record); 287: contract CR1-CR4, C1R source review, PACKET r1-r2 (PR244 record)",
+   "windows": "STATE.md USAGE STOP lines, 5-hour windows only, in order: 2026-11-05 ~18:40; 2026-11-06 ~00:52 (reset time not recorded); 2026-11-06 ~12:18 (reset time not recorded); 2026-11-06 ~22:31; 2026-11-10 ~20:12; 2026-11-11 ~00:52; 2026-11-11 ~11:48; 2026-11-11 ~18:32; windowEnd = the recorded reset time; weekly-line stops (2026-11-07 ~12:05, 2026-11-09 ~14:10) are not 5-hour windows"
+  },
+  "spec": {
+   "file": "research/experiments/RL-23/PREREG.md",
+   "sha256": "2bbd97287add1ee547beafd8e807eb98c3d81da2b9ce6b17c030a2b4ac4d8942"
+  }
+ },
+ "schemaVersion": "planeon.research.factory-aggregates/v1",
+ "slots": [],
+ "windows": [
+  {
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-05T21:50:00"
+  },
+  {
+   "usageAtStop": 96,
+   "windowEnd": "2026-11-06T23:10:00"
+  },
+  {
+   "usageAtStop": 96,
+   "windowEnd": "2026-11-10T20:30:00"
+  },
+  {
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-11T01:30:00"
+  },
+  {
+   "usageAtStop": 97,
+   "windowEnd": "2026-11-11T14:30:00"
+  },
+  {
+   "usageAtStop": 95,
+   "windowEnd": "2026-11-11T19:30:00"
+  }
+ ]
+}
